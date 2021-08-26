@@ -1,0 +1,22 @@
+{
+  "name": "platform/kernel",
+  "description": "addons kernel",
+  "autoload": {
+    "psr-4": {
+      "Platform\\Kernel\\": "src/"
+    }
+  },
+  "require": {
+    "maatwebsite/excel": "^3.1"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Platform\\Kernel\\Providers\\KernelServiceProvider"
+      ],
+      "aliases": {}
+    }
+  },
+  "repositories": [
+  ]
+}

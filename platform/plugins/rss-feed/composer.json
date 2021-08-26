@@ -1,0 +1,9 @@
+{
+    "name": "platform/square",
+    "description": "Rss feed",
+    "type": "package",
+    "require": {
+        "platform/theme": "*@dev",
+        "spatie/laravel-feed": "^2.7|^3.1"
+    }
+}
