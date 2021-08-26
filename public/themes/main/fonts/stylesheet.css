@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Logan Five';
+    src: url('LoganFive-Bold.eot');
+    src: url('LoganFive-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LoganFive-Bold.woff2') format('woff2'),
+        url('LoganFive-Bold.woff') format('woff'),
+        url('LoganFive-Bold.ttf') format('truetype'),
+        url('LoganFive-Bold.svg#LoganFive-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

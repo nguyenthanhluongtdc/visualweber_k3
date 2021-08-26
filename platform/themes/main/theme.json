@@ -1,6 +1,6 @@
 {
-    "name": "Main",
-    "namespace": "Theme\\Ripple\\",
+    "name": "KIAK3",
+    "namespace": "Theme\\Main\\",
     "description": "Ripple is default theme for Laravel CMS since v2.0",
     "author": "Laravel Technologies",
     "version": "5.20",

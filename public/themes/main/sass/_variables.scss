@@ -1,0 +1,27 @@
+.font-buenos-light {
+    font-family: "BuenosAiresTTF-Light";
+}
+.font-buenos-bold {
+    font-family: "BuenosAiresTTF-Bold";
+}
+.primary-color {
+    color: #06141f;
+}
+.container-remake{
+    width: 90%;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.font20{
+    font-size: 20px;
+    @media(max-width: 1680px){
+        font-size: 16px;       
+    }
+}
+.font80{
+    font-size: 80px;
+    @media(max-width: 1680px){
+        font-size: 60px;       
+    }
+}
+$primary-color : #06141f;

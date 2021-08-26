@@ -1,0 +1,107 @@
+.section1{
+    position: relative;
+    background-size: cover;
+    .statistical{
+        position: absolute;
+        bottom: 220px;
+        left: 230px;
+        display: flex;
+        align-items: baseline;
+        .access{
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .client{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            color: #fff;
+        }
+        p.number{
+            font-size: 27px;
+        }
+        p.desc{
+            font-size: 12.5px;
+            text-align: center;
+        }
+    }
+    .section1-footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        .left{
+            background: $primary-color;
+            width: 396px;
+            height: 198px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            ::before{
+                position: absolute;
+                right: 100%;
+                top: 0;
+                bottom: 0;
+                background: $primary-color;
+                content: '';
+                width: 200px;
+            }
+            img{
+                width: 50%;
+                margin: 0 auto;
+            }
+            h3{
+                color: #fff;
+                margin-top: 20px;
+                font-size: 20px;
+                @media(max-width: 1680px){
+                    font-size: 16px;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            background: rgba(0 ,0, 0, 0.2);
+            width: 1284px;
+            height: 198px;
+            position: relative;
+            ::before{
+                position: absolute;
+                left: 100%;
+                top: 0;
+                bottom: 0;
+                background: rgba(0 ,0, 0, 0.03);
+                content: '';
+                width: 200px;
+            }
+            .item{
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .img{
+                    // height: 60px;
+                    img{
+                        max-height: 100%;
+                    }
+                }
+                p{
+                    color: #fff;
+                    font-size: 15px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

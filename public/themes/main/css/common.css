@@ -1,0 +1,225 @@
+.font-buenos-light {
+  font-family: "BuenosAiresTTF-Light";
+}
+
+.font-buenos-bold {
+  font-family: "BuenosAiresTTF-Bold";
+}
+
+.primary-color {
+  color: #06141f;
+}
+
+.container-remake {
+  width: 90%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.font20 {
+  font-size: 20px;
+}
+@media (max-width: 1680px) {
+  .font20 {
+    font-size: 16px;
+  }
+}
+
+.font80 {
+  font-size: 80px;
+}
+@media (max-width: 1680px) {
+  .font80 {
+    font-size: 60px;
+  }
+}
+
+@font-face {
+  font-family: "BuenosAiresTTF-Light";
+  src: url("../fonts/BuenosAiresTTF-Light.eot");
+  src: url("../fonts/BuenosAiresTTF-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BuenosAiresTTF-Light.woff") format("woff"), url("../fonts/BuenosAiresTTF-Light.ttf") format("truetype"), url("../fonts/BuenosAiresTTF-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BuenosAiresTTF-Bold";
+  src: url("../fonts/BuenosAiresTTF-Bold.eot");
+  src: url("../fonts/BuenosAiresTTF-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BuenosAiresTTF-Bold.woff") format("woff"), url("../fonts/BuenosAiresTTF-Bold.ttf") format("truetype"), url("../fonts/BuenosAiresTTF-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BuenosAiresTTF-Light";
+  src: url("../fonts/BuenosAiresTTF-Light.eot");
+  src: url("../fonts/BuenosAiresTTF-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BuenosAiresTTF-Light.woff") format("woff"), url("../fonts/BuenosAiresTTF-Light.ttf") format("truetype"), url("../fonts/BuenosAiresTTF-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BuenosAiresTTF-Bold";
+  src: url("../fonts/BuenosAiresTTF-Bold.eot");
+  src: url("../fonts/BuenosAiresTTF-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BuenosAiresTTF-Bold.woff") format("woff"), url("../fonts/BuenosAiresTTF-Bold.ttf") format("truetype"), url("../fonts/BuenosAiresTTF-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.section1 {
+  position: relative;
+  background-size: cover;
+}
+.section1 .statistical {
+  position: absolute;
+  bottom: 220px;
+  left: 230px;
+  display: flex;
+  align-items: baseline;
+}
+.section1 .statistical .access {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .statistical .client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .statistical p {
+  color: #fff;
+}
+.section1 .statistical p.number {
+  font-size: 27px;
+}
+.section1 .statistical p.desc {
+  font-size: 12.5px;
+  text-align: center;
+}
+.section1 .section1-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.section1 .section1-footer .left {
+  background: #06141f;
+  width: 396px;
+  height: 198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.section1 .section1-footer .left ::before {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  background: #06141f;
+  content: "";
+  width: 200px;
+}
+.section1 .section1-footer .left img {
+  width: 50%;
+  margin: 0 auto;
+}
+.section1 .section1-footer .left h3 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 20px;
+}
+@media (max-width: 1680px) {
+  .section1 .section1-footer .left h3 {
+    font-size: 16px;
+  }
+}
+.section1 .section1-footer .right {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  width: 1284px;
+  height: 198px;
+  position: relative;
+}
+.section1 .section1-footer .right ::before {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.03);
+  content: "";
+  width: 200px;
+}
+.section1 .section1-footer .right .item {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1 .section1-footer .right .item .img img {
+  max-height: 100%;
+}
+.section1 .section1-footer .right .item p {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.section2 {
+  background: #06141f;
+}
+.section2 .section2-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .section2-wrap .left {
+  width: 517px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 1919px) {
+  .section2 .section2-wrap .left {
+    width: 32%;
+  }
+}
+.section2 .section2-wrap .right {
+  width: 1078px;
+}
+@media (max-width: 1919px) {
+  .section2 .section2-wrap .right {
+    width: 64%;
+  }
+}
+.section2 .section2-wrap h2 {
+  line-height: 90px;
+  margin-bottom: 80px;
+  color: #fff;
+}
+@media (max-width: 1680px) {
+  .section2 .section2-wrap h2 {
+    margin-bottom: 60px;
+    line-height: 75px;
+  }
+}
+.section2 .section2-wrap .desc p {
+  line-height: 36px;
+  color: #fff;
+  text-align: justify;
+  margin-bottom: 55px;
+}
+@media (max-width: 1680px) {
+  .section2 .section2-wrap .desc p {
+    margin-bottom: 40px;
+  }
+}
+.section2 .section2-wrap .desc p:last-child {
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=common.css.map */
