@@ -41,33 +41,33 @@
             <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
         </div>
             <ul class="list-menu font-buenos-bold font20">
-            <li class="menu_item" data-menuanchor="home">
+            <li class="menu_item">
                 <a href="#section1" class="menu_link">
                     Trang chủ
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="home">
-                <a href="#section1" class="menu_link">
+            <li class="menu_item">
+                <a href="#section2" class="menu_link">
                     Ngoại thất
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="home">
-                <a href="#section1" class="menu_link">
+            <li class="menu_item" >
+                <a href="#section3" class="menu_link">
                     Nội thất
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="home">
-                <a href="#section1" class="menu_link">
+            <li class="menu_item">
+                <a href="#section4" class="menu_link">
                     Vận hành
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="home">
-                <a href="#section1" class="menu_link">
+            <li class="menu_item" >
+                <a href="#section5" class="menu_link">
                     An toàn
                 </a>
             </li>
-            <li class="chose-car">
-                <a href="">
+            <li class="chose-car" >
+                <a href="#section6">
                     CHỌN XE ONLINE
                 </a>
             </li>

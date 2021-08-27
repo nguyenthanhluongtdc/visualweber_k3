@@ -1,3 +1,38 @@
+
+.nav-tabs{
+    border-bottom: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .icontab{
+    display: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .icontab-active{
+    display: block;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link .icontab{
+    display: block;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link .icontab-active{
+    display: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item:last-child{
+    margin-bottom: 0px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    color: #838a8f;
+    border: none;
+    p.top{
+        margin-bottom: 0px;
+    }
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{
+    border-color: transparent;
+    border: none;
+}
 .section3{
    
     background: $primary-color;
@@ -125,8 +160,13 @@
 }
 
 .section4{
-    iframe{
+    width: 100%;
+    .video{
         width: 100%;
-        height: 100%;
+        img{
+            width: 100%;
+            height: 100vh;
+        }
     }
+   
 }

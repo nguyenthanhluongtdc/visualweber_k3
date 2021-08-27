@@ -15,4 +15,6 @@
     @includeIf('theme.main::views.sections.section4')
     @includeIf('theme.main::views.sections.section5')
     @includeIf('theme.main::views.sections.section6')
+    @includeIf('theme.main::views.sections.section7')
+    @includeIf('theme.main::views.sections.section8')
     </div>

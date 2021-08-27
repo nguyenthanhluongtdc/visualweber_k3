@@ -3,7 +3,7 @@ var myFullpage = new fullpage('#fullpage', {
 
     menu: '#menu',
     lockAnchors: true,
-    anchors: ['home', 'section2', 'section3', 'section4', 'section5', 'section6'],
+    anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7' , 'section8'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -51,7 +51,7 @@ var myFullpage = new fullpage('#fullpage', {
     verticalCentered: true,
 
     afterLoad: function (anchorLink, index) {
-        history.pushState(null, null, "/" + index.anchor);
+        // history.pushState(null, null, "/" + index.anchor);
         if (this.item.clientWidth <= 990) {
             $(".section .intro").css("padding-top", "0px");
             $(".section .intro")

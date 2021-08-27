@@ -1,4 +1,4 @@
-<div data-anchor="home" class="section section1"
+<div data-anchor="section1" class="section section1" id="section1"
     style="background-image: url('{{ Theme::asset()->url('images/section1/banners1.jpg') }}')">
     <div class="statistical">
         <div class="access">
