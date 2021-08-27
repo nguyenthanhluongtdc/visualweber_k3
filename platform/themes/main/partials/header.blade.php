@@ -34,4 +34,51 @@
     <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
     {!! apply_filters(THEME_FRONT_BODY, null) !!}
  
+
+    <header class="header-pc">
+        <div class="container-remake header-pc-wrap">
+            <div class="header-logo">
+            <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
+        </div>
+            <ul class="list-menu font-buenos-bold font20">
+            <li class="menu_item" data-menuanchor="home">
+                <a href="#section1" class="menu_link">
+                    Trang chủ
+                </a>
+            </li>
+            <li class="menu_item" data-menuanchor="home">
+                <a href="#section1" class="menu_link">
+                    Ngoại thất
+                </a>
+            </li>
+            <li class="menu_item" data-menuanchor="home">
+                <a href="#section1" class="menu_link">
+                    Nội thất
+                </a>
+            </li>
+            <li class="menu_item" data-menuanchor="home">
+                <a href="#section1" class="menu_link">
+                    Vận hành
+                </a>
+            </li>
+            <li class="menu_item" data-menuanchor="home">
+                <a href="#section1" class="menu_link">
+                    An toàn
+                </a>
+            </li>
+            <li class="chose-car">
+                <a href="">
+                    CHỌN XE ONLINE
+                </a>
+            </li>
+
+            </ul>   
+            
+           
+        </div>
+    </header>
+
+
+
+
     <div id="page-wrap">

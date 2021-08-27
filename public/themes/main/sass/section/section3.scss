@@ -1,0 +1,132 @@
+.section3{
+   
+    background: $primary-color;
+    color: #fff;
+    .section3-wrap{
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-tabs{
+            border-bottom: none;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .icontab{
+            display: none;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .icontab-active{
+            display: block;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link .icontab{
+            display: block;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link .icontab-active{
+            display: none;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item{
+            margin-bottom: 100px;
+            z-index: 2;
+           
+            @media(max-width: 1680px){
+                margin-bottom: 60px;
+            }
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item:last-child{
+            margin-bottom: 0px;
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+            color: #838a8f;
+            border: none;
+            p.top{
+                margin-bottom: 0px;
+            }
+        }
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{
+            border-color: transparent;
+            border: none;
+        }
+        .list-tab-section3{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .border-dotter{
+                width: 3px;
+                bottom: -50px;
+                position: absolute;
+                left: 31px;
+                top: -50px;
+                
+            }
+            .item-tab-wrap{
+                display: flex;
+                align-items: center;
+                .left{
+                    margin-right: 30px;
+                    background: $primary-color;
+                }
+            }
+        }
+        .content-tab-section3{
+            flex: 1;
+            .content-tab-wrap{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .slider-car{
+                    width: 80%;
+                    margin: 0 auto;
+                    .item-car-color{
+                        position: relative;
+                        width: 85%;
+                        img.img-car{
+                            width: 100%;
+                        }
+                        .color-car-title{
+                            position: absolute;
+                            top: 125%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    .ring360{
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .tab-color-car{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-top: 40px;
+                    }
+                }
+                .desc-car{
+                    width: 15%;
+                    .desc-car-item{
+                        text-align: end;
+                        margin-bottom: 90px;
+                        @media(max-width: 1680px){
+                            margin-bottom: 60px;
+                        }
+                        p.bottom{
+                            color: #838a8f;
+                        }
+                    }
+                    .desc-car-item:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section4{
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}

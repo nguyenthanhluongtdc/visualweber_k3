@@ -4,8 +4,15 @@
 .font-buenos-bold {
     font-family: "BuenosAiresTTF-Bold";
 }
+.font-buenos-re {
+    font-family: "BuenosAiresTTF-Regular";
+}
 .primary-color {
     color: #06141f;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 .container-remake{
     width: 90%;
@@ -16,6 +23,18 @@
     font-size: 20px;
     @media(max-width: 1680px){
         font-size: 16px;       
+    }
+}
+.font25{
+    font-size: 25px;
+    @media(max-width: 1680px){
+        font-size: 20px;       
+    }
+}
+.font40{
+    font-size: 40px;
+    @media(max-width: 1680px){
+        font-size: 30px;       
     }
 }
 .font80{
