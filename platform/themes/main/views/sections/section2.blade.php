@@ -1,7 +1,7 @@
 <div class="section section2" data-anchor="section2">
     <div class="container-remake section2-wrap">
         <div class="left">
-            <h2 class="font80 font-buenos-bold">Sự trở lại mạnh mẽ</h2>
+            <h2 class="font80 font-buenos-bold">Sự trở lại <br> mạnh mẽ</h2>
             <div class="desc">
                 <p class="font-buenos-light font20">Cerato Mới tiếp tục xây dựng danh tiếng của mình về thiết kế sắc nét, uyển chuyển và hiệu suất thể thao, giới thiệu nhiều cải tiến hơn cho bản lý lịch vốn đã ấn tượng của mình. Cabin cực kỳ hiện đại rộng rãi, 
                     tập trung vào người lái và đắm mình trong thế giới kỹ thuật số với thế hệ thông tin giải trí mới nhất.</p>

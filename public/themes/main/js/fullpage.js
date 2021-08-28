@@ -78,20 +78,38 @@ var myFullpage = new fullpage('#fullpage', {
 
 
 $('.section7-carousel').owlCarousel({
-    stagePadding: 500,
-    loop:true,
-    margin:70,
-    nav:true,
+    center: true, 
+    autoplay:false, 
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    stagePadding: 450, 
+    dots: true,
+    items:1,           
+    loop:true,     
+    margin:70,      
     responsive:{
-        0:{
-            items:1
+        1920: {
+            stagePadding: 460, 
+        },
+        1680: {
+            stagePadding: 430, 
+        },
+        1440: {
+            stagePadding: 350, 
+        },
+        1366: {
+            stagePadding: 290, 
         },
         600:{
-            items:1
-        },
-        1000:{
-            items:1
+            items:1 
         }
-    }
-});
+        
+    },
+    onInitialized : function(){
+        if($('.owl-item').first().hasClass('active'))
+            $('.owl-prev').hide();
+        else
+            $('.owl-prev').show();
+    } 
+}); 
 
