@@ -1,4 +1,4 @@
-<div class="section section2" data-anchor="section2" id="section2">
+<div class="section section2" data-anchor="section2">
     <div class="container-remake section2-wrap">
         <div class="left">
             <h2 class="font80 font-buenos-bold">Sự trở lại mạnh mẽ</h2>

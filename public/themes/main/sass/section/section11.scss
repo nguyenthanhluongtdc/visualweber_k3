@@ -1,0 +1,83 @@
+.section11{
+    position: relative;
+    .section11-bg{
+        background: $primary-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    .section11-wrap{
+        h3{
+            text-align: center;
+        }
+        z-index: 2;
+        position: relative;
+        .start{
+            margin: 20px 0;
+            display: flex;
+            a{
+                color: #fff;
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                background: $primary-color;
+                padding: 10px 40px;
+                border-radius: 30px;
+                justify-content: center;
+                margin: 0 auto;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .car-s11{
+            display: flex;
+            margin: 0 auto 40px;
+            justify-content: center;
+            img{
+                @media(max-width: 1440px){
+                    width: 55%;
+                }
+                @media(max-width: 1366px){
+                    width: 50%;
+                }
+            }
+        }
+        .action-s11{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            .action-item{
+                width: 300px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                @media(max-width: 1440px){
+                    width: 250px;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+                @media(max-width: 1366px){
+                    width: 200px;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                p{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

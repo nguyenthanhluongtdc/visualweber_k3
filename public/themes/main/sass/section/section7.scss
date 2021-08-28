@@ -1,3 +1,17 @@
 .section7{
     background: $primary-color;
+    .owl-carousel.owl-drag .owl-item.active{
+        opacity: 0.4;
+    }
+    .owl-carousel.owl-drag .owl-item.active img{
+        height: 300px;
+        margin-top: 65px;
+    }
+    .owl-carousel.owl-drag .owl-item.cloned{
+        opacity: 0.4;
+    }
+    .owl-carousel.owl-drag .owl-item.cloned img{
+        height: 300px;
+        margin-top: 65px;
+    }
 }

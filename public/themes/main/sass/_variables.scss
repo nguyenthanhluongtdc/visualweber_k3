@@ -14,18 +14,27 @@ p{
     margin: 0;
     padding: 0;
 }
+.color-gray{
+    color: #919191;
+}
 .container-remake{
     width: 90%;
     max-width: 1680px;
     margin: 0 auto;
+    @media(max-width : 1366px){
+        width: 75%;
+    }
 }
 .font20{
     font-size: 20px;
     @media(max-width: 1680px){
         font-size: 16px;       
     }
-    @media(max-width : 1366px){
+    @media(max-width : 1440px){
         font-size: 15px;
+    }
+    @media(max-width : 1366px){
+        font-size: 14px;
     }
 }
 .font25{

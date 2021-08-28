@@ -1,4 +1,4 @@
-<div class="section section8" data-anchor="section8" id="section8">
+<div class="section section8" data-anchor="section8">
     <div class="section8-wrap container-remake">
         <div class="left-s8">
             <div class="top">

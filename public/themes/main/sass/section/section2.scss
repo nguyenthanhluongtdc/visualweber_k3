@@ -3,8 +3,10 @@
     .section2-wrap{
         display: flex;
         justify-content: space-between;
+        height: 100vh;
         .left{
             width: 517px;
+            margin-top: 80px;
             @media(max-width: 1919px){
                 width: 32%;
             }
@@ -17,6 +19,9 @@
             width: 1078px;
             @media(max-width: 1919px){
                 width: 64%;
+                img{
+                    height: 100vh;
+                }
             }
         }
         h2{
@@ -25,6 +30,10 @@
             @media(max-width: 1680px){
                 margin-bottom: 60px;  
                 line-height: 75px;
+            }
+            @media(max-width: 1366px){
+                margin-bottom: 30px;  
+                line-height: 55px;
             }
             color: #fff;
         }
@@ -36,6 +45,12 @@
                 margin-bottom: 55px;
                 @media(max-width: 1680px){
                     margin-bottom: 40px;  
+                }
+                @media(max-width: 1440px){
+                    line-height: 30px;
+                }
+                @media(max-width: 1366px){
+                    line-height: 25px;
                 }
             }
             p:last-child{

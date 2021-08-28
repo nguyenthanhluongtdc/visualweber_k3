@@ -3,7 +3,8 @@ var myFullpage = new fullpage('#fullpage', {
 
     menu: '#menu',
     lockAnchors: true,
-    anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7' , 'section8'],
+    licenseKey: "F4D71089-214F4315-958D1E92-109DD6D4",
+    anchors: ['home', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7' , 'section8' , 'section9', 'section10', 'section11' , 'section12'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -73,5 +74,24 @@ var myFullpage = new fullpage('#fullpage', {
 
     afterResponsive: function (isResponsive) { }
 
+});
+
+
+$('.section7-carousel').owlCarousel({
+    stagePadding: 500,
+    loop:true,
+    margin:70,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
 });
 

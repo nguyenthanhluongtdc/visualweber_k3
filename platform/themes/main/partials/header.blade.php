@@ -40,9 +40,9 @@
             <div class="header-logo">
             <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
         </div>
-            <ul class="list-menu font-buenos-bold font20">
-            <li class="menu_item">
-                <a href="#section1" class="menu_link">
+            <ul class="list-menu font-buenos-bold font20" id="menu">
+            <li class="menu_item" data-menuanchor="home">
+                <a href="#home" class="menu_link">
                     Trang chủ
                 </a>
             </li>
