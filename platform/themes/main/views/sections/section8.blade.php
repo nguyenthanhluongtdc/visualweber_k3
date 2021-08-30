@@ -10,6 +10,8 @@
                     <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
 
                     </div>
+                    <div class="border-dotter-mb" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
+                    </div>
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#section8a">
                         <div class="item-tab-wrap">
