@@ -179,6 +179,15 @@
                     .item-car-color{
                         position: relative;
                         width: 85%;
+                        .cloudimage-360{
+                            width: 100%;
+                            @media(max-width:1366px){
+                                canvas{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
                         img.img-car{
                             width: 100%;
                         }
@@ -195,8 +204,9 @@
                             left: 50%;
                             transform: translateX(-50%);
                             @media(max-width: 1366px){
-                                top: 135%;
+                                top: 130%;
                             }
+                            
                             @media(max-width: 400px){
                                 top: 140%;
                             }
@@ -224,6 +234,10 @@
                                 img{
                                     width: 50px;
                                     height: 50px;
+                                    @media(max-width :1366px){
+                                        width: 40px;
+                                        height: 40px;
+                                    }
                                     @media(max-width :1024px){
                                         width: 30px;
                                         height: 30px;
