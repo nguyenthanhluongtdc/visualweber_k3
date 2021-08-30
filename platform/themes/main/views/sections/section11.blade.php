@@ -22,7 +22,7 @@
             <div class="action-item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <a href="">
                     <img src="{{ Theme::asset()->url('images/section11/s11icon2.png') }}">
-                    <p class="font20 font-buenos-re">Liên hệ(Hotline)</p>
+                    <p class="font20 font-buenos-re">Liên hệ (Hotline)</p>
                 </a>
             </div>
             <div class="action-item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
