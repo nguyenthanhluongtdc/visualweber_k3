@@ -1,5 +1,5 @@
 @php Theme::layout('no-sidebar') @endphp
-<div id="fullpage" class="fullpage" data-section="{{$section}}">
+<div id="fullpage" class="fullpage" data-section="{{$section ?? ''}}">
     @includeIf('theme.main::views.sections.section1')
     @includeIf('theme.main::views.sections.section2')
     @includeIf('theme.main::views.sections.section3')
