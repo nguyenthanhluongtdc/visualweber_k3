@@ -5,6 +5,9 @@
             width: 85%;
         }
     }
+    @media(max-width: 1024px){
+        display: none!important;
+    }
     background: #222222;
     padding-top: 70px;
     .section12-wrap{

@@ -40,8 +40,16 @@
             }
         }
     }
+    @media(max-width : 1024px){
+        display: none;
+    }
 }
-
+.header-mobie{
+    display: none;
+    @media(max-width :1024px){
+        display: block;
+    }
+}
 @mixin magnetic($timeing) {
   transition: all $timeing cubic-bezier(0.615, 0, 0.07, 1);
 }
@@ -77,6 +85,10 @@
             display: flex;
             align-items: center;
             transition: all 0.6s ease;
+            outline: none;
+            p{
+                outline: none;
+            }
             .img-bt{
                 width: 40px;
                 height: 40px;
@@ -115,3 +127,8 @@
 }
 
 
+@media(max-width: 1024px){
+    #page-wrap{
+        overflow: hidden;
+    }
+}
