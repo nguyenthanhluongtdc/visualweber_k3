@@ -1,4 +1,4 @@
-<div class="section section3 fp-auto-height-responsive fp-section fp-completely" data-anchor="section3">
+<div class="section section3 fp-auto-height-responsive fp-section fp-completely" data-anchor="hinh-360">
     <div class="container-remake section3-wrap">
         <ul class="list-tab-section3 nav nav-tabs" role="tablist">
             <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">

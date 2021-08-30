@@ -1,4 +1,4 @@
-<div data-anchor="home" class="section section1 fp-auto-height-responsive fp-section fp-completely"
+<div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
     style="background-image: url('{{ Theme::asset()->url('images/section1/banners1.jpg') }}')">
      <!-- Messenger Plugin chat Code -->
      

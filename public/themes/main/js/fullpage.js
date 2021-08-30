@@ -4,7 +4,7 @@ var myFullpage = new fullpage('#fullpage', {
     menu: '#menu',
     lockAnchors: true,
     licenseKey: "F4D71089-214F4315-958D1E92-109DD6D4",
-    anchors: ['home', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7' , 'section8' , 'section9', 'section10', 'section11' , 'section12'],
+    anchors: ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'chon-xe-online' , 'footer'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
