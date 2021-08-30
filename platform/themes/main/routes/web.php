@@ -12,8 +12,8 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
     });
 });
 
-Theme::routes();
-
+// Theme::routes();
+use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
 
@@ -24,9 +24,13 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             'uses' => 'MainController@getSiteMap',
         ]);
 
-        Route::get('{slug?}' . config('core.base.general.public_single_ending_url'), [
-            'as'   => 'public.single',
-            'uses' => 'MainController@getView',
+        // Route::get('{slug?}' . config('core.base.general.public_single_ending_url'), [
+        //     'as'   => 'public.single',
+        //     'uses' => 'MainController@getView',
+        // ]);
+        Route::get('/{section?}', [
+            'as' => 'index',
+            'uses' => 'MainController@getSection'
         ]);
 
     });

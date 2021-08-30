@@ -9,6 +9,5 @@
     </section>
 @endif
 {!! Theme::content() !!}
+
 {!! Theme::partial('footer') !!}
-
-
