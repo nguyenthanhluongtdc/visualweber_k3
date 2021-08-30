@@ -1,4 +1,4 @@
-<div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="section12">
+<div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="footer">
     <div class="section12-wrap container-remake">
         <div class="left">
             <h3 class="font-buenos-re">CÔNG TY TNHH MTV PHÂN PHỐI Ô TÔ DU LỊCH CHU LAI TRƯỜNG HẢI</h3>

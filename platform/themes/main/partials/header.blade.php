@@ -46,33 +46,33 @@
                 <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
             </div>
             <ul class="list-menu font-buenos-bold font20" id="menu">
-                <li class="menu_item" data-menuanchor="home">
-                    <a href="{{route('public.index')}}#home" class="menu_link">
+                <li class="menu_item" data-menuanchor="trang-chu">
+                    <a href="{{route('public.index')}}#trang-chu" class="menu_link">
                         Trang chủ
                     </a>
                 </li>
-                <li class="menu_item" data-menuanchor="section2">
-                    <a href="{{route('public.index')}}#section2" class="menu_link">
+                <li class="menu_item" data-menuanchor="ngoai-that">
+                    <a href="{{route('public.index')}}#ngoai-that" class="menu_link">
                         Ngoại thất
                     </a>
                 </li>
-                <li class="menu_item" data-menuanchor="section3">
-                    <a href="{{route('public.index')}}#section3" class="menu_link">
+                <li class="menu_item" data-menuanchor="noi-that">
+                    <a href="{{route('public.index')}}#noi-that" class="menu_link">
                         Nội thất
                     </a>
                 </li>
-                <li class="menu_item" data-menuanchor="section4">
-                    <a href="{{route('public.index')}}#section4" class="menu_link">
+                <li class="menu_item" data-menuanchor="van-hanh">
+                    <a href="{{route('public.index')}}#van-hanh" class="menu_link">
                         Vận hành
                     </a>
                 </li>
-                <li class="menu_item" data-menuanchor="section5">
-                    <a href="{{route('public.index')}}#section5" class="menu_link">
+                <li class="menu_item" data-menuanchor="an-toan">
+                    <a href="{{route('public.index')}}#an-toan" class="menu_link">
                         An toàn
                     </a>
                 </li>
-                <li class="chose-car" data-menuanchor="section6">
-                    <a href="{{route('public.index')}}#section6">
+                <li class="chose-car" data-menuanchor="chon-xe-online">
+                    <a href="{{route('public.index')}}#chon-xe-online">
                         CHỌN XE ONLINE
                     </a>
                 </li>

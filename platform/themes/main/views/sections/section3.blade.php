@@ -1,4 +1,4 @@
-<div class="section section3 fp-auto-height-responsive fp-section fp-completely" data-anchor="section3">
+<div class="section section3 fp-auto-height-responsive fp-section fp-completely" data-anchor="hinh-360">
     <div class="container-remake section3-wrap">
         <ul class="list-tab-section3 nav nav-tabs" role="tablist">
             <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
@@ -80,8 +80,13 @@
                     <div class="slider-car">
                         
                           <div class="tab-content">
-                            <div id="car1" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
+                            <div id="car1" class="container active show tab-pane fade item-car-color"><br>
+                                <div
+                                class="cloudimage-360"
+                                data-folder="/themes/main/images/xexoay/"
+                                data-filename="{index}.jpg"
+                                data-amount="88"
+                                ></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
@@ -115,7 +120,7 @@
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
                             </div>
-                            <div id="car6" class="container tab-pane active item-car-color"><br>
+                            <div id="car6" class="container tab-pane item-car-color"><br>
                                 <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">

@@ -75,6 +75,7 @@ return [
             $theme->asset()->container('footer')->add('carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'); 
             $theme->asset()->container('footer')->add('carousel_thumb', '//cdn.jsdelivr.net/npm/owl.carousel2.thumbs@0.1.8/dist/owl.carousel2.thumbs.min.js');          
             $theme->asset()->container('footer')->add('jquery_ui', '//code.jquery.com/ui/1.10.3/jquery-ui.js');
+            $theme->asset()->container('footer')->add('cloudimage', '//cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.6.0/js-cloudimage-360-view.min.js');
             // $theme->asset()->container('footer')->usePath()->add('script', 'js/common.js',[],[],time());
             $theme->asset()->container('footer')->usePath()->add('script', 'js/fullpage.js',[],[],time());
         },

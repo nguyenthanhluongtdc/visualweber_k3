@@ -1,4 +1,4 @@
-<div class="section section4 fp-auto-height-responsive fp-section fp-completely" data-anchor="section4">
+<div class="section section4 fp-auto-height-responsive fp-section fp-completely" data-anchor="video">
     <div class="video videopc">
         <a data-fancybox href="https://youtu.be/jpUtyTXFQ94">
         <img src="{{ Theme::asset()->url('images/section4.jpg') }}">
