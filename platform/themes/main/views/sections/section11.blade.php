@@ -1,4 +1,4 @@
-<div class="section section11" data-anchor="section11">
+<div class="section section11 fp-auto-height-responsive fp-section fp-completely" data-anchor="section11">
     <div class="section11-bg">
     </div>
     <div class="section11-wrap container-remake">

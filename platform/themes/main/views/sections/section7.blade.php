@@ -1,4 +1,4 @@
-<div class="section section7" data-anchor="section7">
+<div class="section section7 fp-auto-height-responsive fp-section fp-completely" data-anchor="section7">
     <div class="section7-wrap container-remake">
         <div class="top">
             <p class="font-buenos-bold font30">Nội thất</p>

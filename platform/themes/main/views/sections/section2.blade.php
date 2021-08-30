@@ -1,4 +1,4 @@
-<div class="section section2" data-anchor="section2">
+<div class="section section2  fp-auto-height-responsive fp-section fp-completely" data-anchor="section2">
     <div class="container-remake section2-wrap">
         <div class="left">
             <h2 class="font80 font-buenos-bold">Sự trở lại <br> mạnh mẽ</h2>

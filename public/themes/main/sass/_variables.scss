@@ -24,6 +24,9 @@ p{
     @media(max-width : 1366px){
         width: 75%;
     }
+    @media(max-width : 1024px){
+        width: 90%;
+    }
 }
 .font20{
     font-size: 20px;
@@ -35,6 +38,9 @@ p{
     }
     @media(max-width : 1366px){
         font-size: 14px;
+    }
+    @media(max-width : 450px){
+        font-size: 13px;
     }
 }
 .font25{
@@ -48,17 +54,31 @@ p{
     @media(max-width: 1680px){
         font-size: 25px;       
     }
+    @media(max-width: 480px){
+        font-size: 20px;       
+    }
+    
 }
 .font40{
     font-size: 40px;
     @media(max-width: 1680px){
         font-size: 30px;       
     }
+   
 }
 .font60{
     font-size: 60px;
     @media(max-width: 1680px){
         font-size: 50px;       
+    }
+    @media(max-width : 1366px){
+        font-size: 45px;
+    }
+    @media(max-width : 995px){
+        font-size: 35px;
+    }
+    @media(max-width : 413px){
+        font-size: 25px;
     }
 }
 .font80{
@@ -71,6 +91,12 @@ p{
     }
     @media(max-width : 1366px){
         font-size: 45px;
+    }
+    @media(max-width : 995px){
+        font-size: 35px;
+    }
+    @media(max-width : 413px){
+        font-size: 25px;
     }
 }
 $primary-color : #06141f;

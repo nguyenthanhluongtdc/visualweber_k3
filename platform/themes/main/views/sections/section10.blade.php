@@ -1,4 +1,4 @@
-<div class="section section10" data-anchor="section10">
+<div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="section10">
     <div class="container-remake section10-wrap">
         <h3 class="font80 font-buenos-bold">Các dòng sản phẩm</h3>
         <div class="list-section10">

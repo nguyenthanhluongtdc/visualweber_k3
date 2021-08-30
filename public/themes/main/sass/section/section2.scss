@@ -1,15 +1,31 @@
 .section2{
     background: $primary-color;
+    @media(max-width : 1024px){
+        .container-remake{
+            width: 100%;
+        }
+    }
     .section2-wrap{
         display: flex;
         justify-content: space-between;
         height: 100vh;
         overflow: hidden;
+        @media(max-width : 1024px){
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
         .left{
             width: 517px;
             margin-top: 80px;
             @media(max-width: 1919px){
                 width: 32%;
+            }
+            @media(max-width : 1024px){
+                width: 100%;
+                padding: 0 5%;
+                margin-top: 30px;
+                padding-bottom: 30px;
             }
             display: flex;
             align-items: center;
@@ -22,20 +38,32 @@
                 width: 64%;
                 img{
                     height: 100vh;
+                    @media(max-width: 1024px){
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
+            @media(max-width : 1024px){
+                width: 100%;
+            }   
         }
         h2{
             line-height: 90px;
             margin-bottom: 80px;
             text-align: start;
             width: 100%;
+            @media(max-width : 1024px){
+               br{
+                   display: none;
+               }
+            }  
             @media(max-width: 1680px){
                 margin-bottom: 60px;  
                 line-height: 75px;
             }
             @media(max-width: 1366px){
-                margin-bottom: 30px;  
+                margin-bottom: 20px;  
                 line-height: 55px;
             }
             color: #fff;
@@ -54,6 +82,9 @@
                 }
                 @media(max-width: 1366px){
                     line-height: 25px;
+                }
+                @media(max-width: 1024px){
+                    margin-bottom: 20px;
                 }
             }
             p:last-child{

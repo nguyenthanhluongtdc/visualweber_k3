@@ -1,3 +1,10 @@
 .section6{
     background-size: cover;
+    .img-mobie{
+        display: none;
+        @media(max-width : 1024px){
+            display: block;
+            width: 100%;
+        }
+    }
 }

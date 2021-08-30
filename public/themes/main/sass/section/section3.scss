@@ -42,6 +42,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media(max-width :1024px){
+            flex-wrap: wrap;
+        }
         .nav-tabs{
             border-bottom: none;
         }
@@ -72,6 +75,9 @@
             @media(max-width: 1366px){
                 margin-bottom: 40px;
             }
+            @media(max-width: 1024px){
+                margin-bottom: 0px;
+            }
         }
         .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item:last-child{
             margin-bottom: 0px;
@@ -91,6 +97,17 @@
             display: flex;
             flex-direction: column;
             position: relative;
+            @media(max-width :1024px){
+               width: 100%;
+               flex-direction: row;
+               justify-content: space-between;
+               li{
+                   width: 23%;
+                   a.nav-link{
+                       padding: 0;
+                   }
+               }
+            }
             .border-dotter{
                 width: 3px;
                 bottom: -50px;
@@ -102,20 +119,39 @@
             .item-tab-wrap{
                 display: flex;
                 align-items: center;
+                
                 .left{
                     margin-right: 30px;
                     background: $primary-color;
+                    @media(max-width :1024px){
+                        margin-right: 0;
+                        margin-top: 20px;
+                    }
+                }
+                @media(max-width :1024px){
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    text-align: center;
                 }
             }
         }
         .content-tab-section3{
             flex: 1;
+            @media(max-width :1024px){
+                width: 100%;
+             }
             .content-tab-wrap{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                @media(max-width :1024px){
+                    flex-wrap: wrap;
+                 }
                 .slider-car{
                     width: 80%;
+                    @media(max-width :1024px){
+                        width: 100%;
+                     }
                     margin: 0 auto;
                     .item-car-color{
                         position: relative;
@@ -142,10 +178,24 @@
                         justify-content: center;
                         width: 100%;
                         margin-top: 40px;
+                        @media(max-width :1024px){
+                            width: 100%;
+                            justify-content: space-between;
+                            li{
+                                // width: 12%;
+                                img{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                         }
                     }
                 }
                 .desc-car{
                     width: 15%;
+                    @media(max-width :1024px){
+                        width: 100%;
+                     }
                     .desc-car-item{
                         text-align: end;
                         margin-bottom: 90px;
@@ -175,6 +225,18 @@
         img{
             width: 100%;
             height: 100vh;
+        }
+        @media(max-width : 1024px){
+            display: none;
+        }
+    }
+    .videomobie{
+        display: none;
+        @media(max-width: 1024px){
+            display: block;
+            img{
+                width: 100%;
+            }
         }
     }
    

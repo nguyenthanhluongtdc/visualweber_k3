@@ -1,5 +1,7 @@
-<div data-anchor="home" class="section section1"
+<div data-anchor="home" class="section section1 fp-auto-height-responsive fp-section fp-completely"
     style="background-image: url('{{ Theme::asset()->url('images/section1/banners1.jpg') }}')">
+     <!-- Messenger Plugin chat Code -->
+     
     <div class="statistical">
         <div class="access">
             <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
