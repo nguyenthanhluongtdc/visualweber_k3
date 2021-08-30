@@ -86,15 +86,15 @@
                     <p class="font20 font-buenos-light">Phanh đỗ xe điện tử mới có sẵn trên phạm vi để tăng thêm sự tiện lợi, tự động nhả khi xe được chuyển sang chế độ Dẫn động.</p>
                 </div>
                 <div id="section8b" class="item-right tab-pane fade"><br>
-                    <img src="{{ Theme::asset()->url('images/section8.jpg') }}">
+                    <img src="{{ Theme::asset()->url('images/vanhanh2.jpg') }}">
                     <p class="font20 font-buenos-light">Phanh đỗ xe điện tử mới có sẵn trên phạm vi để tăng thêm sự tiện lợi, tự động nhả khi xe được chuyển sang chế độ Dẫn động.</p>
                 </div>
                 <div id="section8c" class="item-right tab-pane fade"><br>
-                    <img src="{{ Theme::asset()->url('images/section8.jpg') }}">
+                    <img src="{{ Theme::asset()->url('images/vanhanh3.jpg') }}">
                     <p class="font20 font-buenos-light">Phanh đỗ xe điện tử mới có sẵn trên phạm vi để tăng thêm sự tiện lợi, tự động nhả khi xe được chuyển sang chế độ Dẫn động.</p>
                 </div>
                 <div id="section8d" class="item-right tab-pane fade"><br>
-                    <img src="{{ Theme::asset()->url('images/section8.jpg') }}">
+                    <img src="{{ Theme::asset()->url('images/vanhanh4.jpg') }}">
                     <p class="font20 font-buenos-light">Phanh đỗ xe điện tử mới có sẵn trên phạm vi để tăng thêm sự tiện lợi, tự động nhả khi xe được chuyển sang chế độ Dẫn động.</p>
                 </div>
               </div>

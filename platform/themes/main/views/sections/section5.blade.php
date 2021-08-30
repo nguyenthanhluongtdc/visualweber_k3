@@ -19,7 +19,7 @@
                 </div>
                 <div id="section6b" class="tab-pane fade tab-content-s6-item">
                     <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                        <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
+                        <img src="{{ Theme::asset()->url('images/section5/ngoaithat2.jpg') }}">
                     </div>
                     <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
@@ -29,7 +29,7 @@
                 </div>
                 <div id="section6c" class="tab-pane fade tab-content-s6-item">
                     <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                        <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
+                        <img src="{{ Theme::asset()->url('images/section5/ngoaithat3.jpg') }}">
                     </div>
                     <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
