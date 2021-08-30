@@ -1,5 +1,5 @@
 <div class="section section4 fp-auto-height-responsive fp-section fp-completely" data-anchor="video">
-    <div class="video videopc">
+    <div class="video videopc" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
         <a data-fancybox href="https://youtu.be/jpUtyTXFQ94">
         <img src="{{ Theme::asset()->url('images/section4.jpg') }}">
         </a>

@@ -6,7 +6,7 @@
             </div>
             <div class="border-dotter-mb" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
             </div>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <a class="nav-link active" data-toggle="tab" href="#section3a">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -22,7 +22,7 @@
                     </div>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <a class="nav-link" data-toggle="tab" href="#section3b">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -39,7 +39,7 @@
 
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <a class="nav-link" data-toggle="tab" href="#section3c">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -55,7 +55,7 @@
                     </div>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
                 <a class="nav-link" data-toggle="tab" href="#section3d">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -74,12 +74,11 @@
         </ul>
         <div class="content-tab-section3 tab-content">
             <div id="section3a" class="tab-pane active">
-
                 {{-- tab content seclect car  --}}
                 <div class="content-tab-wrap">
                     <div class="slider-car">
                         
-                          <div class="tab-content">
+                          <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                             <div id="car1" class="container active show tab-pane fade item-car-color"><br>
                                 <div
                                 class="cloudimage-360"
@@ -130,37 +129,37 @@
                           </div>
 
                           <ul class="nav nav-tabs tab-color-car" role="tablist">
-                            <li class="nav-item">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                                 <a class="nav-link" data-toggle="tab" href="#car1">
                                     <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
                                 <a class="nav-link" data-toggle="tab" href="#car2">
                                     <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                                 <a class="nav-link" data-toggle="tab" href="#car3">
                                     <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
                                 <a class="nav-link" data-toggle="tab" href="#car4">
                                     <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="1200">
                                 <a class="nav-link" data-toggle="tab" href="#car5">
                                     <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="1500">
                                 <a class="nav-link active" data-toggle="tab" href="#car6">
                                     <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
@@ -174,19 +173,19 @@
                         
                     </div>
                     <div class="desc-car">
-                        <div class="desc-car-item">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                             <p class="top font40 font-buenos-bold">590 mi</p>
                             <p class="bottom font20 font-buenos-re">Range</p>
                         </div>
-                        <div class="desc-car-item">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
                             <p class="top font40 font-buenos-bold">2.68s</p>
                             <p class="bottom font20 font-buenos-re">0-60 mph*</p>
                         </div>
-                        <div class="desc-car-item">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                             <p class="top font40 font-buenos-bold">199 mph</p>
                             <p class="bottom font20 font-buenos-re">Top Speed</p>
                         </div>
-                        <div class="desc-car-item">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
                             <p class="top font40 font-buenos-bold">999 hp</p>
                             <p class="bottom font20 font-buenos-re">Power</p>
                         </div>
@@ -197,7 +196,7 @@
                 <div class="content-tab-wrap">
                     <div class="slider-car">
                         
-                        <div class="tab-content">
+                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                           <div id="car1b" class="container tab-pane fade item-car-color"><br>
                               <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
                               <div class="ring360">
@@ -309,7 +308,6 @@
             <div id="section3c" class="tab-pane fade">
                 <div class="content-tab-wrap">
                     <div class="slider-car">
-                        
                         <div class="tab-content">
                           <div id="car1c" class="container tab-pane fade item-car-color"><br>
                               <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
@@ -423,7 +421,7 @@
                 <div class="content-tab-wrap">
                     <div class="slider-car">
                         
-                        <div class="tab-content">
+                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                           <div id="car1d" class="container tab-pane fade item-car-color"><br>
                               <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
                               <div class="ring360">

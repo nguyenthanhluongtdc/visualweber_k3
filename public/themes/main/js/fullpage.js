@@ -50,16 +50,6 @@ var myFullpage = new fullpage('#fullpage', {
     //Design
     controlArrows: true,
     verticalCentered: true,
-
-    afterLoad: function(origin, anchorLink, index) {
-        // $.fn.fullpage.moveSlideRight();
-        if (this.item.clientWidth <= 990) {
-            $(".section .intro").css("padding-top", "0px");
-            $(".section .intro")
-                .closest(".section")
-                .css("padding-top", "0");
-        }
-    },
     onLeave: function(index, destination, direction, nextIndex) {
         history.pushState(null, null, "/" + destination.anchor);
         if ($('a[hreflang="en"]').length) {
@@ -68,6 +58,10 @@ var myFullpage = new fullpage('#fullpage', {
         if ($('a[hreflang="vi"]').length) {
             $('a[hreflang="vi"]')[0].href = url.replace('en', 'vi') + '/' + destination.anchor;
         }
+        jQuery('.section [data-aos]').removeClass("aos-animate");
+    },
+    onSlideLeave: function(){
+        jQuery('.slide [data-aos]').removeClass("aos-animate");
     },
     afterResize: function (width, height) {
         if (width <= 990) {
@@ -76,6 +70,21 @@ var myFullpage = new fullpage('#fullpage', {
                 .closest(".section")
                 .css("padding-top", "0");
         }
+    },
+    afterSlideLoad: function(){
+        jQuery('.slide.active [data-aos]').addClass("aos-animate");
+    },
+    afterLoad: function(origin, anchorLink, index) {
+        // $.fn.fullpage.moveSlideRight();
+        if (this.item.clientWidth <= 990) {
+            $(".section .intro").css("padding-top", "0px");
+            $(".section .intro")
+                .closest(".section")
+                .css("padding-top", "0");
+        }
+
+        jQuery('.section.active [data-aos]').addClass("aos-animate");
+        //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
     },
 
     afterResponsive: function (isResponsive) { }
@@ -130,4 +139,5 @@ $(document).ready(function(){
     if(document.getElementById('fullpage')){
         myFullpage.moveTo(document.getElementById('fullpage').getAttribute('data-section'));
     }
+    AOS.init();
 });

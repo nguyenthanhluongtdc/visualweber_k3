@@ -28,9 +28,5 @@
 <!-- JS Library-->
 {!! Theme::footer() !!}
 
-
-<script>
-  AOS.init();
-</script>
 </body>
 </html>

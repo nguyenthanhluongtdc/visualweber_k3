@@ -1,6 +1,6 @@
 <div class="section section5 fp-auto-height-responsive fp-section fp-completely" data-anchor="ngoai-that">
     <div class="container-remake section5-wrap">
-        <div class="section5-top">
+        <div class="section5-top" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="font-buenos-bold font30">Ngoại thất</p>
             <h3 class="font-buenos-bold font60">Thiết kế ấn tượng</h3>
         </div>
@@ -8,46 +8,40 @@
         <div class="section5-tab">
             <div class="tab-content tab-content-s6">
                 <div id="section6a" class="tab-pane active tab-content-s6-item">
-                    <div class="img-pri">
+                    <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
                     </div>
-                    <div class="content-ab">
+                    <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
                         <img src="{{ Theme::asset()->url('images/section5/section5a.jpg') }}">
-
-
                     </div>
                 </div>
                 <div id="section6b" class="tab-pane fade tab-content-s6-item">
-                    <div class="img-pri">
+                    <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
                     </div>
-                    <div class="content-ab">
+                    <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
                         <img src="{{ Theme::asset()->url('images/section5/section5a.jpg') }}">
-
-
                     </div>
                 </div>
                 <div id="section6c" class="tab-pane fade tab-content-s6-item">
-                    <div class="img-pri">
+                    <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
                     </div>
-                    <div class="content-ab">
+                    <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
                         <img src="{{ Theme::asset()->url('images/section5/section5a.jpg') }}">
-
-
                     </div>
                 </div>
                 <div id="section6d" class="tab-pane fade tab-content-s6-item">
-                    <div class="img-pri">
+                    <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
                     </div>
-                    <div class="content-ab">
+                    <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
                         <img src="{{ Theme::asset()->url('images/section5/section5a.jpg') }}">
@@ -62,7 +56,7 @@
                 <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
 
                 </div>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <a class="nav-link active" data-toggle="tab" href="#section6a">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -78,7 +72,7 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300">
                     <a class="nav-link" data-toggle="tab" href="#section6b">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -94,7 +88,7 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="600">
                     <a class="nav-link" data-toggle="tab" href="#section6c">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -110,7 +104,7 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="900">
                     <a class="nav-link" data-toggle="tab" href="#section6d">
                         <div class="item-tab-wrap">
                             <div class="left">

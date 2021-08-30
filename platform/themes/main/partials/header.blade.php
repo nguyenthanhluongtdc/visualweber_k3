@@ -84,7 +84,7 @@
     </header>
 
 
-    <div class="fixed-button">
+    <div class="fixed-button" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
 
         <a class="btn" href="#">
             <div class="wrap-button">

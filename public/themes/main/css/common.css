@@ -330,6 +330,14 @@ p {
   width: 140%;
 }
 
+html {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .section1 {
   position: relative;
   background-size: cover;

@@ -1,6 +1,6 @@
 <div class="section section7 fp-auto-height-responsive fp-section fp-completely" data-anchor="noi-that">
     <div class="section7-wrap container-remake">
-        <div class="top">
+        <div class="top" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="font-buenos-bold font30">Nội thất</p>
             <h3 class="font80 font-buenos-bold">Kết nối <br> công nghệ</h3>
         </div>
@@ -8,7 +8,7 @@
             <div class="item-slider">
                 <img src="{{ Theme::asset()->url('images/section7.jpg') }}">
                 <div class="border"></div>
-                <div class="content">
+                <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <h5 class="font-buenos-bold font30">Màn hình cảm ứng HD 10,25"</h5>
                     <div class="desc font-buenos-light font20">
                         <p>Dễ dàng đọc và vận hành, màn hình cảm ứng LCD màu 10,25 "chứa vô số tính năng để làm phong
@@ -21,7 +21,7 @@
             <div class="item-slider">
                 <img src="{{ Theme::asset()->url('images/section7.jpg') }}">
                 <div class="border"></div>
-                <div class="content">
+                <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <h5 class="font-buenos-bold font30">Màn hình cảm ứng HD 10,25"</h5>
                     <div class="desc font-buenos-light font20">
                         <p>Dễ dàng đọc và vận hành, màn hình cảm ứng LCD màu 10,25 "chứa vô số tính năng để làm phong
@@ -34,7 +34,7 @@
             <div class="item-slider">
                 <img src="{{ Theme::asset()->url('images/section7.jpg') }}">
                 <div class="border"></div>
-                <div class="content">
+                <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <h5 class="font-buenos-bold font30">Màn hình cảm ứng HD 10,25"</h5>
                     <div class="desc font-buenos-light font20">
                         <p>Dễ dàng đọc và vận hành, màn hình cảm ứng LCD màu 10,25 "chứa vô số tính năng để làm phong
@@ -47,7 +47,7 @@
             <div class="item-slider">
                 <img src="{{ Theme::asset()->url('images/section7.jpg') }}">
                 <div class="border"></div>
-                <div class="content">
+                <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <h5 class="font-buenos-bold font30">Màn hình cảm ứng HD 10,25"</h5>
                     <div class="desc font-buenos-light font20">
                         <p>Dễ dàng đọc và vận hành, màn hình cảm ứng LCD màu 10,25 "chứa vô số tính năng để làm phong
@@ -58,8 +58,5 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </div>

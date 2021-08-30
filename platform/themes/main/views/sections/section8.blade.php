@@ -1,7 +1,7 @@
 <div class="section section8 fp-auto-height-responsive fp-section fp-completely" data-anchor="van-hanh">
     <div class="section8-wrap container-remake">
         <div class="left-s8">
-            <div class="top">
+            <div class="top" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <p class="font-buenos-bold font30">Vận hành</p>
                 <h3 class="font80 font-buenos-bold">Tiện lợi <br> chỉ một chạm</h3>
             </div>
@@ -12,7 +12,7 @@
                     </div>
                     <div class="border-dotter-mb" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
                     </div>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                     <a class="nav-link active" data-toggle="tab" href="#section8a">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -28,7 +28,7 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <a class="nav-link" data-toggle="tab" href="#section8b">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -44,7 +44,7 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                     <a class="nav-link" data-toggle="tab" href="#section8c">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -60,7 +60,7 @@
 
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
                     <a class="nav-link" data-toggle="tab" href="#section8d">
                         <div class="item-tab-wrap">
                             <div class="left">
@@ -79,7 +79,7 @@
             </ul>
             </div>
         </div>
-        <div class="right">
+        <div class="right" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
             <div class="tab-content">
                 <div id="section8a" class="item-right tab-pane active"><br>
                     <img src="{{ Theme::asset()->url('images/section8.jpg') }}">
