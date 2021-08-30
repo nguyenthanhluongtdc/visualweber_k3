@@ -1,12 +1,15 @@
 <div class="section section3 fp-auto-height-responsive fp-section fp-completely" data-anchor="hinh-360">
     <div class="container-remake section3-wrap">
         <ul class="list-tab-section3 nav nav-tabs" role="tablist">
-            <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
+            <div class="border-dotter"
+                style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
 
             </div>
-            <div class="border-dotter-mb" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
+            <div class="border-dotter-mb"
+                style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
             </div>
-            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700"
+                data-aos-easing="ease-in-sine">
                 <a class="nav-link active" data-toggle="tab" href="#section3a">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -22,7 +25,8 @@
                     </div>
                 </a>
             </li>
-            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700"
+                data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <a class="nav-link" data-toggle="tab" href="#section3b">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -39,7 +43,8 @@
 
                 </a>
             </li>
-            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700"
+                data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <a class="nav-link" data-toggle="tab" href="#section3c">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -55,7 +60,8 @@
                     </div>
                 </a>
             </li>
-            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
+            <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700"
+                data-aos-easing="ease-in-sine" data-aos-delay="900">
                 <a class="nav-link" data-toggle="tab" href="#section3d">
                     <div class="item-tab-wrap">
                         <div class="left">
@@ -74,118 +80,130 @@
         </ul>
         <div class="content-tab-section3 tab-content">
             <div id="section3a" class="tab-pane active">
-                {{-- tab content seclect car  --}}
+                {{-- tab content seclect car --}}
                 <div class="content-tab-wrap">
                     <div class="slider-car">
-                        
-                          <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+
+                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">
                             <div id="car1" class="container active show tab-pane fade item-car-color"><br>
-                                <div
-                                class="cloudimage-360"
-                                data-folder="/themes/main/images/xexoay/"
-                                data-filename="{index}.jpg"
-                                data-amount="88"
-                                ></div>
+                                <div class="cloudimage-360" data-folder="/themes/main/images/xexoay/"
+                                    data-filename="{index}.jpg" data-amount="88"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
                             </div>
                             <div id="car2" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
+                                <img src="{{ Theme::asset()->url('images/section3/car2a.png') }}" alt=""
+                                    class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
                             </div>
                             <div id="car3" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
+                                <img src="{{ Theme::asset()->url('images/section3/car3a.png') }}" alt=""
+                                    class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
                             </div>
                             <div id="car4" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
+                                <img src="{{ Theme::asset()->url('images/section3/car4a.png') }}" alt=""
+                                    class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
                             </div>
                             <div id="car5" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
+                                <img src="{{ Theme::asset()->url('images/section3/car5a.png') }}" alt=""
+                                    class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
                             </div>
                             <div id="car6" class="container tab-pane item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
+                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                    class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
                                 <p class="color-car-title font-buenos-bold font25">Runway Red</p>
                             </div>
-                          </div>
+                        </div>
 
-                          <ul class="nav nav-tabs tab-color-car" role="tablist">
-                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                        <ul class="nav nav-tabs tab-color-car" role="tablist">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700"
+                                data-aos-easing="ease-in-sine">
                                 <a class="nav-link" data-toggle="tab" href="#car1">
                                     <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700"
+                                data-aos-easing="ease-in-sine" data-aos-delay="300">
                                 <a class="nav-link" data-toggle="tab" href="#car2">
                                     <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700"
+                                data-aos-easing="ease-in-sine" data-aos-delay="600">
                                 <a class="nav-link" data-toggle="tab" href="#car3">
                                     <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700"
+                                data-aos-easing="ease-in-sine" data-aos-delay="900">
                                 <a class="nav-link" data-toggle="tab" href="#car4">
                                     <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="1200">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700"
+                                data-aos-easing="ease-in-sine" data-aos-delay="1200">
                                 <a class="nav-link" data-toggle="tab" href="#car5">
                                     <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
                                 </a>
                             </li>
-                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="1500">
+                            <li class="nav-item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="700"
+                                data-aos-easing="ease-in-sine" data-aos-delay="1500">
                                 <a class="nav-link active" data-toggle="tab" href="#car6">
                                     <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
                                     {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
                                 </a>
                             </li>
-                          </ul>
+                        </ul>
 
 
 
 
-                        
+
                     </div>
                     <div class="desc-car">
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
+                            data-aos-easing="ease-in-sine">
                             <p class="top font40 font-buenos-bold">590 mi</p>
                             <p class="bottom font20 font-buenos-re">Range</p>
                         </div>
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
+                            data-aos-easing="ease-in-sine" data-aos-delay="300">
                             <p class="top font40 font-buenos-bold">2.68s</p>
                             <p class="bottom font20 font-buenos-re">0-60 mph*</p>
                         </div>
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
+                            data-aos-easing="ease-in-sine" data-aos-delay="600">
                             <p class="top font40 font-buenos-bold">199 mph</p>
                             <p class="bottom font20 font-buenos-re">Top Speed</p>
                         </div>
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
+                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
+                            data-aos-easing="ease-in-sine" data-aos-delay="900">
                             <p class="top font40 font-buenos-bold">999 hp</p>
                             <p class="bottom font20 font-buenos-re">Power</p>
                         </div>
@@ -195,96 +213,103 @@
             <div id="section3b" class="tab-pane fade">
                 <div class="content-tab-wrap">
                     <div class="slider-car">
-                        
-                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                          <div id="car1b" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
-                          </div>
-                          <div id="car2b" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
-                          </div>
-                          <div id="car3b" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
-                          </div>
-                          <div id="car4b" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
-                          </div>
-                          <div id="car5b" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
-                          </div>
-                          <div id="car6b" class="container tab-pane active item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Red</p>
-                          </div>
+
+                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">
+                            <div id="car1b" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car1a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
+                            </div>
+                            <div id="car2b" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car2a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
+                            </div>
+                            <div id="car3b" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car3a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
+                            </div>
+                            <div id="car4b" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car4a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
+                            </div>
+                            <div id="car5b" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car5a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
+                            </div>
+                            <div id="car6b" class="container tab-pane active item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Red</p>
+                            </div>
                         </div>
 
                         <ul class="nav nav-tabs tab-color-car" role="tablist">
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car1b">
-                                  <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car2b">
-                                  <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car3b">
-                                  <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car4b">
-                                  <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car5b">
-                                  <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link active" data-toggle="tab" href="#car6b">
-                                  <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
-                              </a>
-                          </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car1b">
+                                    <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car2b">
+                                    <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car3b">
+                                    <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car4b">
+                                    <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car5b">
+                                    <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#car6b">
+                                    <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
+                                </a>
+                            </li>
                         </ul>
 
 
 
 
-                      
-                  </div>
+
+                    </div>
                     <div class="desc-car">
                         <div class="desc-car-item">
                             <p class="top font40 font-buenos-bold">590 mi</p>
@@ -309,94 +334,100 @@
                 <div class="content-tab-wrap">
                     <div class="slider-car">
                         <div class="tab-content">
-                          <div id="car1c" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
-                          </div>
-                          <div id="car2c" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
-                          </div>
-                          <div id="car3c" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
-                          </div>
-                          <div id="car4c" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
-                          </div>
-                          <div id="car5c" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
-                          </div>
-                          <div id="car6c" class="container tab-pane active item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Red</p>
-                          </div>
+                            <div id="car1c" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car1a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
+                            </div>
+                            <div id="car2c" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car2a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
+                            </div>
+                            <div id="car3c" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car3a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
+                            </div>
+                            <div id="car4c" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car4a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
+                            </div>
+                            <div id="car5c" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car5a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
+                            </div>
+                            <div id="car6c" class="container tab-pane active item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Red</p>
+                            </div>
                         </div>
 
                         <ul class="nav nav-tabs tab-color-car" role="tablist">
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car1c">
-                                  <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car2c">
-                                  <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car3c">
-                                  <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car4c">
-                                  <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car5c">
-                                  <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link active" data-toggle="tab" href="#car6c">
-                                  <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
-                              </a>
-                          </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car1c">
+                                    <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car2c">
+                                    <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car3c">
+                                    <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car4c">
+                                    <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car5c">
+                                    <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#car6c">
+                                    <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
+                                </a>
+                            </li>
                         </ul>
 
 
 
 
-                      
-                  </div>
+
+                    </div>
                     <div class="desc-car">
                         <div class="desc-car-item">
                             <p class="top font40 font-buenos-bold">590 mi</p>
@@ -420,96 +451,103 @@
             <div id="section3d" class="tab-pane fade">
                 <div class="content-tab-wrap">
                     <div class="slider-car">
-                        
-                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                          <div id="car1d" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
-                          </div>
-                          <div id="car2d" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
-                          </div>
-                          <div id="car3d" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
-                          </div>
-                          <div id="car4d" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
-                          </div>
-                          <div id="car5d" class="container tab-pane fade item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
-                          </div>
-                          <div id="car6d" class="container tab-pane active item-car-color"><br>
-                              <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt="" class="img-car">
-                              <div class="ring360">
-                                  <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
-                              </div>
-                              <p class="color-car-title font-buenos-bold font25">Runway Red</p>
-                          </div>
+
+                        <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">
+                            <div id="car1d" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car1a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color1</p>
+                            </div>
+                            <div id="car2d" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car2a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color2</p>
+                            </div>
+                            <div id="car3d" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car3a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color3</p>
+                            </div>
+                            <div id="car4d" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car4a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color4</p>
+                            </div>
+                            <div id="car5d" class="container tab-pane fade item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/car5a.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
+                            </div>
+                            <div id="car6d" class="container tab-pane active item-car-color"><br>
+                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                    class="img-car">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
+                                </div>
+                                <p class="color-car-title font-buenos-bold font25">Runway Red</p>
+                            </div>
                         </div>
 
                         <ul class="nav nav-tabs tab-color-car" role="tablist">
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car1d">
-                                  <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car2d">
-                                  <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car3d">
-                                  <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car4d">
-                                  <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" data-toggle="tab" href="#car5d">
-                                  <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link active" data-toggle="tab" href="#car6d">
-                                  <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
-                                  {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
-                              </a>
-                          </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car1d">
+                                    <img src="{{ Theme::asset()->url('images/section3/car1.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car2d">
+                                    <img src="{{ Theme::asset()->url('images/section3/car2.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car3d">
+                                    <img src="{{ Theme::asset()->url('images/section3/car3.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car4d">
+                                    <img src="{{ Theme::asset()->url('images/section3/car4.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#car5d">
+                                    <img src="{{ Theme::asset()->url('images/section3/car5.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway White</p> --}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#car6d">
+                                    <img src="{{ Theme::asset()->url('images/section3/red.png') }}" alt="">
+                                    {{-- <p class="font-buenos-bold font25">Runway Red</p> --}}
+                                </a>
+                            </li>
                         </ul>
 
 
 
 
-                      
-                  </div>
+
+                    </div>
                     <div class="desc-car">
                         <div class="desc-car-item">
                             <p class="top font40 font-buenos-bold">590 mi</p>
