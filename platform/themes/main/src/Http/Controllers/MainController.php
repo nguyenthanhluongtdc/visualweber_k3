@@ -71,4 +71,11 @@ class MainController extends PublicController
             ->setError()
             ->setMessage(__('No results found, please try with different keywords.'));
     }
+    public function getSection($section = null)
+    {
+        if(!blank($section) && !in_array($section, ['home', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7' , 'section8' , 'section9', 'section10', 'section11' , 'section12'])) {
+            return redirect()->route('public.index');
+        }
+        return Theme::scope('index', compact(['section']))->render();
+    }
 }

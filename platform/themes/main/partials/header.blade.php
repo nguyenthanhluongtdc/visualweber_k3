@@ -47,32 +47,32 @@
             </div>
             <ul class="list-menu font-buenos-bold font20" id="menu">
                 <li class="menu_item" data-menuanchor="home">
-                    <a href="#home" class="menu_link">
+                    <a href="{{route('public.index')}}#home" class="menu_link">
                         Trang chủ
                     </a>
                 </li>
-                <li class="menu_item">
-                    <a href="#section2" class="menu_link">
+                <li class="menu_item" data-menuanchor="section2">
+                    <a href="{{route('public.index')}}#section2" class="menu_link">
                         Ngoại thất
                     </a>
                 </li>
-                <li class="menu_item">
-                    <a href="#section3" class="menu_link">
+                <li class="menu_item" data-menuanchor="section3">
+                    <a href="{{route('public.index')}}#section3" class="menu_link">
                         Nội thất
                     </a>
                 </li>
-                <li class="menu_item">
-                    <a href="#section4" class="menu_link">
+                <li class="menu_item" data-menuanchor="section4">
+                    <a href="{{route('public.index')}}#section4" class="menu_link">
                         Vận hành
                     </a>
                 </li>
-                <li class="menu_item">
-                    <a href="#section5" class="menu_link">
+                <li class="menu_item" data-menuanchor="section5">
+                    <a href="{{route('public.index')}}#section5" class="menu_link">
                         An toàn
                     </a>
                 </li>
-                <li class="chose-car">
-                    <a href="#section6">
+                <li class="chose-car" data-menuanchor="section6">
+                    <a href="{{route('public.index')}}#section6">
                         CHỌN XE ONLINE
                     </a>
                 </li>

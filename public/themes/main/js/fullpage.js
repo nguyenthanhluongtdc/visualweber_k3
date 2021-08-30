@@ -51,8 +51,8 @@ var myFullpage = new fullpage('#fullpage', {
     controlArrows: true,
     verticalCentered: true,
 
-    afterLoad: function (anchorLink, index) {
-        // history.pushState(null, null, "/" + index.anchor);
+    afterLoad: function(origin, anchorLink, index) {
+        // $.fn.fullpage.moveSlideRight();
         if (this.item.clientWidth <= 990) {
             $(".section .intro").css("padding-top", "0px");
             $(".section .intro")
@@ -60,8 +60,14 @@ var myFullpage = new fullpage('#fullpage', {
                 .css("padding-top", "0");
         }
     },
-    onLeave: function (index, nextIndex, direction) {
-        history.pushState(null, null, "/" + nextIndex.anchor);
+    onLeave: function(index, destination, direction, nextIndex) {
+        history.pushState(null, null, "/" + destination.anchor);
+        if ($('a[hreflang="en"]').length) {
+            $('a[hreflang="en"]')[0].href = url.replace('vi', 'en') + '/' + destination.anchor;
+        }
+        if ($('a[hreflang="vi"]').length) {
+            $('a[hreflang="vi"]')[0].href = url.replace('en', 'vi') + '/' + destination.anchor;
+        }
     },
     afterResize: function (width, height) {
         if (width <= 990) {
@@ -75,7 +81,14 @@ var myFullpage = new fullpage('#fullpage', {
     afterResponsive: function (isResponsive) { }
 
 });
-
+$('#menu li').click(function(e) {
+    // e.preventDefault();
+    try {
+        myFullpage.moveTo(this.getAttribute('data-menuanchor'));
+    } catch (error) {
+        console.log(error);
+    }
+});
 
 $('.section7-carousel').owlCarousel({
     center: true, 
@@ -113,3 +126,8 @@ $('.section7-carousel').owlCarousel({
     } 
 }); 
 
+$(document).ready(function(){
+    if(document.getElementById('fullpage')){
+        myFullpage.moveTo(document.getElementById('fullpage').getAttribute('data-section'));
+    }
+});
