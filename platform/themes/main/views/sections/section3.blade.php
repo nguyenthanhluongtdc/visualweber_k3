@@ -187,23 +187,19 @@
 
                     </div>
                     <div class="desc-car">
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine">
+                        <div class="desc-car-item">
                             <p class="top font40 font-buenos-bold">590 mi</p>
                             <p class="bottom font20 font-buenos-re">Range</p>
                         </div>
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine" data-aos-delay="300">
+                        <div class="desc-car-item" >
                             <p class="top font40 font-buenos-bold">2.68s</p>
                             <p class="bottom font20 font-buenos-re">0-60 mph*</p>
                         </div>
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine" data-aos-delay="600">
+                        <div class="desc-car-item" >
                             <p class="top font40 font-buenos-bold">199 mph</p>
                             <p class="bottom font20 font-buenos-re">Top Speed</p>
                         </div>
-                        <div class="desc-car-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine" data-aos-delay="900">
+                        <div class="desc-car-item" >
                             <p class="top font40 font-buenos-bold">999 hp</p>
                             <p class="bottom font20 font-buenos-re">Power</p>
                         </div>
