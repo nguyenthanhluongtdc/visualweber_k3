@@ -1,18 +1,30 @@
 .section9{
     background: $primary-color;
+    @media(max-width : 1024px){
+        .container-remake{
+            width: 100%;
+        }
+    }
     .section9-wrap{
         padding-top: 80px;
         @media(max-width : 1024px){
             padding-top: 30px;
             padding-bottom: 30px;
+
         }
     }
     p.font30{
         color: #838a8f;
+        @media(max-width: 1024px){
+            padding: 0 5%;
+        }
     }
     h3{
         color: #fff;
         margin-bottom: 25px;
+        @media(max-width: 1024px){
+            padding: 0 5%;
+        }
     }
     .list-image{
         display: flex;

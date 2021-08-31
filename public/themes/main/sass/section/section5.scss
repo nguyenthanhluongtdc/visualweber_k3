@@ -2,14 +2,26 @@
     background: $primary-color;
     .container-remake{
         overflow: hidden;
+        @media(max-width: 1024px){
+            width: 100%;
+        }
     }
     .section5-wrap{
         padding-top: 80px;
+        @media(max-width :1024px){
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
 
     }
     .section5-top{
         padding-left: 120px;
         margin-bottom: 40px;
+        @media(max-width :1024px){
+            padding-left: 0px;
+            margin-bottom: 30px;
+            padding: 0 5%;
+        }
         p{
             color: #838a8f;
         }
@@ -21,26 +33,48 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        @media(max-width :1024px){
+            flex-wrap: wrap;
+        }
         .tab-content-s6{
             width: 100%;
             .tab-content-s6-item{
                 width: 100%;
                 position: relative;
                 // display: flex;
+                @media(max-width :1024px){
+                    
+                }
                 .content-ab{
                     position: absolute;
                     right: 0;
                     width: 50%;
                     top: -23%;
+                    @media(max-width :1024px){
+                        position: relative;
+                        right: unset;
+                        top: unset;
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
                     p{
                         color: #fff;
                         padding-right: 120px;
                         text-align: justify;
                         margin-bottom: 20px;
+                        @media(max-width: 1024px){
+                            padding: 0 5%;
+                            margin: 30px 0;
+                        }
                     }
                 }
                 .img-pri{
                     width: 64%;
+                    @media(max-width :1024px){
+                        width: 100%;
+                    }
                     img{
                         width: 100%;
                         // height: 450px;
@@ -51,6 +85,22 @@
         .tab-menu-s6{
             // width: 32%;
             position: absolute;
+            @media(max-width :1024px){
+                position: relative;
+                width: 100%;
+                top: unset;
+                left: unset;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 30px;
+                padding: 0 5%;
+                li{
+                    width: 23%;
+                    a.nav-link{
+                        padding: 0;
+                    }
+                }
+            }
             left: 65%;
             top: 47%;
             @media(max-width : 1680px){
@@ -71,7 +121,25 @@
                     bottom: -10px;
                     top: -10px;
                 }
+                @media(max-width :1024px){
+                    display: none;
+                }
                 
+                
+            }
+            .border-dotter-mb{
+                display: none;
+                @media(max-width :1024px){
+                    display: block;
+                    position: absolute;
+                    top: 78%;
+                    left: 5%;
+                    right: 5%;
+                    height: 1px;
+                }
+                @media(max-width :480px){
+
+                }
             }
             li{
                 z-index: 2;
@@ -86,10 +154,23 @@
             .item-tab-wrap{
                 display: flex;
                 align-items: center;
-
+                @media(max-width :1024px){
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    text-align: center;
+                }
+                @media(max-width: 1024px){
+                    .right{
+                        height: 40px;
+                    }
+                }
                 .left{
                     margin-right: 40px;
                     background: $primary-color;
+                    @media(max-width :1024px){
+                        margin-right: 0;
+                        margin-top: 20px;
+                    }
                 }
             }
         }

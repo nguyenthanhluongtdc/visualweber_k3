@@ -24,7 +24,7 @@ var myFullpage = new fullpage('#fullpage', {
     loopTop: false,
     loopHorizontal: true,
     setAllowScrolling: false,
-    responsiveWidth: 921,
+    responsiveWidth: 1025,
     continuousVertical: false,
     continuousHorizontal: false,
     scrollHorizontally: false,
@@ -112,18 +112,35 @@ $('.section7-carousel').owlCarousel({
     responsive:{
         1920: {
             stagePadding: 460, 
+            margin:70, 
         },
         1680: {
             stagePadding: 430, 
+            margin:70, 
         },
         1440: {
             stagePadding: 350, 
+            margin:70, 
         },
         1366: {
             stagePadding: 290, 
+            margin:70, 
         },
-        600:{
-            items:1 
+        768: {
+            stagePadding: 100, 
+            margin:0, 
+        },
+        468:{
+            stagePadding: 0, 
+            margin:0,
+        },
+        414:{
+            stagePadding: 0, 
+            margin:0,
+        },
+        250:{
+            stagePadding: 0, 
+            margin:0,
         }
         
     },
@@ -140,4 +157,14 @@ $(document).ready(function(){
         myFullpage.moveTo(document.getElementById('fullpage').getAttribute('data-section'));
     }
     AOS.init();
+});
+
+$('.open-menu').click(function(){
+    $('.content-show').show('slow');
+});
+$('.close-menu').click(function(){
+    $('.content-show').hide('slow');
+});
+$('.close-menu2').click(function(){
+    $('.content-show').hide('slow');
 });

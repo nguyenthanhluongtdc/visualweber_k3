@@ -81,11 +81,60 @@
 
 
         </div>
-        <div class="container-remake header-mobie">
-        </div>
+        
     </header>
 
+    <header class="header-mobie">
+        <div class="container-remake header-mobie-wrap">
+            <div class="left open-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="content-show">
+                <div class="close-menu">
+                    <i class="fas fa-times"></i>
+                    </div>
+                <ul class="list-menu font-buenos-bold font20" id="menu">
+                <li class="menu_item close-menu2" data-menuanchor="trang-chu">
+                    <a href="{{route('public.index')}}#trang-chu" class="menu_link">
+                        Trang chủ
+                    </a>
+                </li>
+                <li class="menu_item close-menu2" data-menuanchor="ngoai-that">
+                    <a href="{{route('public.index')}}#ngoai-that" class="menu_link">
+                        Ngoại thất
+                    </a>
+                </li>
+                <li class="menu_item close-menu2" data-menuanchor="noi-that">
+                    <a href="{{route('public.index')}}#noi-that" class="menu_link">
+                        Nội thất
+                    </a>
+                </li>
+                <li class="menu_item close-menu2" data-menuanchor="van-hanh">
+                    <a href="{{route('public.index')}}#van-hanh" class="menu_link">
+                        Vận hành
+                    </a>
+                </li>
+                <li class="menu_item close-menu2" data-menuanchor="an-toan">
+                    <a href="{{route('public.index')}}#an-toan" class="menu_link">
+                        An toàn
+                    </a>
+                </li>
+                <li class="chose-car close-menu2" data-menuanchor="chon-xe-online">
+                    <a href="{{route('public.index')}}#chon-xe-online">
+                        CHỌN XE ONLINE
+                    </a>
+                </li>
 
+            </ul>
+            </div>
+            <div class="header-logo">
+                <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
+            </div>
+            <div class="right">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        </header>
     <div class="fixed-button" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
 
         <a class="btn" href="#">

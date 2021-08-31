@@ -56,6 +56,8 @@
                 <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
 
                 </div>
+                <div class="border-dotter-mb" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
+                </div>
                 <li class="nav-item" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     <a class="nav-link active" data-toggle="tab" href="#section6a">
                         <div class="item-tab-wrap">

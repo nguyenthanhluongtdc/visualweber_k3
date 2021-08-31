@@ -1,6 +1,91 @@
 .section1{
     position: relative;
     background-size: cover;
+    .s1-pc{
+        @media(max-width :1024px){
+            display: none;
+        }
+    }
+    .s1-mobie{
+        display: none;
+        @media(max-width: 1024px){
+            display: block;
+            .img-pri-s1{
+                width: 100%;
+                position: relative;
+                img.bg{
+                    width: 100%;
+                }
+                .s1-icon-mobie{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    .top{
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 15px;
+                        color: #fff;
+                        text-align: center;
+                        .access{
+                            margin-right: 15px;
+                        }
+                        p.desc{
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                    .center{
+                        background: $primary-color;
+                        padding: 25px 0;
+                        color: #fff;
+                        text-align: center;
+                        img{
+                            width: 15%;
+                            @media(max-width: 480px){
+                                width: 20%;
+                            }
+                        }
+                        h3{
+                            font-size: 15px;
+                            margin-top: 15px;
+                        }
+                    }
+                    .bottom{
+                        display: flex;
+                        justify-content: space-between;
+                        color: #a3a5a9;
+                        padding: 15px 5%;
+                        background: rgba(0 ,0, 0, 0.4);
+                        align-items: baseline;
+                        .item{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            // .img{
+                            //     height: 40px;
+                            // }
+                            @media(max-width :480px){
+                                p.first{
+                                    margin-top: 17px;
+                                }
+                            }
+                        }
+                        p{
+                            font-size: 15px;
+                            text-align: center;
+                            line-height: 20px;
+                            margin-top: 10px;
+                            @media(max-width: 400px){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .statistical{
         position: absolute;
         bottom: 220px;
