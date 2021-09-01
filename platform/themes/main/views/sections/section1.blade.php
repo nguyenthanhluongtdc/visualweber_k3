@@ -45,12 +45,12 @@
         {{-- <img src="{{ Theme::asset()->url('images/section1/banners1.jpg') }}" alt="" class="bg"> --}}
         <div class="s1-icon-mobie">
             <div class="top">
-                <div class="access" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <div class="access">
                     <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
                     <p class="number font-buenos-bold">16 450</p>
                     <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
                 </div>
-                <div class="client" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
+                <div class="client" >
                     <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
                     <p class="number font-buenos-bold">16 450</p>
                     <p class="desc font-buenos-bold">KHÁCH HÀNG <br> ĐẶT MUA XE</p>
