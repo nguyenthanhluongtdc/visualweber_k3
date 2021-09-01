@@ -178,6 +178,16 @@
       }
     
 }
+// .img-bt:hover ~ .btn{
+//     transition: all 0.3s ease;
+//             transition-delay: 0.1s;
+//             color: #fff;
+//             visibility : inherit;
+//             &:before{
+//               @include magnetic(0.3s);
+//               width: 140%;
+//             }
+// }
 .overflow-x-hidden {
     overflow-x: hidden;
 }

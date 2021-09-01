@@ -175,10 +175,18 @@
                     @media(max-width :1024px){
                         width: 100%;
                      }
+                     @media(max-width :480px){
+                         width: 100%;
+                     }
                     margin: 0 auto;
                     .item-car-color{
                         position: relative;
                         width: 85%;
+                        @media(max-width :480px){
+                            width: 100%;
+                            padding-right: 0;
+                            padding-left: 0;
+                        }
                         .cloudimage-360{
                             width: 100%;
                             @media(max-width:1366px){
@@ -213,10 +221,10 @@
                                 top: 127%;
                             }
                             @media(max-width: 480px){
-                                top: 131%;
+                                top: 129%;
                             }
                             @media(max-width: 400px){
-                                top: 140%;
+                                top: 130%;
                             }
                         }
                     }
