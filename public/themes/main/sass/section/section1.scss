@@ -81,7 +81,10 @@
                         // }
                         @media(max-width :480px){
                             p.first{
-                                margin-top: 17px;
+                                margin-top: 25px;
+                            }
+                            p.second{
+                                margin-top: 16px;
                             }
                         }
                     }
@@ -90,9 +93,15 @@
                         text-align: center;
                         line-height: 20px;
                         margin-top: 10px;
+
+                        @media(max-width : 480px){
+                            font-size: 13px;
+                            line-height: 17px;
+                        }
                         @media(max-width: 400px){
                             font-size: 12px;
                         }
+
                     }
                 }
             }

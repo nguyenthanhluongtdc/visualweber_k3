@@ -70,7 +70,7 @@
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                <p class="font-buenos-light">KẾT NỐI </br> CÔNG NGHỆ</p>
+                <p class="font-buenos-light second">KẾT NỐI </br> CÔNG NGHỆ</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
 
