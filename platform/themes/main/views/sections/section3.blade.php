@@ -83,12 +83,14 @@
                 {{-- tab content seclect car --}}
                 <div class="content-tab-wrap">
                     <div class="slider-car">
-
+                        {{-- hình xe chính  --}}
                         <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000">
                             <div id="car1" class="container active show tab-pane fade item-car-color"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/xexoay/"
-                                    data-filename="{index}.jpg" data-amount="88"></div>
+                                {{-- <div class="cloudimage-360" data-folder="/themes/main/images/xexoay/"
+                                    data-filename="{index}.jpg" data-amount="88"></div> --}}
+                                    <img src="{{ Theme::asset()->url('images/section3/car3a.png') }}" alt=""
+                                    class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
                                 </div>
@@ -127,7 +129,7 @@
                                 <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
                             </div>
                             <div id="car6" class="container tab-pane item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/xe1.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
@@ -207,7 +209,7 @@
                         <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000">
                             <div id="car1b" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/car1a.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/car3a.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
@@ -247,7 +249,7 @@
                                 <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
                             </div>
                             <div id="car6b" class="container tab-pane active item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/xe1.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
@@ -325,7 +327,7 @@
                     <div class="slider-car">
                         <div class="tab-content">
                             <div id="car1c" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/car1a.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/car2a.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
@@ -365,7 +367,7 @@
                                 <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
                             </div>
                             <div id="car6c" class="container tab-pane active item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/xe1.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
@@ -445,7 +447,7 @@
                         <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000">
                             <div id="car1d" class="container tab-pane fade item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/car1a.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/car2a.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">
@@ -485,7 +487,7 @@
                                 <p class="color-car-title font-buenos-bold font25">Runway Color5</p>
                             </div>
                             <div id="car6d" class="container tab-pane active item-car-color"><br>
-                                <img src="{{ Theme::asset()->url('images/section3/section3car.png') }}" alt=""
+                                <img src="{{ Theme::asset()->url('images/section3/xe1.png') }}" alt=""
                                     class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="">

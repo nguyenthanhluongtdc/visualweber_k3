@@ -6,12 +6,13 @@
         </div>
 
         <div class="section5-tab">
-            <div class="tab-content tab-content-s6">
-                <div id="section6a" class="tab-pane active tab-content-s6-item">
+            {{-- <div class="tab-content tab-content-s6">
+                <div id="section6a" class= tab-content-s6-item">
                     <div class="img-pri" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
                     </div>
-                    <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+
+                    <div class="content-ab "tab-pane active" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
                         <img src="{{ Theme::asset()->url('images/section5/section5a.jpg') }}">
@@ -24,7 +25,7 @@
                     <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
-                        <img src="{{ Theme::asset()->url('images/section5/hinh2.jpg') }}">
+                        <img src="{{ Theme::asset()->url('images/section5/hinh2a.jpg') }}">
                     </div>
                 </div>
                 <div id="section6c" class="tab-pane fade tab-content-s6-item">
@@ -34,7 +35,7 @@
                     <div class="content-ab" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                         <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
                         từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
-                        <img src="{{ Theme::asset()->url('images/section5/hinh3.jpg') }}">
+                        <img src="{{ Theme::asset()->url('images/section5/hinh3a.jpg') }}">
                     </div>
                 </div>
                 <div id="section6d" class="tab-pane fade tab-content-s6-item">
@@ -49,9 +50,38 @@
 
                     </div>
                 </div>
+            </div> --}}
+
+            <div class="tab-content-s6">
+                <div class="tab-content-s6-item">
+                    <div class="img-pri" data-aos="fade-right">
+                        <img src="{{ Theme::asset()->url('images/section5/section5b.jpg') }}">
+                    </div>
+                    <div class="tab-content content-ab">
+                        <div id="section6a" class="tab-pane active" >
+                            <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
+                            từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
+                            <img src="{{ Theme::asset()->url('images/section5/section5a.jpg') }}">
+                        </div>
+                        <div id="section6b" class="tab-pane fade" >
+                            <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
+                            từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
+                            <img src="{{ Theme::asset()->url('images/section5/hinh2a.jpg') }}">
+                        </div>
+                        <div id="section6c" class="tab-pane fade" >
+                            <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
+                            từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
+                            <img src="{{ Theme::asset()->url('images/section5/hinh3a.jpg') }}">
+                        </div>
+                        <div id="section6d" class="tab-pane fade" >
+                            <p class="font-buenos-light font20">Cerato được làm mới thể thao hơn, bóng bẩy hơn và năng động hơn từ trên xuống dưới. Phong cách táo bạo có ở khắp mọi nơi, 
+                            từ vẻ ngoài mạnh mẽ đến mui xe điêu khắc. Cerato sẽ giúp bạn có được phong cách riêng.</p>
+                            <img src="{{ Theme::asset()->url('images/section5/hinh2a.jpg') }}">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-
-
             <ul class="nav nav-tabs tab-menu-s6" role="tablist">
                 <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
 

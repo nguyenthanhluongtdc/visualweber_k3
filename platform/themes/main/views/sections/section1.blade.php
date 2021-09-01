@@ -41,7 +41,7 @@
     </div>
     <div class="s1-mobie">
        <div class="img-pri-s1">
-        <img src="{{ Theme::asset()->url('images/section1/mobies1.jpg') }}" alt="" class="bg">
+        <img src="{{ Theme::asset()->url('images/section1/bannermb.jpg') }}" alt="" class="bg">
         {{-- <img src="{{ Theme::asset()->url('images/section1/banners1.jpg') }}" alt="" class="bg"> --}}
         <div class="s1-icon-mobie">
             <div class="top">
@@ -60,20 +60,21 @@
                 <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
                 <h3 class="desc font-buenos-light">XU HƯỚNG MỚI – PHONG CÁCH MỚI</h3>
             </div>
-            <div class="bottom">
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
-                    <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
-                    <p class="font-buenos-light first">NHẬN DIỆN MỚI</p>
-                </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
-                    <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                    <p class="font-buenos-light">KẾT NỐI </br> CÔNG NGHỆ</p>
-                </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
-    
-                    <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
-                    <p class="font-buenos-light">CHẾ ĐỘ LÁI <br> THÔNG MINH</p>
-                </div>
+          
+        </div>
+        <div class="bottom" style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">
+            <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
+                <p class="font-buenos-light first">NHẬN DIỆN MỚI</p>
+            </div>
+            <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
+                <p class="font-buenos-light">KẾT NỐI </br> CÔNG NGHỆ</p>
+            </div>
+            <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
+
+                <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
+                <p class="font-buenos-light">CHẾ ĐỘ LÁI <br> THÔNG MINH</p>
             </div>
         </div>
        </div>
