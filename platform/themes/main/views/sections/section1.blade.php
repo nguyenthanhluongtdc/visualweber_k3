@@ -56,11 +56,12 @@
                     <p class="desc font-buenos-bold">KHÁCH HÀNG <br> ĐẶT MUA XE</p>
                 </div>
             </div>
-            <div class="center">
-                <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
-                <h3 class="desc font-buenos-light">XU HƯỚNG MỚI – PHONG CÁCH MỚI</h3>
-            </div>
+           
           
+        </div>
+        <div class="center">
+            <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
+            <h3 class="desc font-buenos-light">XU HƯỚNG MỚI – PHONG CÁCH MỚI</h3>
         </div>
         <div class="bottom" style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">

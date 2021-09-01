@@ -19,7 +19,7 @@
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    bottom: 139px;
+                    bottom: 300px;
                     left: 0;
                     right: 0;
                     .top{
@@ -40,29 +40,29 @@
                             }
                         }
                     }
-                    .center{
-                        background: $primary-color;
-                        padding: 25px 0;
-                        color: #fff;
-                        display: none;
-                        text-align: center;
-                        @media(max-width :480px){
-                            padding: 15px 0;
-                        }
-                        img{
-                            width: 15%;
-                            @media(max-width: 480px){
-                                width: 20%;
-                            }
-                        }
-                        h3{
-                            font-size: 15px;
-                            margin-top: 15px;
-                        }
-                    }
+                   
                    
                 }
-
+                .center{
+                    background: $primary-color;
+                    padding: 25px 0;
+                    color: #fff;
+                    // display: none;
+                    text-align: center;
+                    @media(max-width :480px){
+                        padding: 15px 0;
+                    }
+                    img{
+                        width: 15%;
+                        @media(max-width: 480px){
+                            width: 20%;
+                        }
+                    }
+                    h3{
+                        font-size: 15px;
+                        margin-top: 15px;
+                    }
+                }
                 .bottom{
                     background-size: cover;
                     display: flex;
