@@ -37,6 +37,14 @@
    
     background: $primary-color;
     color: #fff;
+    .tab-pane.active {
+        animation: slide-down 0.9s ease-out;
+    }
+    
+    @keyframes slide-down {
+        0% { opacity: 0; transform: translateY(100%); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
     .section3-wrap{
         padding-top: 80px;
         display: flex;
@@ -163,6 +171,14 @@
             @media(max-width :1024px){
                 width: 100%;
              }
+             .tab-pane.active {
+                animation: slide-ngang 0.9s ease-out;
+            }
+            
+            @keyframes slide-ngang {
+                0% { opacity: 0; transform: translateX(100%); }
+                100% { opacity: 1; transform: translateX(0); }
+            }
             .content-tab-wrap{
                 display: flex;
                 justify-content: space-between;
@@ -339,3 +355,4 @@
     }
    
 }
+

@@ -7,6 +7,14 @@
         padding-bottom: 30px;
         flex-wrap: wrap;
     }
+    .tab-pane.active {
+        animation: slide-down 0.9s ease-out;
+    }
+    
+    @keyframes slide-down {
+        0% { opacity: 0; transform: translateY(100%); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
     .left-s8{
         width: 33%;
         @media(max-width : 1366px){

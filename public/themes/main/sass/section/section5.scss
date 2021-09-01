@@ -36,6 +36,14 @@
         @media(max-width :1024px){
             flex-wrap: wrap;
         }
+        .tab-pane.active {
+            animation: slide-up 0.9s ease-out;
+        }
+        
+        @keyframes slide-up {
+            0% { opacity: 0; transform: translateY(-100%); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
         .tab-content-s6{
             width: 100%;
             .tab-content-s6-item{

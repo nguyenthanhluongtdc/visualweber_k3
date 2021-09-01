@@ -102,80 +102,58 @@
     }
 }
 @mixin magnetic($timeing) {
-  transition: all $timeing cubic-bezier(0.615, 0, 0.07, 1);
+  transition: all $timeing cubic-bezier(0.61, 0, 0.07, 1);
 }
 .fixed-button{
     position: fixed;
     z-index: 333333;
-    right: 70px;
+    right: 20px;
     top: 50%;
-    .btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    a{
         text-decoration: none;
-        outline: none;
-        position: relative;
-        padding: 5px 5px 5px 20px;
-        transition: all 0.3s ease;
-        color: transparent;
-        display: block;
+    }
+    .item-bt{
+        background: #828a90;
+        border-radius: 25px;
+        width: 40px;
         margin-bottom: 10px;
-        &:before{
-            content: '';
-            position: absolute;
-            z-index: -1;
-            right: -3em;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background:#838a8f;
-            width: 40px;
-            height: 40px;
-            border-radius: 5em;
-            @include magnetic(0.3s);
-          }
-        .wrap-button{
-            display: flex;
-            align-items: center;
-            transition: all 0.6s ease;
-            outline: none;
-            p{
-                outline: none;
-            }
-            .img-bt{
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: #838a8f;
-                @include magnetic(0.3s);
-                position: absolute;
-                z-index: -1;
-                right: -3em;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img{
-                    width: 40%;
-                }
-                i{
-                    color: #fff;
-
-                }
-            }
-        }
+        // @include magnetic(0.3s);
         &:hover{
-            transition: all 0.3s ease;
-            transition-delay: 0.1s;
-            color: #fff;
-            visibility : inherit;
-            &:before{
-              @include magnetic(0.3s);
-              width: 140%;
-            }
-          }
-       
-      }
+            width: 150px;
+            padding: 0px 0px 0px 20px;
+
+        }
+    }
+   .wrap-button{
+       display: flex;
+       align-items: center;
+       color: #fff;
+       justify-content: space-between;
+       p.show-p{
+           display: none;
+           animation: slide-ngang 0.9s ease-out;
+       }
+       .img-bt{
+        background: #828a90;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        img{
+            width: 80%;
+        }
+       }
+
+   }
+   .item-bt:hover .show-p{
+       display: block;
+   }
     
 }
 // .img-bt:hover ~ .btn{

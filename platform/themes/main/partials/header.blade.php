@@ -137,38 +137,46 @@
         </header>
     <div class="fixed-button" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
 
-        <a class="btn" href="#">
+        <div class="item-bt">
+            <a class="" href="#">
             <div class="wrap-button">
-                <p class="font-buenos-bold">E-brochure</p>
+                <p class="font-buenos-bold show-p">E-brochure</p>
                 <div class="img-bt">
                     <img src="{{ Theme::asset()->url('images/brochure.png') }}" alt="KIA">
                 </div>
             </div>
         </a>
-        <a class="btn" href="#">
+            </div>
+       <div class="item-bt">
+        <a class="" href="#">
             <div class="wrap-button">
-                <p class="font-buenos-bold">Facebook</p>
+                <p class="font-buenos-bold show-p">Facebook</p>
                 <div class="img-bt">
                     <i class="fab fa-facebook-f"></i>
                 </div>
             </div>
         </a>
-        <a class="btn" href="#">
+        </div>
+        <div class="item-bt">
+            <a class="" href="#">
             <div class="wrap-button">
-                <p class="font-buenos-bold">Youtube</p>
+                <p class="font-buenos-bold show-p">Youtube</p>
                 <div class="img-bt">
                     <i class="fab fa-youtube"></i>
                 </div>
             </div>
         </a>
-        <a class="btn" href="#">
+            </div>
+        <div class="item-bt">
+            <a class="" href="#">
             <div class="wrap-button">
-                <p class="font-buenos-bold">Messenger</p>
+                <p class="font-buenos-bold show-p">Messenger</p>
                 <div class="img-bt">
                     <i class="fas fa-comment-alt"></i>
                 </div>
             </div>
         </a>
+            </div>
     </div>
 
 
