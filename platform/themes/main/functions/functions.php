@@ -2,6 +2,7 @@
 
 register_page_template([
     'no-sidebar' => __('No sidebar'),
+    'default' => 'Default',
 ]);
 
 register_sidebar([

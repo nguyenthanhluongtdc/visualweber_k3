@@ -1,4 +1,4 @@
-<div class="section section2  fp-auto-height-responsive fp-section fp-completely" data-anchor="su-tro-lai">
+{{-- <div class="section section2  fp-auto-height-responsive fp-section fp-completely" data-anchor="su-tro-lai">
     <div class="container-remake section2-wrap">
         <div class="left">
             <h2 class="font80 font-buenos-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Sự trở lại <br> mạnh mẽ</h2>
@@ -11,5 +11,32 @@
         <div class="right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <img src="{{ Theme::asset()->url('images/section2/section2.jpg') }}" alt="">
         </div>
+    </div>
+</div> --}}
+
+
+<div class="section section2  fp-auto-height-responsive fp-section fp-completely" data-anchor="su-tro-lai">
+    <div class="container-remake section2-wrap">
+        <div class="left">
+            <h2 class="font80 font-buenos-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Sự trở lại <br> mạnh mẽ</h2>
+            
+            @if (has_field($page, 'section2_content'))
+            
+            <div class="desc" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                @foreach (get_field($page, 'section2_content') as $item)
+
+                <p class="font-buenos-light font20">
+                    {!! get_sub_field($item, 'content_item_section2') !!}
+                </p>
+                @endforeach
+            </div>
+            @endif
+        </div>
+        @if (has_field($page, 'hinh_anh_section_2'))
+        <div class="right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_anh_section_2')) }}"
+            alt="K3">
+        </div>
+        @endif
     </div>
 </div>

@@ -1,17 +1,22 @@
 <div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
     style="background-image: url('{{ Theme::asset()->url('images/section1/banners1.jpg') }}')">
      <!-- Messenger Plugin chat Code -->
-     
+     {{-- @dd($page); --}}
     <div class="s1-pc">
         <div class="statistical">
             <div class="access" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
-                <p class="number font-buenos-bold">16 450</p>
+                <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
+                    {!! get_field($page, 'number_user') !!}
+                @endif</p>
+                {{-- <p class="number font-buenos-bold">16 450</p> --}}
                 <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
             </div>
             <div class="client" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                 <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
-                <p class="number font-buenos-bold">16 450</p>
+                <p class="number font-buenos-bold">@if (has_field($page, 'number_buy'))
+                    {!! get_field($page, 'number_buy') !!}
+                @endif</p>
                 <p class="desc font-buenos-bold">KHÁCH HÀNG <br> ĐẶT MUA XE</p>
             </div>
         </div>
@@ -47,7 +52,7 @@
             <div class="top">
                 <div class="access">
                     <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
-                    <p class="number font-buenos-bold">16 450</p>
+                    {{-- <p class="number font-buenos-bold">{{ get_field($page, 'number_user') }}</p> --}}
                     <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
                 </div>
                 <div class="client" >

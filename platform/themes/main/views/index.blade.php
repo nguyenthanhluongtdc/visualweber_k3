@@ -1,4 +1,5 @@
-@php Theme::layout('no-sidebar') @endphp
+@php Theme::layout('default') @endphp
+{{-- {!! get_field($page, 'number_user') !!} --}}
 <div id="fullpage" class="fullpage" data-section="{{$section ?? ''}}">
     @includeIf('theme.main::views.sections.section1')
     @includeIf('theme.main::views.sections.section2')
