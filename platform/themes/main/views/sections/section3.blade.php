@@ -659,35 +659,21 @@
 
                     </div>
 
-                   
+                   @if(has_sub_field($item, 'chi_so_of_xe'))
                     <div class="desc-car">
                         @foreach (get_sub_field($item, 'chi_so_of_xe') as $chiso)
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">{!! get_sub_field($chiso, 'range') !!}</p>
-                            <p class="bottom font20 font-buenos-re">Range</p>
+                            @if(has_sub_field($chiso, 'chi_so_tren'))
+                            <p class="top font40 font-buenos-bold">{!! get_sub_field($chiso, 'chi_so_tren') !!}</p>
+                            @endif
+                            @if(has_sub_field($chiso, 'chi_so_duoi'))
+                            <p class="bottom font20 font-buenos-re">{!! get_sub_field($chiso, 'chi_so_duoi') !!}</p>
+                            @endif
                         </div>
                         @endforeach
-                        @foreach (get_sub_field($item, 'chi_so_of_xe') as $chiso)
-                        <div class="desc-car-item" >
-                            <p class="top font40 font-buenos-bold">{!! get_sub_field($chiso, 'chi_so_2') !!}</p>
-                            <p class="bottom font20 font-buenos-re">0-60 mph*</p>
-                        </div>
-                        @endforeach
-                        @foreach (get_sub_field($item, 'chi_so_of_xe') as $chiso)
-
-                        <div class="desc-car-item" >
-                            <p class="top font40 font-buenos-bold">{!! get_sub_field($chiso, 'top_speed') !!}</p>
-                            <p class="bottom font20 font-buenos-re">Top Speed</p>
-                        </div>
-                        @endforeach
-                        @foreach (get_sub_field($item, 'chi_so_of_xe') as $chiso)
-
-                        <div class="desc-car-item" >
-                            <p class="top font40 font-buenos-bold">{!! get_sub_field($chiso, 'power') !!}</p>
-                            <p class="bottom font20 font-buenos-re">Power</p>
-                        </div>
-                        @endforeach
+                        
                     </div>
+                    @endif
                 </div>
 
             @endif

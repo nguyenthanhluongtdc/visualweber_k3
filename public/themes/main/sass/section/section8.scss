@@ -34,6 +34,16 @@
             }
             h3{
                 color: #06141f;
+                font-size: 55px;
+                @media(max-width : 1680px){
+                    font-size: 50px;
+                }
+                @media(max-width : 1440px){
+                    font-size: 43px;
+                }
+                @media(max-width : 1366px){
+                    font-size: 38px;
+                }
                 @media(max-width :1024px){
                     br{
                         display: none;
@@ -142,6 +152,7 @@
             p{
                 margin-top: 20px;
                 color: #06141f;
+                height: 70px;
             }
         }
     }

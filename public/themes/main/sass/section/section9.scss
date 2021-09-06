@@ -1,3 +1,35 @@
+
+  .animated-modal {
+    max-width: 900px;
+    width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    padding: 30px;
+    // transform: translateY(-50px);
+    transition: all .7s;
+
+    h2{
+        text-align: center;
+        width: 100%;
+    }
+    .popup-content{
+        width: 100%;
+        max-height: 580px;
+        overflow-y : auto;
+        @media(max-width : 1366px){
+            max-height: 500px;
+        overflow-y : auto;
+        }
+        img{
+            width: 100%;
+            margin-top: 20px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
 .section9{
     background: $primary-color;
     @media(max-width : 1024px){
@@ -5,6 +37,7 @@
             width: 100%;
         }
     }
+  
     .section9-wrap{
         padding-top: 80px;
         @media(max-width : 1024px){

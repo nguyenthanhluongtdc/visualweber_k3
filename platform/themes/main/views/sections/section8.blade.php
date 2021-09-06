@@ -109,7 +109,7 @@
         <div class="left-s8">
             <div class="top" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <p class="font-buenos-bold font30">Vận hành</p>
-                <h3 class="font80 font-buenos-bold">Tiện lợi <br> chỉ một chạm</h3>
+                <h3 class="font80 font-buenos-bold">Trải nghiệm hứng khởi trọn hành trình</h3>
             </div>
             <div class="bottom">
                 <ul class="nav nav-tabs tab-menu-s8" role="tablist">
@@ -129,7 +129,7 @@
                                 <img src="{{ Theme::asset()->url('images/section3/icontab2.png') }}" alt=""
                                     class="icontab-active">
                             </div>
-                            <div class="right">
+                            <div class="right-content">
                                 @if (has_sub_field($item, 'name_section8'))
                                 <p class="top font20 font-buenos-re">{{ get_sub_field($item, 'name_section8')}}</p>
                                 @endif
