@@ -626,7 +626,7 @@
                                     data-filename="{index}.jpg" data-amount="88"></div> --}}
                                     @if (has_sub_field($car, 'img_car_s3'))
                                     <img src="{{ RvMedia::getImageUrl(get_sub_field($car, 'img_car_s3')) }}"
-                                    alt="K3">
+                                    alt="K3" class="img-car">
                                     @endif
                                     <div class="ring360">
                                         <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">

@@ -1,10 +1,20 @@
 <div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="footer">
     <div class="section12-wrap container-remake">
         <div class="left">
-            <h3 class="font-buenos-re">CÔNG TY TNHH MTV PHÂN PHỐI Ô TÔ DU LỊCH CHU LAI TRƯỜNG HẢI</h3>
-            <p class="item-left font-buenos-re"><span>GIẤY CNĐKDN: </span><span>4000779880 NGÀY CẤP 27/10/2010</span></p>
-            <p class="item-left font-buenos-re"><span>CƠ QUAN CẤP: </span><span>PHÒNG ĐĂNG KÝ KINH DOANH SỞ KẾ HOẠCH VÀ ĐẦU TƯ TỈNH QUẢNG NAM</span></p>
-            <p class="item-left font-buenos-re"><span>ĐỊA CHỈ: </span><span>THÔN 4, XÃ TAM HIỆP, HUYỆN NÚI THÀNH, TỈNH QUẢNG NAM, VIỆT NAM</span></p>
+
+            @if (has_field($page, 'ten_cong_ty'))
+            <h3 class="font-buenos-re">{{ get_field($page, 'ten_cong_ty') }}</h3>
+            @endif
+            @if (has_field($page, 'giay_cndkdn'))
+            <p class="item-left font-buenos-re"><span>GIẤY CNĐKDN: </span><span>{{ get_field($page, 'giay_cndkdn') }}</span></p>
+            @endif
+
+            @if (has_field($page, 'co_quan_cap'))
+            <p class="item-left font-buenos-re"><span>CƠ QUAN CẤP: </span><span>{{ get_field($page, 'co_quan_cap') }}</span></p>
+            @endif
+            @if (has_field($page, 'dia_chi'))
+            <p class="item-left font-buenos-re"><span>ĐỊA CHỈ: </span><span>{{ get_field($page, 'dia_chi') }}</span></p>
+            @endif
             <img src="{{ Theme::asset()->url('images/bct.png') }}">
             <p class="allright font-buenos-re">
                 © 2020 KIA MOTORS VIET NAM. ALL RIGHT RESERVED.
@@ -12,59 +22,75 @@
         </div>
         <div class="footer-menu">
             <h3 class="font-buenos-re">SẢN PHẨM</h3>
+            @if (has_field($page, 'san_pham'))
             <ul class="listmenu-ft font-buenos-re">
-                <li><a href="">Hatchback</a></li>
-                <li><a href="">Sedan</a></li>
-                <li><a href="">SUV</a></li>
-                <li><a href="">MPV</a></li>
+                @foreach (get_field($page, 'san_pham') as $item)
+                    <li><a href="{{ get_sub_field($item , 'link_san_pham_ft')}}">{{ get_sub_field($item , 'ten_san_pham_ft')}}</a></li>
+                @endforeach
             </ul>
+            @endif
         </div>
         <div class="policy">
             <h3 class="font-buenos-re">CHÍNH SÁCH</h3>
+            @if (has_field($page, 'chinh_sach'))
             <ul class="listpolicy-ft font-buenos-re">
-                <li><a href="">Chính sách thanh toán</a></li>
-                <li><a href="">Chính sách bảo mật thông tin cá nhân</a></li>
-                <li><a href="">Chính sách giao nhận - vận chuyển</a></li>
+                @foreach (get_field($page, 'chinh_sach') as $item)
+                <li><a href="{{ get_sub_field($item , 'link_chinh_sach')}}">{{ get_sub_field($item , 'ten_chinh_sach')}}</a></li>
+            @endforeach
+               
             </ul>
+            @endif
         </div>
         <div class="right">
             <h3 class="font-buenos-re">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+            @if (has_field($page, 'hotline'))
             <div class="right-item">
                 <a href="">
                     <p class="right-item">
                         <span><i class="fas fa-phone"></i></span>
                         <span>HOTLINE: </span>
-                        <span>1900 54 55 91</span>
+                        <span>{{ get_field($page, 'hotline') }}</span>
                     </p>
                 </a>
             </div>
+            @endif
+            @if (has_field($page, 'mail_1'))
            <div class="right-item">
-            <a href="">
+            <a href="mailto:{{ get_field($page, 'mail_1') }}">
                 <p class="right-item">
                     <span><i class="fa fa-envelope"></i></span>
-                    <span>cskh@thaco.com.vn</span>
+                    <span>{{ get_field($page, 'mail_1') }}</span>
                 </p>
             </a>
            </div>
+           @endif
+
+           @if (has_field($page, 'mail_2'))
             <div class="right-item">
-                <a href="">
+                <a href="mailto:{{ get_field($page, 'mail_2') }}">
                     <p class="right-item">
                         <span><i class="fa fa-envelope"></i></span>
-                        <span>cskhnb@thaco.com.vn</span>
+                        <span>{{ get_field($page, 'mail_2') }}</span>
                     </p>
                 </a>
             </div>
+            @endif
             <div class="social">
+
+                @if (has_field($page, 'link_facebook'))
                 <div class="item-social">
-                    <a href="">
+                    <a href="{{ get_field($page, 'link_facebook') }}">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
+                @endif
+                @if (has_field($page, 'link_youtube'))
                 <div class="item-social">
-                    <a href="">
+                    <a href="{{ get_field($page, 'link_youtube') }}">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
+                @endif
             </div>
 
             <h3>TẢI ỨNG DỤNG KIA LINK</h3>
@@ -74,16 +100,22 @@
 
                 </div>
                 <div class="app-store">
+
+                    @if (has_field($page, 'link_google_play'))
                     <div class="item-app item-app-t">
-                        <a href="https://play.google.com/store/apps/details?id=com.kia.vietnam.mykia.service.customer" target="_blank">
+                        <a href="{{ get_field($page, 'link_google_play') }}" target="_blank">
                             <img src="{{ Theme::asset()->url('images/ggp.png') }}">
                         </a>
                     </div>
+                    @endif
+
+                    @if (has_field($page, 'link_app_store'))
                     <div class="item-app">
-                        <a href="https://apps.apple.com/vn/app/kia-link-vietnam/id1468936373" target="_blank">
+                        <a href="{{ get_field($page, 'link_app_store') }}" target="_blank">
                             <img src="{{ Theme::asset()->url('images/at.png') }}">
                         </a>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

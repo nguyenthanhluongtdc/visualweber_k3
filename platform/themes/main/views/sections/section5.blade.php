@@ -120,7 +120,7 @@
     <div class="container-remake section5-wrap">
         <div class="section5-top" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="font-buenos-bold font30">Ngoại thất</p>
-            <h3 class="font-buenos-bold font60">Thiết kế ấn tượng</h3>
+            <h3 class="font-buenos-bold font60">Thiết kế tinh tế <br> và năng động</h3>
         </div>
 
         <div class="section5-tab">

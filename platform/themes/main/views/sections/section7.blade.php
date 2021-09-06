@@ -118,7 +118,7 @@
     <div class="section7-wrap container-remake">
         <div class="top" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="font-buenos-bold font30">Nội thất</p>
-            <h3 class="font80 font-buenos-bold">Kết nối <br> công nghệ</h3>
+            <h3 class="font60 font-buenos-bold">Không gian nội thất rộng rãi, mang đậm tính công nghệ</h3>
         </div>
         @if (has_field($page, 'slider_section_7'))
 

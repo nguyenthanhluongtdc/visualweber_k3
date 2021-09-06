@@ -9,9 +9,13 @@
                 <p class="font20 font-buenos-re">Bắt đầu ngay</p>
             </a>
         </div>
+
+        @if (has_field($page, 'hinh_chon_xe_truc_tuyen'))
         <div class="car-s11" >
-            <img src="{{ Theme::asset()->url('images/section11/s11car.png') }}">
+            <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_chon_xe_truc_tuyen')) }}"
+            alt="K3">
         </div>
+        @endif
         <div class="action-s11">
             <div class="action-item" >
                 <a href="">

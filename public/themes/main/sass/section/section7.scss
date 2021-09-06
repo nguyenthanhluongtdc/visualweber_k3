@@ -13,7 +13,26 @@
             padding-bottom: 30px;
         }
         .top{
-            margin-left: 120px;
+            // margin-left: 120px;
+            // margin-bottom: 50px;
+            h3{
+                font-size: 50px;
+                @media(max-width : 1680px){
+                    font-size: 45px;
+                }
+                @media(max-width : 1440px){
+                    font-size: 40px;
+                }
+                @media(max-width : 1366px){
+                    font-size: 35px;
+                    
+                }
+            }
+            width: 50%;
+            @media(max-width : 1366px){
+                width: 45%;
+                margin-top: 10px;
+            }
             @media(max-width :1024px){
                 margin-left: 0;
                 padding: 0 5%;
@@ -100,12 +119,22 @@
         position: relative;
         .content{
             position: absolute;
-            bottom: 117%;
+            bottom: 112%;
             left: 50%;
             color: #fff;
-            width: 725px;
+            width: 835px;
+            @media(max-width: 1680px){
+                width: 757px;
+             }
+             @media(max-width: 1600px){
+                width: 724px;
+             }
             @media(max-width: 1440px){
-                width: 590px;
+                width: 653px;
+             }
+
+             @media(max-width: 1440px){
+                width: 650px;
              }
              @media(max-width: 1024px){
                 position: relative;

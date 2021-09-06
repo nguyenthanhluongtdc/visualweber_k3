@@ -1,7 +1,7 @@
-<div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
-    style="background-image: url('{{ Theme::asset()->url('images/section1/banners1.jpg') }}')">
-     <!-- Messenger Plugin chat Code -->
-     {{-- @dd($page); --}}
+<div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely">
+    <video autoplay muted loop playsinline id="myVideo">
+        <source src="{{ Theme::asset()->url('images/section1/video.mp4') }}" type="video/mp4">
+    </video>
     <div class="s1-pc">
         <div class="statistical">
             <div class="access" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -22,21 +22,21 @@
         </div>
     
     
-        <div class="section1-footer container-remake">
+        <div class="section1-footer">
             <div class="left" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                 <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
-                <h3 class="desc font-buenos-light">XU HƯỚNG MỚI – PHONG CÁCH MỚI</h3>
+                <h3 class="desc font-buenos-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
             </div>
             <div class="right">
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                <div class="item">
                     <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
                     <p class="font-buenos-light">NHẬN DIỆN MỚI</p>
                 </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
                     <p class="font-buenos-light">KẾT NỐI </br> CÔNG NGHỆ</p>
                 </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="400">
     
                     <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
                     <p class="font-buenos-light">CHẾ ĐỘ LÁI <br> THÔNG MINH</p>

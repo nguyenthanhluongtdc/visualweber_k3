@@ -2,7 +2,7 @@
     <div class="container-remake section9-wrap">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
             <p class="font-buenos-bold font30">An toàn</p>
-            <h3 class="font60 font-buenos-bold">An toàn trải nghiệm</h3>
+            <h3 class="font60 font-buenos-bold">Vững tin cầm lái</h3>
         </div>
         
         <div class="list-image">

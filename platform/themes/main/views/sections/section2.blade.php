@@ -18,7 +18,7 @@
 <div class="section section2  fp-auto-height-responsive fp-section fp-completely" data-anchor="su-tro-lai">
     <div class="container-remake section2-wrap">
         <div class="left">
-            <h2 class="font80 font-buenos-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Sự trở lại <br> mạnh mẽ</h2>
+            <h2 class="font60 font-buenos-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Một bước tiến <br> vượt trội</h2>
             
             @if (has_field($page, 'section2_content'))
             
