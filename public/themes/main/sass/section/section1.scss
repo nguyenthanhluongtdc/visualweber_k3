@@ -1,7 +1,7 @@
 .section1{
     position: relative;
     background-size: cover;
-
+    background-position: center;
     .s1-pc{
         @media(max-width :1024px){
             display: none;
@@ -109,15 +109,7 @@
         }
     }
 
-     #myVideo {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
+
     .statistical{
         position: absolute;
         bottom: 220px;
@@ -221,4 +213,186 @@
             }
         }
     }
+}
+.count-down{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9999999999999;
+    .content-count-down{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        h3{
+            font-size: 80px;
+            @media(max-width : 1680px){
+                font-size: 65px;
+            }
+            @media(max-width : 1600px){
+                font-size: 55px;
+            }
+            @media(max-width : 1366px){
+                font-size: 45px;
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            li{
+                margin: 0 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p:first-child{
+                    font-size: 180px;
+                    @media(max-width : 1680px){
+                        font-size: 150px;
+                    }
+                    @media(max-width : 1600px){
+                        font-size: 120px;
+                    }
+                    @media(max-width : 1366px){
+                        font-size: 90px;
+                    }
+                }
+                p:last-child{
+                    font-size: 40px;
+                }
+            }
+            
+        }
+    }
+    h5{
+           margin-top: 80px; 
+        font-size: 35px;
+        margin-bottom: 40px;
+        @media(max-width : 1680px){
+            font-size: 30px;
+        }
+        @media(max-width : 1600px){
+            margin-top: 60px;
+        }
+        @media(max-width : 1366px){
+            font-size: 25px;
+            margin-top: 40px;
+        }
+    }
+    form{
+        width: 40%;
+        @media(max-width : 1600px){
+            width: 50%;
+        }
+        
+    }
+    .contact-form-row{
+        width: 100%;
+        height: 60px;
+        @media(max-width : 1366px){
+            height: 50px;
+        }
+        margin-bottom: 25px;
+        .contact-column-6{
+            width: 49%;
+            height: 100%;
+        }
+        .contact-column-12{
+            width: 100%;
+            height: 100%;
+        }
+        .contact-form-group{
+            width: 100%;
+            height: 100%;
+            input{
+                width: 100%;
+                height: 100%;
+                padding: 0 20px;
+                outline: none;
+            }
+            p{
+                font-size: 13px;
+                color: red;
+            }
+        }
+    }
+    .contact-form-row-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .contact-form-group-bt{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            width: 40%;
+            color: #fff;
+            background: #3371b0;
+            border: none;
+            outline: none;
+            height: 60px;
+            @media(max-width : 1366px){
+                height: 50px;
+            }
+        }
+    }
+}
+
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .fixed-bg{
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0 ,0, 0, 0.5);
+      display: none;
+  }
+
+  .animated-modal-tk{
+    z-index: 100000000000000010000000000000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $primary-color;
+    color: #fff;
+    width: 900px;
+    padding: 30px;
+    height: 500px;
+    
+    animation: slide-upp 0.9s ease-out;
+    .popup-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .close-popup{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 30px;
+        }
+    }
+    display: none;
+  }
+  @keyframes slide-upp {
+    0% { top : 0%; }
+    100% { top: 50%;}
 }

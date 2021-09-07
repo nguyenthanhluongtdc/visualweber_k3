@@ -1,5 +1,5 @@
 <div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
-    style="background-image: url('{{ Theme::asset()->url('images/section1/banners1.jpg') }}')">
+    style="background-image: url('{{ RvMedia::getImageUrl(get_field($page, 'img_bgs_section1')) }}')">
      <!-- Messenger Plugin chat Code -->
      {{-- @dd($page); --}}
     <div class="s1-pc">

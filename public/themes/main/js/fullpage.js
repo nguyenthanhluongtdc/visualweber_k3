@@ -174,3 +174,13 @@ $('.close-menu').click(function(){
 $('.close-menu2').click(function(){
     $('.content-show').hide('slow');
 });
+
+
+$('.fixed-bg').click(function(){
+$('.fixed-bg').hide();
+$('.animated-modal-tk').hide();
+});
+$('.close-popup').click(function(){
+    $('.fixed-bg').hide();
+    $('.animated-modal-tk').hide();
+    });

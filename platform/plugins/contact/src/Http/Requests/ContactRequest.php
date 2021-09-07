@@ -18,15 +18,15 @@ class ContactRequest extends Request
         if (setting('enable_captcha') && is_plugin_active('captcha')) {
             return [
                 'name'                 => 'required',
-                'email'                => 'required|email',
-                'content'              => 'required',
+                'phone'                => 'required',
+                'address'              => 'required',
                 'g-recaptcha-response' => 'required|captcha',
             ];
         }
         return [
-            'name'    => 'required',
-            'email'   => 'required|email',
-            'content' => 'required',
+            'name'                 => 'required',
+            'phone'                => 'required',
+            'address'              => 'required',
         ];
     }
 
@@ -36,10 +36,9 @@ class ContactRequest extends Request
     public function messages()
     {
         return [
-            'name.required'    => trans('plugins/contact::contact.form.name.required'),
-            'email.required'   => trans('plugins/contact::contact.form.email.required'),
-            'email.email'      => trans('plugins/contact::contact.form.email.email'),
-            'content.required' => trans('plugins/contact::contact.form.content.required'),
+            'name.required'    => "Vui lòng nhập họ và tên",
+            'phone.required'   => "Vui lòng nhập số điện thoại",
+            'address.required'      => "Vui lòng nhập địa chỉ"
         ];
     }
 }

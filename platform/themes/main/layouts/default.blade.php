@@ -11,3 +11,11 @@
 {!! Theme::content() !!}
 
 {!! Theme::partial('footer') !!}
+
+@if (session('type') && session('type') == 'success')
+
+<script>
+   $('.animated-modal-tk').show(300);
+   $('.fixed-bg').show();
+</script>
+@endif

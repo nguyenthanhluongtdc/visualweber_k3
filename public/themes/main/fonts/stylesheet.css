@@ -1,11 +1,24 @@
 @font-face {
-    font-family: 'Logan Five';
-    src: url('LoganFive-Bold.eot');
-    src: url('LoganFive-Bold.eot?#iefix') format('embedded-opentype'),
-        url('LoganFive-Bold.woff2') format('woff2'),
-        url('LoganFive-Bold.woff') format('woff'),
-        url('LoganFive-Bold.ttf') format('truetype'),
-        url('LoganFive-Bold.svg#LoganFive-Bold') format('svg');
+    font-family: 'SFU Helvetica';
+    src: url('SFUHelveticaBlack.eot');
+    src: url('SFUHelveticaBlack.eot?#iefix') format('embedded-opentype'),
+        url('SFUHelveticaBlack.woff2') format('woff2'),
+        url('SFUHelveticaBlack.woff') format('woff'),
+        url('SFUHelveticaBlack.ttf') format('truetype'),
+        url('SFUHelveticaBlack.svg#SFUHelveticaBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFU Helvetica';
+    src: url('SFUHelveticaBold.eot');
+    src: url('SFUHelveticaBold.eot?#iefix') format('embedded-opentype'),
+        url('SFUHelveticaBold.woff2') format('woff2'),
+        url('SFUHelveticaBold.woff') format('woff'),
+        url('SFUHelveticaBold.ttf') format('truetype'),
+        url('SFUHelveticaBold.svg#SFUHelveticaBold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

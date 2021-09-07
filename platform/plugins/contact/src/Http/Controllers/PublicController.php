@@ -36,6 +36,8 @@ class PublicController extends Controller
         try {
             $contact = $this->contactRepository->getModel();
             $contact->fill($request->input());
+            $contact['email'] = $contact->email ?? "";
+            $contact['content'] = $contact->content ?? "";
             $this->contactRepository->createOrUpdate($contact);
 
             event(new SentContactEvent($contact));
@@ -50,6 +52,10 @@ class PublicController extends Controller
                     'contact_content' => $contact->content ?? 'N/A',
                 ])
                 ->sendUsingTemplate('notice');
+                return redirect()->back()->with([
+                    'type' => 'success',
+                    'message' => __('Send message successfully!')
+                ]);
 
             return $response->setMessage(__('Send message successfully!'));
         } catch (Exception $exception) {
