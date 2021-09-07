@@ -33,6 +33,9 @@
         .top{
             background: #06141f;
             padding: 45px 0;
+            @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+                padding: 25px 0; 
+            }
             @media(max-width: 1440px){
                 padding: 25px 0;
             }
@@ -52,6 +55,9 @@
         .bottom{
             background: #f7f7f7;
             padding: 35px 30px;
+            @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+                padding: 20px 15px;
+            }
             @media(max-width: 1366px){
                 padding: 20px 15px;
             }

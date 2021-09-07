@@ -45,6 +45,9 @@
             justify-content: center;
            
             img{
+                @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+                    width: 65%;
+                }
                 @media(max-width: 1440px){
                     width: 55%;
                 }
@@ -70,6 +73,13 @@
                 display: flex;
                 justify-content: center;
                 text-align: center;
+                @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+                    width: 250px;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
                 @media(max-width: 1440px){
                     width: 250px;
                     img{

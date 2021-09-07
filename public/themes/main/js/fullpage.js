@@ -110,7 +110,7 @@ $('.section7-carousel').owlCarousel({
     loop:true,     
     margin:70,
     nav: true,
-    navText: ["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'></i></i></div>", "<div class='nav-btn next-slide'><i class='fas fa-chevron-right'></i></div>"],      
+    navText: ["<div class='nav-btn prev-slide'><i class='fas fa-long-arrow-alt-left'></i></div>", "<div class='nav-btn next-slide'><i class='fas fa-long-arrow-alt-right'></i></div>"],      
     responsive:{
         1920: {
             stagePadding: 460, 

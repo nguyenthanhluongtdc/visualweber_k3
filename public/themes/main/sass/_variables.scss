@@ -27,6 +27,9 @@ p{
     width: 90%;
     max-width: 1680px;
     margin: 0 auto;
+    @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+        width: 75%;
+    }
     @media(max-width : 1366px){
         width: 75%;
     }
