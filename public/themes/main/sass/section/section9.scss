@@ -8,6 +8,11 @@
         padding: 0;
         color: #fff;
         font-size: 22px;
+        @media(max-width: 1024px){
+            left: 10px;
+            width: 40px;
+            height: 40px;
+        }
     }
     .fancybox-button.fancybox-button--arrow_right{
         background: $primary-color;
@@ -18,6 +23,11 @@
         padding: 0;
         color: #fff;
         font-size: 22px;
+        @media(max-width: 1024px){
+            right: 10px;
+            width: 40px;
+            height: 40px;
+        }
     }
   .animated-modal {
     max-width: 900px;
@@ -27,6 +37,11 @@
     max-height: 750px;
     @media(max-width: 1680px){
         max-height: 700px;
+    }
+    @media(max-width: 1024px){
+        width: 90%;
+        max-height: 500px;
+        padding: 15px;
     }
     overflow-y : auto;
     padding: 40px;
