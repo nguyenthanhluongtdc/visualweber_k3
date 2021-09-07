@@ -1,7 +1,7 @@
 @php Theme::layout('default') @endphp
 {{-- {!! get_field($page, 'number_user') !!} --}}
 
-{{-- <div class="count-down">
+<div class="count-down">
     
     <video autoplay muted loop playsinline id="myVideo">
         <source src="{{ Theme::asset()->url('images/section1/video.mp4') }}" type="video/mp4">
@@ -79,7 +79,7 @@
     {!! Form::close() !!}
 
     </div>
-</div> --}}
+</div>
 <div id="fullpage" class="fullpage" data-section="{{$section ?? ''}}">
     @includeIf('theme.main::views.sections.section1')
     @includeIf('theme.main::views.sections.section2')

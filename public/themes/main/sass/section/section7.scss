@@ -36,6 +36,7 @@
             @media(max-width :1024px){
                 margin-left: 0;
                 padding: 0 5%;
+                width: 100%;
             }
             p{
                 color: #838a8f;
@@ -127,6 +128,9 @@
         top: 40%;
         transform: translateY(-50%);
         width: 100%;
+        @media(max-width : 1024px){
+           display: none;
+        }
         .owl-prev{
             position: absolute;
             left: 10%;
@@ -186,7 +190,7 @@
                 left: unset;
                 bottom: unset;
                 width: 100%;
-                margin-top: 80px;
+                margin-top: 60px;
              }
              @media(max-width : 767px){
                  padding: 0 5%;
