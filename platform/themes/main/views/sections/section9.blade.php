@@ -9,18 +9,29 @@
            
             <div class="left" data-aos="zoom-in-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <div class="item-top">
+
+                    @if (has_field($page, 'hinh_an_toan_so_1'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal1b" href="javascript:;">
-                        <img src="{{ Theme::asset()->url('images/section9/antoana.jpg') }}">
+                        <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_1')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_1') !!}">
                     </a>
+                    @endif
                     <div style="display: none;" id="animatedModal1b" class="animated-modal">
-                        <h2 class="font-buenos-bold font30"> 6 TÚI KHÍ</h2>
+
+                        @if (has_field($page, 'tieu_de_an_toan_so_1'))
+
+                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_1') !!}</h2>
+                        @endif
                         <div class="popup-content">
                             <div class="content-wrap">
+                                @if (has_field($page, 'content_an_toan_so_1'))
+
                             <p class="font-buenos-re font20">
-                                Để giúp bảo vệ hành khách và giảm chấn thương trong trường hợp va chạm, 
-                                Kia K3 trang bị 6 túi khí an toàn, gồm túi khí người lái và hành khách phía trước, hai túi khí phía trước và túi khí rèm bên có sẵn chạy dọc theo chiều dài của nội thất mỗi bên.
+                                {!! get_field($page, 'content_an_toan_so_1') !!}
                             </p>
-                            <img src="{{ Theme::asset()->url('images/section9/antoana.jpg') }}">
+                            @endif
+                            @if (has_field($page, 'hinh_popup_so1'))
+                            <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_popup_so1')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_1') !!}">
+                            @endif
                             </div>
                         </div>
                     </div>
@@ -48,33 +59,55 @@
             </div>
             <div class="right">
                 <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                    @if (has_field($page, 'hinh_an_toan_so_2'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal2" href="javascript:;">
-                        <img src="{{ Theme::asset()->url('images/section9/antoan2a.jpg') }}">
+                        <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_2')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_2') !!}">
                     </a>
+                    @endif
                     <div style="display: none;" id="animatedModal2" class="animated-modal">
-                        <h2 class="font-buenos-bold font30">CẢM BIẾN HỖ TRỢ ĐỖ XE TRƯỚC - SAU</h2>
+
+                        @if (has_field($page, 'tieu_de_an_toan_so_2'))
+
+                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_2') !!}</h2>
+                        @endif
                         <div class="popup-content">
                             <div class="content-wrap">
+                                @if (has_field($page, 'content_an_toan_so_2'))
+
                             <p class="font-buenos-re font20">
-                                Để giúp bạn tự tin đỗ xe an toàn, Kia K3 sử dụng cảm biến siêu âm cảnh báo chướng ngại vật, giúp bạn đặt bánh xe đúng vị trí khi di chuyển vào không gian chật hẹp.
+                                {!! get_field($page, 'content_an_toan_so_2') !!}
                             </p>
-                            <img src="{{ Theme::asset()->url('images/section9/antoan2b.jpg') }}">
+                            @endif
+                            @if (has_field($page, 'hinh_popup_so2'))
+                            <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_popup_so2')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_2') !!}">
+                            @endif
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                    @if (has_field($page, 'hinh_an_toan_so_3'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal3" href="javascript:;">
-                        <img src="{{ Theme::asset()->url('images/section9/antoan3b.jpg') }}">
+                        <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_3')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_3') !!}">
                     </a>
+                    @endif
                     <div style="display: none;" id="animatedModal3" class="animated-modal">
-                        <h2 class="font-buenos-bold font30">CẢM BIẾN ÁP SUẤT LỐP</h2>
+
+                        @if (has_field($page, 'tieu_de_an_toan_so_3'))
+
+                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_3') !!}</h2>
+                        @endif
                         <div class="popup-content">
                             <div class="content-wrap">
+                                @if (has_field($page, 'content_an_toan_so_3'))
+
                             <p class="font-buenos-re font20">
-                                Giúp người lái giám sát và kiểm soát được áp suất ở từng bánh xe để duy trì áp suất lốp chính xác, di chuyển một cách an toàn.
+                                {!! get_field($page, 'content_an_toan_so_3') !!}
                             </p>
-                            <img src="{{ Theme::asset()->url('images/section9/antoan3a.jpg') }}">
+                            @endif
+                            @if (has_field($page, 'hinh_popup_so3'))
+                            <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_popup_so3')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_3') !!}">
+                            @endif
                             </div>
                         </div>
                     </div>
