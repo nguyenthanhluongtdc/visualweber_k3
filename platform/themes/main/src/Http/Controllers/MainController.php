@@ -122,7 +122,7 @@ class MainController extends PublicController
     //     return Theme::scope('index', compact(['section']))->render();
     // }
 
-
+    
     public function getSection($section = null)
     {
         if(!blank($section) && !in_array($section, ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'chon-xe-online' , 'footer'])) {
@@ -160,5 +160,27 @@ class MainController extends PublicController
 
         abort(404);
         // return Theme::scope('index', compact(['section']))->render();
+    }
+
+    public function getLdp(){
+       
+        if (defined('PAGE_MODULE_SCREEN_NAME')) {
+            $homepageId = BaseHelper::getHomepageId();
+            if ($homepageId) {
+                $slug = SlugHelper::getSlug(null, SlugHelper::getPrefix(Page::class), Page::class, $homepageId);
+
+                if ($slug) {
+                    $data = (new PageService)->handleFrontRoutes($slug);
+
+                    return Theme::scope('page', $data['data'], $data['default_view'])->render();
+                }
+            }
+        }
+
+        SeoHelper::setTitle(theme_option('site_title'));
+
+        Theme::breadcrumb()->add(__('Trang chủ'), route('public.page'));
+
+        event(RenderingHomePageEvent::class);
     }
 }

@@ -18,7 +18,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
 
         Route::get('/', 'MainController@getIndex')->name('public.index');
-
+        Route::get('/ldp', 'MainController@getLdp')->name('public.page');
         Route::get('sitemap.xml', [
             'as'   => 'public.sitemap',
             'uses' => 'MainController@getSiteMap',
