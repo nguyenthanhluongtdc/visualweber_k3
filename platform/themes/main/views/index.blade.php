@@ -11,7 +11,7 @@
     </div>
     <div  class="animated-modal-tk">
         <div class="popup-content">
-            <h2 class="font-sfu-black">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
+            <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
             <div class="close-popup">
                 <i class="fas fa-times"></i>
             </div>
@@ -21,7 +21,7 @@
     <div class="content-count-down">
         <h3 class="font-sfu-black">SẮP XUẤT HIỆN</h3>
         <ul class="time-countdown">
-            <li>
+            <li class="li-dau">
                 <p id="days" class="font-sfu-black"></p>
                 <p class="font-sfu-bold">ngày</p>
             </li>

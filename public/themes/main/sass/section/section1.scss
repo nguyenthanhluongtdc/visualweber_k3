@@ -238,6 +238,12 @@
             @media(max-width : 1366px){
                 font-size: 40px;
             }
+            @media(max-width : 1024px){
+                font-size: 30px;
+             }
+            @media(max-width : 723px){
+               font-size: 30px;
+            }
         }
         ul{
             display: flex;
@@ -248,6 +254,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 p:first-child{
                     font-size: 150px;
                     @media(max-width : 1680px){
@@ -259,12 +266,33 @@
                     @media(max-width : 1366px){
                         font-size: 80px;
                     }
+                    @media(max-width : 1024px){
+                        font-size: 60px;
+                    }
                 }
                 p:last-child{
                     font-size: 40px;
                     @media(max-width : 1600px){
                         font-size: 30px;
                     }
+                    @media(max-width : 1024px){
+                        font-size: 25px;
+                        margin-top: -20px;
+                    }
+                }
+            }
+            @media(max-width : 1024px){
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    width: 31.5%;
+                    margin: 0px;
+                }
+                li.li-dau{
+                    width: 100%;
                 }
             }
             
@@ -286,11 +314,25 @@
             font-size: 25px;
             margin-top: 40px;
         }
+        @media(max-width : 1024px){
+            font-size: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        @media(max-width : 480px){
+            font-size: 13px;
+        }
     }
     form{
         width: 40%;
         @media(max-width : 1600px){
             width: 50%;
+        }
+        @media(max-width : 1024px){
+            width: 70%;
+        }
+        @media(max-width : 723px){
+            width: 90%;
         }
         
     }
@@ -300,6 +342,7 @@
         @media(max-width : 1440px){
             height: 50px;
         }
+        
         margin-bottom: 25px;
         .contact-column-6{
             width: 48%;
@@ -380,7 +423,15 @@
     width: 900px;
     padding: 30px;
     height: 500px;
-    
+    @media(max-width : 1024px){
+        width: 70%;
+        height: 400px;
+    }
+    @media(max-width : 480px){
+        width: 90%;
+        font-size: 15px;
+        height: 300px;
+    }
     animation: slide-upp 0.9s ease-out;
     .popup-content{
         width: 100%;
@@ -389,6 +440,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media(max-width : 480px){
+            font-size: 15px;
+        }
         .close-popup{
             position: absolute;
             top: 0;
