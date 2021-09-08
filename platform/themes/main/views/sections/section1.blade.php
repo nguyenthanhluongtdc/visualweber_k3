@@ -28,15 +28,15 @@
                 <h3 class="desc font-buenos-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
             </div>
             <div class="right">
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                <div class="item"  >
                     <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
                     <p class="font-buenos-light">NHẬN DIỆN MỚI</p>
                 </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
                     <p class="font-buenos-light">KẾT NỐI </br> CÔNG NGHỆ</p>
                 </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="400">
     
                     <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
                     <p class="font-buenos-light">CHẾ ĐỘ LÁI <br> THÔNG MINH</p>
