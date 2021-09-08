@@ -50,10 +50,31 @@
                         </a>
                     </div>
                     <div class="list-bottom-item">
-                        <a href="{{ Theme::asset()->url('images/section9/section94.jpg') }}" data-fancybox="section9"
-                            data-caption="">
-                            <img src="{{ Theme::asset()->url('images/section9/section94.jpg') }}">
+                        @if (has_field($page, 'hinh_an_toan_so_8'))
+                        <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal8" href="javascript:;">
+                            <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_8')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_8') !!}">
                         </a>
+                        @endif
+                        <div style="display: none;" id="animatedModal8" class="animated-modal">
+    
+                            @if (has_field($page, 'tieu_de_an_toan_so_8'))
+    
+                            <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_8') !!}</h2>
+                            @endif
+                            <div class="popup-content">
+                                <div class="content-wrap">
+                                    @if (has_field($page, 'content_an_toan_so_8'))
+    
+                                <p class="font-buenos-re font20">
+                                    {!! get_field($page, 'content_an_toan_so_8') !!}
+                                </p>
+                                @endif
+                                @if (has_field($page, 'hinh_popup_so8'))
+                                <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_popup_so8')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_8') !!}">
+                                @endif
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
