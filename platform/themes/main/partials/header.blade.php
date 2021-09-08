@@ -281,6 +281,7 @@
                             <option value="Tp.Hà Nội">Tp.Hà Nội
                             <option value="TP  HCM">TP HCM
                                 </select>
+                                <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
                     </div>
                 </div>
             </div>
@@ -295,8 +296,17 @@
             {!! Form::close() !!}
 
         </div>
+
+       
+    </div>
+    <div class="camon">
+        <div class="popup-content">
+            <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
+            <div class="close-popup">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
     </div>
 
-
-
+   
     <div id="page-wrap">

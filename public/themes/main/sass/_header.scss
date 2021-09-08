@@ -237,6 +237,9 @@
                 width: 100%;
                 .contact-form-group{
                     width: 100%;
+                    p{
+                        color: red;
+                    }
                     label{
                         width: 100%;
                     }
@@ -285,4 +288,43 @@
         }
     }
 }
-
+.camon{
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $primary-color;
+    color: #fff;
+    width: 900px;
+    padding: 30px;
+    height: 500px;
+    @media(max-width : 1024px){
+        width: 70%;
+        height: 400px;
+    }
+    @media(max-width : 480px){
+        width: 90%;
+        font-size: 15px;
+        height: 300px;
+    }
+    animation: slide-upp 0.9s ease-out;
+    .popup-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media(max-width : 480px){
+            font-size: 15px;
+        }
+        .close-popup{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 30px;
+        }
+    }
+    display: none;
+}

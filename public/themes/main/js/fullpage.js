@@ -183,6 +183,7 @@ $('.animated-modal-tk').hide();
 $('.close-popup').click(function(){
     $('.fixed-bg').hide();
     $('.animated-modal-tk').hide();
+    $('.camon').hide();
     });
 
 $('.close-dangky').click(function(){

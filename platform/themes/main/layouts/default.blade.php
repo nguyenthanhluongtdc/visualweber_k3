@@ -17,5 +17,7 @@
 <script>
    $('.animated-modal-tk').show(300);
    $('.fixed-bg').show();
+   $('.dangky').hide();
+   $('.camon').show();
 </script>
 @endif
