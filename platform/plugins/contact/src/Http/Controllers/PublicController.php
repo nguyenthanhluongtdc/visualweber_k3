@@ -38,7 +38,6 @@ class PublicController extends Controller
             $contact->fill($request->input());
             $contact['email'] = $contact->email ?? "";
             $contact['content'] = $contact->content ?? "";
-            $contact['address'] = $contact->address ?? "";
             $this->contactRepository->createOrUpdate($contact);
 
             event(new SentContactEvent($contact));
