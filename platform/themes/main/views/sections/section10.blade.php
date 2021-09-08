@@ -2,7 +2,7 @@
     <div class="container-remake section10-wrap">
         <h3 class="font80 font-buenos-bold" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">Các dòng sản phẩm</h3>
         <div class="list-section10">
-            <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            {{-- <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <div class="top">
                     <p class="font20 font-buenos-re">KIA Cerato</p>
                     <h5 class="font30 font-buenos-bold">1.6 MT</h5>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="top">
                     <p class="font20 font-buenos-re">KIA Cerato</p>

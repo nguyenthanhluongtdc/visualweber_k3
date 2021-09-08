@@ -16,7 +16,7 @@
         100% { opacity: 1; transform: translateY(0); }
     }
     .left-s8{
-        width: 33%;
+        width: 37%;
         @media(max-width : 1366px){
             width: 40%;
 
@@ -41,8 +41,17 @@
                 @media(max-width : 1440px){
                     font-size: 43px;
                 }
+                @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+                    font-size: 38px;
+                }
                 @media(max-width : 1366px){
                     font-size: 38px;
+                }
+                @media(max-width : 1360px){
+                    font-size: 36px;
+                }
+                @media(max-width : 1280px){
+                    font-size: 33px;
                 }
                 @media(max-width :1024px){
                     br{
@@ -137,7 +146,7 @@
         }
     }
     .right{
-        width: 63%;
+        width: 60%;
         @media(max-width : 1366px){
             width: 58%;
         }
