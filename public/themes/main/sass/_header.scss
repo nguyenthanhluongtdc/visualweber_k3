@@ -182,3 +182,107 @@
         top: 60px;
     }
 }
+
+.dangky{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+    background: $primary-color;
+    .form-dangky{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background: #fff;
+        width: 50%;
+        padding: 70px;
+        @media(max-width : 1366px){
+            padding: 50px;
+        }
+        @media(max-width : 768px){
+            width: 90%;
+        }
+        @media(max-width : 480px){
+            padding: 40px;
+         }
+        .close-dangky{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 25px;
+            color: $primary-color;
+        }
+        h3{
+            font-size: 50px;
+            color: $primary-color;
+            text-align: center;
+            @media(max-width : 1680px){
+                font-size: 40px;
+            }
+            @media(max-width : 1366px){
+                font-size: 35px;
+            }
+            @media(max-width : 480px){
+               font-size: 20px;
+               margin-bottom: 20px;
+            }
+        }
+        .contact-form-row{
+            width: 100%;
+            margin-bottom: 15px;
+            .contact-column-12{
+                width: 100%;
+                .contact-form-group{
+                    width: 100%;
+                    label{
+                        width: 100%;
+                    }
+                    input{
+                        width: 100%;
+                        border-top: none!important;
+                        border-left: none;
+                        border-right: none;
+                        height: 50px;
+                        border-color: #ccc;
+                        @media(max-width : 480px){
+                            height: 40px;
+                         }
+                         &:focus-visible{
+                             border-top: none;
+                         }
+                    }
+                    select{
+                        width: 100%;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        height: 50px;
+                        border-color: #ccc;
+                        @media(max-width : 480px){
+                            height: 40px;
+                         }
+                    }
+                }
+            }
+        }
+        .contact-form-group-bt{
+            width: 100%;
+            button{
+                width: 100%;
+                background: $primary-color;
+                color: #fff;
+                border: none;
+                outline: none;
+                height: 60px;
+                margin-top: 20px;
+                @media(max-width : 480px){
+                    height: 40px;
+                 }
+            }
+        }
+    }
+}
+

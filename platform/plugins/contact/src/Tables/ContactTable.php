@@ -88,6 +88,8 @@ class ContactTable extends TableAbstract
             'id',
             'name',
             'phone',
+            'address',
+            // 'city',
             'email',
             'created_at',
             'status',
@@ -108,6 +110,10 @@ class ContactTable extends TableAbstract
             ],
             'name'       => [
                 'title' => trans('core/base::tables.name'),
+                'class' => 'text-left',
+            ],
+            'address'       => [
+                'title' => trans('Địa chỉ'),
                 'class' => 'text-left',
             ],
             'email'      => [

@@ -184,3 +184,9 @@ $('.close-popup').click(function(){
     $('.fixed-bg').hide();
     $('.animated-modal-tk').hide();
     });
+
+$('.close-dangky').click(function(){
+    $('.dangky').hide(300);
+});
+
+

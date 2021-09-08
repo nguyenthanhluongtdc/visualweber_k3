@@ -48,6 +48,7 @@ class PublicController extends Controller
                     'contact_subject' => $contact->subject ?? 'N/A',
                     'contact_email'   => $contact->email ?? 'N/A',
                     'contact_phone'   => $contact->phone ?? 'N/A',
+                    'contact_city'   => $contact->city ?? 'N/A',
                     'contact_address' => $contact->address ?? 'N/A',
                     'contact_content' => $contact->content ?? 'N/A',
                 ])
