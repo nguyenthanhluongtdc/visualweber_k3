@@ -46,7 +46,7 @@
     </div>
     <div class="s1-mobie">
        <div class="img-pri-s1">
-        <img src="{{ Theme::asset()->url('images/section1/bannermb.jpg') }}" alt="" class="bg">
+        <img src="{{ Theme::asset()->url('images/section1/hinhmb.jpg') }}" alt="" class="bg">
         {{-- <img src="{{ Theme::asset()->url('images/section1/banners1.jpg') }}" alt="" class="bg"> --}}
         <div class="s1-icon-mobie">
             <div class="top">
@@ -70,7 +70,7 @@
         </div>
         <div class="center">
             <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
-            <h3 class="desc font-buenos-light">XU HƯỚNG MỚI – PHONG CÁCH MỚI</h3>
+            <h3 class="desc font-buenos-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
         </div>
         <div class="bottom" style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
