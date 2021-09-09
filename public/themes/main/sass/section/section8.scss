@@ -53,10 +53,11 @@
                 @media(max-width : 1280px){
                     font-size: 33px;
                 }
-                @media(max-width :1024px){
-                    br{
-                        display: none;
-                    }
+                @media(max-width :480px){
+                    font-size: 30px;
+                }
+                @media(max-width :380px){
+                    font-size: 25px;
                 }
             }
             p{

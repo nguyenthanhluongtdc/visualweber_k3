@@ -109,7 +109,7 @@
         <div class="left-s8">
             <div class="top" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
                 <p class="font-buenos-bold font30">Vận hành</p>
-                <h3 class="font80 font-buenos-bold">Trải nghiệm hứng khởi trọn hành trình</h3>
+                <h3 class="font80 font-buenos-bold">Trải nghiệm hứng khởi <br> trọn hành trình</h3>
             </div>
             <div class="bottom">
                 <ul class="nav nav-tabs tab-menu-s8" role="tablist">

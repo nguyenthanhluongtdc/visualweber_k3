@@ -33,6 +33,12 @@
                     margin-top: 0;
                     
                 }
+                @media(max-width : 480px){
+                    font-size: 35px;
+                }
+                @media(max-width : 380px){
+                    font-size: 30px;
+                }
             }
             width: 50%;
             @media(max-width : 1366px){
