@@ -19,5 +19,6 @@
    $('.fixed-bg').show();
    $('.dangky').hide();
    $('.camon').show();
+   
 </script>
 @endif

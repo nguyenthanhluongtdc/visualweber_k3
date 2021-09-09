@@ -193,7 +193,5 @@ $('.close-dangky').click(function(){
 
 
 
-        $(".js-example-disabled-results").select2({
-            minimumResultsForSearch: Infinity,
-        });
-
+$(".js-example-disabled-results").select2();
+  

@@ -17,6 +17,10 @@
         rel="stylesheet" type="text/css">
     <!-- CSS Library-->
 
+
+    
+    
+
     <style>
         :root {
             --color-1st: {{ theme_option('primary_color', '#bead8e') }};
@@ -214,8 +218,7 @@
                 <div class="contact-column-12">
                     <div class="contact-form-group">
                         <label for="" class="font20 font-buenos-light">Tỉnh/Thành phố:</label>
-                          <select name="address" id="contact_address2" class="font20 font-buenos-light">
-                            /* <option value=""></option> */
+                          <select name="address" id="contact_address2" class="font20 font-buenos-light js-example-disabled-results">
                             <option value="An Giang">An Giang</option>
                             <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
                             <option value="Bắc Giang">Bắc Giang</option>
@@ -298,7 +301,6 @@
 
         </div>
 
-       
     </div>
     <div class="camon">
         <div class="popup-content">
