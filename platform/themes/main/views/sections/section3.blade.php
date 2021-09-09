@@ -116,12 +116,13 @@
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}" alt="K3">
                                 </a>
                             </li>
-                            {{-- Blue --}}
-                            <li class="nav-item">
+                             {{-- Blue 1 --}}
+                             <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar03">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}" alt="K3">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}" alt="K3">
                                 </a>
                             </li>
+                            
                             {{-- Gray --}}
                             <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar04">
@@ -134,12 +135,12 @@
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}" alt="K3">
                                 </a>
                             </li>
-                            {{-- Blue 1 --}}
-                            <li class="nav-item">
-                                <a class="nav-link " data-toggle="tab" href="#tabcar06">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}" alt="K3">
-                                </a>
-                            </li>
+                           {{-- Blue --}}
+                           <li class="nav-item">
+                            <a class="nav-link " data-toggle="tab" href="#tabcar06">
+                                <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}" alt="K3">
+                            </a>
+                        </li>
                         </ul>
                     </div>
 
@@ -180,10 +181,11 @@
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
                             </div>
-                            {{-- Blue 01 --}}
+                            
+                            {{-- Blue --}}
                             <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
-                                    data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
+                                <div class="cloudimage-360" data-folder="/themes/main/images/360/blue/"
+                                    data-filename="B4U_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -204,10 +206,10 @@
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
                             </div>
-                            {{-- Blue --}}
+                            {{-- Blue 01 --}}
                             <div id="tabcar06b" class="container tab-pane tab-pane2 item-car-color"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/blue/"
-                                    data-filename="B4U_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
+                                <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
+                                    data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
