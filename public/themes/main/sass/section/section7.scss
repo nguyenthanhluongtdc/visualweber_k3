@@ -19,6 +19,7 @@
                 font-size: 50px;
                 @media(max-width : 1680px){
                     font-size: 45px;
+                    margin-top: 5px;
                 }
                 @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                     font-size: 40px;
@@ -28,6 +29,8 @@
                 }
                 @media(max-width : 1366px){
                     font-size: 35px;
+                    line-height: 40px;
+                    margin-top: 0;
                     
                 }
             }
@@ -178,9 +181,9 @@
             @media(max-width: 1680px){
                 width: 757px;
              }
-             @media(max-width: 1600px){
-                width: 724px;
-             }
+             @media only screen and (min-width: 1599px) and (max-width: 1601px) {
+                width: 600px;
+            }
             @media(max-width: 1440px){
                 width: 653px;
              }

@@ -190,15 +190,15 @@
     left: 0;
     right: 0;
     z-index: 99999999999999999999999999999999999999999999999999999999999;
-    background: $primary-color;
+    background: transparent;
     .form-dangky{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50% , -50%);
         background: #fff;
-        width: 50%;
-        padding: 70px;
+        width: 45%;
+        padding: 50px;
         @media(max-width : 1366px){
             padding: 50px;
         }
@@ -220,7 +220,7 @@
             color: $primary-color;
             text-align: center;
             @media(max-width : 1680px){
-                font-size: 40px;
+                font-size: 35px;
             }
             @media(max-width : 1366px){
                 font-size: 35px;
@@ -250,6 +250,9 @@
                         border-right: none;
                         height: 50px;
                         border-color: #ccc;
+                        @media(max-width : 1680px){
+                            height: 40px;
+                         }
                         @media(max-width : 480px){
                             height: 40px;
                          }
@@ -264,6 +267,9 @@
                         border-right: none;
                         height: 50px;
                         border-color: #ccc;
+                        @media(max-width : 1680px){
+                            height: 40px;
+                         }
                         @media(max-width : 480px){
                             height: 40px;
                          }
@@ -281,6 +287,9 @@
                 outline: none;
                 height: 60px;
                 margin-top: 20px;
+                @media(max-width : 1680px){
+                    height: 50px;
+                 }
                 @media(max-width : 480px){
                     height: 40px;
                  }
