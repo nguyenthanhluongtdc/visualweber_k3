@@ -50,8 +50,34 @@ var myFullpage = new fullpage('#fullpage', {
     //Design
     controlArrows: true,
     verticalCentered: true,
+    afterLoad: function(origin, anchorLink, index) {
+        // $.fn.fullpage.moveSlideRight();
+        let count = window.location.pathname.toString().split('/').length;
+        let url = window.location.pathname.substr(0, window.location.pathname.toString().lastIndexOf('/'));
+        let paramQuery = window.location.search;
+        if (count <= 2) {
+            url = window.location.pathname.toString();
+        }
+        if(origin.anchor != 'trang-chu'){
+            history.pushState(null, null, url + '/' + anchorLink.anchor + paramQuery);
+        }
+        if (this.item.clientWidth <= 990) {
+            $(".section .intro").css("padding-top", "0px");
+            $(".section .intro")
+                .closest(".section")
+                .css("padding-top", "0");
+        }
+    },
     onLeave: function(index, destination, direction, nextIndex) {
-        history.pushState(null, null, "/" + destination.anchor);
+        // history.pushState(null, null, "/" + nextIndex.anchor);
+        let count = window.location.pathname.toString().split('/').length;
+        let url = window.location.pathname.substr(0, window.location.pathname.toString().lastIndexOf('/'));
+        let paramQuery = window.location.search;
+        if (count <= 2) {
+            url = window.location.pathname.toString();
+        }
+        history.pushState(null, null, url + '/' + destination.anchor + paramQuery);
+
         if ($('a[hreflang="en"]').length) {
             $('a[hreflang="en"]')[0].href = url.replace('vi', 'en') + '/' + destination.anchor;
         }
@@ -59,6 +85,17 @@ var myFullpage = new fullpage('#fullpage', {
             $('a[hreflang="vi"]')[0].href = url.replace('en', 'vi') + '/' + destination.anchor;
         }
         jQuery('.section [data-aos]').removeClass("aos-animate");
+        
+         // $.fn.fullpage.moveSlideRight();
+         if (this.item.clientWidth <= 990) {
+            $(".section .intro").css("padding-top", "0px");
+            $(".section .intro")
+                .closest(".section")
+                .css("padding-top", "0");
+        }
+
+        jQuery('.section.active [data-aos]').addClass("aos-animate");
+        //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
     },
     onSlideLeave: function(){
         jQuery('.slide [data-aos]').removeClass("aos-animate");
@@ -73,18 +110,6 @@ var myFullpage = new fullpage('#fullpage', {
     },
     afterSlideLoad: function(){
         jQuery('.slide.active [data-aos]').addClass("aos-animate");
-    },
-    afterLoad: function(origin, anchorLink, index) {
-        // $.fn.fullpage.moveSlideRight();
-        if (this.item.clientWidth <= 990) {
-            $(".section .intro").css("padding-top", "0px");
-            $(".section .intro")
-                .closest(".section")
-                .css("padding-top", "0");
-        }
-
-        jQuery('.section.active [data-aos]').addClass("aos-animate");
-        //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
     },
 
     afterResponsive: function (isResponsive) { }

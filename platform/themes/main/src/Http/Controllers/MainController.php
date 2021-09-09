@@ -125,12 +125,12 @@ class MainController extends PublicController
     
     public function getSection($section = null)
     {
-        if(!blank($section) && !in_array($section, ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'chon-xe-online' , 'footer'])) {
-            return redirect()->route('public.index');
+        if(!blank($section) && !in_array($section, ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'chon-xe-online' , 'footer'])) {            
+            return redirect()->route('public.page');
         }
         $key = null;
         if (empty($key)) {
-            return $this->getIndex();
+            return $this->getLdp($section);
         }
         $slug = SlugHelper::getSlug($key, '');
 
@@ -140,7 +140,7 @@ class MainController extends PublicController
 
         if (defined('PAGE_MODULE_SCREEN_NAME')) {
             if ($slug->reference_type == Page::class && BaseHelper::isHomepage($slug->reference_id)) {
-                return redirect()->to('/');
+                return redirect()->to(route('public.page'));
             }
         }
 
@@ -162,7 +162,7 @@ class MainController extends PublicController
         // return Theme::scope('index', compact(['section']))->render();
     }
 
-    public function getLdp(){
+    public function getLdp($section = null){
        
         if (defined('PAGE_MODULE_SCREEN_NAME')) {
             $homepageId = BaseHelper::getHomepageId();
@@ -171,7 +171,7 @@ class MainController extends PublicController
 
                 if ($slug) {
                     $data = (new PageService)->handleFrontRoutes($slug);
-
+                    $data['data']['section'] = $section;
                     return Theme::scope('page', $data['data'], $data['default_view'])->render();
                 }
             }
@@ -179,7 +179,7 @@ class MainController extends PublicController
 
         SeoHelper::setTitle(theme_option('site_title'));
 
-        Theme::breadcrumb()->add(__('Trang chủ'), route('public.page'));
+        Theme::breadcrumb()->add(__('Trang chủ'), route('public.page',$section));
 
         event(RenderingHomePageEvent::class);
     }

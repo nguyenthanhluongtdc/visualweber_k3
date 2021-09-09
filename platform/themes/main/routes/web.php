@@ -28,7 +28,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
         //     'as'   => 'public.single',
         //     'uses' => 'MainController@getView',
         // ]);
-        Route::get('/{section?}', [
+        Route::get('/ldp/{section?}', [
             'as' => 'index',
             'uses' => 'MainController@getSection'
         ]);
