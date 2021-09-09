@@ -104,7 +104,7 @@
             flex-wrap: wrap;
         }
         .left{
-            width: 45.6%;
+            width: 51%;
             @media(max-width : 1024px){
                 width: 100%;
                 margin-bottom: 1%;
@@ -130,7 +130,7 @@
             }
         }
         .right{
-            width: 53.7%;
+            width: 48%;
             @media(max-width : 1024px){
                 width: 100%;
             }
@@ -138,13 +138,16 @@
             flex-wrap: wrap;
             justify-content: space-between;
             .item-right{
-                width: 49.3%;
+                width: 48.9%;
                 img{
                     width: 100%;
                 }
             }
+            .item-right2{
+                width: 100%;
+            }
             .item-right:nth-child(1){
-                margin-bottom: 1%;
+                // margin-bottom: 1%;
             }
             .item-right:nth-child(2){
                 margin-bottom: 1%;

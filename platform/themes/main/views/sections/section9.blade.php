@@ -13,6 +13,8 @@
                     @if (has_field($page, 'hinh_an_toan_so_1'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal1b" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_1')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_1') !!}">
+                        {{-- <img src="{{ Theme::asset()->url('images/section9/at1a.jpg') }}"> --}}
+
                     </a>
                     @endif
                     <div style="display: none;" id="animatedModal1b" class="animated-modal">
@@ -36,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-bottom">
+                {{-- <div class="list-bottom">
                     <div class="list-bottom-item">
                         <a href="{{ Theme::asset()->url('images/section9/section92.jpg') }}" data-fancybox="section9"
                             data-caption="">
@@ -76,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="right">
                 <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
@@ -133,18 +135,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
-                    <a href="{{ Theme::asset()->url('images/section9/section97.jpg') }}" data-fancybox="section9"
-                        data-caption="">
-                        <img src="{{ Theme::asset()->url('images/section9/section97.jpg') }}">
+                <div class="item-right item-right2" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                    @if (has_field($page, 'hinh_an_toan_so_4'))
+                    <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal4" href="javascript:;">
+                        <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_4')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_4') !!}">
                     </a>
+                    @endif
+                    <div style="display: none;" id="animatedModal4" class="animated-modal">
+
+                        @if (has_field($page, 'tieu_de_an_toan_so_4'))
+
+                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_4') !!}</h2>
+                        @endif
+                        <div class="popup-content">
+                            <div class="content-wrap">
+                                @if (has_field($page, 'content_an_toan_so_4'))
+
+                            <p class="font-buenos-re font20">
+                                {!! get_field($page, 'content_an_toan_so_4') !!}
+                            </p>
+                            @endif
+                            @if (has_field($page, 'hinh_popup_so4'))
+                            <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_popup_so4')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_4') !!}">
+                            @endif
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
+                {{-- <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
                     <a href="{{ Theme::asset()->url('images/section9/section98.jpg') }}" data-fancybox="section9"
                         data-caption="">
                         <img src="{{ Theme::asset()->url('images/section9/section98.jpg') }}">
                     </a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
