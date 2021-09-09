@@ -197,8 +197,11 @@
         left: 50%;
         transform: translate(-50% , -50%);
         background: #fff;
-        width: 45%;
+        width: 38%;
         padding: 50px;
+        @media(max-width : 1440px){
+            padding: 40px;
+        }
         @media(max-width : 1366px){
             padding: 30px;
         }
@@ -216,14 +219,14 @@
             color: $primary-color;
         }
         h3{
-            font-size: 50px;
+            font-size: 40px;
             color: $primary-color;
             text-align: center;
             @media(max-width : 1680px){
                 font-size: 35px;
             }
             @media(max-width : 1366px){
-                font-size: 35px;
+                font-size: 30px;
             }
             @media(max-width : 480px){
                font-size: 20px;
