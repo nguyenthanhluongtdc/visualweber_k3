@@ -200,7 +200,7 @@
         width: 45%;
         padding: 50px;
         @media(max-width : 1366px){
-            padding: 50px;
+            padding: 30px;
         }
         @media(max-width : 768px){
             width: 90%;
@@ -232,7 +232,10 @@
         }
         .contact-form-row{
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
+            @media(max-width : 1440px){
+                margin-bottom: 20px;
+            }
             .contact-column-12{
                 width: 100%;
                 .contact-form-group{
@@ -245,35 +248,43 @@
                     }
                     input{
                         width: 100%;
-                        border-top: none!important;
-                        border-left: none;
-                        border-right: none;
-                        height: 50px;
+                        outline: 0;
+                        border-width: 0 0 2px;
+                        // border-color: blue;
+                        // height: 50px;
                         border-color: #ccc;
-                        @media(max-width : 1680px){
-                            height: 40px;
+                        padding-top: 15px;
+                        padding-bottom: 5px;
+                        @media(max-width : 1440px){
+                            padding-top: 12px;
                          }
                         @media(max-width : 480px){
-                            height: 40px;
+                            // height: 40px;
                          }
                          &:focus-visible{
                              border-top: none;
                          }
                     }
+                    input:focus {
+                        border-color: $primary-color;
+                      }
                     select{
                         width: 100%;
-                        border-top: none;
-                        border-left: none;
-                        border-right: none;
-                        height: 50px;
+                        outline: 0;
+                        border-width: 0 0 2px;
+                        padding-top: 15px;
+                        padding-bottom: 5px;
                         border-color: #ccc;
                         @media(max-width : 1680px){
-                            height: 40px;
+                            // height: 40px;
                          }
                         @media(max-width : 480px){
-                            height: 40px;
+                            // height: 40px;
                          }
                     }
+                    select:focus {
+                        border-color: $primary-color;
+                      }
                 }
             }
         }
