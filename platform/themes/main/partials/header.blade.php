@@ -219,6 +219,7 @@
                     <div class="contact-form-group">
                         <label for="" class="font20 font-buenos-light">Tỉnh/Thành phố:</label>
                           <select name="address" id="contact_address2" class="font20 font-buenos-light js-example-disabled-results">
+                            <option value="An Giang"></option>
                             <option value="An Giang">An Giang</option>
                             <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
                             <option value="Bắc Giang">Bắc Giang</option>
