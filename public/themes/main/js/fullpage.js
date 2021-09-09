@@ -68,7 +68,7 @@ var myFullpage = new fullpage('#fullpage', {
                 .css("padding-top", "0");
         }
     },
-    onLeave: function(index, destination, direction, nextIndex) {
+    onLeave: async function(index, destination, direction, nextIndex) {
         // history.pushState(null, null, "/" + nextIndex.anchor);
         let count = window.location.pathname.toString().split('/').length;
         let url = window.location.pathname.substr(0, window.location.pathname.toString().lastIndexOf('/'));
@@ -84,7 +84,7 @@ var myFullpage = new fullpage('#fullpage', {
         if ($('a[hreflang="vi"]').length) {
             $('a[hreflang="vi"]')[0].href = url.replace('en', 'vi') + '/' + destination.anchor;
         }
-        jQuery('.section [data-aos]').removeClass("aos-animate");
+        await jQuery('.section [data-aos]').removeClass("aos-animate");
         
          // $.fn.fullpage.moveSlideRight();
          if (this.item.clientWidth <= 990) {
@@ -94,7 +94,7 @@ var myFullpage = new fullpage('#fullpage', {
                 .css("padding-top", "0");
         }
 
-        jQuery('.section.active [data-aos]').addClass("aos-animate");
+        await jQuery('.section.active [data-aos]').addClass("aos-animate");
         //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
     },
     onSlideLeave: function(){
