@@ -45,8 +45,32 @@
   color: #fff;
   .tab-pane.active {
     animation: slide-down 0.9s ease-out;
+    
   }
-
+  .tab-content {
+    position: relative;
+  }
+ 
+  .tab-pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+    z-index: -1;
+    transition: all linear .3s;
+    display: block;
+    &:nth-child(1){
+        position: unset;
+    }
+   
+  }
+  .tab-pane.active{
+      opacity: 1;
+      z-index: 1;
+      transition: all linear .3s;
+  }
   @keyframes slide-down {
     0% {
       opacity: 0;
@@ -124,6 +148,7 @@
       border: none;
     }
     .list-tab-section3 {
+     
       display: flex;
       flex-direction: column;
       position: relative;
@@ -231,6 +256,7 @@
             }
             .cloudimage-360 {
               width: 100%;
+             
               @media (max-width: 1366px) {
                 canvas {
                   width: 100%;
@@ -328,6 +354,7 @@
           .tab-content {
             position: relative;
           }
+         
           .tab-pane {
             position: absolute;
             top: 0;
@@ -341,6 +368,7 @@
             &:nth-child(1){
                 position: unset;
             }
+           
           }
           .tab-pane.active{
               opacity: 1;
@@ -419,3 +447,4 @@
     }
   }
 }
+
