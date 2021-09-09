@@ -90,15 +90,9 @@
        </div>
 
     </div>
+    
 
-    {{-- <div class="float-button register_drive">
-        <div class="content-float">
-            <div class="float float-tuvan">
-                <img src="{{ Theme::asset()->url('images/brochure.png') }}" alt="icon">
-                <span>Tải E-Brochure</span>
-            </div>
-        </div>
-    </div> --}}
+    
     
 
    
