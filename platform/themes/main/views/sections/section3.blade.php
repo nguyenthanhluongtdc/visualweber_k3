@@ -23,7 +23,7 @@
                         </div>
                         <div class="right">
                             <p class="top font20 font-buenos-re">KIA K3</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 Luxury</p>
+                            <p class="bottom font25 font-buenos-bold">1.6 Premium</p>
                         </div>
                     </div>
                 </a>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="right">
                             <p class="top font20 font-buenos-re">KIA K3</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 Premium</p>
+                            <p class="bottom font25 font-buenos-bold">1.6 Luxury</p>
                         </div>
                     </div>
                 </a>
@@ -166,64 +166,68 @@
                         <div class="tab-content tabcontent2" >
                             {{-- White --}}
                             <div id="tabcar01b" class="container tab-pane tab-pane2 item-car-color active"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/"
-                                    data-filename="SWP_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
+                                {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/"
+                                    data-filename="SWP_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
+
+                                    <img src="{{ Theme::asset()->url('images/xe/car1.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
                             </div>
                             {{-- Black --}}
                             <div id="tabcar02b" class="container tab-pane tab-pane2 item-car-color"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/black/"
-                                    data-filename="ABP_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
+                                {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/black/"
+                                    data-filename="ABP_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
+                                    <img src="{{ Theme::asset()->url('images/xe/car5.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
                             </div>
                             {{-- Blue 01 --}}
-                            <div id="tabcar06b" class="container tab-pane tab-pane2 item-car-color"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
-                                    data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
+                            <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color"><br>
+                                {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
+                                    data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
+                                    <img src="{{ Theme::asset()->url('images/xe/car3.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
                             </div>
                             {{-- Gray --}}
-                            <div id="tabcar04b" class="container tab-pane tab-pane2 item-car-color"><br>
+                            {{-- <div id="tabcar04b" class="container tab-pane tab-pane2 item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/gray/"
                                     data-filename="ABT_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
-                            </div>
+                            </div> --}}
                             {{-- Gray 1 --}}
-                            <div id="tabcar05b" class="container tab-pane tab-pane2 item-car-color"><br>
+                            {{-- <div id="tabcar05b" class="container tab-pane tab-pane2 item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/gray_1/"
                                     data-filename="KLG_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
-                            </div>
+                            </div> --}}
                             {{-- Blue --}}
-                            <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color"><br>
+                            {{-- <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/blue/"
                                     data-filename="B4U_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <ul class="nav nav-tabs tab-color-car" role="tablist">
                            {{-- White --}}
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabcar01b">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}" alt="K3">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/red.jpg') }}" alt="K3">
                                 </a>
                             </li>
                             {{-- Black --}}
                             <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar02b">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}" alt="K3">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}" alt="K3">
                                 </a>
                             </li>
                             {{-- Blue --}}
@@ -233,23 +237,23 @@
                                 </a>
                             </li>
                             {{-- Gray --}}
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar04b">
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray.jpg') }}" alt="K3">
                                 </a>
-                            </li>
+                            </li> --}}
                              {{-- Gray 1 --}}
-                             <li class="nav-item">
+                             {{-- <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar05b">
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}" alt="K3">
                                 </a>
-                            </li>
+                            </li> --}}
                             {{-- Blue 1 --}}
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar06b">
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}" alt="K3">
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                     <div class="desc-car">
