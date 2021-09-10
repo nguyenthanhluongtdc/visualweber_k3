@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                             {{-- Blue 01 --}}
-                            <div id="tabcar03" class="container tab-pane item-car-color"><br>
+                            <div id="tabcar06" class="container tab-pane item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
                                     data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                             {{-- Blue --}}
-                            <div id="tabcar06" class="container tab-pane item-car-color"><br>
+                            <div id="tabcar03" class="container tab-pane item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/blue/"
                                     data-filename="B4U_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
@@ -181,7 +181,7 @@
                                 </div>
                             </div>
                             {{-- Blue 01 --}}
-                            <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color"><br>
+                            <div id="tabcar06b" class="container tab-pane tab-pane2 item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
                                     data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                             {{-- Blue --}}
-                            <div id="tabcar06b" class="container tab-pane tab-pane2 item-car-color"><br>
+                            <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/blue/"
                                     data-filename="B4U_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
