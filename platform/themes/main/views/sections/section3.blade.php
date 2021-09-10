@@ -22,8 +22,8 @@
                                 class="icontab-active">
                         </div>
                         <div class="right">
-                            <p class="top font20 font-buenos-re">KIA Cerato</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 MT Luxury</p>
+                            <p class="top font20 font-buenos-re">KIA K3</p>
+                            <p class="bottom font25 font-buenos-bold">1.6 AT Luxury</p>
                         </div>
                     </div>
                 </a>
@@ -39,8 +39,8 @@
                                 class="icontab-active">
                         </div>
                         <div class="right">
-                            <p class="top font20 font-buenos-re">KIA Cerato</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 MT Premium</p>
+                            <p class="top font20 font-buenos-re">KIA K3</p>
+                            <p class="bottom font25 font-buenos-bold">1.6 AT Premium</p>
                         </div>
                     </div>
                 </a>
