@@ -23,7 +23,7 @@
                         </div>
                         <div class="right">
                             <p class="top font20 font-buenos-re">KIA K3</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 AT Luxury</p>
+                            <p class="bottom font25 font-buenos-bold">1.6 Luxury</p>
                         </div>
                     </div>
                 </a>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="right">
                             <p class="top font20 font-buenos-re">KIA K3</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 AT Premium</p>
+                            <p class="bottom font25 font-buenos-bold">1.6 Premium</p>
                         </div>
                     </div>
                 </a>

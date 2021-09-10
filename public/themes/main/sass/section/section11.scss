@@ -46,7 +46,7 @@
            
             img{
                 @media only screen and (min-width: 1599px) and (max-width: 1601px) {
-                    width: 65%;
+                    width: 55%;
                 }
                 @media(max-width: 1440px){
                     width: 55%;
@@ -74,7 +74,7 @@
                 justify-content: center;
                 text-align: center;
                 @media only screen and (min-width: 1599px) and (max-width: 1601px) {
-                    width: 250px;
+                    width: 200px;
                     img{
                         width: 90px;
                         height: 90px;

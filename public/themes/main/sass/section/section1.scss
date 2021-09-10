@@ -116,24 +116,55 @@
         left: 5%;
         display: flex;
         align-items: baseline;
+        @media(max-width : 1366px){
+            bottom: 155px;
+        }
+        @media(max-width : 1280px){
+            bottom: 155px;
+        }
         .access{
             margin-right: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media(max-width : 1366px){
+                margin-right: 50px;
+                img{
+                    width: 70px;
+                }
+            }
+            @media(max-width : 1280px){
+                margin-right: 50px;
+                img{
+                    width: 70px;
+                }
+            }
         }
         .client{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media(max-width : 1366px){
+                img{
+                    width: 35px;
+                }
+            }
+            @media(max-width : 1280px){
+                img{
+                    width: 35px;
+                }
+            }
         }
         p{
             color: #fff;
         }
         p.number{
             font-size: 27px;
+            @media(max-width : 1366px){
+                font-size: 20px;
+            }
         }
         p.desc{
             font-size: 12.5px;
@@ -156,11 +187,13 @@
             justify-content: center;
             position: relative;
             @media(max-width: 1366px){
-                height: 170px;
+                height: 130px;
+                width: 30%;
+
             }
             @media(max-width: 1280px){
                 width: 30%;
-                height: 170px;
+                height: 130px;
             }
             ::before{
                 position: absolute;
@@ -174,7 +207,7 @@
             img{
                 width: 50%;
                 margin: 0 auto;
-                @media(max-width: 1280px){
+                @media(max-width: 1366px){
                     width: 30%;
                 }
             }
@@ -199,11 +232,13 @@
             
             height: 198px;
             @media(max-width: 1366px){
-                height: 170px;
+                height: 130px;
+                width: 70%;
+
             }
             @media(max-width: 1280px){
                 width: 70%;
-                height: 170px;
+                height: 130px;
             }
             position: relative;
             // ::before{
@@ -231,6 +266,9 @@
                     font-size: 15px;
                     margin-top: 15px;
                     text-align: center;
+                    @media(max-width :1280px){
+                        font-size: 13px;
+                    }
                 }
             }
         }

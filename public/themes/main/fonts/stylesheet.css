@@ -1,25 +1,38 @@
 @font-face {
-    font-family: 'SFU Helvetica';
-    src: url('SFUHelveticaBlack.eot');
-    src: url('SFUHelveticaBlack.eot?#iefix') format('embedded-opentype'),
-        url('SFUHelveticaBlack.woff2') format('woff2'),
-        url('SFUHelveticaBlack.woff') format('woff'),
-        url('SFUHelveticaBlack.ttf') format('truetype'),
-        url('SFUHelveticaBlack.svg#SFUHelveticaBlack') format('svg');
-    font-weight: 900;
+    font-family: 'Kia Signature';
+    src: url('KiaSignatureBold.eot');
+    src: url('KiaSignatureBold.eot?#iefix') format('embedded-opentype'),
+        url('KiaSignatureBold.woff2') format('woff2'),
+        url('KiaSignatureBold.woff') format('woff'),
+        url('KiaSignatureBold.ttf') format('truetype'),
+        url('KiaSignatureBold.svg#KiaSignatureBold') format('svg');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'SFU Helvetica';
-    src: url('SFUHelveticaBold.eot');
-    src: url('SFUHelveticaBold.eot?#iefix') format('embedded-opentype'),
-        url('SFUHelveticaBold.woff2') format('woff2'),
-        url('SFUHelveticaBold.woff') format('woff'),
-        url('SFUHelveticaBold.ttf') format('truetype'),
-        url('SFUHelveticaBold.svg#SFUHelveticaBold') format('svg');
-    font-weight: bold;
+    font-family: 'Kia Signature';
+    src: url('KiaSignatureRegular.eot');
+    src: url('KiaSignatureRegular.eot?#iefix') format('embedded-opentype'),
+        url('KiaSignatureRegular.woff2') format('woff2'),
+        url('KiaSignatureRegular.woff') format('woff'),
+        url('KiaSignatureRegular.ttf') format('truetype'),
+        url('KiaSignatureRegular.svg#KiaSignatureRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kia Signature';
+    src: url('KiaSignatureLight.eot');
+    src: url('KiaSignatureLight.eot?#iefix') format('embedded-opentype'),
+        url('KiaSignatureLight.woff2') format('woff2'),
+        url('KiaSignatureLight.woff') format('woff'),
+        url('KiaSignatureLight.ttf') format('truetype'),
+        url('KiaSignatureLight.svg#KiaSignatureLight') format('svg');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
