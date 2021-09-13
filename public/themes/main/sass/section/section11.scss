@@ -46,7 +46,7 @@
            
             img{
                 height: auto;
-                    object-fit: contain;
+                object-fit: contain;
                 @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                     width: 55%;
                 }
@@ -58,7 +58,6 @@
                 }
                 @media(max-width: 1024px){
                     width: 85%;
-                    
                 }
             }
         }
