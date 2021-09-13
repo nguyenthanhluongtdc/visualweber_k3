@@ -46,7 +46,7 @@
     </div>
     <div class="s1-mobie">
        <div class="img-pri-s1">
-        <img src="{{ Theme::asset()->url('images/section1/hinhmb1.jpg') }}" alt="" class="bg">
+        <img src="{{ Theme::asset()->url('images/section1/hinhmb1.jpg') }}" alt="" class="bg fit-cover">
         {{-- <img src="{{ Theme::asset()->url('images/section1/banners1.jpg') }}" alt="" class="bg"> --}}
         <div class="s1-icon-mobie">
             <div class="top">
