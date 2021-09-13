@@ -22,8 +22,8 @@
                                 class="icontab-active">
                         </div>
                         <div class="right">
-                            <p class="top font20 font-buenos-re">KIA K3</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 Premium</p>
+                            <p class="top font20 font-kia-re">KIA K3</p>
+                            <p class="bottom font25 font-kia-bold">1.6 Premium</p>
                         </div>
                     </div>
                 </a>
@@ -39,8 +39,8 @@
                                 class="icontab-active">
                         </div>
                         <div class="right">
-                            <p class="top font20 font-buenos-re">KIA K3</p>
-                            <p class="bottom font25 font-buenos-bold">1.6 Luxury</p>
+                            <p class="top font20 font-kia-re">KIA K3</p>
+                            <p class="bottom font25 font-kia-bold">1.6 Luxury</p>
                         </div>
                     </div>
                 </a>
@@ -145,16 +145,16 @@
 
                     <div class="desc-car">
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">126 hp</p>
-                            <p class="bottom font20 font-buenos-re">6,300 rpm</p>
+                            <p class="top font40 font-kia-bold">126 hp</p>
+                            <p class="bottom font20 font-kia-re">6,300 rpm</p>
                         </div>
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">155 Nm</p>
-                            <p class="bottom font20 font-buenos-re">4,850 rpm</p>
+                            <p class="top font40 font-kia-bold">155 Nm</p>
+                            <p class="bottom font20 font-kia-re">4,850 rpm</p>
                         </div>
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">6.9 L</p>
-                            <p class="bottom font20 font-buenos-re">100 km (hỗn hợp )(*)</p>
+                            <p class="top font40 font-kia-bold">6.9 L</p>
+                            <p class="bottom font20 font-kia-re">100 km (hỗn hợp )(*)</p>
                         </div>
                     </div>
                 </div>
@@ -258,16 +258,16 @@
                     </div>
                     <div class="desc-car">
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">126 hp</p>
-                            <p class="bottom font20 font-buenos-re">6,300 rpm</p>
+                            <p class="top font40 font-kia-bold">126 hp</p>
+                            <p class="bottom font20 font-kia-re">6,300 rpm</p>
                         </div>
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">155 Nm</p>
-                            <p class="bottom font20 font-buenos-re">4,850 rpm</p>
+                            <p class="top font40 font-kia-bold">155 Nm</p>
+                            <p class="bottom font20 font-kia-re">4,850 rpm</p>
                         </div>
                         <div class="desc-car-item">
-                            <p class="top font40 font-buenos-bold">6.9 L</p>
-                            <p class="bottom font20 font-buenos-re">100 km (hỗn hợp )(*)</p>
+                            <p class="top font40 font-kia-bold">6.9 L</p>
+                            <p class="bottom font20 font-kia-re">100 km (hỗn hợp )(*)</p>
                         </div>
                     </div>
                 </div>

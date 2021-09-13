@@ -119,8 +119,8 @@
 <div class="section section5 fp-auto-height-responsive fp-section fp-completely" data-anchor="ngoai-that">
     <div class="container-remake section5-wrap">
         <div class="section5-top" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-            <p class="font-buenos-bold font30">Ngoại thất</p>
-            <h3 class="font-buenos-bold font60">Thiết kế tinh tế <br> và năng động</h3>
+            <p class="font-kia-bold font30">Ngoại thất</p>
+            <h3 class="font-kia-bold font60">Thiết kế tinh tế <br> và năng động </h3>
         </div>
 
         <div class="section5-tab">
@@ -142,7 +142,7 @@
                             <div id="section5{{ $key }}" class="tab-pane {{ $loop->first ? 'active' : '' }}" >
 
                                 @if (has_sub_field($item, 'content_tab_s5'))
-                                <p class="font-buenos-light font20">{!! get_sub_field($item, 'content_tab_s5') !!}</p>
+                                <p class="font-kia-light font20">{!! get_sub_field($item, 'content_tab_s5') !!}</p>
                                 @endif
                                 @if (has_sub_field($item, 'hinh_tab_s5'))
                                 <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_tab_s5')) }}"
@@ -191,7 +191,7 @@
                             </div>
                             <div class="right">
                                 @if (has_sub_field($item, 'title_tab_s5'))
-                                <p class="top font20 font-buenos-re">{!! get_sub_field($item, 'title_tab_s5') !!}</p>
+                                <p class="top font20 font-kia-re">{!! get_sub_field($item, 'title_tab_s5') !!}</p>
                                 @endif
                             </div>
                         </div>

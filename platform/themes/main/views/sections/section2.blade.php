@@ -18,14 +18,14 @@
 <div class="section section2  fp-auto-height-responsive fp-section fp-completely" data-anchor="su-tro-lai">
     <div class="container-remake section2-wrap">
         <div class="left">
-            <h2 class="font60 font-buenos-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Một bước tiến <br> vượt trội</h2>
+            <h2 class="font60 font-kia-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Một bước tiến <br> vượt trội</h2>
             
             @if (has_field($page, 'section2_content'))
             
             <div class="desc" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="300">
                 @foreach (get_field($page, 'section2_content') as $item)
 
-                <p class="font-buenos-light font20">
+                <p class="font-kia-light font20">
                     {!! get_sub_field($item, 'content_item_section2') !!}
                 </p>
                 @endforeach
