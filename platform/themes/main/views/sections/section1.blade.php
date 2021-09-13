@@ -6,11 +6,11 @@
         <div class="statistical">
             <div class="access" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
-                <p class="number font-kia-bold">@if (has_field($page, 'number_user'))
+                <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
                     {!! get_field($page, 'number_user') !!}
                 @endif</p>
                 {{-- <p class="number font-buenos-bold">16 450</p> --}}
-                <p class="desc font-kia-bold" style="text-transform: uppercase;">lượt truy cập</p>
+                <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
             </div>
             <div class="client" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                 <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
@@ -79,12 +79,12 @@
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                <p class="font-kia-light second">kết nối <br> công nghệ</p>
+                <p class="font-kia-light second">kết nối công nghệ</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
 
                 <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
-                <p class="font-kia-light">chế độ lái <br> thông minh</p>
+                <p class="font-kia-light">chế độ lái thông minh</p>
             </div>
         </div>
        </div>

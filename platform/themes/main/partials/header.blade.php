@@ -172,7 +172,7 @@
                 </div>
             </a>
         </div>
-        <div class="item-bt">
+        <div class="item-bt d-none">
             <a class="" href=" #">
                 <div class="wrap-button">
                     <p class="font-buenos-bold show-p">Messenger</p>
