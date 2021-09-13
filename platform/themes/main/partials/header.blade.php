@@ -153,7 +153,7 @@
             </a>
         </div>
         <div class="item-bt">
-            <a class="" href=" #">
+            <a class="" href="https://www.facebook.com/kiamotorsvietnam/" target="_blank">
                 <div class="wrap-button">
                     <p class="font-buenos-bold show-p">Facebook</p>
                     <div class="img-bt">
@@ -163,7 +163,7 @@
             </a>
         </div>
         <div class="item-bt">
-            <a class="" href=" #">
+            <a class="" href="https://www.youtube.com/user/thacokia/featured" target="_blank">
                 <div class="wrap-button">
                     <p class="font-buenos-bold show-p">Youtube</p>
                     <div class="img-bt">
