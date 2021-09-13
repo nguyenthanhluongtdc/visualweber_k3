@@ -49,7 +49,7 @@
             <div class="header-logo">
                 <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
             </div>
-            <ul class="list-menu font-buenos-bold font20" id="menu">
+            <ul class="list-menu font-kia-bold font20" id="menu">
                 <li class="menu_item" data-menuanchor="trang-chu">
                     <a href="{{ route('public.index') }}#trang-chu" class="menu_link">
                         Trang chủ
@@ -62,17 +62,17 @@
                 </li>
                 <li class="menu_item" data-menuanchor="noi-that">
                     <a href="{{ route('public.index') }}#noi-that" class="menu_link">
-                        Nội thất
+                        Nội thất
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="van-hanh">
                     <a href="{{ route('public.index') }}#van-hanh" class="menu_link">
-                        Vận hành
+                        Vận hành
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="an-toan">
                     <a href="{{ route('public.index') }}#an-toan" class="menu_link">
-                        An toàn
+                        An toàn
                     </a>
                 </li>
                 <li class="chose-car" data-menuanchor="chon-xe-online">
@@ -97,7 +97,7 @@
                 <div class="close-menu">
                     <i class="fas fa-times"></i>
                 </div>
-                <ul class="list-menu font-buenos-bold font20" id="menu">
+                <ul class="list-menu font-kia-bold font20" id="menu">
                     <li class="menu_item close-menu2" data-menuanchor="trang-chu">
                         <a href="{{ route('public.index') }}#trang-chu" class="menu_link">
                             Trang chủ
@@ -110,17 +110,17 @@
                     </li>
                     <li class="menu_item close-menu2" data-menuanchor="noi-that">
                         <a href="{{ route('public.index') }}#noi-that" class="menu_link">
-                            Nội thất
+                            Nội thất
                         </a>
                     </li>
                     <li class="menu_item close-menu2" data-menuanchor="van-hanh">
                         <a href="{{ route('public.index') }}#van-hanh" class="menu_link">
-                            Vận hành
+                            Vận hành
                         </a>
                     </li>
                     <li class="menu_item close-menu2" data-menuanchor="an-toan">
                         <a href="{{ route('public.index') }}#an-toan" class="menu_link">
-                            An toàn
+                            An toàn
                         </a>
                     </li>
                     <li class="chose-car close-menu2" data-menuanchor="chon-xe-online">
