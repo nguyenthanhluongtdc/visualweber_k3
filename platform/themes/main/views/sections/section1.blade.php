@@ -6,18 +6,18 @@
         <div class="statistical">
             <div class="access" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
-                <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
+                <p class="number font-kia-bold">@if (has_field($page, 'number_user'))
                     {!! get_field($page, 'number_user') !!}
                 @endif</p>
                 {{-- <p class="number font-buenos-bold">16 450</p> --}}
-                <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
+                <p class="desc font-kia-bold" style="text-transform: uppercase;">lượt truy cập</p>
             </div>
             <div class="client" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                 <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
                 <p class="number font-buenos-bold">@if (has_field($page, 'number_buy'))
                     {!! get_field($page, 'number_buy') !!}
                 @endif</p>
-                <p class="desc font-buenos-bold">KHÁCH HÀNG <br> ĐẶT MUA XE</p>
+                <p class="desc font-buenos-bold" style="text-transform: uppercase;">khách hàng <br> đặt mua xe</p>
             </div>
         </div>
     
