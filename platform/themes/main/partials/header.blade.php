@@ -172,7 +172,7 @@
                 </div>
             </a>
         </div>
-        <div class="item-bt">
+        /* <div class="item-bt">
             <a class="" href=" #">
                 <div class="wrap-button">
                     <p class="font-buenos-bold show-p">Messenger</p>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </a>
-        </div>
+        </div> */
     </div>
 
     <div class="dangky">
