@@ -129,7 +129,7 @@
 
                 @if (has_sub_field($item, 'hinh_item_slider'))
                 <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}"
-                                    alt="K3">
+                                    alt="K3" >
                 @endif
                 <div class="border"></div>
                 <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
