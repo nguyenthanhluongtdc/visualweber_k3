@@ -134,7 +134,7 @@
                 <div class="border"></div>
                 <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     @if (has_sub_field($item, 'tieu_de_item_slider'))
-                    <h5 class="font-kia-bold font30">{{ get_sub_field($item, 'tieu_de_item_slider')}}</h5>
+                    <h5 class="font-kia-bold font30">{!! get_sub_field($item, 'tieu_de_item_slider') !!}</h5>
                     @endif
                     @if (has_sub_field($item, 'noi_dung_item_slider'))
                     <div class="desc font-kia-light font20">

@@ -17,14 +17,14 @@
                 position: relative;
                 img.bg{
                     width: 100%;
-                    height: 100vh;
-                    // @media(max-width : 480px){
-                    //     height: 100vh;
-                    // }
+                    height: auto;
+                    @media(max-width : 480px){
+                        height: 100vh;
+                    }
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    top: 75vh;
+                    bottom: 32%;
                     left: 0;
                     right: 0;
                     .top{
@@ -522,7 +522,7 @@
   }
 
   .animated-modal-tk{
-    z-index: 100000000000000010000000000000;
+    z-index: 111;
     position: fixed;
     top: 50%;
     left: 50%;

@@ -1,4 +1,8 @@
-
+.fancybox-container{
+    @media(max-width : 1024px){
+        z-index: 11;
+    }
+}
      .fancybox-navigation .fancybox-button--arrow_left{
         background: #828a90;
         border-radius: 50%;
