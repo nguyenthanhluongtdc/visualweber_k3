@@ -17,14 +17,14 @@
                 position: relative;
                 img.bg{
                     width: 100%;
-                    height: 100vh;
-                    // @media(max-width : 480px){
-                    //     height: 100vh;
-                    // }
+                    height: auto;
+                    @media(max-width : 480px){
+                        height: 100vh;
+                    }
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    top: 75vh;
+                    top: 62%;
                     left: 0;
                     right: 0;
                     .top{
