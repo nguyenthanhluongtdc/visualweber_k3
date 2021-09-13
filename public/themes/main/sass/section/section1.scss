@@ -17,14 +17,14 @@
                 position: relative;
                 img.bg{
                     width: 100%;
-                    height: auto;
-                    @media(max-width : 480px){
-                        height: 100vh;
-                    }
+                    height: 100vh;
+                    // @media(max-width : 480px){
+                    //     height: 100vh;
+                    // }
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    bottom: 320px;
+                    top: 75vh;
                     left: 0;
                     right: 0;
                     .top{
@@ -57,20 +57,25 @@
                 }
                 .center{
                     background: $primary-color;
-                    height: 150px;
+                    height: 15vh;
                     color: #fff;
                     // display: none;
                     text-align: center;
-                    @media(max-width :480px){
-                        padding: 15px 0;
-                    }
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 0;
                     img{
                         width: 15%;
+                        height: 50%;
+                        object-fit: contain;
                         @media(max-width: 480px){
                             width: 20%;
                         }
                     }
                     h3{
+                        width: 100%;
                         font-size: 15px;
                         margin-top: 15px;
                     }
@@ -80,25 +85,39 @@
                     display: flex;
                     justify-content: space-between;
                     color: #a3a5a9;
-                    height: 150px;
+                    height: 15vh;
                     // background: rgba(0 ,0, 0, 0.4);
                     align-items: baseline;
+                    // padding: 15px 0;
                     .item{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        // .img{
-                        //     height: 40px;
-                        // }
-                        @media(max-width :480px){
-                            p.first{
-                                margin-top: 25px;
-                            }
-                            p.second{
-                                margin-top: 16px;
+                        width: 33.33336%;
+                        height: 100%;
+                        padding: 5px;
+                        
+                        .img{
+                            width: 100%;
+                            height: 45%;
+                            text-align: center;
+
+                            img {
+                                max-height: 100%;
                             }
                         }
+                        p {
+                            margin-top: 0;
+                        }
+                        // @media(max-width :480px){
+                        //     p.first{
+                        //         margin-top: 25px;
+                        //     }
+                        //     p.second{
+                        //         margin-top: 16px;
+                        //     }
+                        // }
                     }
                     p{
                         font-size: 15px;

@@ -79,12 +79,12 @@
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                <p class="font-kia-light second">kết nối <br> công nghệ</p>
+                <p class="font-kia-light second">kết nối công nghệ</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
 
                 <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
-                <p class="font-kia-light">chế độ lái <br> thông minh</p>
+                <p class="font-kia-light">chế độ lái thông minh</p>
             </div>
         </div>
        </div>
