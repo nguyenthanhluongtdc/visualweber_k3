@@ -157,6 +157,10 @@ $('.section7-carousel').owlCarousel({
             stagePadding: 290, 
             margin:70, 
         },
+        1200: {
+            stagePadding: 290, 
+            margin:70, 
+        },
         768: {
             stagePadding: 100, 
             margin:0, 
