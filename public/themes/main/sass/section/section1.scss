@@ -29,8 +29,14 @@
                         margin-bottom: 15px;
                         color: #fff;
                         text-align: center;
+                        margin-left: -5%;
+                        margin-right: -5%;
+                        >div {
+                            padding-left: 5%;
+                            padding-right: 5%;
+                        }
                         .access{
-                            margin-right: 25px;
+                            // margin-right: 25px;
                         }
                         p.desc{
                             font-size: 15px;
