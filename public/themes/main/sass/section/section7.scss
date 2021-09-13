@@ -164,7 +164,7 @@
             .prev-slide{
                 color: #fff;
                 font-size: 22px;
-                background: $primary-color;
+                background: #828a90;
                 height: 50px;
                 width: 50px;
                 border-radius: 50%;
@@ -180,7 +180,7 @@
             .next-slide{
                 color: #fff;
                 font-size: 22px;
-                background: $primary-color;
+                background: #828a90;
                 height: 50px;
                 width: 50px;
                 border-radius: 50%;
@@ -198,19 +198,18 @@
             left: 50%;
             color: #fff;
             width: 835px;
-            @media(max-width: 1680px){
+            @media(max-width: 1919px){
                 width: 757px;
+             }
+            
+
+             @media(max-width: 1679px){
+                width: 650px;
              }
              @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                 width: 600px;
             }
-            @media(max-width: 1440px){
-                width: 653px;
-             }
-
-             @media(max-width: 1440px){
-                width: 650px;
-             }
+            
              @media(max-width: 1366px){
                 width: 477px;
              }

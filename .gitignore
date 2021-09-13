@@ -12,7 +12,7 @@ bin/*
 
 ############# Laravel #############
 storage/*
-# public/storage/
+public/storage/
 
 ################ GUIDE LINE ####################
 ## To gitignore every file and folder under a directory recursively:
@@ -560,5 +560,5 @@ public/mix-manifest.json
 
 /storage/installing
 public/docs
-public/themes/main/css/common.css
-public/themes/main/css/common.css.map
+
+public/themes/main/css
