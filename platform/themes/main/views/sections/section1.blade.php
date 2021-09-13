@@ -14,32 +14,32 @@
             </div>
             <div class="client" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                 <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
-                <p class="number font-buenos-bold">@if (has_field($page, 'number_buy'))
+                <p class="number font-kia-bold">@if (has_field($page, 'number_buy'))
                     {!! get_field($page, 'number_buy') !!}
                 @endif</p>
-                <p class="desc font-buenos-bold">KHÁCH HÀNG <br> ĐẶT MUA XE</p>
+                <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng <br> đặt mua xe</p>
             </div>
         </div>
     
     
         <div class="section1-footer container-remake">
             <div class="left" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
-                <h3 class="desc font-buenos-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
+                <img src="{{ Theme::asset()->url('images/section1/k32.png') }}" alt="">
+                <h3 class="desc font-kia-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
             </div>
             <div class="right">
                 <div class="item"  >
                     <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
-                    <p class="font-buenos-light">NHẬN DIỆN MỚI</p>
+                    <p class="font-kia-light">nhận diện mới</p>
                 </div>
                 <div class="item" >
                     <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                    <p class="font-buenos-light">KẾT NỐI </br> CÔNG NGHỆ</p>
+                    <p class="font-kia-light">kết nối <br> công nghệ</p>
                 </div>
                 <div class="item" >
     
                     <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
-                    <p class="font-buenos-light">CHẾ ĐỘ LÁI <br> THÔNG MINH</p>
+                    <p class="font-kia-light">chế độ lái <br> thông minh</p>
                 </div>
             </div>
         </div>
@@ -52,39 +52,39 @@
             <div class="top">
                 <div class="access">
                     <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
-                    <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
+                    <p class="number font-kia-bold">@if (has_field($page, 'number_user'))
                         {!! get_field($page, 'number_user') !!}
                     @endif</p>
-                    <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
+                    <p class="desc font-kia-bold" style="text-transform: uppercase;">lượt truy cập</p>
                 </div>
                 <div class="client" >
                     <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
-                    <p class="number font-buenos-bold">@if (has_field($page, 'number_buy'))
+                    <p class="number font-kia-bold">@if (has_field($page, 'number_buy'))
                         {!! get_field($page, 'number_buy') !!}
                     @endif</p>
-                    <p class="desc font-buenos-bold">KHÁCH HÀNG <br> ĐẶT MUA XE</p>
+                    <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng <br> đặt mua xe</p>
                 </div>
             </div>
            
           
         </div>
         <div class="center">
-            <img src="{{ Theme::asset()->url('images/section1/k3.png') }}" alt="">
-            <h3 class="desc font-buenos-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
+            <img src="{{ Theme::asset()->url('images/section1/k32.png') }}" alt="">
+            <h3 class="desc font-kia-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
         </div>
         <div class="bottom" style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
-                <p class="font-buenos-light first">NHẬN DIỆN MỚI</p>
+                <p class="font-kia-light first">nhận diện mới</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                <p class="font-buenos-light second">KẾT NỐI </br> CÔNG NGHỆ</p>
+                <p class="font-kia-light second">kết nối <br> công nghệ</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
 
                 <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
-                <p class="font-buenos-light">CHẾ ĐỘ LÁI <br> THÔNG MINH</p>
+                <p class="font-kia-light">chế độ lái <br> thông minh</p>
             </div>
         </div>
        </div>
@@ -98,5 +98,3 @@
    
 
 </div>
-
-

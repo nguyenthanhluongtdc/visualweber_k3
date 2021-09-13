@@ -186,7 +186,7 @@
 
     <div class="dangky">
         <div class="form-dangky">
-            <h3 class="font-buenos-bold">ĐĂNG KÝ THÔNG TIN</h3>
+            <h3 class="font-kia-bold">ĐĂNG KÝ THÔNG TIN</h3>
             <div class="close-dangky">
                 <i class="fas fa-times"></i>
             </div>
@@ -194,22 +194,22 @@
             <div class="contact-form-row contact-form-row-top">
                 <div class="contact-column-12">
                     <div class="contact-form-group">
-                        <label for="" class="font20 font-buenos-light">Họ và tên:</label>
+                        <label for="" class="font20 font-kia-light">Họ và tên:</label>
                            <input type=" text"
-                            class="contact-form-input font20 font-buenos-light" name="name" value="{{ old('name') }}"
+                            class="contact-form-input font20 font-kia-light" name="name" value="{{ old('name') }}"
                             id="contact_name2" placeholder="">
-                            <p class="error-msg font-buenos-re">{{ $errors->first('name') }}</p>
+                            <p class="error-msg font-kia-re">{{ $errors->first('name') }}</p>
                     </div>
                 </div>
             </div>
             <div class="contact-form-row">
                 <div class="contact-column-12">
                     <div class="contact-form-group">
-                        <label for="" class="font20 font-buenos-light">Số điện thoại:</label>
+                        <label for="" class="font20 font-kia-light">Số điện thoại:</label>
                            <input type=" text"
-                            class="contact-form-input font20 font-buenos-light" name="phone"
+                            class="contact-form-input font20 font-kia-light" name="phone"
                             value="{{ old('phone') }}" id="contact_phone2" placeholder="">
-                            <p class="error-msg font-buenos-re">{{ $errors->first('phone') }}</p>
+                            <p class="error-msg font-kia-re">{{ $errors->first('phone') }}</p>
                     </div>
                 </div>
             </div>
@@ -217,8 +217,8 @@
             <div class="contact-form-row">
                 <div class="contact-column-12">
                     <div class="contact-form-group">
-                        <label for="" class="font20 font-buenos-light">Tỉnh/Thành phố:</label>
-                          <select name="address" id="contact_address2" class="font20 font-buenos-light js-example-disabled-results">
+                        <label for="" class="font20 font-kia-light">Tỉnh/Thành phố:</label>
+                          <select name="address" id="contact_address2" class="font20 font-kia-light js-example-disabled-results">
                             <option value="An Giang"></option>
                             <option value="An Giang">An Giang</option>
                             <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
@@ -286,12 +286,12 @@
                             <option value="Tp.Hà Nội">Tp.Hà Nội</option>
                             <option value="TP  HCM">TP HCM</option>
                         </select>
-                                <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                                <p class="error-msg font-kia-re">{{$errors->first('address')}}</p>
                     </div>
                 </div>
             </div>
             <div class="contact-form-group-bt">
-                <button type="submit" class="contact-button font-buenos-bold font20">Xác nhận</button>
+                <button type="submit" class="contact-button font-kia-bold font20">Xác nhận</button>
             </div>
 
             <div class="contact-form-group">

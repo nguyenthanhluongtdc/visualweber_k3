@@ -3,17 +3,17 @@
         <div class="left">
 
             @if (has_field($page, 'ten_cong_ty'))
-            <h3 class="font-buenos-re">{{ get_field($page, 'ten_cong_ty') }}</h3>
+            <h3 class="font-kia-re">{{ get_field($page, 'ten_cong_ty') }}</h3>
             @endif
             @if (has_field($page, 'giay_cndkdn'))
-            <p class="item-left font-buenos-re"><span>GIẤY CNĐKDN: </span><span>{{ get_field($page, 'giay_cndkdn') }}</span></p>
+            <p class="item-left font-kia-re"><span>GIẤY CNĐKDN: </span><span>{{ get_field($page, 'giay_cndkdn') }}</span></p>
             @endif
 
             @if (has_field($page, 'co_quan_cap'))
-            <p class="item-left font-buenos-re"><span>CƠ QUAN CẤP: </span><span>{{ get_field($page, 'co_quan_cap') }}</span></p>
+            <p class="item-left font-kia-re"><span>CƠ QUAN CẤP: </span><span>{{ get_field($page, 'co_quan_cap') }}</span></p>
             @endif
             @if (has_field($page, 'dia_chi'))
-            <p class="item-left font-buenos-re"><span>ĐỊA CHỈ: </span><span>{{ get_field($page, 'dia_chi') }}</span></p>
+            <p class="item-left font-kia-re"><span>ĐỊA CHỈ: </span><span>{{ get_field($page, 'dia_chi') }}</span></p>
             @endif
             <img src="{{ Theme::asset()->url('images/bct.png') }}">
             <p class="allright font-buenos-re">
@@ -21,9 +21,9 @@
             </p>
         </div>
         <div class="footer-menu">
-            <h3 class="font-buenos-re">SẢN PHẨM</h3>
+            <h3 class="font-kia-re">SẢN PHẨM</h3>
             @if (has_field($page, 'san_pham'))
-            <ul class="listmenu-ft font-buenos-re">
+            <ul class="listmenu-ft font-kia-re">
                 @foreach (get_field($page, 'san_pham') as $item)
                     <li><a href="{{ get_sub_field($item , 'link_san_pham_ft')}}">{{ get_sub_field($item , 'ten_san_pham_ft')}}</a></li>
                 @endforeach
@@ -31,9 +31,9 @@
             @endif
         </div>
         <div class="policy">
-            <h3 class="font-buenos-re">CHÍNH SÁCH</h3>
+            <h3 class="font-kia-re">CHÍNH SÁCH</h3>
             @if (has_field($page, 'chinh_sach'))
-            <ul class="listpolicy-ft font-buenos-re">
+            <ul class="listpolicy-ft font-kia-re">
                 @foreach (get_field($page, 'chinh_sach') as $item)
                 <li><a href="{{ get_sub_field($item , 'link_chinh_sach')}}">{{ get_sub_field($item , 'ten_chinh_sach')}}</a></li>
             @endforeach
@@ -41,8 +41,8 @@
             </ul>
             @endif
         </div>
-        <div class="right">
-            <h3 class="font-buenos-re">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+        <div class="right"  class="font-kia-re">
+            <h3 class="font-kia-re">LIÊN HỆ VỚI CHÚNG TÔI</h3>
             @if (has_field($page, 'hotline'))
             <div class="right-item">
                 <a href="">
