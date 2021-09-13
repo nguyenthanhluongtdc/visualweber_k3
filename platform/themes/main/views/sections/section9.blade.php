@@ -1,8 +1,8 @@
 <div class="section section9 fp-auto-height-responsive fp-section fp-completely" data-anchor="an-toan">
     <div class="container-remake section9-wrap">
         <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
-            <p class="font-buenos-bold font30">An toàn</p>
-            <h3 class="font60 font-buenos-bold">Vững tin cầm lái</h3>
+            <p class="font-kia-bold font30">An toàn</p>
+            <h3 class="font60 font-kia-bold">Vững tin cầm lái</h3>
         </div>
         
         <div class="list-image">
