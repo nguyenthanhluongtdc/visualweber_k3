@@ -198,6 +198,16 @@
             left: 50%;
             color: #fff;
             width: 835px;
+            h5{
+                br{
+                    display: none;
+                }
+                @media(max-width : 1024px){
+                    br{
+                        display: block;
+                    }
+                }
+            }
             @media(max-width: 1919px){
                 width: 757px;
              }
