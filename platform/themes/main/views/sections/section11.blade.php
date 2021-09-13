@@ -4,7 +4,7 @@
     <div class="section11-wrap container-remake" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
         <h3 class="font80 font-kia-bold" >Chọn xe trực tuyến</h3>
         <div class="start" >
-            <a href="">
+            <a href="#">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section11/s11icon.png') }}"></div>
                 <p class="font20 font-kia-re">Bắt đầu ngay</p>
             </a>
@@ -18,10 +18,16 @@
         @endif
         <div class="action-s11">
             <div class="action-item" >
-                <a href="">
+                <a href="{{ RvMedia::getImageUrl(get_field($page, 'hinh_anh_section_2')) }}" data-fancybox="images" data-caption="NEW CERATO K3">
                     <img src="{{ Theme::asset()->url('images/section11/s11icon1.png') }}">
                     <p class="font20 font-kia-re">Hình ảnh</p>
                 </a>
+                @foreach (get_field($page, 'slider_section_7') as $item)
+                    <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}" data-fancybox="images" data-caption="NEW CERATO K3"></a>
+                @endforeach
+                @foreach (get_field($page, 'list_section8') as $key => $item)
+                <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" data-fancybox="images" data-caption="NEW CERATO K3"></a>
+                @endforeach
             </div>
             <div class="action-item" >
                 <a href="https://kiamotorsvietnam.com.vn/lien-he" target="_blank">
@@ -36,7 +42,7 @@
                 </a>
             </div>
             <div class="action-item" >
-                <a href="">
+                <a href="{{ Theme::asset()->url('images/section11/s11icon4.png') }}" data-fancybox="qrcode" data-caption="NEW CERATO K3">
                     <img src="{{ Theme::asset()->url('images/section11/s11icon4.png') }}">
                     <p class="font20 font-kia-re">QR code</p>
                 </a>
