@@ -218,7 +218,7 @@ $('.close-popup').click(function(){
 $('.close-dangky').click(function(){
     $('.dangky').hide(300);
 });
-$('.start').click(function(){
+$('.register').click(function(){
     $('.dangky').show(300);
 });
 

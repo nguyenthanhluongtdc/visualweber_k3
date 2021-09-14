@@ -24,7 +24,7 @@
     
         <div class="section1-footer container-remake">
             <div class="left" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <img src="{{ Theme::asset()->url('images/section1/k32.png') }}" alt="">
+                <img src="{{ Theme::asset()->url('images/section1/logok31.png') }}" alt="logo">
                 <h3 class="desc font-kia-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
             </div>
             <div class="right">
@@ -69,7 +69,7 @@
           
         </div>
         <div class="center">
-            <img src="{{ Theme::asset()->url('images/section1/k32.png') }}" alt="">
+            <img src="{{ Theme::asset()->url('images/section1/logok31.png') }}" alt="logo">
             <h3 class="desc font-kia-light">PHONG CÁCH SỐNG THÔNG MINH</h3>
         </div>
         <div class="bottom" style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">

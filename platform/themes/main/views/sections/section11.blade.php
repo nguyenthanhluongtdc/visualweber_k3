@@ -2,9 +2,9 @@
     <div class="section11-bg">
     </div>
     <div class="section11-wrap container-remake" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
-        <h3 class="font80 font-kia-bold" >Chọn xe trực tuyến</h3>
-        <div class="start" >
-            <a href="#">
+        <h3 class="font60 font-kia-bold" >ĐẶT XE TRỰC TUYẾN</h3>
+        <div class="start">
+            <a href="https://kiamotorsvietnam.com.vn/du-toan-chi-phi/chon-xe-va-phien-ban?car_model=25&color_id=14" target="_blank">
                 <div class="img"><img src="{{ Theme::asset()->url('images/section11/s11icon.png') }}"></div>
                 <p class="font20 font-kia-re">Bắt đầu ngay</p>
             </a>
