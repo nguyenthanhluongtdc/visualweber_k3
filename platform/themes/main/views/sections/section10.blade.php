@@ -39,7 +39,7 @@
                             <li class="font20 font-kia-light">- Màn hình đa thông tin 3.5”</li>
                             <li class="font20 font-kia-light">- Màn hình giải trí AVN 8”</li>
                             <li class="font20 font-kia-light">- Tính năng khởi động từ xa</li>
-                            <li class="font20 font-kia-light">- Ghế lái chỉnh điện, cửa sổ trời</li>
+                            <li class="font20 font-kia-re">- Ghế lái chỉnh điện, cửa sổ trời</li>
                             <li class="font20 font-kia-light">- Cảm biến hỗ trợ đỗ xe sau</li>
                         </ul>
                         <div class="content-bottom">

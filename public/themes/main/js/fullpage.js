@@ -213,15 +213,21 @@ $('.close-popup').click(function(){
     $('.fixed-bg').hide();
     $('.animated-modal-tk').hide();
     $('.camon').hide();
+
     });
 
 $('.close-dangky').click(function(){
     $('.dangky').hide(300);
+    $('.fixed-bgg').hide();
 });
 $('.register').click(function(){
     $('.dangky').show(300);
+    $('.fixed-bgg').show();
 });
-
+$('.fixed-bgg').click(function(){
+    $('.dangky').hide(300);
+    $('.fixed-bgg').hide();
+});
 
 
 $(".js-example-disabled-results").select2();

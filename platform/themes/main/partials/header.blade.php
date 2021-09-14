@@ -183,7 +183,8 @@
             </a>
         </div>
     </div>
-
+    <div class="fixed-bgg">
+    </div>
     <div class="dangky">
         <div class="form-dangky">
             <h3 class="font-kia-bold">ĐĂNG KÝ THÔNG TIN</h3>
