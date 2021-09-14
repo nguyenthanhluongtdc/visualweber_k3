@@ -18,6 +18,10 @@
             @media(max-width : 480px){
                 font-size: 28px;
             }
+            @media only screen and (min-width: 1025px) and (max-height : 767px){
+                padding-top: 90px;
+                font-size: 35px;
+            }
         }
         z-index: 2;
         position: relative;
@@ -51,6 +55,9 @@
                 height: auto;
                 object-fit: contain;
                 width: 49%;
+                @media only screen and (min-width: 1025px) and (max-height : 767px){
+                    width: 40%;
+                }
                
             }
         }
