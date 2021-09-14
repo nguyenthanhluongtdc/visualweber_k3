@@ -4,7 +4,7 @@
         <div class="list-section10">
             <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="top">
-                    <p class="font20 font-kia-re">KIA K3</p>
+                    <p class="font20 font-kia-re">The New Kia K3</p>
                     <h5 class="font30 font-kia-bold">1.6 MT</h5>
                 </div>
                 <div class="bottom">
@@ -28,7 +28,7 @@
             </div>
             <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="top">
-                    <p class="font20 font-kia-re">KIA K3</p>
+                    <p class="font20 font-kia-re">The New Kia K3</p>
                     <h5 class="font30 font-kia-bold">1.6 Luxury</h5>
                 </div>
                 <div class="bottom">
@@ -52,7 +52,7 @@
             </div>
             <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="900">
                 <div class="top">
-                    <p class="font20 font-buenos-re">KIA K3</p>
+                    <p class="font20 font-buenos-re">The New Kia K3</p>
                     <h5 class="font30 font-buenos-bold">1.6 Premium</h5>
                 </div>
                 <div class="bottom">
