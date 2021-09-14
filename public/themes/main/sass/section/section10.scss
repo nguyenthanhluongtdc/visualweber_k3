@@ -114,25 +114,19 @@
                         height: 160px;
                         line-height: 20px;
                     }
-                    // @media only screen and (min-width: 1441px) and (max-width: 1679px) {
-                    //     height: 120px;
-                    //     overflow-y: scroll;
-                    // }
+                  
                     @media(max-width : 1440px){
                         height: 150px;
                         line-height: 20px;
                     }
-                    // @media only screen and (min-width: 1281px) and (max-width: 1400px) {
-                    //     height: 100px;
-                    //     overflow-y: scroll;
-                    // }
+                    @media(max-width : 1366px){
+                        height: 150px;
+                    }
+                    
                     @media(max-width : 1280px){
                         height: 150px;
                     }
-                    // @media only screen and (min-width: 1025px) and (max-width: 1279px) {
-                    //     height: 80px;
-                    //     overflow-y: scroll;
-                    // }
+                    
                     @media(max-width : 1024px){
                         height: auto;
                     }
@@ -183,7 +177,7 @@
     
 }
 @media  
-       screen and (max-height: 700px) {
+       screen and (max-height: 650px) {
         .list-section10 .item .bottom .content-item ul{
             height: 60px;
             overflow-y: scroll;
