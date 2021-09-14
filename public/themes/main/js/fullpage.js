@@ -80,9 +80,9 @@ var myFullpage = new fullpage('#fullpage', {
             $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 40}px)`;
             if($('.section5-wrap .tab-content').length){
                 if(document.body.clientWidth > 1366){
-                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 40}px)`;
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 35}px)`;
                 }else{
-                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 25}px)`;
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 20}px)`;
                 }
             }
         }
@@ -139,9 +139,9 @@ var myFullpage = new fullpage('#fullpage', {
             $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 40}px)`;
             if($('.section5-wrap .tab-content').length){
                 if(width > 1366){
-                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 40}px)`;
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 35}px)`;
                 }else{
-                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 25}px)`;
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 20}px)`;
                 }
             }
         }
