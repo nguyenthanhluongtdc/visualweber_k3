@@ -77,7 +77,7 @@ var myFullpage = new fullpage('#fullpage', {
         }
         if($('.section5-wrap .section5-top').length){
             let hei = $('.section5-wrap .section5-top').height();
-            $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 40}px)`;
+            $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 100}px)`;
             if($('.section5-wrap .tab-content').length){
                 if(document.body.clientWidth > 1366){
                     $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 35}px)`;
@@ -266,7 +266,9 @@ $('.fixed-bgg').click(function(){
     $('.dangky').hide(300);
     $('.fixed-bgg').hide();
 });
-
+$('.button-video').click(function(){
+    $('.showvideo').click();
+})
 
 $(".js-example-disabled-results").select2();
   
