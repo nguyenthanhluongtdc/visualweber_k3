@@ -6,7 +6,7 @@
         }
     }
     .section7-wrap{
-        padding-top: 80px;
+        padding-top: 85px;
         overflow: hidden;
         @media(max-width :1024px){
             padding-top: 30px;
@@ -17,6 +17,7 @@
             // margin-bottom: 50px;
             h3{
                 font-size: 50px;
+                margin-top: 5px;
                 @media(max-width : 1680px){
                     font-size: 45px;
                     margin-top: 5px;
@@ -208,7 +209,7 @@
             bottom: 112%;
             left: 50%;
             color: #fff;
-            width: calc(90vw / 2);
+            width: calc(89vw / 2);
             @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                 width: calc(80vw / 2);
             }
