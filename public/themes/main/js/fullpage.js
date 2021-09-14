@@ -184,7 +184,7 @@ $('.section7-carousel').owlCarousel({
             margin:70, 
         },
         1440: {
-            stagePadding: 350, 
+            stagePadding: 320, 
             margin:70, 
         },
         1366: {

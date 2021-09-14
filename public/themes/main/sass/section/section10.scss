@@ -176,10 +176,10 @@
     }
     
 }
-@media  
-       screen and (max-height: 650px) {
+@media only screen and (max-height: 650px) {
+
         .list-section10 .item .bottom .content-item ul{
-            height: 60px;
+            height: 80px;
             overflow-y: scroll;
         }
 }
