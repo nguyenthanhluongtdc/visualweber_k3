@@ -117,7 +117,7 @@
 
 
 <div class="section section5 fp-auto-height-responsive fp-section fp-completely" data-anchor="ngoai-that">
-    <div class="container-remake section5-wrap">
+    <div class="container-remake section5-wrap h-100">
         <div class="section5-top" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="font-kia-bold font30">Ngoại thất</p>
             <h3 class="font-kia-bold font60">Thiết kế tinh tế <br> và năng động </h3>
