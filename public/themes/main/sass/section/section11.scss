@@ -50,18 +50,8 @@
             img{
                 height: auto;
                 object-fit: contain;
-                @media only screen and (min-width: 1599px) and (max-width: 1601px) {
-                    width: 55%;
-                }
-                @media(max-width: 1440px){
-                    width: 55%;
-                }
-                @media(max-width: 1366px){
-                    width: 50%;
-                }
-                @media(max-width: 1024px){
-                    width: 85%;
-                }
+                width: 49%;
+               
             }
         }
         .action-s11{
@@ -78,6 +68,10 @@
                 display: flex;
                 justify-content: center;
                 text-align: center;
+                img{
+                    width: 90px;
+                    height: 90px;
+                }
                 @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                     width: 200px;
                     img{
