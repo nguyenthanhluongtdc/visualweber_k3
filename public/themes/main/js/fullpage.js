@@ -75,6 +75,17 @@ var myFullpage = new fullpage('#fullpage', {
                 $('.section7-wrap .owl-item.center .content')[0].style.top = `calc(-${hei + 53}px)`;
             }
         }
+        if($('.section5-wrap .section5-top').length){
+            let hei = $('.section5-wrap .section5-top').height();
+            $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 40}px)`;
+            if($('.section5-wrap .tab-content').length){
+                if(document.body.clientWidth > 1366){
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 40}px)`;
+                }else{
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 25}px)`;
+                }
+            }
+        }
     },
     onLeave: async function(index, destination, direction, nextIndex) {
         // history.pushState(null, null, "/" + nextIndex.anchor);
@@ -121,6 +132,17 @@ var myFullpage = new fullpage('#fullpage', {
             $('.section7-wrap .section7-carousel')[0].style.height = `calc(100% - ${hei + 110}px)`;
             if($('.section7-wrap .owl-item.center .content').length){
                 $('.section7-wrap .owl-item.center .content')[0].style.top = `calc(-${hei + 53}px)`;
+            }
+        }
+        if($('.section5-wrap .section5-top').length){
+            let hei = $('.section5-wrap .section5-top').height();
+            $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 40}px)`;
+            if($('.section5-wrap .tab-content').length){
+                if(width > 1366){
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 40}px)`;
+                }else{
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 25}px)`;
+                }
             }
         }
     },
