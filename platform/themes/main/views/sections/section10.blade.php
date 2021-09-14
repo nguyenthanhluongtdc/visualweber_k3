@@ -12,11 +12,11 @@
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
                         <ul class="list-content">
-                            <li class="font20 font-kia-light">- Màn hình giải trí AVN 8”</li>
-                            <li class="font20 font-kia-light">- Hệ thống âm thanh 6 loa</li>
-                            <li class="font20 font-kia-light">- Cửa gió cho hàng ghế 2</li>
-                            <li class="font20 font-kia-light">- Hệ thống cân bằng điện tử ESC + HAC</li>
-                            <li class="font20 font-kia-light">- Camera lùi</li>
+                            <li class="font20 font-kia-re">- Màn hình giải trí AVN 8”</li>
+                            <li class="font20 font-kia-re">- Hệ thống âm thanh 6 loa</li>
+                            <li class="font20 font-kia-re">- Cửa gió cho hàng ghế 2</li>
+                            <li class="font20 font-kia-re">- Hệ thống cân bằng điện tử ESC + HAC</li>
+                            <li class="font20 font-kia-re">- Camera lùi</li>
                         </ul>
                         <div class="content-bottom">
                            <div class="register font20 font-kia-re">
@@ -36,11 +36,11 @@
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
                         <ul class="list-content">
-                            <li class="font20 font-kia-light">- Màn hình đa thông tin 3.5”</li>
-                            <li class="font20 font-kia-light">- Màn hình giải trí AVN 8”</li>
-                            <li class="font20 font-kia-light">- Tính năng khởi động từ xa</li>
+                            <li class="font20 font-kia-re">- Màn hình đa thông tin 3.5”</li>
+                            <li class="font20 font-kia-re">- Màn hình giải trí AVN 8”</li>
+                            <li class="font20 font-kia-re">- Tính năng khởi động từ xa</li>
                             <li class="font20 font-kia-re">- Ghế lái chỉnh điện, cửa sổ trời</li>
-                            <li class="font20 font-kia-light">- Cảm biến hỗ trợ đỗ xe sau</li>
+                            <li class="font20 font-kia-re">- Cảm biến hỗ trợ đỗ xe sau</li>
                         </ul>
                         <div class="content-bottom">
                             <div class="register font20 font-kia-re">
@@ -60,12 +60,12 @@
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật</p>
                         <ul class="list-content">
-                            <li class="font20 font-kia-light">- Màn hình đa thông tin 4.2”</li>
-                            <li class="font20 font-kia-light">- Màn hình giải trí AVN 10.25”</li>
-                            <li class="font20 font-kia-light">- Sưởi và làm mát hàng ghế trước</li>
-                            <li class="font20 font-kia-light">- Gương chiếu hậu chống chói tự động ECM</li>
-                            <li class="font20 font-kia-light">- Nhớ 2 vị trí ghế lái</li>
-                            <li class="font20 font-kia-light">- 6 túi khí an toàn, cảm biến hỗ trợ đỗ xe trước và sau</li>
+                            <li class="font20 font-kia-re">- Màn hình đa thông tin 4.2”</li>
+                            <li class="font20 font-kia-re">- Màn hình giải trí AVN 10.25”</li>
+                            <li class="font20 font-kia-re">- Sưởi và làm mát hàng ghế trước</li>
+                            <li class="font20 font-kia-re">- Gương chiếu hậu chống chói tự động ECM</li>
+                            <li class="font20 font-kia-re">- Nhớ 2 vị trí ghế lái</li>
+                            <li class="font20 font-kia-re">- 6 túi khí an toàn, cảm biến hỗ trợ đỗ xe trước và sau</li>
                         </ul>
                         <div class="content-bottom">
                             <div class="register font20 font-kia-re">
