@@ -30,6 +30,7 @@
         flex-wrap: wrap;
     }
     .item{
+        filter: drop-shadow(1px 2px 4px #ccc);
         width: 25%;
         margin: 0 50px;
         h5{
@@ -103,6 +104,12 @@
                     width: 100%;
                     text-align: center;
                     cursor: pointer;
+                    border: 1px solid #06141f;
+                    padding: 13px 0 10px;
+
+                    background: $primary-color;
+                    color: #fff;
+
                 }
                 ul{
                     list-style: none;

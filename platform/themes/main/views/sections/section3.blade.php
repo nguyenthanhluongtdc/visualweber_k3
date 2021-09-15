@@ -188,7 +188,7 @@
                              <div id="tabcar03b" class="container tab-pane tab-pane2 item-car-color active"><br>
                                 {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
                                     data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
-                                    <img src="{{ Theme::asset()->url('images/xe/car3.png') }}" alt="360" class="img-car">
+                                    <img src="{{ Theme::asset()->url('images/section3/xanh.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -198,7 +198,7 @@
                                 {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/"
                                     data-filename="SWP_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
 
-                                    <img src="{{ Theme::asset()->url('images/xe/car1.png') }}" alt="360" class="img-car">
+                                    <img src="{{ Theme::asset()->url('images/section3/do.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -207,7 +207,7 @@
                             <div id="tabcar02b" class="container tab-pane tab-pane2 item-car-color"><br>
                                 {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/black/"
                                     data-filename="ABP_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
-                                    <img src="{{ Theme::asset()->url('images/xe/car5.png') }}" alt="360" class="img-car">
+                                    <img src="{{ Theme::asset()->url('images/section3/trang.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -303,7 +303,7 @@
                             <div id="tabcar03c" class="container tab-pane tab-pane2 item-car-color active"><br>
                                 {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/blue_1/"
                                     data-filename="M4B_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
-                                    <img src="{{ Theme::asset()->url('images/xe/car3.png') }}" alt="360" class="img-car">
+                                    <img src="{{ Theme::asset()->url('images/section3/xanh.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -313,7 +313,7 @@
                                 {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/"
                                     data-filename="SWP_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
 
-                                    <img src="{{ Theme::asset()->url('images/xe/car1.png') }}" alt="360" class="img-car">
+                                    <img src="{{ Theme::asset()->url('images/section3/do.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -322,7 +322,7 @@
                             <div id="tabcar02c" class="container tab-pane tab-pane2 item-car-color"><br>
                                 {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/black/"
                                     data-filename="ABP_{index}.webp" data-amount="36" data-spin-reverse="true"></div> --}}
-                                    <img src="{{ Theme::asset()->url('images/xe/car5.png') }}" alt="360" class="img-car">
+                                    <img src="{{ Theme::asset()->url('images/section3/trang.png') }}" alt="360" class="img-car">
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>

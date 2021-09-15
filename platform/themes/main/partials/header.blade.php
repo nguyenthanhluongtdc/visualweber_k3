@@ -77,7 +77,7 @@
                 </li>
                 <li class="chose-car" data-menuanchor="chon-xe-online">
                     <a href="{{ route('public.index') }}#chon-xe-online">
-                        CHỌN XE ONLINE
+                        ĐẶT XE TRỰC TUYẾN
                     </a>
                 </li>
 
@@ -125,7 +125,7 @@
                     </li>
                     <li class="chose-car close-menu2" data-menuanchor="chon-xe-online">
                         <a href="{{ route('public.index') }}#chon-xe-online">
-                            CHỌN XE ONLINE
+                            ĐẶT XE TRỰC TUYẾN
                         </a>
                     </li>
 
