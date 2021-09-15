@@ -129,8 +129,8 @@
                     object-fit: cover;
                     @media(max-width : 1024px){
                         width: 100%;
-                       height: auto;
-                       object-fit: none;
+                        height: auto;
+                       object-fit: none!important;
                     }
                 }
             }
