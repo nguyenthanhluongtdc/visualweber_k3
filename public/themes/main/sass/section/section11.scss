@@ -113,8 +113,9 @@
                         top: 8.5px;
                     }
                     .image-brochure {
-                        width: 60%;
+                        width: 45%;
                         height: auto;
+                        filter: invert(1);
                     }
                     // @include maxWidth(1366) {
                     //     width: 60px;

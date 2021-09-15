@@ -44,7 +44,7 @@
             <div class="action-item" >
                 <a href="#" class="d-flex flex-column align-items-center">
                     <div class="image-brochure__box">
-                        <img class="image-brochure" src="{{ Theme::asset()->url('images/section11/Brochure.png') }}">
+                        <img class="image-brochure" src="{{ Theme::asset()->url('images/brochure.png') }}">
                     </div>
                     <p class="font20 font-kia-re">Brochure</p>
                 </a>
