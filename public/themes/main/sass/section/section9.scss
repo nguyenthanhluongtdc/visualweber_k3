@@ -112,6 +112,8 @@
         .left{
             width: 50%;
             padding-bottom: 15px;
+            padding-right: 15px;
+            // padding-bottom: 15px;
             @media(max-width : 1024px){
                 width: 100%;
                 margin-bottom: 1%;
@@ -143,7 +145,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: -15px;
+            // margin: -15px;
             padding-bottom: 15px;
             @media(max-width : 1024px){
                 width: 100%;
@@ -152,7 +154,7 @@
             }
 
             >div {
-                padding: 15px;
+                // padding: 15px;
 
                 img {
                     height: 100%;
@@ -163,6 +165,7 @@
 
             .item-right{
                 width: 50%;
+                
                 img{
                     width: 100%;
                 }
@@ -171,11 +174,12 @@
                 width: 100%;
             }
             .item-right:nth-child(1){
-                // margin-bottom: 1%;
+                padding-right: 15px;
             }
-            // .item-right:nth-child(2){
-            //     margin-bottom: 1%;
-            // }
+            .item-right:last-child{
+                padding-bottom: 0;
+                padding-top: 15px;
+            }
         }
     }
 }

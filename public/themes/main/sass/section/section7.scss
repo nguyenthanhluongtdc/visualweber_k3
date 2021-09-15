@@ -6,7 +6,13 @@
         }
     }
     .section7-wrap{
-        padding-top: 88px;
+        padding-top: 130px;
+        @media(max-width : 1679px){
+            padding-top: 110px;
+        }
+        @media(max-width : 1400px){
+            padding-top: 88px;
+        }
         overflow: hidden;
         @media(max-width :1024px){
             padding-top: 30px;
@@ -56,7 +62,7 @@
             }
             h3{
                 color: #fff;
-                margin-bottom: 75px;
+                margin-bottom: 50px;
                 @media(max-width: 1680px){
                     margin-bottom: 59px;
                  }
