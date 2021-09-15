@@ -81,7 +81,7 @@
                 padding: 20px;
             }
             img{
-                width: 45%;
+                width: 60%;
                 display: flex;
                 margin: 0 auto;
                 @media(max-width: 1366px){
@@ -89,12 +89,12 @@
                 }
             }
             .content-item{
-                margin-top: 25px;
+                margin-top: 10px;
                 @media only screen and (min-width: 1599px) and (max-width: 1601px) {
-                    margin-top: 20px;
+                    margin-top: 10px;
                 }
                 @media(max-width: 1440px){
-                    margin-top: 20px;
+                    margin-top: 10px;
                 }
                 p.title{
                     margin-bottom: 20px;

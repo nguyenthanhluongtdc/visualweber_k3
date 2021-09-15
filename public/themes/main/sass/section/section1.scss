@@ -57,7 +57,6 @@
                 }
                 .center{
                     background: $primary-color;
-                    height: 15vh;
                     color: #fff;
                     // display: none;
                     text-align: center;
@@ -67,12 +66,7 @@
                     justify-content: center;
                     padding: 15px 0;
                     img{
-                        width: 15%;
-                        height: 50%;
-                        object-fit: contain;
-                        @media(max-width: 480px){
-                            width: 20%;
-                        }
+                        width: 100%;
                     }
                     h3{
                         width: 100%;
@@ -216,16 +210,7 @@
             flex-direction: column;
             justify-content: center;
             position: relative;
-            @media(max-width: 1366px){
-                height: 130px;
-                width: 30%;
-
-            }
-            @media(max-width: 1280px){
-                width: 30%;
-                height: 130px;
-            }
-            ::before{
+            &::before{
                 position: absolute;
                 right: 100%;
                 top: 0;
@@ -234,13 +219,24 @@
                 content: '';
                 width: 200px;
             }
+            @media(max-width: 1366px){
+                height: 130px;
+
+            }
+            @media(max-width: 1280px){
+                height: 130px;
+            }
+           
             img{
-                width: 50%;
+                width: 88%;
                 margin: 0 auto;
                 @media(max-width: 1366px){
                     width: 30%;
+
                 }
+               
             }
+           
             h3{
                 color: #fff;
                 margin-top: 20px;

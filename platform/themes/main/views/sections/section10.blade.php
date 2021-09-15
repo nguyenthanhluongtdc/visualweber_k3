@@ -8,7 +8,7 @@
                     <h5 class="font30 font-buenos-bold">1.6 Premium</h5>
                 </div>
                 <div class="bottom">
-                    <img src="{{ Theme::asset()->url('images/section10/maudo.png') }}">
+                    <img src="{{ Theme::asset()->url('images/section10/k3pri2.png') }}">
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật</p>
                         <ul class="list-content">
