@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-right item-right2" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                <div class="item-right item-right2">
                     @if (has_field($page, 'hinh_an_toan_so_4'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal4" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_4')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_4') !!}">
