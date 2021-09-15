@@ -174,7 +174,7 @@
                         </div>
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">6.9 L</p>
-                            <p class="bottom font20 font-kia-re">100 km (hỗn hợp )(*)</p>
+                            <p class="bottom font20 font-kia-re">100 km <br>(hỗn hợp )(*)</p>
                         </div>
                     </div>
                 </div>
@@ -289,7 +289,7 @@
                         </div>
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">6.9 L</p>
-                            <p class="bottom font20 font-kia-re">100 km (hỗn hợp )(*)</p>
+                            <p class="bottom font20 font-kia-re">100 km <br>(hỗn hợp )(*)</p>
                         </div>
                     </div>
                 </div>
@@ -404,7 +404,7 @@
                         </div>
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">6.9 L</p>
-                            <p class="bottom font20 font-kia-re">100 km (hỗn hợp )(*)</p>
+                            <p class="bottom font20 font-kia-re none-pc">100 km <br>(hỗn hợp )(*)</p>
                         </div>
                     </div>
                 </div>
