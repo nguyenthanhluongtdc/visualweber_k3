@@ -16,7 +16,7 @@
 
     }
     .section5-top{
-        padding-left: 120px;
+        // padding-left: 120px;
         margin-bottom: 20px;
         @media(max-width : 1366px){
             padding-left: 0;
@@ -70,6 +70,9 @@
                     right: 0;
                     width: 50%;
                     bottom: 67%;
+                    @media(max-width : 1366px){
+                        width: 43%;
+                    }
                     img{
                         width: 100%;
                     }
@@ -90,12 +93,15 @@
                     }
                     p{
                         color: #fff;
-                        padding-right: 120px;
+                        // padding-right: 120px;
                         text-align: justify;
                         margin-bottom: 20px;
                         font-size: 15px;
+
+                        height: 63px;
                         @media(max-width :1366px){
                             padding-right: 0;
+                            font-size: 13px;
                         }
                         @media(max-width: 1024px){
                             padding: 0 5%;
@@ -137,12 +143,12 @@
                 }
             }
             left: 65%;
-            top: 40%;
+            top: 42%;
             @media(max-width : 1680px){
-                top: 37%;
+                top: 40%;
             }
             @media(max-width : 1440px){
-                top: 39%;
+                top: 44%;
             }
             @media(max-width : 1366px){
                 top: 50%;
