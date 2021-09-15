@@ -96,6 +96,39 @@
                         height: 90px;
                     }
                 }
+                .image-brochure__box {
+                    width: 90px;
+                    height: 90px;
+                    background-color: white;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @media(max-width: 1366px){
+                        width: 60px;
+                        height: 60px;
+                    }
+                    @media(max-width: 480px){
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        top: 8.5px;
+                    }
+                    .image-brochure {
+                        width: 60%;
+                        height: auto;
+                    }
+                    // @include maxWidth(1366) {
+                    //     width: 60px;
+                    //     height: 60px;
+                       
+                    // }
+
+                    // @include maxWidth(480) {
+                    //     height: 30px;
+                    //     width: 30px;
+                    // }
+                }
                 @media(max-width : 1024px){
                    width: 20%; 
                  }

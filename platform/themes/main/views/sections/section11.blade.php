@@ -42,9 +42,11 @@
                 </a>
             </div>
             <div class="action-item" >
-                <a href="{{ Theme::asset()->url('images/section11/s11icon4.png') }}" data-fancybox="qrcode" data-caption="NEW CERATO K3">
-                    <img src="{{ Theme::asset()->url('images/section11/s11icon4.png') }}">
-                    <p class="font20 font-kia-re">QR code</p>
+                <a href="#" class="d-flex flex-column align-items-center">
+                    <div class="image-brochure__box">
+                        <img class="image-brochure" src="{{ Theme::asset()->url('images/section11/Brochure.png') }}">
+                    </div>
+                    <p class="font20 font-kia-re">Brochure</p>
                 </a>
             </div>
         </div>
