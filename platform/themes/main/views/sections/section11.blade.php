@@ -41,14 +41,20 @@
                     <p class="font20 font-kia-re">Hệ thống Showroom</p>
                 </a>
             </div>
-            <div class="action-item" >
+            <div class="action-item item-icon-tt" >
+                <a href="#"">
+                    <img src="{{ Theme::asset()->url('images/section11/icon4.png') }}">
+                    <p class="font20 font-kia-re br-close">Thông tin <br>chi tiết</p>
+                </a>
+            </div>
+            {{-- <div class="action-item" >
                 <a href="#" class="d-flex flex-column align-items-center">
                     <div class="image-brochure__box">
                         <img class="image-brochure" src="{{ Theme::asset()->url('images/brochure.png') }}">
                     </div>
-                    <p class="font20 font-kia-re">Brochure</p>
+                    <p class="font20 font-kia-re br-close">Thông tin <br>chi tiết</p>
                 </a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

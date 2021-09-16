@@ -13,6 +13,12 @@
         height: 50%;
     }
     .section11-wrap{
+        .br-close br{
+            display: none;
+            @media(max-width : 480px){
+                display: block;
+            }
+        }
         h3{
             text-align: center;
             @media(max-width : 480px){
@@ -94,6 +100,7 @@
                         height: 90px;
                     }
                 }
+                
                 .image-brochure__box {
                     width: 90px;
                     height: 90px;
@@ -142,6 +149,10 @@
                         }
                     }
                 }
+            }
+            .item-icon-tt img{
+                border-radius: 50%;
+                filter: invert(1);
             }
             a{
                 color: #fff;
