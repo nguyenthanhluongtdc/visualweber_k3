@@ -174,8 +174,8 @@
                         </div>
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">6.9 L</p>
-                            <p class="bottom font15 font-kia-re">100 km <br>(hỗn hợp )</p>
-                            <p class="bottom font15 font-kia-re">(Áp dụng cho phiên bản Premium )</p>
+                            <p class="bottom font15 font-kia-re">100 km <br>(hỗn hợp)</p>
+                            <p class="bottom font15 font-kia-re">(Áp dụng cho <br>phiên bản premium)</p>
                         </div>
                     </div>
                 </div>
