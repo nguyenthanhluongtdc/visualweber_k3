@@ -42,7 +42,7 @@
                 </a>
             </div>
             <div class="action-item item-icon-tt" >
-                <a href="#"">
+                <a href="#">
                     <img src="{{ Theme::asset()->url('images/section11/icon4.png') }}">
                     <p class="font20 font-kia-re br-close">Thông tin <br>chi tiết</p>
                 </a>
