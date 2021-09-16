@@ -242,7 +242,7 @@
                             {{-- Blue --}}
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabcar03b">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}" alt="K3">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}" alt="K3">
                                 </a>
                             </li>
                            {{-- White --}}
@@ -357,7 +357,7 @@
                              {{-- Blue --}}
                              <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabcar03c">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}" alt="K3">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}" alt="K3">
                                 </a>
                             </li>
                            {{-- White --}}
