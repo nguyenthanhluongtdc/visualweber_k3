@@ -22,7 +22,7 @@
                                 class="icontab-active">
                         </div>
                         <div class="right">
-                            <p class="top font20 font-kia-re">The New Kia K3</p>
+                            <p class="top font20 font-kia-re">The New K3</p>
                             <p class="bottom font25 font-kia-bold">1.6 Premium</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                                 class="icontab-active">
                         </div>
                         <div class="right">
-                            <p class="top font20 font-kia-re">The New Kia K3</p>
+                            <p class="top font20 font-kia-re">The New K3</p>
                             <p class="bottom font25 font-kia-bold">1.6 Luxury</p>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             class="icontab-active">
                     </div>
                     <div class="right">
-                        <p class="top font20 font-kia-re">The New Kia K3</p>
+                        <p class="top font20 font-kia-re">The New K3</p>
                         <p class="bottom font25 font-kia-bold">1.6 MT</p>
                     </div>
                 </div>
