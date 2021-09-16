@@ -34,7 +34,7 @@ var myFullpage = new fullpage('#fullpage', {
     resetSliders: false,
 
     fadingEffect: false,
-    normalScrollElements: ".animated-modal",
+    normalScrollElements: ".scrollable-content",
     scrollOverflow: false,
     scrollOverflowReset: false,
     scrollOverflowOptions: null,

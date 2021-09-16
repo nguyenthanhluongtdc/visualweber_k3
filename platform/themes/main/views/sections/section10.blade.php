@@ -11,7 +11,7 @@
                     <img src="{{ Theme::asset()->url('images/section10/xepri.png') }}">
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật</p>
-                        <ul class="list-content">
+                        <ul class="list-content scrollable-content">
                             <li class="font20 font-kia-re">- Màn hình đa thông tin 4.2”</li>
                             <li class="font20 font-kia-re">- Màn hình giải trí AVN 10.25”</li>
                             <li class="font20 font-kia-re">- Sưởi và làm mát hàng ghế trước</li>
@@ -36,7 +36,7 @@
                     <img src="{{ Theme::asset()->url('images/section10/2luxu.png') }}">
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
-                        <ul class="list-content">
+                        <ul class="list-content scrollable-content">
                             <li class="font20 font-kia-re">- Màn hình đa thông tin 3.5”</li>
                             <li class="font20 font-kia-re">- Màn hình giải trí AVN 8”</li>
                             <li class="font20 font-kia-re">- Tính năng khởi động từ xa</li>
@@ -60,7 +60,7 @@
                     <img src="{{ Theme::asset()->url('images/section10/3mt.png') }}">
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
-                        <ul class="list-content">
+                        <ul class="list-content scrollable-content">
                             <li class="font20 font-kia-re">- Màn hình giải trí AVN 8”</li>
                             <li class="font20 font-kia-re">- Hệ thống âm thanh 6 loa</li>
                             <li class="font20 font-kia-re">- Cửa gió cho hàng ghế 2</li>
