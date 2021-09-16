@@ -111,10 +111,15 @@
     .list-image{
         display: flex;
         justify-content: space-between;
+        max-height: 60vh;
+        height: 60vh;
         @media(max-width : 1024px){
             flex-wrap: wrap;
+            max-height: unset;
+            height: auto;
         }
         .left{
+            height: 100%;
             width: 50%;
             padding-bottom: 15px;
             @media(max-width : 1366px){
@@ -126,6 +131,7 @@
                 width: 100%;
                 padding-bottom: 10px;
                 padding-right: 0;
+                height: auto;
             }
             .item-top{
                 width: 100%;
@@ -155,6 +161,7 @@
             }
         }
         .right{
+            height: 100%;
             width: 50%;
             display: flex;
             flex-wrap: wrap;
@@ -168,9 +175,14 @@
                 width: 100%;
                 margin: 0;
                 padding-bottom: 15px;
+                height: auto;
             }
 
             >div {
+                height: 50%;
+                @media(max-width : 1024px){
+                    height: auto;
+                }
                 // padding: 15px;
 
                 img {
