@@ -166,15 +166,16 @@
                     <div class="desc-car">
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">126 hp</p>
-                            <p class="bottom font20 font-kia-re">6,300 rpm</p>
+                            <p class="bottom font15 font-kia-re">6,300 rpm</p>
                         </div>
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">155 Nm</p>
-                            <p class="bottom font20 font-kia-re">4,850 rpm</p>
+                            <p class="bottom font15 font-kia-re">4,850 rpm</p>
                         </div>
                         <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">6.9 L</p>
-                            <p class="bottom font20 font-kia-re">100 km <br>(hỗn hợp )(*)</p>
+                            <p class="bottom font15 font-kia-re">100 km <br>(hỗn hợp )</p>
+                            <p class="bottom font15 font-kia-re">(Áp dụng cho phiên bản Premium )</p>
                         </div>
                     </div>
                 </div>
