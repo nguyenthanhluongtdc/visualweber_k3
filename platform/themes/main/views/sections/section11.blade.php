@@ -18,15 +18,15 @@
         @endif
         <div class="action-s11">
             <div class="action-item" >
-                <a href="{{ RvMedia::getImageUrl(get_field($page, 'hinh_anh_section_2')) }}" data-fancybox="images" data-caption="The New Kia K3">
+                <a href="{{ RvMedia::getImageUrl(get_field($page, 'hinh_anh_section_2')) }}" data-fancybox="images" data-caption="The New K3">
                     <img src="{{ Theme::asset()->url('images/section11/s11icon1.png') }}">
                     <p class="font20 font-kia-re">Hình ảnh</p>
                 </a>
                 @foreach (get_field($page, 'slider_section_7') as $item)
-                    <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}" data-fancybox="images" data-caption="The New Kia K3"></a>
+                    <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}" data-fancybox="images" data-caption="The New K3"></a>
                 @endforeach
                 @foreach (get_field($page, 'list_section8') as $key => $item)
-                <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" data-fancybox="images" data-caption="The New Kia K3"></a>
+                <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" data-fancybox="images" data-caption="The New K3"></a>
                 @endforeach
             </div>
             <div class="action-item" >
