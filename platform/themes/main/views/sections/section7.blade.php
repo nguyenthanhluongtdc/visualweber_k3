@@ -6,7 +6,7 @@
         </div>
         @if (has_field($page, 'slider_section_7'))
         {{-- Height trừ phần dic top --}}
-        <div class="section7-carousel owl-carousel" style="height: calc(100% - 260px);">
+        <div class="section7-carousel owl-carousel">
 
             @foreach (get_field($page, 'slider_section_7') as $item)
             <div class="item-slider">

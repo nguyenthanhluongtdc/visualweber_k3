@@ -70,7 +70,7 @@ var myFullpage = new fullpage('#fullpage', {
         // CSS lại element
         if($('.section7-wrap .top').length && $('.section7-wrap .section7-carousel').length){
             let hei = $('.section7-wrap .top').height();
-            $('.section7-wrap .section7-carousel')[0].style.height = `calc(100% - ${hei + 110}px)`;
+            // $('.section7-wrap .section7-carousel')[0].style.height = `calc(100% - ${hei + 110}px)`;
             if($('.section7-wrap .owl-item.center .content').length){
                 $('.section7-wrap .owl-item.center .content')[0].style.top = `calc(-${hei + 53}px)`;
             }
@@ -129,7 +129,7 @@ var myFullpage = new fullpage('#fullpage', {
         // CSS lại element
         if($('.section7-wrap .top').length && $('.section7-wrap .section7-carousel').length){
             let hei = $('.section7-wrap .top').height();
-            $('.section7-wrap .section7-carousel')[0].style.height = `calc(100% - ${hei + 110}px)`;
+            // $('.section7-wrap .section7-carousel')[0].style.height = `calc(100% - ${hei + 110}px)`;
             if($('.section7-wrap .owl-item.center .content').length){
                 $('.section7-wrap .owl-item.center .content')[0].style.top = `calc(-${hei + 53}px)`;
             }
