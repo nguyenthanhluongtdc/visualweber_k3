@@ -51,7 +51,7 @@
             }   
         }
         h2{
-            line-height: 80px;
+            // line-height: 80px;
             margin-bottom: 80px;
             text-align: start;
             width: 100%;
@@ -60,14 +60,14 @@
             }  
             @media(max-width: 1680px){
                 margin-bottom: 60px;  
-                line-height: 70px;
+                // line-height: 70px;
             }
             @media(max-width: 1366px){
                 margin-bottom: 20px;  
-                line-height: 50px;
+                // line-height: 50px;
             }
             @media(max-width: 480px){
-                line-height: 40px;
+                // line-height: 40px;
             }
             color: #fff;
         }
