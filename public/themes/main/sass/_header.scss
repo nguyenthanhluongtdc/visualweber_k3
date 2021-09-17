@@ -424,7 +424,7 @@
     outline: none;
     color: white;
     right: 30px; 
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(0, -100%);
     padding: 5px 10px;
     border-radius: 5px;
     
@@ -439,14 +439,14 @@
 #moveDown {
     position: fixed;
     z-index: 10000;
-    bottom: 15%;
+    top: 82%;
     background-color: #06141f;
     border: none;
     outline: none;
     color: white;
-    right: 30px;
+    right: 0;
     display: flex;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(0, -100%);
     align-items: center;
     border-radius: 5px;
     padding: 5px;
