@@ -199,7 +199,7 @@
                     <div class="img-bt">
                         <i class="fas fa-arrow-up"></i>
                     </div>
-                    <p class="font-buenos-bold show-p">Messenger</p>
+                    <p class="font-buenos-bold show-p">Về trang đầu</p>
                 </div>
             </a>
         </div>
