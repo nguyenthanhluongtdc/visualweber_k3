@@ -6,16 +6,16 @@
         padding-top: 30px;
     }
     h3{
-        margin-bottom: 40px;
+       margin: 5px 0 25px 0;
         text-align: center;
         @media only screen and (min-width: 1599px) and (max-width: 1601px) {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         @media(max-width: 1440px){
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         @media(max-width: 1366px){
-            margin-bottom: 20px;
+            margin-bottom: 15px;
            
         }
        
@@ -115,23 +115,23 @@
                     list-style: none;
                     margin: 0;
                     padding: 0;
-                    height: 180px;
+                    height: 160px;
                     line-height: 23px;
                     @media(max-width : 1680px){
-                        height: 160px;
+                        height: 150px;
                         line-height: 20px;
                     }
                   
                     @media(max-width : 1440px){
-                        height: 150px;
+                        height: 130px;
                         line-height: 20px;
                     }
                     @media(max-width : 1366px){
-                        height: 150px;
+                        height: 120px;
                     }
                     
                     @media(max-width : 1280px){
-                        height: 150px;
+                        height: 120px;
                     }
                     
                     @media(max-width : 1024px){
