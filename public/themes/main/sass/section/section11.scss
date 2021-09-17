@@ -7,6 +7,9 @@
     display: none!important;
     @media(max-width : 1024px){
     display: block!important;
+    a{
+        display: block;
+    }
     }
 }
 

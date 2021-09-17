@@ -26,8 +26,8 @@
                             </strong>
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
-                        <div class="content-bottom">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe1" class="none-mobiee">
+                        <div class="content-bottom none-mobiee">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe1" class="">
                                 BẮT ĐẦU NGAY
                             </a>
                             
@@ -71,8 +71,8 @@
                             </strong>
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
-                        <div class="content-bottom">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe3" class="none-mobiee">
+                        <div class="content-bottom none-mobiee">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe3" class="">
                                 BẮT ĐẦU NGAY
                             </a>
                             
@@ -116,8 +116,8 @@
                             </strong>
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
-                        <div class="content-bottom">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe2" class="none-mobiee">
+                        <div class="content-bottom none-mobiee">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe2" class="">
                                 BẮT ĐẦU NGAY
                             </a>
                             
