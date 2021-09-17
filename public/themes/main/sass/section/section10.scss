@@ -6,10 +6,16 @@ max-height: 100vh;
 max-width: 100vw;
 border: none;
 margin: 0;
+@media(max-width : 480px){
+    padding: 0;
+}
 img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    @media(max-width  :480px){
+        object-fit: cover;
+    }
 }
 }
 
