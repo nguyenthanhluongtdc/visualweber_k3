@@ -19,9 +19,15 @@
                             <li class="font20 font-kia-re">- Nhớ 2 vị trí ghế lái</li>
                             <li class="font20 font-kia-re">- 6 túi khí an toàn, cảm biến hỗ trợ đỗ xe trước và sau</li>
                         </ul>
+                        <div class="row-price">
+                            <strong class="text-uppercase font-kia-bold">
+                                GIÁ NIÊM YẾT: 
+                            </strong>
+                            <b class="price">xxx.xxx.xxx VNĐ</b>
+                        </div>
                         <div class="content-bottom">
-                            <div class="register font20 font-kia-re">
-                                ĐĂNG KÝ THÔNG TIN
+                            <div class="register font-kia-bold font20 font-kia-re">
+                                BẮT ĐẦU NGAY
                                </div>
                         </div>
                     </div>
@@ -43,9 +49,15 @@
                             <li class="font20 font-kia-re">- Ghế lái chỉnh điện, cửa sổ trời</li>
                             <li class="font20 font-kia-re">- Cảm biến hỗ trợ đỗ xe sau</li>
                         </ul>
+                        <div class="row-price">
+                            <strong class="text-uppercase font-kia-bold">
+                                GIÁ NIÊM YẾT: 
+                            </strong>
+                            <b class="price">xxx.xxx.xxx VNĐ</b>
+                        </div>
                         <div class="content-bottom">
-                            <div class="register font20 font-kia-re">
-                                ĐĂNG KÝ THÔNG TIN
+                            <div class="register font-kia-bold font20 font-kia-re">
+                                BẮT ĐẦU NGAY
                                </div>
                         </div>
                     </div>
@@ -67,9 +79,15 @@
                             <li class="font20 font-kia-re">- Hệ thống cân bằng điện tử ESC + HAC</li>
                             <li class="font20 font-kia-re">- Camera lùi</li>
                         </ul>
+                        <div class="row-price">
+                            <strong class="text-uppercase font-kia-bold">
+                                GIÁ NIÊM YẾT: 
+                            </strong>
+                            <b class="price">xxx.xxx.xxx VNĐ</b>
+                        </div>
                         <div class="content-bottom">
-                           <div class="register font20 font-kia-re">
-                            ĐĂNG KÝ THÔNG TIN
+                           <div class="register font-kia-bold font20 font-kia-re">
+                            BẮT ĐẦU NGAY
                            </div>
                         </div>
                     </div>
