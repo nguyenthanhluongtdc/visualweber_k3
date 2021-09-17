@@ -14,7 +14,7 @@
         height: 100%;
         .list-menu{
             display: flex;
-            align-items: baseline;
+            align-items: center;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -23,9 +23,15 @@
                     color: #08141e;
                     text-decoration: none;
                     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .img{
+                        height: 42px;
+                        margin-bottom: 3px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
                 }
                 margin-left: 90px;
                 @media(max-width : 1919px){
@@ -120,7 +126,7 @@
     position: fixed;
     z-index: 10;
     right: 20px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;

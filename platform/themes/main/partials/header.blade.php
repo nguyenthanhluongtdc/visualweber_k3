@@ -55,25 +55,33 @@
                
                 <li class="menu_item" data-menuanchor="ngoai-that">
                     <a href="{{ route('public.index') }}#ngoai-that" class="menu_link">
-                        <img src="{{ Theme::asset()->url('images/section1/icontop1.png') }}" alt="" style="width : 100px">
+                        <div class="img">
+                            <img src="{{ Theme::asset()->url('images/section1/icontop1.png') }}" alt="" style="width : 100px">
+                        </div>
                         <p>Nhận diện mới</p>
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="noi-that">
                     <a href="{{ route('public.index') }}#noi-that" class="menu_link">
-                        <img src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt="" style="width : 45px">
+                        <div class="img">
+                            <img src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt="" style="width : 43px">
+                        </div>
                         <p>Kết nối công nghệ</p>
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="van-hanh">
                     <a href="{{ route('public.index') }}#van-hanh" class="menu_link">
-                        <img src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt="" style="width : 38px">
+                        <div class="img">
+                            <img src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt="" style="width : 36px">
+                        </div>
                         <p>Chế độ lái thông minh</p>
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="an-toan">
                     <a href="{{ route('public.index') }}#an-toan" class="menu_link">
-                        <img src="{{ Theme::asset()->url('images/section1/icontop4.png') }}" alt="" style="width : 70px">
+                        <div class="img">
+                            <img src="{{ Theme::asset()->url('images/section1/icontop4.png') }}" alt="" style="width : 62px">
+                        </div>
                         <p>An toàn tối ưu</p>
                     </a>
                 </li>

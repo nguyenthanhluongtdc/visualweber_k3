@@ -21,7 +21,7 @@
         height: 100%;
         .number-wrap{
             position: absolute;
-            bottom: 50px;
+            bottom: 40px;
             left: 6%;
             display: flex;
             align-items: baseline;
@@ -33,18 +33,39 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                
+            }
+            .access1{
+                img{
+                    @media(max-width : 1440px){
+                        width: 60px;
+                     }
+                }
+            }
+            .access2{
+               img{
+                @media(max-width : 1440px){
+                    width: 33px;
+                 }
+               }
             }
             p.number{
                 font-size: 20px;
                 margin: 5px 0;
+                @media(max-width : 1440px){
+                    font-size: 18px;
+                }
             }
             p.desc{
                 font-size: 13px;
+                @media(max-width : 1440px){
+                    font-size: 12px;
+                }
             }
         }
         .wrap-kp{
             position: absolute;
-            bottom: 50px;
+            bottom: 40px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
