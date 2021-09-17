@@ -423,7 +423,7 @@
     position: fixed;
     z-index: 10000;
     bottom: 15%;
-    background-color: #06141f;
+    background-color: transparent;
     border: none;
     outline: none;
     color: white;
@@ -436,7 +436,7 @@
         font-size: 20px;
         display: inline-block;
         animation: top 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-        margin-right: 5px;
+        margin-right: 10px;
     }
 }
 
@@ -444,19 +444,20 @@
     position: fixed;
     z-index: 10000;
     top: 82%;
-    background-color: #06141f;
+    background-color: transparent;
     border: none;
     outline: none;
-    color: white;
     right: 0;
     display: flex;
     transform: rotate(90deg) translate(0, -100%);
     align-items: center;
     border-radius: 5px;
     padding: 5px;
+    font-weight: bold;
 
     .text {
-        margin-right: 10px;
+        margin-right: 7px;
+        font-size: 14px;
     }
 
     .arrow {
@@ -467,16 +468,16 @@
     div.mouse-container{
         position:relative;
         display:block;
-        height: 40px;
-        margin-right: 10px;
+        height: 35px;
+        margin-right: 7px;
     }
 
     div.mouse{
             position:relative;
             margin:0 auto;
             display:block;
-            width:80px;
-            height:40px;
+            width:70px;
+            height:35px;
             border: solid 2px #fff;
             border-radius: 25px;
            

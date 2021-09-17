@@ -1,3 +1,6 @@
+let indexX = -1;
+let colors = ['#fff', '#fffe', '#fff', '#fff', '#fff', '#fff', '#fff' , '#06141f' , '#fff', '#06141f', '#fff' , '#fff'];
+
 var myFullpage = new fullpage('#fullpage', {
     //Navigation
 
@@ -52,14 +55,21 @@ var myFullpage = new fullpage('#fullpage', {
     verticalCentered: true,
     afterLoad: function(origin, anchorLink, index) {
         // $.fn.fullpage.moveSlideRight();
-        console.log(anchorLink)
+
+        indexX = anchorLink.index;
+        color = colors[indexX];
+
+        $moveDown = $('#moveDown');
+
+        $moveDown.css('color', color);
+        $moveDown.find('.mouse').css('border-color', color).find('.scroll-down').css('background', color);
 
         if(anchorLink.isLast) {
-            $('#moveDown').hide();
+            $moveDown.hide();
             $('#moveTop').show();
         }else {
             $('#moveTop').hide();
-            $('#moveDown').show();
+            $moveDown.show();
         }
 
         let count = window.location.pathname.toString().split('/').length;
