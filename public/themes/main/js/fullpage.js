@@ -307,3 +307,20 @@ $(document).on('click', '#moveTop', function(){
     fullpage_api.moveTo(1);
     console.log('sdf')
 });
+
+if ($(window).width() < 1025) {
+    let btn = $('#moveTop');
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn.show();
+      } else {
+        btn.hide()
+      }
+    });
+    
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
+}
