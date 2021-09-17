@@ -69,7 +69,12 @@ var myFullpage = new fullpage('#fullpage', {
             $('#moveTop').show();
         }else {
             $('#moveTop').hide();
-            $moveDown.show();
+            
+            if(indexX!==0) {
+                $moveDown.show();
+            }else {
+                $moveDown.hide();
+            }
         }
 
         let count = window.location.pathname.toString().split('/').length;
