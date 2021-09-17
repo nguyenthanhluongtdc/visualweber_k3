@@ -180,11 +180,14 @@
                             <p class="top font40 font-kia-bold">155 Nm</p>
                             <p class="bottom font15 font-kia-re">4,850 rpm</p>
                         </div>
-                        <div class="desc-car-item">
+
+
+                        {{-- tạm ẩn  --}}
+                        {{-- <div class="desc-car-item">
                             <p class="top font40 font-kia-bold">6.9 L</p>
                             <p class="bottom font15 font-kia-re">100 km <br>(hỗn hợp)</p>
                             <p class="bottom font15 font-kia-re">(Áp dụng cho <br>phiên bản premium)</p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
