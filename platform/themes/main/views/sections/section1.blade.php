@@ -66,7 +66,7 @@
         </div>
         <div class="bottom" style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="300">
-                <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
+                <div class="img img-con"><img src="{{ Theme::asset()->url('images/section1/icontop1.png') }}" alt=""></div>
                 <p class="font-kia-light first">nhận diện mới</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
