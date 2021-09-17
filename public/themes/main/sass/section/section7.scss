@@ -5,19 +5,31 @@
             width: 100%;
         }
     }
+    .fp-tableCell {
+        vertical-align: bottom;
+    }
     .section7-wrap{
-        padding-top: 130px;
-        @media(max-width : 1679px){
-            padding-top: 110px;
+        height: calc(100% - 85px - 10vh);
+
+        @include maxWidth(1440) {
+            height: calc(100% - 85px - 8vh);
         }
-        @media(max-width : 1400px){
-            padding-top: 100px;
+
+        @include maxWidth(1200) {
+            height: calc(100% - 85px - 5vh);
         }
-        overflow: hidden;
-        @media(max-width :1024px){
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
+        // padding-top: 130px;
+        // @media(max-width : 1679px){
+        //     padding-top: 110px;
+        // }
+        // @media(max-width : 1400px){
+        //     padding-top: 100px;
+        // }
+        // overflow: hidden;
+        // @media(max-width :1024px){
+        //     padding-top: 30px;
+        //     padding-bottom: 30px;
+        // }
         .top{
             // margin-left: 120px;
             // margin-bottom: 50px;
@@ -38,7 +50,7 @@
                     font-size: 35px;
                     line-height: 40px;
                     margin-top: 0;
-                    
+
                 }
                 @media(max-width : 480px){
                     font-size: 35px;
@@ -107,7 +119,7 @@
     //     margin-top: 65px;
     // }
     .owl-carousel button.owl-dot{
-        
+
         margin: 0 30px;
         @media(max-width : 1440px){
             margin: 0 20px;
@@ -126,6 +138,10 @@
         align-items: center;
         justify-content: center;
         margin-top: 30px;
+        @include maxWidth(991) {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
         // padding-bottom: 20px;
         @media(max-width : 1366px){
             // margin-top: 10px;
@@ -204,9 +220,9 @@
         }
     }
     .section7-carousel{
-        height: 50vh;
+        height: 45vh;
         @media(max-width : 1279px){
-            height: 40vh;
+            height: 45vh;
 
         }
         @media(max-width : 1024px){
@@ -252,7 +268,7 @@
             // @media(max-width: 1919px){
             //     width: 757px;
             //  }
-            
+
 
             //  @media(max-width: 1679px){
             //     width: 650px;
@@ -260,7 +276,7 @@
             //  @media only screen and (min-width: 1599px) and (max-width: 1601px) {
             //     width: 600px;
             // }
-            
+
             //  @media(max-width: 1366px){
             //     width: 477px;
             //  }
@@ -324,5 +340,5 @@
     .owl-carousel.owl-drag .owl-item .border{
         opacity: 0;
     }
-    
+
 }
