@@ -82,7 +82,7 @@ var myFullpage = new fullpage('#fullpage', {
                 if(document.body.clientWidth > 1366){
                     $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 35}px)`;
                 }else{
-                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 20}px)`;
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 30}px)`;
                 }
             }
         }
@@ -141,7 +141,7 @@ var myFullpage = new fullpage('#fullpage', {
                 if(width > 1366){
                     $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 35}px)`;
                 }else{
-                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 20}px)`;
+                    $('.section5-wrap .tab-content')[0].style.top = `calc(-${hei + 30}px)`;
                 }
             }
         }
