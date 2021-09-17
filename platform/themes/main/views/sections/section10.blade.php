@@ -1,4 +1,4 @@
-<div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="san-pham">
+<div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="dat-xe-truc-tuyen">
     <div class="container-remake section10-wrap" >
         <h2 class="text-uppercase font-kia-bold font60 text-center mb-0">ĐẶT XE TRỰC TUYẾN</h2>
         <h3 class="font40 font-kia-bold" >Các dòng sản phẩm</h3>
