@@ -111,7 +111,7 @@
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    bottom: 32%;
+                    bottom: 24%;
                     left: 0;
                     right: 0;
                     .top{
@@ -143,7 +143,6 @@
                    
                 }
                 .center{
-                    background: $primary-color;
                     color: #fff;
                     // display: none;
                     text-align: center;
@@ -151,9 +150,11 @@
                     flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
+                    position: absolute;
+                    top: 15%;
                     padding: 0;
                     img{
-                        width: 90%;
+                        width: 50%;
                     }
                     h3{
                         width: 100%;
