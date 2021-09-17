@@ -1,8 +1,8 @@
 <div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="san-pham">
-    <div class="container-remake section10-wrap">
-        <h3 class="font60 font-kia-bold" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">Các dòng sản phẩm</h3>
+    <div class="container-remake section10-wrap" >
+        <h3 class="font60 font-kia-bold" >Các dòng sản phẩm</h3>
         <div class="list-section10">
-            <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="100">
+            <div class="item">
                 <div class="top">
                     <p class="font20 font-kia-re">The New K3</p>
                     <h5 class="font30 font-kia-bold">1.6 Premium</h5>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
+            <div class="item">
                 <div class="top">
                     <p class="font20 font-kia-re">The New K3</p>
                     <h5 class="font30 font-kia-bold">1.6 Luxury</h5>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item" data-aos="flip-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+            <div class="item" >
                 <div class="top">
                     <p class="font20 font-kia-re">The New K3</p>
                     <h5 class="font30 font-kia-bold">1.6 MT</h5>

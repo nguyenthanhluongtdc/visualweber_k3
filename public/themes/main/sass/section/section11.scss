@@ -1,5 +1,7 @@
 .section11{
     position: relative;
+    background: $primary-color;
+    padding: 100px 0;
     @media(max-width : 1024px){
         margin-top: 30px;
         padding-bottom: 30px;
