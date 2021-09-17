@@ -192,7 +192,7 @@
                 </div>
             </a>
         </div>
-        <div class="item-bt back-top">
+        <div class="item-bt moveTop">
             <a class="" href=" #">
                 <div class="wrap-button">
                     
@@ -332,11 +332,7 @@
         </span>
     </button>
 
-    <button id="moveTop">
-        <span class="arrow">
-            <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
-        </span>
-    </button>
+  
 
     <div class="camon">
         <div class="popup-content">
