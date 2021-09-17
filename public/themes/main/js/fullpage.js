@@ -56,7 +56,7 @@ var myFullpage = new fullpage('#fullpage', {
     afterLoad: function(origin, anchorLink, index) {
         // $.fn.fullpage.moveSlideRight();
 
-        // indexX = anchorLink.index;
+        indexX = anchorLink.index;
         // color = colors[indexX];
 
         $moveDown = $('#moveDown');
