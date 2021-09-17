@@ -52,6 +52,16 @@ var myFullpage = new fullpage('#fullpage', {
     verticalCentered: true,
     afterLoad: function(origin, anchorLink, index) {
         // $.fn.fullpage.moveSlideRight();
+        console.log(anchorLink)
+
+        if(anchorLink.isLast) {
+            $('#moveDown').hide();
+            $('#moveTop').show();
+        }else {
+            $('#moveTop').hide();
+            $('#moveDown').show();
+        }
+
         let count = window.location.pathname.toString().split('/').length;
         let url = window.location.pathname.substr(0, window.location.pathname.toString().lastIndexOf('/'));
         let paramQuery = window.location.search;
@@ -272,3 +282,11 @@ $('.button-video').click(function(){
 
 $(".js-example-disabled-results").select2();
   
+$(document).on('click', '#moveDown', function(){
+    fullpage_api.moveSectionDown();
+});
+
+$(document).on('click', '#moveTop', function(){
+    fullpage_api.moveTo(1);
+    console.log('sdf')
+});
