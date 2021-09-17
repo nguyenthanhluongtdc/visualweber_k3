@@ -321,9 +321,12 @@
           .ring360 {
             text-align: center;
             margin-top: 20px;
-            // @media(max-width : 1400px){
-            //   margin-top: 0;
-            // }
+            @media(max-width : 1400px){
+              margin-top: 60px;
+              img{
+                width: 60px;
+              }
+            }
           }
           .tab-color-car {
             display: flex;

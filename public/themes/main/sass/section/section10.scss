@@ -30,7 +30,7 @@
         flex-wrap: wrap;
     }
     .item{
-        filter: drop-shadow(1px 2px 4px #ccc);
+        // filter: drop-shadow(1px 2px 4px #ccc);
         width: 25%;
         margin: 0 50px;
         h5{
@@ -156,7 +156,7 @@
                         margin-top: 20px;
                         padding-top: 20px;
                     }
-                    border-top: 1px solid #06141f;
+                    border-top: 1px solid #4c4f52;
                     display: flex;
                     justify-content: space-between;
                     .bt-left{

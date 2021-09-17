@@ -3,13 +3,12 @@
      <!-- Messenger Plugin chat Code -->
      {{-- @dd($page); --}}
     <div class="s1-pc">
-        <div class="statistical">
+        {{-- <div class="statistical">
             <div class="access" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
                 <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
                     {!! get_field($page, 'number_user') !!}
                 @endif</p>
-                {{-- <p class="number font-buenos-bold">16 450</p> --}}
                 <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
             </div>
             <div class="client" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
@@ -19,27 +18,47 @@
                 @endif</p>
                 <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng <br> đặt mua xe</p>
             </div>
-        </div>
+        </div> --}}
     
     
         <div class="section1-footer container-remake">
-            <div class="left" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <div class="left">
                 <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="logo">
                 {{-- <h3 class="desc font-kia-light">PHONG CÁCH SỐNG THÔNG MINH</h3> --}}
             </div>
             <div class="right">
-                <div class="item"  >
-                    <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
-                    <p class="font-kia-light">nhận diện mới</p>
+                <div class="right-item-left">
+                    <div class="item"  >
+                        <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconcar.png') }}" alt=""></div>
+                        <p class="font-kia-light">nhận diện mới</p>
+                    </div>
+                    <div class="item" >
+                        <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
+                        <p class="font-kia-light">kết nối công nghệ</p>
+                    </div>
+                    <div class="item" >
+        
+                        <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
+                        <p class="font-kia-light">chế độ lái thông minh</p>
+                    </div>
                 </div>
-                <div class="item" >
-                    <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
-                    <p class="font-kia-light">kết nối <br> công nghệ</p>
-                </div>
-                <div class="item" >
-    
-                    <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
-                    <p class="font-kia-light">chế độ lái <br> thông minh</p>
+
+                <div class="statistical2">
+                    <div class="access access1" >
+                        <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
+                        <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
+                            {!! get_field($page, 'number_user') !!}
+                        @endif</p>
+                        {{-- <p class="number font-buenos-bold">16 450</p> --}}
+                        <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
+                    </div>
+                    <div class="access access2">
+                        <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
+                        <p class="number font-kia-bold">@if (has_field($page, 'number_buy'))
+                            {!! get_field($page, 'number_buy') !!}
+                        @endif</p>
+                        <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng đặt mua xe</p>
+                    </div>
                 </div>
             </div>
         </div>
