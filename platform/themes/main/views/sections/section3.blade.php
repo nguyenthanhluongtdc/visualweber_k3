@@ -84,7 +84,7 @@
                             {{-- White --}}
                             <div id="tabcar01" class="container tab-pane item-car-color "><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/white/"
-                                    data-filename="SWP_{index}.webp" data-amount="31" data-spin-reverse="true"></div>
+                                    data-filename="SWP_{index}.png" data-amount="31" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
