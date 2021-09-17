@@ -7,7 +7,7 @@ var myFullpage = new fullpage('#fullpage', {
     menu: '#menu',
     lockAnchors: true,
     licenseKey: "F4D71089-214F4315-958D1E92-109DD6D4",
-    anchors: ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'footer'],
+    anchors: ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'dat-xe-truc-tuyen', 'lien-he'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -285,10 +285,10 @@ $('.close-dangky').click(function(){
     $('.dangky').hide(300);
     $('.fixed-bgg').hide();
 });
-$('.register').click(function(){
-    $('.dangky').show(300);
-    $('.fixed-bgg').show();
-});
+// $('.register').click(function(){
+//     $('.dangky').show(300);
+//     $('.fixed-bgg').show();
+// });
 $('.fixed-bgg').click(function(){
     $('.dangky').hide(300);
     $('.fixed-bgg').hide();

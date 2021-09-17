@@ -1,10 +1,10 @@
-<div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="footer">
+<div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="lien-he">
     
-    <div class="section section-12-top p-auto-height-responsive fp-auto-height fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="lien-he"
+    <div class="section-12-top"
     style="background-image: url('{{Theme::asset()->url('images/bglienhe.jpg') }}')"
     >
         
-        <div class="section11-wrap container-remake" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
+        <div class="section11-wrap container-remake" >
             {{-- <h3 class="font60 font-kia-bold" >ĐẶT XE TRỰC TUYẾN</h3>
             <div class="start">
                 <a href="https://kiamotorsvietnam.com.vn/du-toan-chi-phi/chon-xe-va-phien-ban?car_model=25&color_id=14" target="_blank">
@@ -20,7 +20,7 @@
             </div>
             @endif --}}
             <div class="action-s11">
-                <div class="action-item" >
+                <div class="action-item" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <a href="{{ RvMedia::getImageUrl(get_field($page, 'hinh_anh_section_2')) }}" data-fancybox="images" data-caption="The New K3">
                         <img src="{{ Theme::asset()->url('images/section11/s11icon1.png') }}">
                         <p class="font20 font-kia-re">Hình ảnh</p>
@@ -32,13 +32,13 @@
                     <a  href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" data-fancybox="images" data-caption="The New K3"></a>
                     @endforeach
                 </div>
-                <div class="action-item" >
+                <div class="action-item"  data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" data-aos-delay="600" >
                     <a href="https://kiamotorsvietnam.com.vn/lien-he" target="_blank">
                         <img src="{{ Theme::asset()->url('images/section11/s11icon2.png') }}">
                         <p class="font20 font-kia-re">Liên hệ (Hotline)</p>
                     </a>
                 </div>
-                <div class="action-item" >
+                <div class="action-item"  data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine" data-aos-delay="900">
                     <a href="https://kiamotorsvietnam.com.vn/dai-ly" target="_blank">
                         <img src="{{ Theme::asset()->url('images/section11/s11icon3.png') }}">
                         <p class="font20 font-kia-re">Hệ thống Showroom</p>

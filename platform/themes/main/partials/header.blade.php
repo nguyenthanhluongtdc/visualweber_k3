@@ -85,8 +85,8 @@
                         <p>An toàn tối ưu</p>
                     </a>
                 </li>
-                <li class="chose-car" data-menuanchor="chon-xe-online">
-                    <a href="{{ route('public.index') }}#chon-xe-online">
+                <li class="chose-car" data-menuanchor="dat-xe-truc-tuyen">
+                    <a href="{{ route('public.index') }}#dat-xe-truc-tuyen">
                         ĐẶT XE TRỰC TUYẾN
                     </a>
                 </li>
@@ -133,8 +133,8 @@
                             An toàn
                         </a>
                     </li>
-                    <li class="chose-car close-menu2" data-menuanchor="chon-xe-online">
-                        <a href="{{ route('public.index') }}#chon-xe-online">
+                    <li class="chose-car close-menu2" data-menuanchor="dat-xe-truc-tuyen">
+                        <a href="{{ route('public.index') }}#dat-xe-truc-tuyen">
                             ĐẶT XE TRỰC TUYẾN
                         </a>
                     </li>

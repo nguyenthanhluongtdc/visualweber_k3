@@ -108,7 +108,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 333333333;
+    z-index: 11;
     background: #fff;
     padding: 20px 0;
     .header-mobie-wrap{
@@ -264,6 +264,7 @@
     bottom: 0;
     background: rgba( 0,0,0, 0.4);
     z-index: 88888888888888;
+    display: none;
 }
 .dangky{
     position: fixed;
@@ -273,6 +274,7 @@
     right: 0;
     z-index: 99999999999999999999999999999999999999999999999999999999999;
     background: transparent;
+    display: none;
     .select2-container--default .select2-selection--single{
         padding-top: 20px;
         padding-bottom: 5px;

@@ -81,7 +81,7 @@
                 </div> --}}
             </div>
             <div class="right">
-                <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+                <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     @if (has_field($page, 'hinh_an_toan_so_2'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal2" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_2')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_2') !!}">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">
+                <div class="item-right" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="400">
                     @if (has_field($page, 'hinh_an_toan_so_3'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal3" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_3')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_3') !!}">
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-right item-right2 item-cova">
+                <div class="item-right item-right2 item-cova" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
                     @if (has_field($page, 'hinh_an_toan_so_4'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal4" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_4')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_4') !!}">
