@@ -304,6 +304,27 @@
         </div>
 
     </div>
+    <button id="moveDown">
+        <span class="text">DOWN</span> 
+        <div class='mouse-container'>
+            <div class='mouse'>
+                <span class='scroll-down'></span>
+            </div>
+        </div>
+        <span class="arrow">
+            >>
+        </span>
+    </button>
+
+    <button id="moveTop">
+        <span class="arrow">
+            <<
+        </span>
+        <span class="text">
+            TOP
+        </span>
+    </button>
+
     <div class="camon">
         <div class="popup-content">
             <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
