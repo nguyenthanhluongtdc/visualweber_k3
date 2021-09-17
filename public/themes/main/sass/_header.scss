@@ -237,6 +237,7 @@
     bottom: 0;
     background: rgba( 0,0,0, 0.4);
     z-index: 88888888888888;
+    display: none;
 }
 .dangky{
     position: fixed;
@@ -246,6 +247,7 @@
     right: 0;
     z-index: 99999999999999999999999999999999999999999999999999999999999;
     background: transparent;
+    display: none;
     .select2-container--default .select2-selection--single{
         padding-top: 20px;
         padding-bottom: 5px;

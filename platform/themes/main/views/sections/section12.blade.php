@@ -1,4 +1,4 @@
-<div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="footer">
+<div class="section p-auto-height-responsive fp-auto-height section12 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="lien-he">
     
     <div class="section section-12-top p-auto-height-responsive fp-auto-height fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="lien-he"
     style="background-image: url('{{Theme::asset()->url('images/bglienhe.jpg') }}')"
