@@ -111,13 +111,24 @@
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    bottom: 24%;
+                    bottom: 19%;
                     left: 0;
                     right: 0;
+                    .access{
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    .client{
+                        img{
+                            width: 35px;
+                        }
+                    }
                     .top{
                         display: flex;
                         justify-content: center;
                         margin-bottom: 15px;
+                        align-items: baseline;
                         color: #fff;
                         text-align: center;
                         margin-left: -10%;
