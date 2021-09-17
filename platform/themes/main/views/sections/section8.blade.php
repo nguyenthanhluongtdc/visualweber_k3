@@ -158,19 +158,21 @@
                         <div id="section8{{ $key }}"
                             class="item-right tab-pane {{ $loop->first ? 'active' : '' }}"><br>
                             @if (has_sub_field($item, 'hinh_van_hanh'))
-                                <a href="#">
-                                    <div class="img">
-
+                              
+                                    <div class="{{ $loop->first ? 'img' : 'novideo'}} ">
+                                        <a href="#" class="videoco">
                                         <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
                                             alt="{{ get_sub_field($item, 'name_section8') }}">
-
+                                       
                                         <div class="button-video2">
 
                                             <img src="{{ Theme::asset()->url('images/button.png') }}" alt="">
                                         </div>
-
+                                        </a>
+                                        <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
+                                            alt="{{ get_sub_field($item, 'name_section8') }}" class="kovideo">
                                     </div>
-                                </a>
+                              
                             @endif
                             @if (has_sub_field($item, 'noi_dung_van_hanh_item'))
                                 <p class="font20 font-kia-light">{{ get_sub_field($item, 'noi_dung_van_hanh_item') }}
