@@ -1,4 +1,6 @@
-<div class="section p-auto-height-responsive fp-auto-height section11 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="lien-he">
+<div class="section p-auto-height-responsive fp-auto-height section11 fp-auto-height-responsive fp-section fp-table fp-completely" data-anchor="lien-he"
+style="background-image: url('{{Theme::asset()->url('images/bglienhe.jpg') }}')"
+>
     
     <div class="section11-wrap container-remake" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" data-aos-easing="ease-in-sine">
         {{-- <h3 class="font60 font-kia-bold" >ĐẶT XE TRỰC TUYẾN</h3>
