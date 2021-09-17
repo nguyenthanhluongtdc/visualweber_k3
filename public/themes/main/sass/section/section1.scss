@@ -3,7 +3,7 @@
       bottom: 0;
     }
     50% {
-      bottom: 40px;
+      bottom: 30px;
     }
   }
 
@@ -80,7 +80,7 @@
             display: flex;
             align-items: center;
             .icon-kp{
-                animation: MoveUpDown 1.2s linear infinite;
+                animation: MoveUpDown 1.5s linear infinite;
                 position: absolute;
                 left: -30px;
                 bottom: 0;
