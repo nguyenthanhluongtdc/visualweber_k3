@@ -88,7 +88,7 @@
                     width: 3px;
                     bottom: -20px;
                     position: absolute;
-                    left: 31px;
+                    left: calc(1rem + 16px);
                     top: -20px;
                     @media(max-width :1024px){
                         display: none;
@@ -119,6 +119,7 @@
                     }
                     a.active{
                         color: black;
+                        font-weight: bold;
                     }
                 }
                 .item-tab-wrap{
