@@ -1,10 +1,32 @@
 <div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
-    style="background-image: url('{{Theme::asset()->url('images/section1/bgnew.jpg') }}')">
+    style="background-image: url('{{Theme::asset()->url('images/section1/bgnew2.jpg') }}')">
    
     <div class="s1-pc">
        
-    
-    
+        <div class="number-wrap">
+            <div class="access access1" >
+                <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
+                <p class="number font-buenos-bold">@if (has_field($page, 'number_user'))
+                    {!! get_field($page, 'number_user') !!}
+                @endif</p>
+                <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
+            </div>
+            <div class="access access2">
+                <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
+                <p class="number font-kia-bold">@if (has_field($page, 'number_buy'))
+                    {!! get_field($page, 'number_buy') !!}
+                @endif</p>
+                <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng<br>đặt mua xe</p>
+            </div>
+        </div>
+        <div class="wrap-kp">
+            <div class="icon-kp">
+                <img src="{{ Theme::asset()->url('images/section1/khampha.png') }}" alt="">
+            </div>
+            <div class="chu">
+                <img src="{{ Theme::asset()->url('images/section1/chu.png') }}" alt="">
+            </div>
+        </div>
        
     </div>
 
