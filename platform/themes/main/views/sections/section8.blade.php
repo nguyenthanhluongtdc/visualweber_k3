@@ -103,68 +103,85 @@
    
 </div> --}}
 <div class="section section8 fp-auto-height-responsive fp-section fp-completely" data-anchor="van-hanh">
-@if (has_field($page, 'list_section8'))
+    @if (has_field($page, 'list_section8'))
 
-    <div class="section8-wrap container-remake">
-        <div class="left-s8">
-            <div class="top" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
-                <p class="font-kia-bold font30">Vận hành</p>
-                <h3 class="font80 font-kia-bold">Trải nghiệm hứng khởi <br> trọn hành trình</h3>
-            </div>
-            <div class="bottom">
-                <ul class="nav nav-tabs tab-menu-s8" role="tablist">
-                    <div class="border-dotter" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
+        <div class="section8-wrap container-remake">
+            <div class="left-s8">
+                <div class="top" data-aos="fade-down" data-aos-offset="300" data-aos-duration="700"
+                    data-aos-easing="ease-in-sine" >
+                    <p class="font-kia-bold font30">Vận hành</p>
+                    <h3 class="font80 font-kia-bold">Trải nghiệm hứng khởi <br> trọn hành trình</h3>
+                </div>
+                <div class="bottom">
+                    <ul class="nav nav-tabs tab-menu-s8" role="tablist">
+                        <div class="border-dotter"
+                            style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
 
-                    </div>
-                    <div class="border-dotter-mb" style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
-                    </div>
-
-                @foreach (get_field($page, 'list_section8') as $key => $item)
-                <li class="nav-item" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
-                    <a class="nav-link {{ $loop->first ? 'active' : '' }}" data-toggle="tab" href="#section8{{$key}}">
-                        <div class="item-tab-wrap">
-                            <div class="left">
-                                <img src="{{ Theme::asset()->url('images/section3/icontab1.png') }}" alt=""
-                                    class="icontab">
-                                <img src="{{ Theme::asset()->url('images/section3/icontab2.png') }}" alt=""
-                                    class="icontab-active">
-                            </div>
-                            <div class="right-content">
-                                @if (has_sub_field($item, 'name_section8'))
-                                <p class="top font20 font-kia-re">{{ get_sub_field($item, 'name_section8')}}</p>
-                                @endif
-                            </div>
+                        </div>
+                        <div class="border-dotter-mb"
+                            style="background-image: url('{{ Theme::asset()->url('images/section3/borderdt.png') }}')">
                         </div>
 
-                    </a>
-                </li>
+                        @foreach (get_field($page, 'list_section8') as $key => $item)
+                            <li class="nav-item" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-duration="700" data-aos-easing="ease-in-sine">
+                                <a class="nav-link {{ $loop->first ? 'active' : '' }}" data-toggle="tab"
+                                    href="#section8{{ $key }}">
+                                    <div class="item-tab-wrap">
+                                        <div class="left">
+                                            <img src="{{ Theme::asset()->url('images/section3/icontab1.png') }}"
+                                                alt="" class="icontab">
+                                            <img src="{{ Theme::asset()->url('images/section3/icontab2.png') }}"
+                                                alt="" class="icontab-active">
+                                        </div>
+                                        <div class="right-content">
+                                            @if (has_sub_field($item, 'name_section8'))
+                                                <p class="top font20 font-kia-re">
+                                                    {{ get_sub_field($item, 'name_section8') }}</p>
+                                            @endif
+                                        </div>
+                                    </div>
 
-                @endforeach
-                
-            </ul>
+                                </a>
+                            </li>
+
+                        @endforeach
+
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="tab-content">
+
+                    @foreach (get_field($page, 'list_section8') as $key => $item)
+
+                        <div id="section8{{ $key }}"
+                            class="item-right tab-pane {{ $loop->first ? 'active' : '' }}"><br>
+                            @if (has_sub_field($item, 'hinh_van_hanh'))
+                                <a href="#">
+                                    <div class="img">
+
+                                        <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
+                                            alt="{{ get_sub_field($item, 'name_section8') }}">
+
+                                        <div class="button-video2">
+
+                                            <img src="{{ Theme::asset()->url('images/button.png') }}" alt="">
+                                        </div>
+
+                                    </div>
+                                </a>
+                            @endif
+                            @if (has_sub_field($item, 'noi_dung_van_hanh_item'))
+                                <p class="font20 font-kia-light">{{ get_sub_field($item, 'noi_dung_van_hanh_item') }}
+                                </p>
+                            @endif
+                        </div>
+
+                    @endforeach
+
+                </div>
             </div>
         </div>
-        <div class="right">
-            <div class="tab-content">
-
-                @foreach (get_field($page, 'list_section8') as $key => $item)
-
-                <div id="section8{{$key}}" class="item-right tab-pane {{ $loop->first ? 'active' : '' }}"><br>
-                    @if (has_sub_field($item, 'hinh_van_hanh'))
-                   <div class="img">
-                    <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
-                    alt="{{ get_sub_field($item, 'name_section8')}}">
-                   </div>
-                    @endif
-                    @if (has_sub_field($item, 'noi_dung_van_hanh_item'))
-                    <p class="font20 font-kia-light">{{ get_sub_field($item, 'noi_dung_van_hanh_item')}}</p>
-                    @endif
-                </div>
-
-                @endforeach
-               
-              </div>
-        </div>
-    </div>
-@endif
+    @endif
 </div>
