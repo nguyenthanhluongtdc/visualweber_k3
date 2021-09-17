@@ -153,7 +153,7 @@
         data-aos-easing="ease-in-sine">
 
         <div class="item-bt">
-            <a class="" href="{{ Theme::asset()->url('images/section11/brochure.jpg') }}" download" target="_blank">
+            <a class="" href="{{ Theme::asset()->url('/brochures/E-BROCHURE-K3.jpg') }}" download" target="_blank">
                 <div class="wrap-button">
                     <p class="font-kia-bold show-p">E-brochure</p>
                     <div class="img-bt">
@@ -220,7 +220,7 @@
                            <input type=" text"
                             class="contact-form-input font20 font-kia-light" name="name" value="{{ old('name') }}"
                             id="contact_name2" placeholder="">
-                            <p class="error-msg font-kia-re">{{ $errors->first('name') }}</p>
+                            <p class="error-msg font-kia-re">{{ $errors->first('name') ?? '' }}</p>
                     </div>
                 </div>
             </div>
@@ -231,7 +231,7 @@
                            <input type=" text"
                             class="contact-form-input font20 font-kia-light" name="phone"
                             value="{{ old('phone') }}" id="contact_phone2" placeholder="">
-                            <p class="error-msg font-kia-re">{{ $errors->first('phone') }}</p>
+                            <p class="error-msg font-kia-re">{{ $errors->first('phone') ?? '' }}</p>
                     </div>
                 </div>
             </div>
@@ -308,7 +308,7 @@
                             <option value="Tp.Hà Nội">Tp.Hà Nội</option>
                             <option value="TP  HCM">TP HCM</option>
                         </select>
-                                <p class="error-msg font-kia-re">{{$errors->first('address')}}</p>
+                                <p class="error-msg font-kia-re">{{$errors->first('address') ?? ''}}</p>
                     </div>
                 </div>
             </div>
