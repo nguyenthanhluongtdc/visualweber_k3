@@ -155,7 +155,7 @@
         <div class="item-bt">
             <a class="" href="{{ Theme::asset()->url('images/section11/e-brochure.pdf') }}" download" target="_blank">
                 <div class="wrap-button">
-                    <p class="font-buenos-bold show-p">E-brochure</p>
+                    <p class="font-kia-bold show-p">E-brochure</p>
                     <div class="img-bt">
                         <img src="{{ Theme::asset()->url('images/brochure.png') }}" alt="KIA">
                     </div>
@@ -175,7 +175,7 @@
         <div class="item-bt">
             <a class="" href="https://www.youtube.com/user/thacokia/featured" target="_blank">
                 <div class="wrap-button">
-                    <p class="font-buenos-bold show-p">Youtube</p>
+                    <p class="font-kia-bold show-p">Youtube</p>
                     <div class="img-bt">
                         <i class="fab fa-youtube"></i>
                     </div>
@@ -185,7 +185,7 @@
         <div class="item-bt d-none">
             <a class="" href=" #">
                 <div class="wrap-button">
-                    <p class="font-buenos-bold show-p">Messenger</p>
+                    <p class="font-kia-bold show-p">Messenger</p>
                     <div class="img-bt">
                         <i class="fas fa-comment-alt"></i>
                     </div>
@@ -195,7 +195,7 @@
         <div class="moveTop">
             <a class="" href=" #">
                 <div class="wrap-buttonn">
-                    <p class="font-buenos-bold show-p bttun-to-top">Về trang đầu</p>
+                    <p class="font-kia-bold show-p bttun-to-top">Về trang đầu</p>
                     <div class="img-bt">
                         <i class="fas fa-arrow-up"></i>
                     </div>
