@@ -1,9 +1,9 @@
 
 .section12{
+    padding-top: 85px;
     @media only screen and (min-width: 1599px) and (max-width: 1601px){
         .container-remake{
             width: 90%;
-            
         }
     }
     @media(max-width: 1366px){
@@ -15,8 +15,9 @@
         display: none!important;
     }
     background: #222222;
-    padding-top: 70px;
+    
     .section12-wrap{
+        padding-top: 70px;
         display: flex;
         justify-content: space-between;
         h3{
