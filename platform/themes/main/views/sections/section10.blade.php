@@ -1,5 +1,6 @@
 <div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="san-pham">
     <div class="container-remake section10-wrap" >
+        {{-- <h2 class="text-uppercase font-kia-bold font80 text-center mb-0">ĐẶT XE TRỰC TUYẾN</h2> --}}
         <h3 class="font60 font-kia-bold" >Các dòng sản phẩm</h3>
         <div class="list-section10">
             <div class="item">
