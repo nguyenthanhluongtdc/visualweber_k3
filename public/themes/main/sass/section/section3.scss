@@ -320,21 +320,34 @@
           }
           .ring360 {
             text-align: center;
-            margin-top: 20px;
-            @media(max-width : 1400px){
+            margin-top: 40px;
+            @media(max-width : 1440px){
               margin-top: 60px;
               img{
                 width: 60px;
               }
             }
+            @media(max-width : 1366px){
+              margin-top: 70px;
+              img{
+                width: 70px;
+              }
+            }
+            @media(max-width : 1279px){
+              margin-top: 90px;
+              img{
+                width: 60px;
+              }
+            }
+
           }
           .tab-color-car {
             display: flex;
             justify-content: center;
             width: 100%;
             margin-top: 40px;
-            @media(max-width : 1400px){
-              margin-top: 10px;
+            @media(max-width : 1440px){
+              margin-top: 20px;
             }
 
             img {
