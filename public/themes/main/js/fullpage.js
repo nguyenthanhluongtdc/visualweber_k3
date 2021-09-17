@@ -1,5 +1,5 @@
 let indexX = -1;
-let colors = ['#fff', '#fffe', '#fff', '#fff', '#fff', '#fff', '#fff' , '#06141f' , '#fff', '#06141f', '#fff' , '#fff'];
+let colors = ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff' , '#000' , '#fff', '#000', '#fff' , '#fff'];
 
 var myFullpage = new fullpage('#fullpage', {
     //Navigation

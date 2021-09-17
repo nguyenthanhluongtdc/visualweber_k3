@@ -322,13 +322,13 @@
             </div>
         </div>
         <span class="arrow">
-            >>
+            <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
         </span>
     </button>
 
     <button id="moveTop">
         <span class="arrow">
-            <<
+            <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
         </span>
         <span class="text">
             TOP
