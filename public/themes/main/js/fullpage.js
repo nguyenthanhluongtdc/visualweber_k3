@@ -306,7 +306,6 @@ if ($(window).width() < 1025) {
 
     $(window).scroll(function() {
       if ($(window).scrollTop() > 500) {
-          console.log('sdf')
         btn.show();
       } else {
         btn.hide()
