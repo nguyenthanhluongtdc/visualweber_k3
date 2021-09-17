@@ -144,7 +144,7 @@
             </ul>
             </div>
         </div>
-        <div class="right" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine">
+        <div class="right">
             <div class="tab-content">
 
                 @foreach (get_field($page, 'list_section8') as $key => $item)

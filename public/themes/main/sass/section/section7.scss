@@ -6,7 +6,13 @@
         }
     }
     .section7-wrap{
-        padding-top: 80px;
+        padding-top: 130px;
+        @media(max-width : 1679px){
+            padding-top: 110px;
+        }
+        @media(max-width : 1400px){
+            padding-top: 100px;
+        }
         overflow: hidden;
         @media(max-width :1024px){
             padding-top: 30px;
@@ -17,6 +23,7 @@
             // margin-bottom: 50px;
             h3{
                 font-size: 50px;
+                margin-top: 5px;
                 @media(max-width : 1680px){
                     font-size: 45px;
                     margin-top: 5px;
@@ -55,7 +62,7 @@
             }
             h3{
                 color: #fff;
-                margin-bottom: 75px;
+                margin-bottom: 50px;
                 @media(max-width: 1680px){
                     margin-bottom: 59px;
                  }
@@ -63,12 +70,12 @@
                     margin-bottom: 70px;
                 }
                 @media(max-width: 1366px){
-                   margin-bottom: 62px;
+                   margin-bottom: 40px;
                    font-size: 33px;
                 }
                 @media(max-width: 1280px){
-                    font-size: 30px;
-                    margin-bottom: 60px;
+                    font-size: 28px;
+                    margin-bottom: 40px;
                  }
                 @media(max-width :1024px){
                    br{
@@ -82,6 +89,7 @@
         opacity: 0.4;
         transition: all .2s ease-in;
         transform: scale(0.8);
+        height: 100%;
     }
     .owl-carousel.owl-drag .owl-item.center{
         opacity: 1;
@@ -118,12 +126,12 @@
         align-items: center;
         justify-content: center;
         margin-top: 30px;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
         @media(max-width : 1366px){
-            margin-top: 10px;
+            // margin-top: 10px;
         }
         @media(max-width : 1280px){
-            margin-top: 15px;
+            // margin-top: 15px;
         }
     }
     .owl-carousel .owl-dots button.owl-dot.active{
@@ -147,6 +155,11 @@
     }
     .owl-carousel .owl-stage-outer{
         overflow: inherit;
+        margin-bottom:15px;
+        height:100%;
+    }
+    .owl-carousel .owl-stage{
+        height: 100%;
     }
 
     .owl-carousel .owl-nav{
@@ -190,14 +203,33 @@
             }
         }
     }
+    .section7-carousel{
+        height: 50vh;
+        @media(max-width : 1279px){
+            height: 40vh;
+
+        }
+        @media(max-width : 1024px){
+            height: auto;
+        }
+    }
     .item-slider{
         position: relative;
+        height: 100%;
+        img{
+            height:100%;
+            object-fit: cover;
+        }
         .content{
             position: absolute;
+            top: unset!important;
             bottom: 112%;
             left: 50%;
             color: #fff;
-            width: calc(90vw / 2);
+            width: calc(88vw / 2);
+            @media(min-width : 1921px){
+                width: calc(80vw / 2);
+            }
             @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                 width: calc(80vw / 2);
             }
@@ -238,6 +270,7 @@
                 bottom: unset;
                 width: 100%;
                 margin-top: 60px;
+                top: unset!important;
              }
              @media(max-width : 767px){
                  padding: 0 5%;

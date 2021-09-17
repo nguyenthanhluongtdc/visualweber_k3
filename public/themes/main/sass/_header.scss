@@ -34,7 +34,7 @@
                     margin-left: 80px;
                 }
                 @media(max-width : 1366px){
-                    margin-left: 40px;
+                    margin-left: 55px;
                 }
             }
             li.chose-car{
@@ -187,7 +187,15 @@
         top: 60px;
     }
 }
-
+.fixed-bgg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0,0,0, 0.4);
+    z-index: 88888888888888;
+}
 .dangky{
     position: fixed;
     top: 0;
@@ -291,6 +299,7 @@
                         border-color: #ccc;
                         padding-top: 15px;
                         padding-bottom: 5px;
+                        border-bottom: 1px solid #ccc;
                         @media(max-width : 1440px){
                             padding-top: 12px;
                          }
@@ -392,6 +401,14 @@
     z-index: 33333333333333333333;
     padding: 50%;
     top: 50%;
+}
+.select2-container--default .select2-results>.select2-results__options{
+    @media only screen and (min-width: 1025px) and (max-height : 767px){
+        max-height: 100px;
+    }
+    @media(max-width: 480px){
+        max-height: 50px;
+    }
 }
 .select2-container--default .select2-search--dropdown .select2-search__field{
     height: 40px;

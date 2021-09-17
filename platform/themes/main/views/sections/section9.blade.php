@@ -21,13 +21,13 @@
 
                         @if (has_field($page, 'tieu_de_an_toan_so_1'))
 
-                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_1') !!}</h2>
+                        <h2 class="font-kia-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_1') !!}</h2>
                         @endif
                         <div class="popup-content">
                             <div class="content-wrap">
                                 @if (has_field($page, 'content_an_toan_so_1'))
 
-                            <p class="font-buenos-re font20">
+                            <p class="font-kia-re font20">
                                 {!! get_field($page, 'content_an_toan_so_1') !!}
                             </p>
                             @endif
@@ -91,13 +91,13 @@
 
                         @if (has_field($page, 'tieu_de_an_toan_so_2'))
 
-                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_2') !!}</h2>
+                        <h2 class="font-kia-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_2') !!}</h2>
                         @endif
                         <div class="popup-content">
                             <div class="content-wrap">
                                 @if (has_field($page, 'content_an_toan_so_2'))
 
-                            <p class="font-buenos-re font20">
+                            <p class="font-kia-re font20">
                                 {!! get_field($page, 'content_an_toan_so_2') !!}
                             </p>
                             @endif
@@ -118,13 +118,13 @@
 
                         @if (has_field($page, 'tieu_de_an_toan_so_3'))
 
-                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_3') !!}</h2>
+                        <h2 class="font-kia-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_3') !!}</h2>
                         @endif
                         <div class="popup-content">
                             <div class="content-wrap">
                                 @if (has_field($page, 'content_an_toan_so_3'))
 
-                            <p class="font-buenos-re font20">
+                            <p class="font-kia-re font20">
                                 {!! get_field($page, 'content_an_toan_so_3') !!}
                             </p>
                             @endif
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-right item-right2" data-aos="zoom-in-up" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="600">
+                <div class="item-right item-right2">
                     @if (has_field($page, 'hinh_an_toan_so_4'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal4" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_4')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_4') !!}">
@@ -145,13 +145,13 @@
 
                         @if (has_field($page, 'tieu_de_an_toan_so_4'))
 
-                        <h2 class="font-buenos-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_4') !!}</h2>
+                        <h2 class="font-kia-bold font30">{!! get_field($page, 'tieu_de_an_toan_so_4') !!}</h2>
                         @endif
                         <div class="popup-content">
                             <div class="content-wrap">
                                 @if (has_field($page, 'content_an_toan_so_4'))
 
-                            <p class="font-buenos-re font20">
+                            <p class="font-kia-re font20">
                                 {!! get_field($page, 'content_an_toan_so_4') !!}
                             </p>
                             @endif

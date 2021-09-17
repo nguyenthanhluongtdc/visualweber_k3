@@ -2,12 +2,16 @@
     background: $primary-color;
     .container-remake{
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         @media(max-width: 1024px){
             width: 100%;
         }
     }
     .section5-wrap{
-        padding-top: 80px;
+        padding-top: 100px;
+       
         @media(max-width :1024px){
             padding-top: 30px;
             padding-bottom: 30px;
@@ -15,11 +19,11 @@
 
     }
     .section5-top{
-        padding-left: 120px;
-        margin-bottom: 40px;
+        // padding-left: 120px;
+        margin-bottom: 20px;
         @media(max-width : 1366px){
             padding-left: 0;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         @media(max-width :1024px){
             padding-left: 0px;
@@ -31,6 +35,7 @@
         }
         h3{
             color: #fff;
+            margin-top: 5px;
             @media only screen and (min-width: 1599px) and (max-width: 1601px) {
                 margin-top: 5px;
             }
@@ -43,8 +48,13 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        height: 55vh;
+        @media(max-width : 1279px){
+            height: 50vh;
+        }
         @media(max-width :1024px){
             flex-wrap: wrap;
+            height: auto;
         }
         .tab-pane.active {
             animation: slide-up 0.9s ease-out;
@@ -68,6 +78,9 @@
                     right: 0;
                     width: 50%;
                     bottom: 67%;
+                    @media(max-width : 1366px){
+                        width: 43%;
+                    }
                     img{
                         width: 100%;
                     }
@@ -80,7 +93,7 @@
                     @media(max-width :1024px){
                         position: relative;
                         right: unset;
-                        top: unset;
+                        top: unset!important;
                         width: 100%;
                         img{
                             width: 100%;
@@ -88,15 +101,25 @@
                     }
                     p{
                         color: #fff;
-                        padding-right: 120px;
+                        // padding-right: 120px;
                         text-align: justify;
                         margin-bottom: 20px;
+                        font-size: 15px;
+                        display: flex;
+                        align-items: flex-end;
+                        height: 63px;
                         @media(max-width :1366px){
                             padding-right: 0;
+                            font-size: 13px;
+                            margin-bottom: 5px;
+                        }
+                        @media(max-width : 1279px){
+                            font-size: 12px;
                         }
                         @media(max-width: 1024px){
                             padding: 0 5%;
                             margin: 30px 0;
+                            font-size: 13px;
                         }
                     }
                 }
@@ -107,6 +130,8 @@
                     }
                     img{
                         width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                         // height: 450px;
                     }
                 }
@@ -132,9 +157,15 @@
                 }
             }
             left: 65%;
-            top: 37%;
+            top: 42%;
             @media(max-width : 1680px){
-                top: 37%;
+                top: 40%;
+            }
+            @media(max-width : 1440px){
+                top: 44%;
+            }
+            @media(max-width : 1366px){
+                top: 36%;
             }
             // @media(max-width : 1440px){
             //     top: 46%;
@@ -150,6 +181,9 @@
                 @media(max-width : 1440px){
                     bottom: -10px;
                     top: -10px;
+                }
+                @media(max-width : 1366px){
+                    left: 25px;
                 }
                 @media(max-width :1024px){
                     display: none;
@@ -197,6 +231,12 @@
                 .left{
                     margin-right: 40px;
                     background: $primary-color;
+                    @media(max-width : 1366px){
+                        margin-right: 15px;
+                       img{
+                           width: 25px;
+                       }
+                    }
                     @media(max-width :1024px){
                         margin-right: 0;
                         margin-top: 20px;

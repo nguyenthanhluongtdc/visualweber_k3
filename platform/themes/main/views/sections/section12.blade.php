@@ -65,28 +65,19 @@
            </div>
            @endif
 
-           @if (has_field($page, 'mail_2'))
-            <div class="right-item">
-                <a href="mailto:{{ get_field($page, 'mail_2') }}">
-                    <p class="right-item">
-                        <span><i class="fa fa-envelope"></i></span>
-                        <span>{{ get_field($page, 'mail_2') }}</span>
-                    </p>
-                </a>
-            </div>
-            @endif
+          
             <div class="social">
 
                 @if (has_field($page, 'link_facebook'))
                 <div class="item-social">
-                    <a href="{{ get_field($page, 'link_facebook') }}">
+                    <a href="https://www.facebook.com/kiamotorsvietnam/" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
                 @endif
                 @if (has_field($page, 'link_youtube'))
                 <div class="item-social">
-                    <a href="{{ get_field($page, 'link_youtube') }}">
+                    <a href="https://www.youtube.com/user/thacokia/featured" target="_blank">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>

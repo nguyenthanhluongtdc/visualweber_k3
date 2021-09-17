@@ -1,5 +1,39 @@
+:root {
+    --height-header: 5vw;
+}
 .section6{
     background-size: cover;
+    .content{
+        height: calc(100vh - var(--height-header));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 40px;
+        @media(max-width : 1024px){
+            display: none;
+        }
+        .top{
+            img{
+                width: 60%;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+        .bottom{
+            color: #fff;
+            .link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    color: #fff;
+                    padding: 10px 35px 7px;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
     .img-mobie{
         display: none;
         @media(max-width : 1024px){

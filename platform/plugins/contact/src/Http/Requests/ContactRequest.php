@@ -36,9 +36,9 @@ class ContactRequest extends Request
     public function messages()
     {
         return [
-            'name.required'    => "Vui lòng nhập họ và tên",
-            'phone.required'   => "Vui lòng nhập số điện thoại",
-            'address.required'      => "Vui lòng nhập địa chỉ"
+            'name.required'    => "Vui lòng nhập họ và tên",
+            'phone.required'   => "Vui lòng nhập số điện thoại",
+            'address.required'      => "Vui lòng nhập địa chỉ"
         ];
     }
 }

@@ -42,15 +42,18 @@
     @media(max-width: 1680px){
         max-height: 700px;
     }
+   
+    // overflow-y : auto;
+    padding: 40px;
+    @media(max-width : 1400px){
+        max-width: 700px;
+        width: 700px;
+        max-height: 550px;
+    }
     @media(max-width: 1024px){
         width: 90%;
         max-height: 500px;
         padding: 15px;
-    }
-    overflow-y : auto;
-    padding: 40px;
-    @media(max-width : 1366px){
-        max-height: 550px;
     }
     // transform: translateY(-50px);
     transition: all .7s;
@@ -82,6 +85,9 @@
   
     .section9-wrap{
         padding-top: 80px;
+        @media(max-width : 1366px){
+            padding-top: 90px;
+        }
         @media(max-width : 1024px){
             padding-top: 30px;
             padding-bottom: 30px;
@@ -97,6 +103,7 @@
     h3{
         color: #fff;
         margin-bottom: 25px;
+        margin-top: 5px;
         @media(max-width: 1024px){
             padding: 0 5%;
         }
@@ -104,20 +111,40 @@
     .list-image{
         display: flex;
         justify-content: space-between;
+        max-height: 60vh;
+        height: 60vh;
         @media(max-width : 1024px){
             flex-wrap: wrap;
+            max-height: unset;
+            height: auto;
         }
         .left{
+            height: 100%;
             width: 50%;
             padding-bottom: 15px;
+            @media(max-width : 1366px){
+                padding-bottom: 30px;
+            }
+            padding-right: 15px;
+            // padding-bottom: 15px;
             @media(max-width : 1024px){
                 width: 100%;
-                margin-bottom: 1%;
+                padding-bottom: 10px;
+                padding-right: 0;
+                height: auto;
             }
             .item-top{
                 width: 100%;
+                height: 100%;
                 img{
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    @media(max-width : 1024px){
+                        width: 100%;
+                        height: auto;
+                       object-fit: none;
+                    }
                 }
             }
             .list-bottom{
@@ -134,30 +161,47 @@
             }
         }
         .right{
+            height: 100%;
             width: 50%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: -15px;
+            // margin: -15px;
             padding-bottom: 15px;
+            @media(max-width : 1366px){
+                padding-bottom: 30px;
+            }
             @media(max-width : 1024px){
                 width: 100%;
                 margin: 0;
                 padding-bottom: 15px;
+                height: auto;
             }
 
             >div {
-                padding: 15px;
+                height: 50%;
+                @media(max-width : 1024px){
+                    height: auto;
+                }
+                // padding: 15px;
 
                 img {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                    @media(max-width : 1024px){
+                        width: 100%;
+                        height: auto;
+                       object-fit: contain;
+                    }
                 }
             }
 
             .item-right{
                 width: 50%;
+                @media(max-width : 1024px){
+                    width: 100%;
+                }
                 img{
                     width: 100%;
                 }
@@ -166,11 +210,19 @@
                 width: 100%;
             }
             .item-right:nth-child(1){
-                // margin-bottom: 1%;
+                padding-right: 15px;
+                @media(max-width : 1024px){
+                    padding-right: 0px;
+                    padding-bottom: 10px;
+                }
             }
-            // .item-right:nth-child(2){
-            //     margin-bottom: 1%;
-            // }
+            .item-right:last-child{
+                padding-bottom: 0;
+                padding-top: 15px;
+                @media(max-width : 1024px){
+                    padding-top: 10px;
+                }
+            }
         }
     }
 }
