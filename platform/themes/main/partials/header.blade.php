@@ -47,32 +47,34 @@
     <header class="header-pc">
         <div class="container-remake header-pc-wrap">
             <div class="header-logo">
+               <a href="https://kiamotorsvietnam.com.vn/" target="_blank">
                 <img src="{{ Theme::asset()->url('images/logo.png') }}" alt="KIA NEW CERATO K3">
+                </a>
             </div>
             <ul class="list-menu font-kia-bold font20" id="menu">
-                <li class="menu_item" data-menuanchor="trang-chu">
-                    <a href="{{ route('public.index') }}#trang-chu" class="menu_link">
-                        Trang chủ
-                    </a>
-                </li>
+               
                 <li class="menu_item" data-menuanchor="ngoai-that">
                     <a href="{{ route('public.index') }}#ngoai-that" class="menu_link">
-                        Ngoại thất
+                        <img src="{{ Theme::asset()->url('images/section1/icontop1.png') }}" alt="" style="width : 100px">
+                        <p>Nhận diện mới</p>
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="noi-that">
                     <a href="{{ route('public.index') }}#noi-that" class="menu_link">
-                        Nội thất
+                        <img src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt="" style="width : 45px">
+                        <p>Kết nối công nghệ</p>
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="van-hanh">
                     <a href="{{ route('public.index') }}#van-hanh" class="menu_link">
-                        Vận hành
+                        <img src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt="" style="width : 38px">
+                        <p>Chế độ lái thông minh</p>
                     </a>
                 </li>
                 <li class="menu_item" data-menuanchor="an-toan">
                     <a href="{{ route('public.index') }}#an-toan" class="menu_link">
-                        An toàn
+                        <img src="{{ Theme::asset()->url('images/section1/icontop4.png') }}" alt="" style="width : 70px">
+                        <p>An toàn tối ưu</p>
                     </a>
                 </li>
                 <li class="chose-car" data-menuanchor="chon-xe-online">
