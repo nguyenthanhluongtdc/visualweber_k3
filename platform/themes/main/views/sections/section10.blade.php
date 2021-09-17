@@ -27,12 +27,23 @@
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
                         <div class="content-bottom">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe1">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe1" class="none-mobiee">
                                 BẮT ĐẦU NGAY
                             </a>
-                            <div style="display: none;" id="animatedModal101" class="animated-modal">
+                            
+                            <div style="display: none;" id="animatedModal101" class="animated-modal2">
 
                                 <img src="{{ Theme::asset()->url('images/section10/popupmx.jpg') }}">
+                            </div>
+                           
+                        </div>
+                        <div class="content-bottom none-pcc">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102" href="javascript:;" data-fancybox="muaxe1b" class="">
+                                BẮT ĐẦU NGAY
+                            </a>
+                            <div style="display: none;" id="animatedModal102" class="animated-modal2">
+
+                                <img src="{{ Theme::asset()->url('images/section10/popupmx2.jpg') }}">
                             </div>
                         </div>
                     </div>
@@ -61,9 +72,24 @@
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
                         <div class="content-bottom">
-                            <a href="#" class="register font-kia-bold font20 font-kia-re">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe3" class="none-mobiee">
                                 BẮT ĐẦU NGAY
                             </a>
+                            
+                            <div style="display: none;" id="animatedModal101" class="animated-modal2">
+
+                                <img src="{{ Theme::asset()->url('images/section10/popupmx.jpg') }}">
+                            </div>
+                           
+                        </div>
+                        <div class="content-bottom none-pcc">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102" href="javascript:;" data-fancybox="muaxe3b" class="">
+                                BẮT ĐẦU NGAY
+                            </a>
+                            <div style="display: none;" id="animatedModal102" class="animated-modal2">
+
+                                <img src="{{ Theme::asset()->url('images/section10/popupmx2.jpg') }}">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,9 +117,24 @@
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
                         <div class="content-bottom">
-                           <a href="" class="register font-kia-bold font20 font-kia-re">
-                            BẮT ĐẦU NGAY
-                           </a>
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe2" class="none-mobiee">
+                                BẮT ĐẦU NGAY
+                            </a>
+                            
+                            <div style="display: none;" id="animatedModal101" class="animated-modal2">
+
+                                <img src="{{ Theme::asset()->url('images/section10/popupmx.jpg') }}">
+                            </div>
+                           
+                        </div>
+                        <div class="content-bottom none-pcc">
+                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102" href="javascript:;" data-fancybox="muaxe2b" class="">
+                                BẮT ĐẦU NGAY
+                            </a>
+                            <div style="display: none;" id="animatedModal102" class="animated-modal2">
+
+                                <img src="{{ Theme::asset()->url('images/section10/popupmx2.jpg') }}">
+                            </div>
                         </div>
                     </div>
                 </div>

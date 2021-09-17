@@ -1,3 +1,19 @@
+.animated-modal2{
+    display: inline-block;
+width: 100%;
+height: 100%;
+max-height: 100vh;
+max-width: 100vw;
+border: none;
+margin: 0;
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+}
+
+
 
 .section10-wrap{
     padding-top: 80px;
@@ -30,7 +46,6 @@
         flex-wrap: wrap;
     }
     .item{
-        // filter: drop-shadow(1px 2px 4px #ccc);
         width: 25%;
         margin: 0 50px;
         h5{
@@ -155,8 +170,6 @@
                 }
                
                 .content-bottom{
-                   
-                    //border-top: 1px solid #4c4f52;
                     display: flex;
                     justify-content: space-between;
                     .bt-left{
@@ -215,4 +228,5 @@
       background-color: #000000;
       border: 2px solid #555555;
     }
-  }
+}
+ 

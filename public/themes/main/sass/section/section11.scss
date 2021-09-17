@@ -1,3 +1,15 @@
+.none-mobiee{
+    @media(max-width : 1024px){
+     display: none!important;
+     }
+}
+.none-pcc{
+    display: none!important;
+    @media(max-width : 1024px){
+    display: block!important;
+    }
+}
+
 .section-12-top{
     position: relative;
     background-size: cover;
