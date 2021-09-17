@@ -122,6 +122,15 @@
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
                             </div>
+                            <div id="tabcar01b" class="container tab-pane item-car-color"><br>
+                                {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/red/"
+                                    data-filename="RED_{index}.png" data-amount="36" data-spin-reverse="true">
+                                </div> --}}
+                                <img class="w-100" src="{{ Theme::asset()->url('images/360/red/RED_1.png') }}" alt="360">
+                                <div class="ring360">
+                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
+                                </div>
+                            </div>
                            
                         </div>
                         <ul class="nav nav-tabs tab-color-car" role="tablist">
