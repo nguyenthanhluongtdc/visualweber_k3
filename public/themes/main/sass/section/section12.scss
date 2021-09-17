@@ -36,6 +36,12 @@
             .right{
                 width: 100%;
             }
+            .footer-menu{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
         }
         h3{
             font-size: 17px;
