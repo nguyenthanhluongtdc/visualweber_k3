@@ -11,7 +11,37 @@
     }
     .section5-wrap{
         padding-top: 100px;
-       
+        position: relative;
+        .section5-abso-mobie{
+            display: none;
+            @media(max-width: 1024px){
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .section5-abso{
+            position: absolute;
+            top: 120px;
+            right: 0;
+            height: 25vh;
+            @media(max-width : 1679px){
+                height: 23vh;
+            }
+            @media(max-width : 1400px){
+                height: 20vh;
+            }
+            width: 50%;
+            @media(max-width : 1024px){
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
         @media(max-width :1024px){
             padding-top: 30px;
             padding-bottom: 30px;
@@ -48,7 +78,60 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        height: 55vh;
+        
+        margin-top: 30px;
+        @media(max-width : 1366px){
+            margin-top: 0px;
+        }
+        .section5-tab-wrap{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            @media(max-width : 1024px){
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+            .tab-content-left{
+                width: 64%;
+                @media(max-width : 1024px){
+                    width: 100%;
+                    height: auto!important;
+                    margin-top: 15px;
+                }
+                color: #fff;
+                .content-s5-tab{
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 45vh;
+                        object-fit: cover;
+                        margin-bottom: 20px;
+                        @media(max-width  :1366px){
+                            margin-bottom: 10px;
+                        }
+                        @media(max-width:  1024px){
+                            height: auto;
+                        }
+                    }
+                    p{
+                        height: 50px;
+                        font-size: 18px;
+                        @media(max-width : 1440px){
+                            font-size: 13px;
+                        }
+                        @media(max-width:  1024px){
+                           width: 90%;
+                           display: flex;
+                           margin:  0 auto;
+                           height: auto;
+                           margin-bottom: 10px;
+                        }
+                    }
+                }
+               
+            }
+        }
         @media(max-width : 1279px){
             height: 50vh;
         }
@@ -138,8 +221,12 @@
             }
         }
         .tab-menu-s6{
-            // width: 32%;
-            position: absolute;
+            width: 32%;
+           position: relative;
+           margin-top: 20px;
+           a.active p.top{
+               font-family: 'VN-KiaSignature-Bold';
+           }
             @media(max-width :1024px){
                 position: relative;
                 width: 100%;
@@ -156,28 +243,15 @@
                     }
                 }
             }
-            left: 65%;
-            top: 42%;
-            @media(max-width : 1680px){
-                top: 40%;
-            }
-            @media(max-width : 1440px){
-                top: 44%;
-            }
-            @media(max-width : 1366px){
-                top: 36%;
-            }
-            // @media(max-width : 1440px){
-            //     top: 46%;
-            // }
+           
             display: flex;
             flex-direction: column;
             .border-dotter{
                 width: 3px;
                 bottom: -20px;
                 position: absolute;
-                left: 31px;
-                top: -20px;
+                left: 29px;
+                top: -15px;
                 @media(max-width : 1440px){
                     bottom: -10px;
                     top: -10px;
@@ -207,12 +281,15 @@
             }
             li{
                 z-index: 2;
-                margin: 10px 0;
+                margin: 20px 0;
                 @media(max-width : 1680px){
-                    margin: 3px 0;
+                    margin: 15px 0;
                 }
-                @media(max-width : 1440px){
-                    margin: 0px;
+                @media(max-width : 1600px){
+                    margin: 10px 0;
+                }
+                @media(max-width : 1279px){
+                    margin: 5px 0;
                 }
             }
             .item-tab-wrap{
