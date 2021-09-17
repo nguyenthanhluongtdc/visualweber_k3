@@ -2,7 +2,7 @@
     <div class="section7-wrap container-remake h-100">
         <div class="top" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="font-kia-bold font30">Nội thất</p>
-            <h3 class="font60 font-kia-bold">Không gian nội thất rộng rãi, mang đậm tính công nghệ</h3>
+            <h3 class="font60 font-kia-bold">Không gian nội thất rộng rãi,<br>mang đậm tính công nghệ</h3>
         </div>
         @if (has_field($page, 'slider_section_7'))
         {{-- Height trừ phần dic top --}}

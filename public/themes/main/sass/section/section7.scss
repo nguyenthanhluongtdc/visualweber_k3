@@ -125,13 +125,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // margin-top: 30px;
+        margin-top: 30px;
         // padding-bottom: 20px;
         @media(max-width : 1366px){
-            margin-top: 10px;
+            // margin-top: 10px;
         }
         @media(max-width : 1280px){
-            margin-top: 15px;
+            // margin-top: 15px;
         }
     }
     .owl-carousel .owl-dots button.owl-dot.active{
