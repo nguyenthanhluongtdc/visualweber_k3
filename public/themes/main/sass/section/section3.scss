@@ -498,9 +498,8 @@
     img {
       width: 100%;
       height: 100vh;
-      @media(max-width : 1200px){
-        height: auto;
-      }
+      object-fit: cover;
+      object-position: bottom left;
     }
     @media (max-width: 1024px) {
       display: none;

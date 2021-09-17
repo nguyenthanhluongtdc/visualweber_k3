@@ -151,8 +151,10 @@
 
                 <div id="section8{{$key}}" class="item-right tab-pane {{ $loop->first ? 'active' : '' }}"><br>
                     @if (has_sub_field($item, 'hinh_van_hanh'))
+                   <div class="img">
                     <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
-                                alt="{{ get_sub_field($item, 'name_section8')}}">
+                    alt="{{ get_sub_field($item, 'name_section8')}}">
+                   </div>
                     @endif
                     @if (has_sub_field($item, 'noi_dung_van_hanh_item'))
                     <p class="font20 font-kia-light">{{ get_sub_field($item, 'noi_dung_van_hanh_item')}}</p>
