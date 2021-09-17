@@ -7,7 +7,7 @@ var myFullpage = new fullpage('#fullpage', {
     menu: '#menu',
     lockAnchors: true,
     licenseKey: "F4D71089-214F4315-958D1E92-109DD6D4",
-    anchors: ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'lien-he'],
+    anchors: ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'san-pham', 'footer'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -64,7 +64,9 @@ var myFullpage = new fullpage('#fullpage', {
         $moveDown.css('color', color);
         $moveDown.find('.mouse').css('border-color', color).find('.scroll-down').css('background', color);
 
-        if(anchorLink.isLast) {
+        console.log(anchorLink)
+
+        if(anchorLink.anchor == 'footer') {
             $moveDown.hide();
             $('#moveTop').show();
         }else {
