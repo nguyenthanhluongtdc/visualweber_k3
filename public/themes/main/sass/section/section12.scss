@@ -12,14 +12,31 @@
         }
     }
     @media(max-width: 1024px){
-        display: none!important;
+        // display: none!important;
     }
     background: #222222;
     
     .section12-wrap{
+        // @media(max-width: 1024px){
+        //     display: none!important;
+        // }
         padding-top: 70px;
         display: flex;
         justify-content: space-between;
+        @media(max-width : 1024px){
+            flex-wrap: wrap;
+            .left{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .footer-menu , .policy{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .right{
+                width: 100%;
+            }
+        }
         h3{
             font-size: 17px;
             @media(max-width: 1440px){
