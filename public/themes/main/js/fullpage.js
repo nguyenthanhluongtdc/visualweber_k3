@@ -105,15 +105,15 @@ var myFullpage = new fullpage('#fullpage', {
         if($('.section5-wrap .section5-top').length){
             let hei = $('.section5-wrap .section5-top').height();
             // $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 100}px)`;
-            if($('.section5-wrap .section5-abso').length){
-                if(document.body.clientWidth > 1300){
-                    $('.section5-wrap .section5-abso')[0].style.top = `${hei - 30}px`;
-                    $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
-                }else{
-                    $('.section5-wrap .section5-abso')[0].style.top = `${hei - 20}px`;
-                    $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
-                }
-            }
+            // if($('.section5-wrap .section5-abso').length){
+            //     if(document.body.clientWidth > 1300){
+            //         $('.section5-wrap .section5-abso')[0].style.top = `${hei - 30}px`;
+            //         $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
+            //     }else{
+            //         $('.section5-wrap .section5-abso')[0].style.top = `${hei - 20}px`;
+            //         $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
+            //     }
+            // }
         }
     },
     onLeave: async function(index, destination, direction, nextIndex) {
@@ -166,15 +166,15 @@ var myFullpage = new fullpage('#fullpage', {
         if($('.section5-wrap .section5-top').length){
             let hei = $('.section5-wrap .section5-top').height();
             // $('.section5-wrap .section5-tab')[0].style.height = `calc(100% - ${hei + 100}px)`;
-            if($('.section5-wrap .section5-abso').length){
-                if(document.body.clientWidth > 1300){
-                    $('.section5-wrap .section5-abso')[0].style.top = `${hei - 30}px`;
-                    $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
-                }else{
-                    $('.section5-wrap .section5-abso')[0].style.top = `${hei - 20}px`;
-                    $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
-                }
-            }
+            // if($('.section5-wrap .section5-abso').length){
+            //     if(document.body.clientWidth > 1300){
+            //         $('.section5-wrap .section5-abso')[0].style.top = `${hei - 30}px`;
+            //         $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
+            //     }else{
+            //         $('.section5-wrap .section5-abso')[0].style.top = `${hei - 20}px`;
+            //         $('.section5-wrap .section5-abso')[0].style.height = `${hei + (hei - (hei - 40))}px`;
+            //     }
+            // }
         }
     },
     afterSlideLoad: function(){
