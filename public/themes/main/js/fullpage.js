@@ -1,5 +1,5 @@
 let indexX = -1;
-let colors = ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff' , '#000' , '#fff', '#000', '#fff' , '#fff'];
+// let colors = ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff' , '#000' , '#fff', '#000', '#fff' , '#fff'];
 
 var myFullpage = new fullpage('#fullpage', {
     //Navigation
@@ -56,15 +56,15 @@ var myFullpage = new fullpage('#fullpage', {
     afterLoad: function(origin, anchorLink, index) {
         // $.fn.fullpage.moveSlideRight();
 
-        indexX = anchorLink.index;
-        color = colors[indexX];
+        // indexX = anchorLink.index;
+        // color = colors[indexX];
 
         $moveDown = $('#moveDown');
 
-        $moveDown.css('color', color);
-        $moveDown.find('.mouse').css('border-color', color).find('.scroll-down').css('background', color);
+        // $moveDown.css('color', color);
+        // $moveDown.find('.mouse').css('border-color', color).find('.scroll-down').css('background', color);
 
-        console.log(anchorLink)
+        // console.log(anchorLink)
 
         if(anchorLink.anchor == 'footer') {
             $moveDown.hide();
