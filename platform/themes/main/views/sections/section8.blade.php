@@ -160,7 +160,7 @@
                             @if (has_sub_field($item, 'hinh_van_hanh'))
                               
                                     <div class="{{ $loop->first ? 'img' : 'novideo'}} ">
-                                        <a href="#" class="videoco">
+                                        <a  class="videoco" data-fancybox href="{{ Theme::asset()->url('images/k3video.mp4') }}">
                                         <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
                                             alt="{{ get_sub_field($item, 'name_section8') }}">
                                        
