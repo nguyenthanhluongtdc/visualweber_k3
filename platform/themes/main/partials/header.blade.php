@@ -192,6 +192,17 @@
                 </div>
             </a>
         </div>
+        <div class="item-bt moveTop">
+            <a class="" href=" #">
+                <div class="wrap-button">
+                    
+                    <div class="img-bt">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <p class="font-buenos-bold show-p">Messenger</p>
+                </div>
+            </a>
+        </div>
     </div>
     <div class="fixed-bgg">
     </div>
@@ -321,11 +332,7 @@
         </span>
     </button>
 
-    <button id="moveTop">
-        <span class="arrow">
-            <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
-        </span>
-    </button>
+  
 
     <div class="camon">
         <div class="popup-content">

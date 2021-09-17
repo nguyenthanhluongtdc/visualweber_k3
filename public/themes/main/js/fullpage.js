@@ -66,11 +66,11 @@ var myFullpage = new fullpage('#fullpage', {
 
         // console.log(anchorLink)
 
-        if(anchorLink.anchor == 'footer') {
+        if(anchorLink.isLast) {
             $moveDown.hide();
-            $('#moveTop').show();
+            $('.moveTop').show();
         }else {
-            $('#moveTop').hide();
+            $('.moveTop').hide();
             
             if(indexX!==0) {
                 $moveDown.show();
@@ -299,20 +299,13 @@ $('.button-video').click(function(){
 
 $(".js-example-disabled-results").select2();
   
-$(document).on('click', '#moveDown', function(){
-    fullpage_api.moveSectionDown();
-});
 
-$(document).on('click', '#moveTop', function(){
-    fullpage_api.moveTo(1);
-    console.log('sdf')
-});
 
 if ($(window).width() < 1025) {
-    let btn = $('#moveTop');
+    let btn = $('.moveTop');
 
     $(window).scroll(function() {
-      if ($(window).scrollTop() > 300) {
+      if ($(window).scrollTop() > 500) {
         btn.show();
       } else {
         btn.hide()
@@ -322,5 +315,13 @@ if ($(window).width() < 1025) {
     btn.on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({scrollTop:0}, '300');
+    });
+}else {
+    $(document).on('click', '#moveDown', function(){
+        fullpage_api.moveSectionDown();
+    });
+    
+    $(document).on('click', '.moveTop', function(){
+        fullpage_api.moveTo(1);
     });
 }
