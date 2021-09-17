@@ -11,10 +11,23 @@
     padding: 0;
     max-height: 100%;
   }
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(50vw - 4.6px);
+    height: 100%;
+    background-color: #000912;
+    z-index: 0;
+  }
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
+    z-index: 2;
+    position: relative;
     @media (max-width: 480px) {
       object-fit: inherit;
       width: 100%;
@@ -27,6 +40,14 @@
       i {
         color: #fff;
       }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &:after {
+      display: none;
+    }
+    img {
+      height: auto;
     }
   }
 }
