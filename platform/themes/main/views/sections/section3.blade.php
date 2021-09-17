@@ -64,11 +64,13 @@
         </li>
         </ul>
         <div class="content-tab-section3 tab-content">
+               {{-- Hình premium  --}}
             <div id="section3a" class="tab-pane active">
                 {{-- tab content seclect car --}}
                 <div class="content-tab-wrap">
                     <div class="slider-car">
                         {{-- hình xe chính  --}}
+                     
                         <div class="tab-content" data-aos="fade-down" data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000">
                              {{-- Blue 01 --}}
@@ -159,6 +161,12 @@
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}" alt="K3">
                                 </a>
                             </li>
+                            {{-- RED --}}
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#tabcar01b">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/red2.jpg') }}" alt="K3">
+                                </a>
+                            </li>
                             
                         </ul>
                     </div>
@@ -180,6 +188,8 @@
                     </div>
                 </div>
             </div>
+
+            {{-- Hình luxury  --}}
             <div id="section3c" class="tab-pane fade">
                 <div class="content-tab-wrap">
                     <div class="slider-car">
@@ -295,6 +305,8 @@
                     </div>
                 </div>
             </div>
+
+            {{-- Hình Mt  --}}
             <div id="section3d" class="tab-pane fade">
                 <div class="content-tab-wrap">
                     <div class="slider-car">
