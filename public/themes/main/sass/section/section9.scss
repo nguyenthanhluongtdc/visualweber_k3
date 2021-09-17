@@ -196,7 +196,15 @@
                     }
                 }
             }
-
+            .item-cova{
+                img{
+                    object-fit: contain;
+                    background: black;
+                    @media(max-width : 1024px){
+                        background: none;
+                    }
+                }
+            }
             .item-right{
                 width: 50%;
                 @media(max-width : 1024px){

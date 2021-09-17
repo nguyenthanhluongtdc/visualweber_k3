@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-right item-right2">
+                <div class="item-right item-right2 item-cova">
                     @if (has_field($page, 'hinh_an_toan_so_4'))
                     <a data-fancybox="section9" data-animation-duration="700" data-src="#animatedModal4" href="javascript:;">
                         <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_an_toan_so_4')) }}" alt="{!! get_field($page, 'tieu_de_an_toan_so_4') !!}">
