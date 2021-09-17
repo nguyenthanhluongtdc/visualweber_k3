@@ -314,13 +314,8 @@
         </div>
 
     </div>
+    
     <button id="moveDown">
-        <span class="text">DOWN</span> 
-        <div class='mouse-container'>
-            <div class='mouse'>
-                <span class='scroll-down'></span>
-            </div>
-        </div>
         <span class="arrow">
             <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
         </span>
@@ -329,9 +324,6 @@
     <button id="moveTop">
         <span class="arrow">
             <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
-        </span>
-        <span class="text">
-            TOP
         </span>
     </button>
 
