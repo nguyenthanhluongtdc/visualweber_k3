@@ -195,11 +195,11 @@
         <div class="item-bt moveTop">
             <a class="" href=" #">
                 <div class="wrap-button">
-                    
+                    <p class="font-buenos-bold show-p bttun-to-top">Về trang đầu</p>
                     <div class="img-bt">
                         <i class="fas fa-arrow-up"></i>
                     </div>
-                    <p class="font-buenos-bold show-p">Về trang đầu</p>
+                   
                 </div>
             </a>
         </div>
