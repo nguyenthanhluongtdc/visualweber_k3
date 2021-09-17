@@ -211,7 +211,21 @@
     //         }
     //     }
     // }
-
+        .wrap-buttonn{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            justify-content: space-between;
+            background: #828a90;
+            width: 140px;
+            border-radius: 25px;
+            height: 40px;
+            padding: 0px 15px 0 15px;
+            p{
+                margin-top: 2px;
+                font-size: 12px;
+            }
+        }
    .wrap-button{
        display: flex; 
        align-items: center;

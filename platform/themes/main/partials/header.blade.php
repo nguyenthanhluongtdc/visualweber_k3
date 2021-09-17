@@ -192,9 +192,9 @@
                 </div>
             </a>
         </div>
-        <div class="item-bt moveTop">
+        <div class="moveTop">
             <a class="" href=" #">
-                <div class="wrap-button">
+                <div class="wrap-buttonn">
                     <p class="font-buenos-bold show-p bttun-to-top">Về trang đầu</p>
                     <div class="img-bt">
                         <i class="fas fa-arrow-up"></i>
