@@ -285,10 +285,10 @@ $('.close-dangky').click(function(){
     $('.dangky').hide(300);
     $('.fixed-bgg').hide();
 });
-$('.register').click(function(){
-    $('.dangky').show(300);
-    $('.fixed-bgg').show();
-});
+// $('.register').click(function(){
+//     $('.dangky').show(300);
+//     $('.fixed-bgg').show();
+// });
 $('.fixed-bgg').click(function(){
     $('.dangky').hide(300);
     $('.fixed-bgg').hide();
