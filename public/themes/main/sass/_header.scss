@@ -526,7 +526,16 @@
     .select2-container--default .select2-selection--single{
         height: 40px;
         opacity: 0.7;
+        border: none;
+        border-radius: 5px;
     }
+    .select2{
+        // margin-right: 16px;
+    }
+    // .select2-container{
+    //     margin-right: 16px;
+    //     width: 100%;
+    // }
     .select2-container--default .select2-results>.select2-results__options{
         @media only screen and (min-width: 1025px) and (max-height : 767px){
             max-height: 100px;
