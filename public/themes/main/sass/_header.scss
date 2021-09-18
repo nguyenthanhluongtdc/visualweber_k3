@@ -216,29 +216,7 @@
         }
     }
 
-    // .moveTop {
-    //     padding-left: 0 !important; 
-
-    //     .wrap-button {
-    //         justify-content: flex-start;
-
-    //         i {
-    //             background-color: white;
-    //             width: 100%;
-    //             height: 100%;
-    //             color: #828a90;
-    //             border-radius: 50%;
-    //             position: relative;
-
-    //             &::before {
-    //                 position: absolute;
-    //                 top: 50%;
-    //                 left: 50%;
-    //                 transform: translate(-50%, -50%);
-    //             }
-    //         }
-    //     }
-    // }
+  
         .wrap-buttonn{
             display: flex;
             align-items: center;
@@ -335,7 +313,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 99999999999999999999999999999999999999999999999999999999999;
+    z-index: 9;
     background: transparent;
     display: none;
     .select2-container--default .select2-selection--single{
@@ -415,6 +393,7 @@
                 margin-bottom: 20px;
             }
             .contact-column-12{
+               
                 width: 100%;
                 .contact-form-group{
                     width: 100%;
@@ -475,7 +454,7 @@
                 color: #fff;
                 border: none;
                 outline: none;
-                height: 60px;
+                height: 50px;
                 margin-top: 20px;
                 @media(max-width : 1680px){
                     height: 50px;
@@ -530,25 +509,46 @@
 
 
 
-.select2-container--open .select2-dropdown--below {
-    position: absolute;
-    z-index: 33333333333333333333;
-    padding: 50%;
-    top: 50%;
-}
-.select2-container--default .select2-results>.select2-results__options{
-    @media only screen and (min-width: 1025px) and (max-height : 767px){
+
+    .select2-container--open .select2-dropdown--below {
+        position: absolute;
+        z-index: 3333333333333333333399999999999999999999999999999999999999;
+        padding: 50%;
+        top: 50%;
+        max-height: 150px;
+    }
+    .select2-container--default .select2-results>.select2-results__options{
         max-height: 100px;
     }
-    @media(max-width: 480px){
-        max-height: 50px;
+    .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{
+        height: 50px;
     }
-}
-.select2-container--default .select2-search--dropdown .select2-search__field{
-    height: 40px;
-    border: 1px solid #ccc;
-}
-
+    .select2-container--default .select2-selection--single{
+        height: 50px;
+    }
+    .select2-container--default .select2-results>.select2-results__options{
+        @media only screen and (min-width: 1025px) and (max-height : 767px){
+            max-height: 100px;
+        }
+        @media(max-width: 480px){
+            max-height: 50px;
+        }
+    }
+    .select2-container--default .select2-search--dropdown .select2-search__field{
+        height: 40px;
+        border: 1px solid #ccc;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: 'VN-KiaSignature-Regular';
+        font-size: 15px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+        top: 50%;
+        transform: translateY(-50%);
+    }
 #moveTop {
     position: fixed; 
     z-index: 10000;
@@ -651,3 +651,7 @@
     }
         
 }
+// .select2-container{
+//     width: 200px;
+// }
+

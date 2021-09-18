@@ -4,7 +4,7 @@
 <div class="count-down">
     
     <video autoplay muted loop playsinline id="myVideo">
-        <source src="{{ Theme::asset()->url('images/section1/video.mp4') }}" type="video/mp4">
+        <source src="{{ Theme::asset()->url('images/teaser.mp4') }}" type="video/mp4">
     </video>
     <div class="fixed-bg">
 
@@ -43,17 +43,36 @@
 
 
         {!! Form::open(['route' => 'public.send.contact', 'method' => 'POST', 'class' => 'contact-form']) !!}
+
+        {{-- hệ thống showwroom tỉnh thành  --}}
+        <div class="contact-form-row contact-form-row-top">
+            <div class="contact-column-6">
+                <div class="contact-form-group">
+                    <input type="text" class="contact-form-input font-kia-light" name="" value="" id=""
+                        placeholder="Vui lòng chọn tỉnh thành">
+                </div>
+            </div>
+            <div class="contact-column-6">
+                <div class="contact-form-group">
+                    <input type="text" class="contact-form-inputfont-kia-light" name="" value="" id=""
+                           placeholder="Vui lòng chọn showroom">
+                </div>
+            </div>
+        </div>
+
+        {{-- họ tên số điện thoại  --}}
+
             <div class="contact-form-row contact-form-row-top">
                 <div class="contact-column-6">
                     <div class="contact-form-group">
-                        <input type="text" class="contact-form-input font20 font-kia-light" name="name" value="{{ old('name') }}" id="contact_name"
+                        <input type="text" class="contact-form-input font-kia-light" name="name" value="{{ old('name') }}" id="contact_name"
                             placeholder="Họ và tên">
                             <p class="error-msg font-buenos-re">{{$errors->first('name')}}</p>
                     </div>
                 </div>
                 <div class="contact-column-6">
                     <div class="contact-form-group">
-                        <input type="text" class="contact-form-input font20 font-kia-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
+                        <input type="text" class="contact-form-inputfont-kia-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
                                placeholder="Số điện thoại">
                                <p class="error-msg font-buenos-re">{{$errors->first('phone')}}</p>
                     </div>
@@ -61,10 +80,31 @@
             </div>
             <div class="contact-form-row">
                 <div class="contact-column-12">
-                    <div class="contact-form-group">
+                     <div class="contact-form-group">
+                        <input type="text" class="contact-form-input font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
+                               placeholder="Nhập địa chỉ liên hệ"  type="color" value="#444">
+                        <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-row">
+                <div class="contact-column-12">
+                    {{-- <div class="contact-form-group">
                         <input type="text" class="contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
                                placeholder="Địa chỉ">
-                               <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                        <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                    </div> --}}
+                    <div class="tinh">
+                        <select name="form-control" id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
+                            <option value="" selected>Tỉnh/ Thành phố</option>
+                        </select>
+                        <select name="form-control" id="district" name="district" onchange="changeFuncDistrict();" class="font-kia-light js-example-disabled-results">
+                            <option value="" selected>Quận/ Huyện</option>
+                        </select>
+                        <select name="form-control" id="ward" name="ward" aria-placeholder="Quận huyện" class="font-kia-light js-example-disabled-results">
+                            <option value="" selected>Phường/ Xã</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -132,3 +172,76 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+
+{{-- <script>
+    document.addEventListener("DOMContentLoaded", function(){
+        var province=document.getElementById("province");
+        window.onload=function(){
+            $.ajax({
+                url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/province',
+                headers: {
+                    'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
+                    'Content-Type':'application/json'
+                },
+                method: 'GET',
+                dataType: 'json',
+                success: function(response){
+                    console.log('succes: ');
+                    console.log(response.data);
+                    var str="<option selected> Tỉnh thành</option>";
+                    for(var i=0; i<response.data.length; i++){
+                        console.log(response.data[i].ProvinceName);
+                        str=str+"<option class='provinceId' data-province='"+response.data[i].ProvinceID+"' >" +response.data[i].ProvinceName + "</option>"
+                    }
+                    province.innerHTML=str;
+                }
+            });
+        }
+    }, false)
+
+   function changeFunc(){
+       var selectBox = document.getElementById("province");
+       var selectedValue = selectBox.options[selectBox.selectedIndex].getAttribute('data-province');
+       var district=document.getElementById('district');
+       $.ajax({
+                url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/district',
+                headers: {
+                    'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
+                    'Content-Type':'application/json'
+                },
+                method: 'GET',
+                dataType: 'json',
+                success: function(response){
+                    var str="<option selected>Quận huyện</option>";
+                    for(var i=0; i<response.data.length; i++){
+                        if(response.data[i].ProvinceID==selectedValue)
+                        str=str+"<option class='districtId' data-district='"+response.data[i].DistrictID+"' >" +response.data[i].DistrictName + "</option>"
+                    }
+                    district.innerHTML=str;
+                }
+            });
+   }
+
+   function changeFuncDistrict(){
+       var selectBox = document.getElementById("district");
+       var selectedValue = selectBox.options[selectBox.selectedIndex].getAttribute('data-district');
+       var ward = document.getElementById('ward');
+       $.ajax({
+                url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/ward?district_id='+selectedValue,
+                headers: {
+                    'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
+                    'Content-Type':'application/json'
+                },
+                method: 'GET',
+                dataType: 'json',
+                success: function(response){
+                    var str="<option selected>Phường xã</option>";
+                    for(var i=0; i<response.data.length; i++){
+                        if(response.data[i].ProvinceID==selectedValue)
+                        str=str+"<option class='wardId' data-ward='"+response.data[i].WardCode+"' >" +response.data[i].WardName + "</option>"
+                    }
+                    ward.innerHTML=str;
+                }
+            });
+   }
+</script> --}}
