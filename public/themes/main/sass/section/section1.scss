@@ -577,7 +577,7 @@
                         font-size: 60px;
                     }
                     @media(max-width : 480px){
-                        font-size: 40px;
+                        font-size: 60px;
                     }
                     
                 }
@@ -616,7 +616,7 @@
     h5{
         
         font-size: 35px;
-        margin: 30px 0 20px;
+        margin: 60px 0 20px;
         @media(max-width : 1680px){
             font-size: 30px;
         }
@@ -626,7 +626,7 @@
         }
         @media(max-width : 1366px){
             font-size: 25px;
-            margin: 15px 0 10px;
+            margin: 35px 0 10px;
         }
         @media(max-width : 1279px){
             font-size: 20px;
@@ -797,11 +797,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 30px;
         @media(max-width : 480px){
-            margin-top: 55px;
+            margin-top: 65px;
         }
         button{
-            width: 35%;
+            width: 32%;
             color: #fff;
             background: #3371b0;
             border: none;

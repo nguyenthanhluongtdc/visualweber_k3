@@ -119,10 +119,10 @@
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
                         <select id="district-form" name="district" class="add-item add-item2 font-kia-light js-example-disabled-results" required>
-                            <option value="" selected>Quận/ Huyện</option>
+                            <option value="">Quận/ Huyện</option>
                         </select>
                         <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item3 add-item font-kia-light js-example-disabled-results" required>
-                            <option value="" selected>Phường/ Xã</option>
+                            <option value="">Phường/ Xã</option>
                         </select>
                     </div>
                     {{-- <p class="error-msg font-kia-re request">{{$errors->first('address')}}</p> --}}
