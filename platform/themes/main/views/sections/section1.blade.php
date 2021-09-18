@@ -70,13 +70,18 @@
                 <p class="font-kia-light first">nhận diện mới</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="600">
-                <div class="img"><img src="{{ Theme::asset()->url('images/section1/iconconnect.png') }}" alt=""></div>
+                <div class="img img-con2"><img src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt=""></div>
                 <p class="font-kia-light second">kết nối công nghệ</p>
             </div>
             <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
 
-                <div class="img"> <img src="{{ Theme::asset()->url('images/section1/icondrive.png') }}" alt=""> </div>
+                <div class="img img-con3"> <img src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt=""> </div>
                 <p class="font-kia-light">chế độ lái thông minh</p>
+            </div>
+            <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="900">
+
+                <div class="img img-con4"> <img src="{{ Theme::asset()->url('images/section1/icontop4.png') }}" alt=""> </div>
+                <p class="font-kia-light">An toàn tối ưu</p>
             </div>
         </div>
        </div>

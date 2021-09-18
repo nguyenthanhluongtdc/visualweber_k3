@@ -177,7 +177,25 @@
                     .img-con{
                         img{
                             filter: invert(1);
-                            width: 100px;
+                            width: 60px;
+                        }
+                    }
+                    .img-con2{
+                        img{
+                            filter: invert(1);
+                            width: 32px;
+                        }
+                    }
+                    .img-con3{
+                        img{
+                            filter: invert(1);
+                            width: 29px;
+                        }
+                    }
+                    .img-con4{
+                        img{
+                            filter: invert(1);
+                            width: 50px;
                         }
                     }
                     background-size: cover;
@@ -195,14 +213,14 @@
                         justify-content: center;
                         width: 33.33336%;
                         height: 100%;
-                        padding: 5px;
+                        padding: 10px 0 5px;
                         
                         .img{
                             width: 100%;
                             height: 45%;
                             text-align: center;
                             align-items: flex-end;
-                            justify-content: center;
+                            // justify-content: center;
                             display: flex;
                             img {
                                 max-height: 100%;
@@ -225,10 +243,11 @@
                         text-align: center;
                         line-height: 20px;
                         margin-top: 10px;
+                        color: #fff;
 
                         @media(max-width : 480px){
-                            font-size: 13px;
-                            line-height: 17px;
+                            font-size: 11px;
+                            line-height: 14px;
                         }
                         @media(max-width: 400px){
                             font-size: 12px;
