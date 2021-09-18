@@ -481,11 +481,15 @@
     //     }
     // }
 }
+
+#fullpage{
+    display: none;
+}
 .count-down{
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 9999999999999;
+    z-index: 999999999999999999;
     .content-count-down{
         display: flex;
         flex-direction: column;
@@ -536,6 +540,9 @@
              }
             @media(max-width : 723px){
                font-size: 27px;
+            }
+            @media(max-width  : 480px){
+                margin-bottom: 60px;
             }
         }
         ul{

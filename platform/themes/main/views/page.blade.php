@@ -81,8 +81,8 @@
     </div>
 </div> --}}
 
-
-<div id="fullpage" class="fullpage" data-section="{{$section ?? ''}}">
+{{-- tạm ẩn fp  --}}
+<div id="fullpage" class="fullpage" data-section="{{$section ?? ''}}" class="d-none">
     @includeIf('theme.main::views.sections.section1')
     @includeIf('theme.main::views.sections.section2')
     @includeIf('theme.main::views.sections.section3')
