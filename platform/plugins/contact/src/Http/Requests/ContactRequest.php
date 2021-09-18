@@ -36,8 +36,9 @@ class ContactRequest extends Request
             'ward'              => 'required',
             'phone' => [
                 'required',
-                'regex:/(09|08|07|05|03)+([0-9]{8})\b/',
                 'size:10',
+                'regex:/(09|08|07|05|03)+([0-9]{8})\b/',
+                
             ],
         ];
     }

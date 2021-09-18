@@ -832,9 +832,36 @@
             
         }
     }
-    p.request{
+    div.error{
+        &:hover{
+         p.error-msg{
+          opacity:1;
+       }
+       }
+       }
+       .error p.request{
         font-size: 11px;
-        color: red;
+        position: absolute;
+        top: calc(100% - 5px);
+        left: 0;
+        width: 100%;
+        background: red;
+        z-index: 1;
+        border-radius: 0 0 3px 3px;
+        color: #fff;
+        padding: 5px;
+        visibility: unset;
+        box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+        transition: all linear .3s;
+        opacity: 0;
+        
+    }
+    div.error input{
+        border: 1px solid red!important;
+    }
+    div.error:hover p.request{
+        opacity:1;
+        visibility:unsetl
     }
     .contact-form-row-top{
         display: flex;
@@ -857,7 +884,7 @@
             background: #3371b0;
             border: none;
             outline: none;
-            border-radius: 5px;
+            border-radius: 4px;
             height: 45px;
             @media(max-width : 1440px){
                 height: 45px;
@@ -935,3 +962,23 @@
     0% { top : 0%; }
     100% { top: 50%;}
 }
+
+
+.count-down .contact-form-row .contact-form-group{
+    position: relative;
+}
+// input.error{
+//     border: 1px solid red!important;
+//     }
+//     p.error-msg{
+//         position: absolute;
+//         top: calc(100% - 5px);
+//         left: 0;
+//         width: 100%;
+//         background: red;
+//         z-index: 1;
+//         border-radius: 0 0 3px 3px;
+//         color: #fff;
+//         padding: 5px;
+//         visibility: hidden;
+//         }

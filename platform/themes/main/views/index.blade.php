@@ -88,14 +88,14 @@
                     <div class="contact-form-group">
                         <input type="text" class="contact-form-input font-kia-light" name="name" value="{{ old('name') }}" id="contact_name"
                             placeholder="Họ và tên" required>
-                            <p class="error-msg font-kia-re request">{{$errors->first('name')}}</p>
+                            {{-- <p class="error-msg font-kia-re request">{{$errors->first('name')}}</p> --}}
                     </div>
                 </div>
                 <div class="contact-column-6">
-                    <div class="contact-form-group">
-                        <input type="number" class="contact-form-inputfont-kia-light mobile" name="phone" value="{{ old('phone') }}" id="contact_phone"
+                    <div class="contact-form-group mobilehover {{$errors->has('phone') ? 'error' : ''}}">
+                        <input type="number" class="contact-form-inputfont-kia-light " name="phone" value="{{ old('phone') }}" id="contact_phone"
                                placeholder="Số điện thoại" required>
-                               <p class="error-msg font-kia-re request">{{$errors->first('phone')}}</p>
+                               <p class="error-msg font-kia-re request erro-p">{{$errors->first('phone')}}</p>
                     </div>
                 </div>
             </div>
