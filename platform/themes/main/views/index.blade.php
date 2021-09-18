@@ -1,6 +1,12 @@
 @php Theme::layout('default') @endphp
 {{-- {!! get_field($page, 'number_user') !!} --}}
 
+<script>
+    const showroomsUrl = '{{route('public.ajax.showroom')}}'
+    const xaphuongUrl = '{{route('public.ajax.xaphuong')}}'
+    const quanhuyenUrl = '{{route('public.ajax.quanhuyen')}}'
+</script>
+
 <div class="count-down">
     
     <video autoplay muted loop playsinline id="myVideo">
@@ -19,6 +25,9 @@
         
     </div>
     <div class="content-count-down">
+        <div class="loading d-none">
+        <img src="{{Theme::asset()->url('images/loading.gif')}}" alt="Loading">
+        </div>
         <h3 class="font-kia-bold">CÙNG CHỜ ĐÓN</h3>
         <ul class="time-countdown">
             <li class="li-dau">
@@ -51,13 +60,16 @@
                 <div class="contact-form-group">
                     <select name="form-control" id="city" name="city"  class="font-kia-light js-example-disabled-results">
                         <option value="" selected>Vui lòng chọn tỉnh thành</option>
+                        @foreach(get_province_for_form() as $item)
+                        <option value="{{$item->matp}}">{{$item->name}}</option>
+                        @endforeach
                     </select>
                    
                 </div>
             </div>
             <div class="contact-column-6">
                 <div class="contact-form-group">
-                    <select name="form-control" id="showroom" name="showroom"  class="font-kia-light js-example-disabled-results">
+                    <select name="form-control" id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results">
                         <option value="" selected>Vui lòng chọn showroom</option>
                     </select>
                    
@@ -103,10 +115,10 @@
                         {{-- <select name="form-control" id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
-                        <select name="form-control" id="district" name="district" onchange="changeFuncDistrict();" class="add-item font-kia-light js-example-disabled-results">
+                        <select name="form-control" id="district-form" name="district" class="add-item font-kia-light js-example-disabled-results">
                             <option value="" selected>Quận/ Huyện</option>
                         </select>
-                        <select name="form-control" id="ward" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results">
+                        <select name="form-control" id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results">
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>

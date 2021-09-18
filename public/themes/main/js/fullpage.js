@@ -339,73 +339,224 @@ if ($(window).width() < 1025) {
 }
 
 
-    document.addEventListener("DOMContentLoaded", function(){
-        var province=document.getElementById("province");
-        window.onload=function(){
-            $.ajax({
-                url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/province',
-                headers: {
-                    'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
-                    'Content-Type':'application/json'
-                },
-                method: 'GET',
-                dataType: 'json',
-                success: function(response){
+    // document.addEventListener("DOMContentLoaded", function(){
+    //     var province=document.getElementById("province");
+    //     window.onload=function(){
+    //         $.ajax({
+    //             url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/province',
+    //             headers: {
+    //                 'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
+    //                 'Content-Type':'application/json'
+    //             },
+    //             method: 'GET',
+    //             dataType: 'json',
+    //             success: function(response){
                    
-                    var str="<option selected>Tỉnh/ Thành phố</option>";
-                    for(var i=0; i<response.data.length; i++){
-                        console.log(response.data[i].ProvinceName);
-                        str=str+"<option class='provinceId' data-province='"+response.data[i].ProvinceID+"' >" +response.data[i].ProvinceName + "</option>"
-                    }
-                    province.innerHTML=str;
-                }
-            });
-        }
-    }, false)
+    //                 var str="<option selected>Tỉnh/ Thành phố</option>";
+    //                 for(var i=0; i<response.data.length; i++){
+    //                     console.log(response.data[i].ProvinceName);
+    //                     str=str+"<option class='provinceId' data-province='"+response.data[i].ProvinceID+"' >" +response.data[i].ProvinceName + "</option>"
+    //                 }
+    //                 province.innerHTML=str;
+    //             }
+    //         });
+    //     }
+    // }, false)
 
-   function changeFunc(){
-       var selectBox = document.getElementById("province");
-       var selectedValue = selectBox.options[selectBox.selectedIndex].getAttribute('data-province');
-       var district=document.getElementById('district');
-       $.ajax({
-                url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/district',
-                headers: {
-                    'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
-                    'Content-Type':'application/json'
-                },
-                method: 'GET',
-                dataType: 'json',
-                success: function(response){
-                    var str="<option selected>Quận huyện</option>";
-                    for(var i=0; i<response.data.length; i++){
-                        if(response.data[i].ProvinceID==selectedValue)
-                        str=str+"<option class='districtId' data-district='"+response.data[i].DistrictID+"' >" +response.data[i].DistrictName + "</option>"
-                    }
-                    district.innerHTML=str;
-                }
-            });
-   }
+//    function changeFunc(){
+//        var selectBox = document.getElementById("province");
+//        var selectedValue = selectBox.options[selectBox.selectedIndex].getAttribute('data-province');
+//        var district=document.getElementById('district');
+//        $.ajax({
+//                 url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/district',
+//                 headers: {
+//                     'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
+//                     'Content-Type':'application/json'
+//                 },
+//                 method: 'GET',
+//                 dataType: 'json',
+//                 success: function(response){
+//                     var str="<option selected>Quận huyện</option>";
+//                     for(var i=0; i<response.data.length; i++){
+//                         if(response.data[i].ProvinceID==selectedValue)
+//                         str=str+"<option class='districtId' data-district='"+response.data[i].DistrictID+"' >" +response.data[i].DistrictName + "</option>"
+//                     }
+//                     district.innerHTML=str;
+//                 }
+//             });
+//    }
 
-   function changeFuncDistrict(){
-       var selectBox = document.getElementById("district");
-       var selectedValue = selectBox.options[selectBox.selectedIndex].getAttribute('data-district');
-       var ward = document.getElementById('ward');
-       $.ajax({
-                url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/ward?district_id='+selectedValue,
+//    function changeFuncDistrict(){
+//        var selectBox = document.getElementById("district");
+//        var selectedValue = selectBox.options[selectBox.selectedIndex].getAttribute('data-district');
+//        var ward = document.getElementById('ward');
+//        $.ajax({
+//                 url: 'https://dev-online-gateway.ghn.vn/shiip/public-api/master-data/ward?district_id='+selectedValue,
+//                 headers: {
+//                     'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
+//                     'Content-Type':'application/json'
+//                 },
+//                 method: 'GET',
+//                 dataType: 'json',
+//                 success: function(response){
+//                     console.log('succes: ');
+//                     console.log(response.data);
+//                     var str="<option selected>Phường xã</option>";
+//                     for(var i=0; i<response.data.length; i++){
+//                         str=str+"<option class='wardId' data-ward='"+response.data[i].WardCode+"' >" +response.data[i].WardName + "</option>"
+//                     }
+//                     ward.innerHTML=str;
+//                 }
+//             });
+//    }
+
+var getForForm = {
+    getShowroom: () => {
+        const resultShoroom = $('#city')
+        if (!resultShoroom) return
+        
+        $(document).on('change', '#city', function(e){
+            console.log($(this).val());
+            $.ajax({
                 headers: {
-                    'token':'2144f26b-183f-11ec-b8c6-fade198b4859',
-                    'Content-Type':'application/json'
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                method: 'GET',
-                dataType: 'json',
-                success: function(response){
-                    console.log('succes: ');
-                    console.log(response.data);
-                    var str="<option selected>Phường xã</option>";
-                    for(var i=0; i<response.data.length; i++){
-                        str=str+"<option class='wardId' data-ward='"+response.data[i].WardCode+"' >" +response.data[i].WardName + "</option>"
+                url: showroomsUrl,
+                data: {
+                    provinceId: $(this).val()
+                },
+                method: "GET",
+                dataType: "json",
+                beforeSend: function() {
+                    $('.loading').removeClass('d-none')
+
+                },
+                success: function (data) {
+                    console.log(data);
+                    if($('#showroom-form').length){
+                        $('#showroom-form').html(data.showroom)
                     }
-                    ward.innerHTML=str;
+                },
+                error: function (xhr, thrownError) {
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
                 }
-            });
-   }
+            })
+        })
+    },
+    getShowroom: () => {
+        const resultShoroom = $('#city')
+        if (!resultShoroom) return
+        
+        $(document).on('change', '#city', function(e){
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: showroomsUrl,
+                data: {
+                    provinceId: $(this).val()
+                },
+                method: "GET",
+                dataType: "json",
+                beforeSend: function() {
+                    $('.loading').removeClass('d-none')
+
+                },
+                success: function (data) {
+                    if($('#showroom-form').length){
+                        $('#showroom-form').html(data.showroom)
+                    }
+                },
+                error: function (xhr, thrownError) {
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
+                }
+            })
+        })
+    },
+    getDistrict: () => {
+        const resultShoroom = $('#city')
+        if (!resultShoroom) return
+        
+        $(document).on('change', '#city', function(e){
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: quanhuyenUrl,
+                data: {
+                    provinceId: $(this).val()
+                },
+                method: "GET",
+                dataType: "json",
+                beforeSend: function() {
+                    $('.loading').removeClass('d-none')
+
+                },
+                success: function (data) {
+                    if($('#district-form').length){
+                        $('#district-form').html(data.district)
+                    }
+                },
+                error: function (xhr, thrownError) {
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
+                }
+            })
+        })
+    },
+    getWard: () => {
+        const resultShoroom = $('#city')
+        if (!resultShoroom) return
+        
+        $(document).on('change', '#district-form', function(e){
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: xaphuongUrl,
+                data: {
+                    districtId: $(this).val()
+                },
+                method: "GET",
+                dataType: "json",
+                beforeSend: function() {
+                    $('.loading').removeClass('d-none')
+
+                },
+                success: function (data) {
+                    // console.log(data);
+                    if($('#ward-form').length){
+                        $('#ward-form').html(data.ward)
+                    }
+                },
+                error: function (xhr, thrownError) {
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
+                }
+            })
+        })
+    },
+}
+$(document).ready(function(){
+    getForForm.getShowroom();
+    getForForm.getDistrict();
+    getForForm.getWard()
+})

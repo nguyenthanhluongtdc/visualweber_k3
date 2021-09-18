@@ -2,22 +2,24 @@
 
 namespace Theme\Main\Http\Controllers;
 
-use Platform\Theme\Http\Controllers\PublicController;
-use BaseHelper;
-use Platform\Page\Models\Page;
-use Platform\Page\Services\PageService;
-use Platform\Theme\Events\RenderingSingleEvent;
-use Platform\Theme\Events\RenderingHomePageEvent;
-use Platform\Theme\Events\RenderingSiteMapEvent;
-use Illuminate\Contracts\Filesystem\FileNotFoundException;
-use Illuminate\Routing\Controller;
-use Illuminate\Support\Arr;
-use Response;
-use SeoHelper;
-use SiteMapManager;
-use SlugHelper;
 use Theme;
 use RvMedia;
+use Response;
+use SeoHelper;
+use BaseHelper;
+use SlugHelper;
+use SiteMapManager;
+use Illuminate\Support\Arr;
+use Platform\Page\Models\Page;
+use Illuminate\Routing\Controller;
+use Illuminate\Http\Request;
+use Platform\Page\Services\PageService;
+use Platform\Theme\Events\RenderingSingleEvent;
+use Platform\Theme\Events\RenderingSiteMapEvent;
+use Platform\Theme\Events\RenderingHomePageEvent;
+use Platform\Base\Http\Responses\BaseHttpResponse;
+use Platform\Theme\Http\Controllers\PublicController;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 class MainController extends PublicController
 {
@@ -182,5 +184,83 @@ class MainController extends PublicController
         Theme::breadcrumb()->add(__('Trang chủ'), route('public.page',$section));
 
         event(RenderingHomePageEvent::class);
+    }
+    public function getShowroom(Request $request, BaseHttpResponse $response){
+        try {
+            $data = get_agencies_by_province_id($request->provinceId);
+            $output = "";
+            if(!empty($data)){
+                foreach($data as $item){
+                    $output.='<option value="'.$item->id.'" >'.$item->name.'</option>';
+                }
+            }
+            return response()->json(
+                [
+                    'showroom' => $output,
+                    'type' => 'success',
+                ]
+            );
+        } catch (\Throwable $th) {
+            \Log::error('Có lỗi xảy ra khi lấy danh sách đại lý theo tỉnh thành', [$th->getMessage(), $th->getFile(), $th->getLine()]);
+            return response()->json(
+                [
+                    'type' => 'error',
+                    'message' => $th->getMessage(),
+
+                ]
+            );
+        }
+    }
+    public function getDistrict(Request $request, BaseHttpResponse $response){
+        try {
+            $data = get_district_by_province_id($request->provinceId);
+            $output = "";
+            if(!empty($data)){
+                foreach($data as $item){
+                    $output.='<option value="'.$item->maqh.'" >'.$item->name.'</option>';
+                }
+            }
+            return response()->json(
+                [
+                    'district' => $output,
+                    'type' => 'success',
+                ]
+            );
+        } catch (\Throwable $th) {
+            \Log::error('Có lỗi xảy ra khi lấy danh sách đại lý theo tỉnh thành', [$th->getMessage(), $th->getFile(), $th->getLine()]);
+            return response()->json(
+                [
+                    'type' => 'error',
+                    'message' => $th->getMessage(),
+
+                ]
+            );
+        }
+    }
+    public function getWard(Request $request, BaseHttpResponse $response){
+        try {
+            $data = get_ward_by_district_id($request->districtId);
+            $output = "";
+            if(!empty($data)){
+                foreach($data as $item){
+                    $output.='<option value="'.$item->xaid.'" >'.$item->name.'</option>';
+                }
+            }
+            return response()->json(
+                [
+                    'ward' => $output,
+                    'type' => 'success',
+                ]
+            );
+        } catch (\Throwable $th) {
+            \Log::error('Có lỗi xảy ra khi lấy danh sách đại lý theo tỉnh thành', [$th->getMessage(), $th->getFile(), $th->getLine()]);
+            return response()->json(
+                [
+                    'type' => 'error',
+                    'message' => $th->getMessage(),
+
+                ]
+            );
+        }
     }
 }

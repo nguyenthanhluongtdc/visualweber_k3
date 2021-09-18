@@ -494,6 +494,19 @@
         width: 100%;
         height: 100%;
         color: #fff;
+        .loading{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 7vw;
+                height: 7vw;
+            }
+        }
         h3{
             font-size: 60px;
             @media(max-width : 1680px){
