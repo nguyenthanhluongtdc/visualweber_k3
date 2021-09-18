@@ -62,7 +62,7 @@
                     <select id="city" name="city"  class="font-kia-light js-example-disabled-results city" required>
                         <option value="" selected>Vui lòng chọn tỉnh thành</option>
                         @foreach(get_province_for_form() as $item)
-                        <option value="{{$item->matp}}">{{$item->name}}</option>
+                        <option  {{ old('city') == @$item->matp ? 'selected' : '' }} value="{{$item->matp}}">{{$item->name}}</option>
                         @endforeach
                     </select>
                    
@@ -71,7 +71,7 @@
             </div>
             <div class="contact-column-6">
                 <div class="contact-form-group">
-                    <select id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results" required>
+                    <select id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results"  required>
                         <option value="" selected>Vui lòng chọn showroom</option>
                     </select>
                     <div class="loading d-none">
@@ -122,7 +122,7 @@
                         <select id="district-form" name="district" class="add-item add-item2 font-kia-light js-example-disabled-results" required>
                             <option value="">Quận/ Huyện</option>
                         </select>
-                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item3 add-item font-kia-light js-example-disabled-results" required>
+                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item3 add-item font-kia-light js-example-disabled-results"  required>
                             <option value="">Phường/ Xã</option>
                         </select>
                     </div>
