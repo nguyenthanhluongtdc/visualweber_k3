@@ -28,7 +28,8 @@
         {{-- <div class="loading d-none">
         <img src="{{Theme::asset()->url('images/ts1.gif')}}" alt="Loading">
         </div> --}}
-        <h3 class="font-kia-bold">CÙNG CHỜ ĐÓN</h3>
+        <h3 class="font-kia-bold top">CÙNG CHỜ ĐÓN</h3>
+        <h3 class="font-kia-bold bot">PHONG CÁCH SỐNG MỚI</h3>
         <ul class="time-countdown">
             <li class="li-dau">
                 <p id="days" class="font-kia-bold"></p>
