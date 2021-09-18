@@ -1,4 +1,4 @@
-<div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
+{{-- <div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
     style="background-image: url('{{ Theme::asset()->url('images/section1/bgnew3.jpg') }}')">
 
     <div class="s1-pc">
@@ -125,4 +125,4 @@
 
 
 
-</div>
+</div> --}}
