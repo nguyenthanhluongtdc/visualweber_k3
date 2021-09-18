@@ -23,7 +23,12 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             'as'   => 'public.sitemap',
             'uses' => 'MainController@getSiteMap',
         ]);
-
+        Route::group(['prefix' => 'ajax'], function () {
+            Route::get('showroom', 'MainController@getShowroom')->name('public.ajax.showroom');
+            Route::get('xaphuong', 'MainController@getWard')->name('public.ajax.xaphuong');
+            Route::get('quanhuyen', 'MainController@getDistrict')->name('public.ajax.quanhuyen');
+            
+        });
         // Route::get('{slug?}' . config('core.base.general.public_single_ending_url'), [
         //     'as'   => 'public.single',
         //     'uses' => 'MainController@getView',
