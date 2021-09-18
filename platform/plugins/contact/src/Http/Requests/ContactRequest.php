@@ -18,28 +18,40 @@ class ContactRequest extends Request
         if (setting('enable_captcha') && is_plugin_active('captcha')) {
             return [
                 'name'                 => 'required',
-                'phone'                => 'required',
                 'address'              => 'required',
                 'g-recaptcha-response' => 'required|captcha',
+                'phone' => [
+                    'required',
+                    'regex:/(09|08|07|05|03)+([0-9]{8})\b/',
+                    'size:10',
+                ],
             ];
         }
         return [
             'name'                 => 'required',
-            'phone'                => 'required',
             'address'              => 'required',
             'city'              => 'required',
             'showroom'              => 'required',
             'district'              => 'required',
             'ward'              => 'required',
+            'phone' => [
+                'required',
+                'regex:/(09|08|07|05|03)+([0-9]{8})\b/',
+                'size:10',
+            ],
         ];
     }
 
+    
     /**
      * @return array
      */
     public function messages()
     {
         return [
+            'phone.required' => 'Vui lòng nhập Số điện thoại',
+            'phone.regex' => 'Vui lòng nhập Số điện thoại đúng định dạng',
+            'phone.size' => 'Số điện thoại phải đúng 10 chữ số',
             'name.required'    => "Vui lòng nhập họ và tên",
             'phone.required'   => "Vui lòng nhập số điện thoại",
             'address.required'      => "Vui lòng nhập địa chỉ",
