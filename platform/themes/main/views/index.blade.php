@@ -11,7 +11,7 @@
     </div>
     <div  class="animated-modal-tk">
         <div class="popup-content">
-            <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
+            <h2 class="font-kia-bold font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
             <div class="close-popup">
                 <i class="fas fa-times"></i>
             </div>
@@ -19,41 +19,41 @@
         
     </div>
     <div class="content-count-down">
-        <h3 class="font-sfu-black">SẮP XUẤT HIỆN</h3>
+        <h3 class="font-kia-bold">CÙNG CHỜ ĐÓN</h3>
         <ul class="time-countdown">
             <li class="li-dau">
-                <p id="days" class="font-sfu-black"></p>
-                <p class="font-sfu-bold">ngày</p>
+                <p id="days" class="font-kia-bold"></p>
+                <p class="font-kia-re">ngày</p>
             </li>
             <li>
-                <p id="hours" class="font-sfu-black"></p>
-                <p class="font-sfu-bold">giờ</p>
+                <p id="hours" class="font-kia-bold"></p>
+                <p class="font-kia-re">giờ</p>
             </li>
             <li>
-                <p id="minutes" class="font-sfu-black"></p>
-                <p class="font-sfu-bold">phút</p>
+                <p id="minutes" class="font-kia-bold"></p>
+                <p class="font-kia-re">phút</p>
             </li>
             <li>
-                <p id="seconds" class="font-sfu-black"></p>
-                <p class="font-sfu-bold">giây</p>
+                <p id="seconds" class="font-kia-bold"></p>
+                <p class="font-kia-re">giây</p>
             </li>
         </ul>
 
-        <h5 class="font-sfu-black">ĐĂNG KÝ NHẬN THÔNG TIN MỚI NHẤT</h5>
+        <h5 class="font-kia-bold">ĐĂNG KÝ NHẬN THÔNG TIN MỚI NHẤT</h5>
 
 
         {!! Form::open(['route' => 'public.send.contact', 'method' => 'POST', 'class' => 'contact-form']) !!}
             <div class="contact-form-row contact-form-row-top">
                 <div class="contact-column-6">
                     <div class="contact-form-group">
-                        <input type="text" class="contact-form-input font20 font-buenos-light" name="name" value="{{ old('name') }}" id="contact_name"
+                        <input type="text" class="contact-form-input font20 font-kia-light" name="name" value="{{ old('name') }}" id="contact_name"
                             placeholder="Họ và tên">
                             <p class="error-msg font-buenos-re">{{$errors->first('name')}}</p>
                     </div>
                 </div>
                 <div class="contact-column-6">
                     <div class="contact-form-group">
-                        <input type="text" class="contact-form-input font20 font-buenos-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
+                        <input type="text" class="contact-form-input font20 font-kia-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
                                placeholder="Số điện thoại">
                                <p class="error-msg font-buenos-re">{{$errors->first('phone')}}</p>
                     </div>
@@ -62,7 +62,7 @@
             <div class="contact-form-row">
                 <div class="contact-column-12">
                     <div class="contact-form-group">
-                        <input type="text" class="contact-form-input font20 font-buenos-light" name="address" value="{{ old('address') }}" id="contact_address"
+                        <input type="text" class="contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
                                placeholder="Địa chỉ">
                                <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
                     </div>
@@ -71,7 +71,7 @@
 
             
             <div class="contact-form-group-bt">
-                <button type="submit" class="contact-button font-buenos-bold font20">Gửi</button>
+                <button type="submit" class="contact-button font-kia-bold font20">Gửi</button>
             </div>
             
             <div class="contact-form-group">
@@ -105,7 +105,7 @@
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 15, 2021 0:00:00").getTime();
+var countDownDate = new Date("Sep 22, 2021 0:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
