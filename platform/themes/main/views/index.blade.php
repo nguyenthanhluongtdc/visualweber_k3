@@ -58,7 +58,7 @@
             <div class="contact-column-6">
                
                 <div class="contact-form-group">
-                    <select name="form-control" id="city" name="city"  class="font-kia-light js-example-disabled-results">
+                    <select id="city" name="city"  class="font-kia-light js-example-disabled-results">
                         <option value="" selected>Vui lòng chọn tỉnh thành</option>
                         @foreach(get_province_for_form() as $item)
                         <option value="{{$item->matp}}">{{$item->name}}</option>
@@ -69,7 +69,7 @@
             </div>
             <div class="contact-column-6">
                 <div class="contact-form-group">
-                    <select name="form-control" id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results">
+                    <select id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results">
                         <option value="" selected>Vui lòng chọn showroom</option>
                     </select>
                     <div class="loading d-none">
@@ -114,13 +114,13 @@
                         <input type="text" class="add-item contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
                         placeholder="Nhập địa chỉ liên hệ">
                        
-                        {{-- <select name="form-control" id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
+                        {{-- <select id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
-                        <select name="form-control" id="district-form" name="district" class="add-item font-kia-light js-example-disabled-results">
+                        <select id="district-form" name="district" class="add-item font-kia-light js-example-disabled-results">
                             <option value="" selected>Quận/ Huyện</option>
                         </select>
-                        <select name="form-control" id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results">
+                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results">
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>
