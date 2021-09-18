@@ -577,7 +577,7 @@
                         font-size: 60px;
                     }
                     @media(max-width : 480px){
-                        font-size: 50px;
+                        font-size: 40px;
                     }
                     
                 }
@@ -603,11 +603,11 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 li{
-                    width: 31.5%;
+                    width: 25%;
                     margin: 0px;
                 }
                 li.li-dau{
-                    width: 100%;
+                    // width: 100%;
                 }
             }
             
@@ -690,10 +690,18 @@
                 align-items: center;
                 justify-content: space-between;
                 height: 100%;
+                flex-wrap: wrap;
                 .add-item{
                     width: 32%;
                    position: relative;
-                   
+                  
+                }
+                .add-item1{
+                  
+                   @media(max-width  :480px){
+                       width: 100%;
+                       margin-bottom: 2%;
+                   }
                 }
                 .add-item::before{
                     content: '';
@@ -708,10 +716,16 @@
                 .add-item2{
                     width: 32%;
                     height: 100%;
+                    @media(max-width  :480px){
+                        width: 49%;
+                    }
                 }
                 .add-item3{
                     width: 32%;
                     height: 100%;
+                    @media(max-width  :480px){
+                        width: 49%;
+                    }
                 }
                 input{
                     width: 100%;
@@ -783,6 +797,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media(min-width : 480px){
+            margin-top: 55px;
+        }
         button{
             width: 35%;
             color: #fff;
