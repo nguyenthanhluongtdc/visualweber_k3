@@ -34,13 +34,21 @@ class PublicController extends Controller
     public function postSendContact(ContactRequest $request, BaseHttpResponse $response)
     {        
         try {
+            $city = get_city_by_id($request->city)->name;
+            $showroom = get_showroom_by_id($request->showroom)->name;
+            $district = get_district_by_id($request->district)->name;
+            $ward = get_ward_by_id($request->ward)->name;
+
             $contact = $this->contactRepository->getModel();
             $contact->fill($request->input());
             $contact['email'] = $contact->email ?? "";
             $contact['content'] = $contact->content ?? "";
+            $contact['city'] = $city ?? "";
+            $contact['showroom'] = $showroom ?? "";
+            $contact['district'] = $district ?? "";
+            $contact['ward'] = $ward ?? "";
             $this->contactRepository->createOrUpdate($contact);
             event(new SentContactEvent($contact));
-            
             EmailHandler::setModule(CONTACT_MODULE_SCREEN_NAME)
                 ->setVariableValues([
                     'contact_name'    => $contact->name ?? 'N/A',
@@ -50,6 +58,9 @@ class PublicController extends Controller
                     'contact_city'   => $contact->city ?? 'N/A',
                     'contact_address' => $contact->address ?? 'N/A',
                     'contact_content' => $contact->content ?? 'N/A',
+                    'contact_showroom' => $contact->showroom ?? 'N/A',
+                    'contact_district' => $contact->district ?? 'N/A',
+                    'contact_ward' => $contact->ward ?? 'N/A',
                 ])
                 ->sendUsingTemplate('notice');
                 return redirect()->back()->with([

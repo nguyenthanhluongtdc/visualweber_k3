@@ -14,9 +14,14 @@ return [
     'variables'   => [
         'contact_name'    => 'Contact name',
         'contact_subject' => 'Contact subject',
-        'contact_email'   => 'Contact email',
-        'contact_phone'   => 'Contact phone',
-        'contact_address' => 'Contact address',
-        'contact_content' => 'Contact content',
+        'contact_email'     => 'Contact email',
+        'contact_phone'     => 'Contact phone',
+        'contact_address'    => 'Contact address',
+        'contact_content'   => 'Contact content',
+        'contact_showroom' => 'Contact showroom',
+        'contact_district' => 'Contact district',
+        'contact_ward'      => 'Contact ward',
+        'contact_city'      => 'Contact city',
+        
     ],
 ];

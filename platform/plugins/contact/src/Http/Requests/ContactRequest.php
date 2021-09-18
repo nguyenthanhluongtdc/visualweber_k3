@@ -27,6 +27,10 @@ class ContactRequest extends Request
             'name'                 => 'required',
             'phone'                => 'required',
             'address'              => 'required',
+            'city'              => 'required',
+            'showroom'              => 'required',
+            'district'              => 'required',
+            'ward'              => 'required',
         ];
     }
 
@@ -38,7 +42,12 @@ class ContactRequest extends Request
         return [
             'name.required'    => "Vui lòng nhập họ và tên",
             'phone.required'   => "Vui lòng nhập số điện thoại",
-            'address.required'      => "Vui lòng nhập địa chỉ"
+            'address.required'      => "Vui lòng nhập địa chỉ",
+            'city.required'      => "Vui lòng chọn Tỉnh/Thành phố",
+            'showroom.required'      => "Vui lòng chọn Showroom",
+            'district.required'      => "Vui lòng chọn Quận huyện",
+            'ward.required'      => "Vui lòng chọn Xã/Phường/Thị trấn"
+            
         ];
     }
 }
