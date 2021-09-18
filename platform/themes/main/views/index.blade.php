@@ -58,7 +58,7 @@
             <div class="contact-column-6">
                
                 <div class="contact-form-group">
-                    <select id="city" name="city"  class="font-kia-light js-example-disabled-results">
+                    <select id="city" name="city"  class="font-kia-light js-example-disabled-results city" required>
                         <option value="" selected>Vui lòng chọn tỉnh thành</option>
                         @foreach(get_province_for_form() as $item)
                         <option value="{{$item->matp}}">{{$item->name}}</option>
@@ -66,10 +66,11 @@
                     </select>
                    
                 </div>
+                <p class="city-required d-none">Vui lòng chọn tỉnh thành</p>
             </div>
             <div class="contact-column-6">
                 <div class="contact-form-group">
-                    <select id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results">
+                    <select id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results" required>
                         <option value="" selected>Vui lòng chọn showroom</option>
                     </select>
                     <div class="loading d-none">
@@ -85,15 +86,15 @@
                 <div class="contact-column-6">
                     <div class="contact-form-group">
                         <input type="text" class="contact-form-input font-kia-light" name="name" value="{{ old('name') }}" id="contact_name"
-                            placeholder="Họ và tên">
-                            <p class="error-msg font-buenos-re">{{$errors->first('name')}}</p>
+                            placeholder="Họ và tên" required>
+                            {{-- <p class="error-msg font-kia-re request">{{$errors->first('name')}}</p> --}}
                     </div>
                 </div>
                 <div class="contact-column-6">
                     <div class="contact-form-group">
                         <input type="text" class="contact-form-inputfont-kia-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
-                               placeholder="Số điện thoại">
-                               <p class="error-msg font-buenos-re">{{$errors->first('phone')}}</p>
+                               placeholder="Số điện thoại" required>
+                               {{-- <p class="error-msg font-kia-re request">{{$errors->first('phone')}}</p> --}}
                     </div>
                 </div>
             </div>
@@ -112,7 +113,7 @@
                    
                     <div class="tinh">
                         <input type="text" class="add-item contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
-                        placeholder="Nhập địa chỉ liên hệ">
+                        placeholder="Nhập địa chỉ liên hệ" required>
                        
                         {{-- <select id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
@@ -124,7 +125,7 @@
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>
-                    <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                    {{-- <p class="error-msg font-kia-re request">{{$errors->first('address')}}</p> --}}
                 </div>
             </div>
 

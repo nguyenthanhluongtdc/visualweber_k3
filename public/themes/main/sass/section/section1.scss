@@ -652,7 +652,7 @@
             width: 70%;
         }
         @media(max-width : 723px){
-            width: 80%;
+            width: 95%;
             height: auto;
         }
         
@@ -765,11 +765,12 @@
                     color: #444;
                   }
             }
-            p{
-                font-size: 13px;
-                color: #444;
-            }
+            
         }
+    }
+    p.request{
+        font-size: 11px;
+        color: red;
     }
     .contact-form-row-top{
         display: flex;

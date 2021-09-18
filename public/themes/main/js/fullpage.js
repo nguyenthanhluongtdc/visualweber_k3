@@ -530,3 +530,26 @@ $(document).ready(function(){
     $("#ward-form").attr('disabled', true);
     $("#district-form").attr('disabled', true);
 })
+
+
+
+
+$(document).ready(function() {
+  
+  
+
+      var $select2 = $('.city', $(this));
+      
+      // Reset
+      $select2.parents('.form-group').removeClass('is-invalid');
+      
+      if ($select2.val() === '') {
+        
+        // Add is-invalid class when select2 element is required
+        $('.city-required').show();
+        
+        // Stop submiting
+        // e.preventDefault();
+        return false;
+      }
+      });
