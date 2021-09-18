@@ -32,23 +32,15 @@ class PublicController extends Controller
      * @throws \Throwable
      */
     public function postSendContact(ContactRequest $request, BaseHttpResponse $response)
-    {
-        if($request->has('province') && $request->has('district') && $request->has('ward') && $request->has('address')){
-            $request->address = $request->province.', '.$request->district.', '.$request->ward;
-           
-        }
-        
-
+    {        
         try {
             $contact = $this->contactRepository->getModel();
             $contact->fill($request->input());
             $contact['email'] = $contact->email ?? "";
             $contact['content'] = $contact->content ?? "";
-            $contact['address'] =  $request->address;
             $this->contactRepository->createOrUpdate($contact);
-
             event(new SentContactEvent($contact));
-
+            
             EmailHandler::setModule(CONTACT_MODULE_SCREEN_NAME)
                 ->setVariableValues([
                     'contact_name'    => $contact->name ?? 'N/A',
@@ -64,7 +56,7 @@ class PublicController extends Controller
                     'type' => 'success',
                     'message' => __('Send message successfully!')
                 ]);
-
+            
             return $response->setMessage(__('Send message successfully!'));
         } catch (Exception $exception) {
             info($exception->getMessage());
