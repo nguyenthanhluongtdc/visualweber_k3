@@ -122,7 +122,7 @@
            @endif
 
           
-            <div class="social">
+            {{-- <div class="social">
 
                 @if (has_field($page, 'link_facebook'))
                 <div class="item-social">
@@ -138,7 +138,7 @@
                     </a>
                 </div>
                 @endif
-            </div>
+            </div> --}}
 
             <h3>TẢI ỨNG DỤNG KIA LINK</h3>
             <div class="app-kia">

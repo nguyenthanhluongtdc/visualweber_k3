@@ -560,6 +560,9 @@
         align-items: center;
         font-family: 'VN-KiaSignature-Regular';
         font-size: 13px;
+        @media(max-width : 480px){
+            font-size: 11px;
+        }
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow{
         top: 50%;
