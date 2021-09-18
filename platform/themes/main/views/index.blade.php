@@ -93,7 +93,7 @@
                 </div>
                 <div class="contact-column-6">
                     <div class="contact-form-group">
-                        <input type="text" class="contact-form-inputfont-kia-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
+                        <input type="number" class="contact-form-inputfont-kia-light" name="phone" value="{{ old('phone') }}" id="contact_phone"
                                placeholder="Số điện thoại" required>
                                {{-- <p class="error-msg font-kia-re request">{{$errors->first('phone')}}</p> --}}
                     </div>
@@ -252,3 +252,23 @@ var x = setInterval(function() {
             });
    }
 </script> --}}
+
+{{-- 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('body').on('click','.', function() {
+        var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        var mobile = $('#mobile').val();
+        if(mobile !==''){
+            if (vnf_regex.test(mobile) == false) 
+            {
+                alert('Số điện thoại của bạn không đúng định dạng!');
+            }else{
+                alert('Số điện thoại của bạn hợp lệ!');
+            }
+        }else{
+            alert('Bạn chưa điền số điện thoại!');
+        }
+        });
+    });
+    </script> --}}
