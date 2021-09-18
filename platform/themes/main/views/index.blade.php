@@ -112,16 +112,16 @@
                 <div class="contact-column-12">
                    
                     <div class="tinh">
-                        <input type="text" class="add-item contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
+                        <input type="text" class="add-item  add-item1 contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
                         placeholder="Nhập địa chỉ liên hệ" required>
                        
                         {{-- <select id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
-                        <select id="district-form" name="district" class="add-item font-kia-light js-example-disabled-results" required>
+                        <select id="district-form" name="district" class="add-item add-item2 font-kia-light js-example-disabled-results" required>
                             <option value="" selected>Quận/ Huyện</option>
                         </select>
-                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results" required>
+                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item3 add-item font-kia-light js-example-disabled-results" required>
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>
