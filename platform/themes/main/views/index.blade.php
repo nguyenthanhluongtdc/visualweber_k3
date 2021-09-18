@@ -47,15 +47,20 @@
         {{-- hệ thống showwroom tỉnh thành  --}}
         <div class="contact-form-row contact-form-row-top">
             <div class="contact-column-6">
+               
                 <div class="contact-form-group">
-                    <input type="text" class="contact-form-input font-kia-light" name="" value="" id=""
-                        placeholder="Vui lòng chọn tỉnh thành">
+                    <select name="form-control" id="city" name="city"  class="font-kia-light js-example-disabled-results">
+                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
+                    </select>
+                   
                 </div>
             </div>
             <div class="contact-column-6">
                 <div class="contact-form-group">
-                    <input type="text" class="contact-form-inputfont-kia-light" name="" value="" id=""
-                           placeholder="Vui lòng chọn showroom">
+                    <select name="form-control" id="showroom" name="showroom"  class="font-kia-light js-example-disabled-results">
+                        <option value="" selected>Vui lòng chọn showroom</option>
+                    </select>
+                   
                 </div>
             </div>
         </div>
@@ -78,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form-row">
+            {{-- <div class="contact-form-row">
                 <div class="contact-column-12">
                      <div class="contact-form-group">
                         <input type="text" class="contact-form-input font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
@@ -86,23 +91,22 @@
                         <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             
             <div class="contact-form-row">
                 <div class="contact-column-12">
-                    {{-- <div class="contact-form-group">
-                        <input type="text" class="contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
-                               placeholder="Địa chỉ">
-                        <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
-                    </div> --}}
+                   
                     <div class="tinh">
-                        <select name="form-control" id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
+                        <input type="text" class="add-item contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
+                        placeholder="Nhập địa chỉ liên hệ">
+                         <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                        {{-- <select name="form-control" id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
-                        </select>
-                        <select name="form-control" id="district" name="district" onchange="changeFuncDistrict();" class="font-kia-light js-example-disabled-results">
+                        </select> --}}
+                        <select name="form-control" id="district" name="district" onchange="changeFuncDistrict();" class="add-item font-kia-light js-example-disabled-results">
                             <option value="" selected>Quận/ Huyện</option>
                         </select>
-                        <select name="form-control" id="ward" name="ward" aria-placeholder="Quận huyện" class="font-kia-light js-example-disabled-results">
+                        <select name="form-control" id="ward" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results">
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>

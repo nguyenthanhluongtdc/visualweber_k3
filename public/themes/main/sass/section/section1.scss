@@ -600,7 +600,7 @@
     }
     form{
         width: 40%;
-        height: 45vh;
+        // height: 45vh;
         @media(max-width : 1600px){
             width: 50%;
         }
@@ -614,11 +614,11 @@
     }
     .contact-form-row{
         width: 100%;
-        height: 50px;
-        font-size: 15px;
+        height: 40px;
+        font-size: 13px;
         color: #444;
         @media(max-width : 1440px){
-            height: 50px;
+            height: 40px;
         }
         
         margin-bottom: 15px;
@@ -629,6 +629,9 @@
         .contact-column-6{
             width: 49%;
             height: 100%;
+            select{
+                width: 100%;
+            }
         }
         .contact-column-12{
             width: 100%;
@@ -639,15 +642,38 @@
                 align-items: center;
                 justify-content: space-between;
                 height: 100%;
-                select{
+                .add-item{
                     width: 32%;
                     height: 100%;
+                }
+                input{
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 8px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: none;
+                    opacity: 0.7;
+                    font-size: 13px;
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #444;
+                        opacity: 1; /* Firefox */
+                      }
+                      
+                      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: #444;
+                      }
+                      
+                      &::-ms-input-placeholder { /* Microsoft Edge */
+                        color: #444;
+                      }
                 }
             }
         }
         .contact-form-group{
             width: 100%;
             height: 100%;
+            
             input{
                 width: 100%;
                 height: 100%;
@@ -655,6 +681,7 @@
                 outline: none;
                 border-radius: 5px;
                 border: none;
+                opacity: 0.7;
                 &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: #444;
                     opacity: 1; /* Firefox */
@@ -686,14 +713,14 @@
         align-items: center;
         justify-content: center;
         button{
-            width: 40%;
+            width: 35%;
             color: #fff;
             background: #3371b0;
             border: none;
             outline: none;
-            height: 60px;
+            height: 45px;
             @media(max-width : 1440px){
-                height: 50px;
+                height: 45px;
                 width: 35%;
             }
             @media(max-width : 480px){
