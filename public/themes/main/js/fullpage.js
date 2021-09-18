@@ -192,6 +192,14 @@ $('#menu li').click(function(e) {
         console.log(error);
     }
 });
+$('.menu2ne li').click(function(e) {
+    // e.preventDefault();
+    try {
+        myFullpage.moveTo(this.getAttribute('data-menuanchor'));
+    } catch (error) {
+        console.log(error);
+    }
+});
 
 $('.section7-carousel').owlCarousel({
     center: true, 
