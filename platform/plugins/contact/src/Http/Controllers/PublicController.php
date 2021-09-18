@@ -33,12 +33,18 @@ class PublicController extends Controller
      */
     public function postSendContact(ContactRequest $request, BaseHttpResponse $response)
     {
+        if($request->has('province') && $request->has('district') && $request->has('ward') && $request->has('address')){
+            $request->request->add(['address' =>$request->address. ' ' .$request->ward. ' ' .$request->district. ' ' .$request->province]);
+           
+        }
+
+
         try {
             $contact = $this->contactRepository->getModel();
             $contact->fill($request->input());
             $contact['email'] = $contact->email ?? "";
             $contact['content'] = $contact->content ?? "";
-            $contact['address'] = $contact->address ?? "";
+            $contact['address'] = $contact->address. ' ' .$contact->ward. ' ' .$contact->district. ' ' .$contact->province ?? "";
             $this->contactRepository->createOrUpdate($contact);
 
             event(new SentContactEvent($contact));
