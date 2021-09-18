@@ -526,9 +526,9 @@ $(document).ready(function(){
     getForForm.getShowroom();
     getForForm.getDistrict();
     getForForm.getWard();
-    $("#showroom-form").attr('disabled', true);
-    $("#ward-form").attr('disabled', true);
-    $("#district-form").attr('disabled', true);
+    // $("#showroom-form").attr('disabled', true);
+    // $("#ward-form").attr('disabled', true);
+    // $("#district-form").attr('disabled', true);
 })
 
 

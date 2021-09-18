@@ -72,7 +72,15 @@
             <div class="contact-column-6">
                 <div class="contact-form-group">
                     <select id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results"  required>
+                        @if(!old('city'))
                         <option value="" selected>Vui lòng chọn showroom</option>
+                        @endif
+                        @if(old('city'))
+                            <option value="">Vui lòng chọn showroom</option>
+                            @foreach(get_agencies_by_province_id(old('city')) as $item)
+                                <option  {{ old('showroom') == @$item->id ? 'selected' : '' }} value="{{$item->id}}">{{$item->name}}</option>
+                            @endforeach
+                        @endif
                     </select>
                     <div class="loading d-none">
                         <img src="{{Theme::asset()->url('images/ts1.gif')}}" alt="Loading">
@@ -120,10 +128,26 @@
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
                         <select id="district-form" name="district" class="add-item add-item2 font-kia-light js-example-disabled-results" required>
+                            @if(!old('city'))
                             <option value="">Quận/ Huyện</option>
+                            @endif
+                            @if(old('city'))
+                                <option value="">Quận/ Huyện</option>
+                                @foreach(get_district_by_province_id(old('city')) as $item)
+                                    <option  {{ old('district') == @$item->maqh ? 'selected' : '' }} value="{{$item->maqh}}">{{$item->name}}</option>
+                                @endforeach
+                            @endif
                         </select>
                         <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item3 add-item font-kia-light js-example-disabled-results"  required>
+                            @if(!old('district'))
                             <option value="">Phường/ Xã</option>
+                            @endif
+                            @if(old('district'))
+                                <option value="">Phường/ Xã</option>
+                                @foreach(get_ward_by_district_id(old('district')) as $item)
+                                    <option  {{ old('ward') == @$item->xaid ? 'selected' : '' }} value="{{$item->xaid}}">{{$item->name}}</option>
+                                @endforeach
+                            @endif
                         </select>
                     </div>
                     {{-- <p class="error-msg font-kia-re request">{{$errors->first('address')}}</p> --}}
@@ -143,8 +167,6 @@
 
     </div>
 </div>
-
-
 
 
 
@@ -178,6 +200,11 @@ var x = setInterval(function() {
     document.getElementById("demo") ? document.getElementById("demo").innerHTML = "EXPIRED" : '';
   }
 }, 1000);
+@if(!old('city'))
+    $(document).ready(()=>{
+        $('select[name="city"]')[0].value = '';
+    });
+@endif
 </script>
 
 {{-- <script>

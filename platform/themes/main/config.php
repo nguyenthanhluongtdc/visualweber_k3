@@ -60,7 +60,7 @@ return [
             
             $theme->asset()->usePath()->add('style', 'css/common.css',[],[],time());
 
-            $theme->asset()->container('footer')->add('jquery', '//code.jquery.com/jquery-3.5.1.min.js');
+            $theme->asset()->container('header')->add('jquery', '//code.jquery.com/jquery-3.5.1.min.js');
             $theme->asset()->container('footer')->add('fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js');
             // $theme->asset()->container('footer')->add('semantic', '//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js');
             $theme->asset()->container('footer')->add('fullpage_js', '//cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js');
