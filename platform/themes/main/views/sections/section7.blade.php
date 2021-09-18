@@ -16,7 +16,7 @@
                 <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}"
                                     alt="K3" >
                 @endif
-                <div class="border"></div>
+                {{-- <div class="border"></div> --}}
                 <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     @if (has_sub_field($item, 'tieu_de_item_slider'))
                     <h5 class="font-kia-bold font30">{!! get_sub_field($item, 'tieu_de_item_slider') !!}</h5>
