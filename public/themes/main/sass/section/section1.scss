@@ -553,6 +553,10 @@
                         font-size: 60px;
                         line-height: 20px;
                     }
+                    @media(max-width : 1279px){
+                        font-size: 60px;
+                        line-height: 10px;
+                    }
                     @media(max-width : 1024px){
                         font-size: 60px;
                     }
@@ -609,6 +613,10 @@
         }
         @media(max-width : 1366px){
             font-size: 25px;
+            margin: 15px 0 10px;
+        }
+        @media(max-width : 1279px){
+            font-size: 20px;
         }
         @media(max-width : 1024px){
             font-size: 15px;
@@ -623,6 +631,9 @@
         // height: 45vh;
         @media(max-width : 1600px){
             width: 50%;
+        }
+        @media(max-width : 1366px){
+            height: 45vh;
         }
         @media(max-width : 1024px){
             width: 70%;
