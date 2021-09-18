@@ -50,10 +50,9 @@ class ContactRequest extends Request
     {
         return [
             'phone.required' => 'Vui lòng nhập Số điện thoại',
-            'phone.regex' => 'Vui lòng nhập Số điện thoại đúng định dạng',
+            'phone.regex' => 'Số điện thoại không hợp lệ',
             'phone.size' => 'Số điện thoại phải đúng 10 chữ số',
             'name.required'    => "Vui lòng nhập họ và tên",
-            'phone.required'   => "Vui lòng nhập số điện thoại",
             'address.required'      => "Vui lòng nhập địa chỉ",
             'city.required'      => "Vui lòng chọn Tỉnh/Thành phố",
             'showroom.required'      => "Vui lòng chọn Showroom",
