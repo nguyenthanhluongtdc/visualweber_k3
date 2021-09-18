@@ -25,9 +25,9 @@
         
     </div>
     <div class="content-count-down">
-        <div class="loading d-none">
-        <img src="{{Theme::asset()->url('images/loading.gif')}}" alt="Loading">
-        </div>
+        {{-- <div class="loading d-none">
+        <img src="{{Theme::asset()->url('images/ts1.gif')}}" alt="Loading">
+        </div> --}}
         <h3 class="font-kia-bold">CÙNG CHỜ ĐÓN</h3>
         <ul class="time-countdown">
             <li class="li-dau">
@@ -72,7 +72,9 @@
                     <select name="form-control" id="showroom-form" name="showroom"  class="font-kia-light js-example-disabled-results">
                         <option value="" selected>Vui lòng chọn showroom</option>
                     </select>
-                   
+                    <div class="loading d-none">
+                        <img src="{{Theme::asset()->url('images/ts1.gif')}}" alt="Loading">
+                        </div>
                 </div>
             </div>
         </div>
