@@ -39,11 +39,14 @@ class Contact extends BaseModel
     protected $fillable = [
         'name',
         'email',
-        // 'city',
+        'city',
         'phone',
         'address',
         'subject',
         'content',
+        'showroom',
+        'district',
+        'ward',
         'status',
     ];
 

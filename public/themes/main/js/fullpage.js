@@ -429,7 +429,7 @@ var getForForm = {
                 beforeSend: function() {
                     $('.loading').removeClass('d-none')
                     $("#ward-form").attr('disabled', true);
-                    $('#ward-form').html('<option selected value="" >Vui lòng chọn Tỉnh/Thành phố</option>')
+                    $('#ward-form').html('<option selected value="" >Vui lòng chọn Phường/Xã</option>')
                 },
                 success: function (data) {
                     if($('#showroom-form').length){
@@ -466,7 +466,7 @@ var getForForm = {
                 beforeSend: function() {
                     $('.loading').removeClass('d-none')
                     $("#ward-form").attr('disabled', true);
-                    $('#ward-form').html('<option selected value="" >Vui lòng chọn Tỉnh/Thành phố</option>')
+                    $('#ward-form').html('<option selected value="" >Vui lòng chọn Phường/Xã</option>')
                 },
                 success: function (data) {
                     if($('#district-form').length){
