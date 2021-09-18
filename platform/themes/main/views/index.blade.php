@@ -10,7 +10,7 @@
 <div class="count-down">
     
     <video autoplay muted loop playsinline id="myVideo">
-        <source src="{{ Theme::asset()->url('images/teasinga.mp4') }}" type="video/mp4">
+        <source src="{{ Theme::asset()->url('images/teasingare.mp4') }}" type="video/mp4">
     </video>
     <div class="fixed-bg">
 
