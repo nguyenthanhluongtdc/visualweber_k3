@@ -214,7 +214,7 @@ class MainController extends PublicController
     public function getDistrict(Request $request, BaseHttpResponse $response){
         try {
             $data = get_district_by_province_id($request->provinceId);
-            $output = "";
+            $output = '<option selected value="" >Vui lòng chọn Quận/Huyện</option>';
             if(!empty($data)){
                 foreach($data as $item){
                     $output.='<option value="'.$item->maqh.'" >'.$item->name.'</option>';
@@ -240,7 +240,7 @@ class MainController extends PublicController
     public function getWard(Request $request, BaseHttpResponse $response){
         try {
             $data = get_ward_by_district_id($request->districtId);
-            $output = "";
+            $output = '<option selected value="" >Vui lòng chọn Phường/Xã</option>';
             if(!empty($data)){
                 foreach($data as $item){
                     $output.='<option value="'.$item->xaid.'" >'.$item->name.'</option>';

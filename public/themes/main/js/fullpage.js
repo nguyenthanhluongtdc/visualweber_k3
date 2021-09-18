@@ -416,7 +416,6 @@ var getForForm = {
         if (!resultShoroom) return
         
         $(document).on('change', '#city', function(e){
-            console.log($(this).val());
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -429,47 +428,13 @@ var getForForm = {
                 dataType: "json",
                 beforeSend: function() {
                     $('.loading').removeClass('d-none')
-
-                },
-                success: function (data) {
-                    console.log(data);
-                    if($('#showroom-form').length){
-                        $('#showroom-form').html(data.showroom)
-                    }
-                },
-                error: function (xhr, thrownError) {
-                    console.log(xhr.responseText);
-                    console.log(thrownError)
-                    $('.loading').addClass('d-none')
-                },
-                complete: function(xhr, status) {
-                    $('.loading').addClass('d-none')
-                }
-            })
-        })
-    },
-    getShowroom: () => {
-        const resultShoroom = $('#city')
-        if (!resultShoroom) return
-        
-        $(document).on('change', '#city', function(e){
-            $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                url: showroomsUrl,
-                data: {
-                    provinceId: $(this).val()
-                },
-                method: "GET",
-                dataType: "json",
-                beforeSend: function() {
-                    $('.loading').removeClass('d-none')
-
+                    $("#ward-form").attr('disabled', true);
+                    $('#ward-form').html('<option selected value="" >Vui lòng chọn Tỉnh/Thành phố</option>')
                 },
                 success: function (data) {
                     if($('#showroom-form').length){
                         $('#showroom-form').html(data.showroom)
+                        $("#showroom-form").removeAttr('disabled');
                     }
                 },
                 error: function (xhr, thrownError) {
@@ -500,11 +465,13 @@ var getForForm = {
                 dataType: "json",
                 beforeSend: function() {
                     $('.loading').removeClass('d-none')
-
+                    $("#ward-form").attr('disabled', true);
+                    $('#ward-form').html('<option selected value="" >Vui lòng chọn Tỉnh/Thành phố</option>')
                 },
                 success: function (data) {
                     if($('#district-form').length){
                         $('#district-form').html(data.district)
+                        $("#district-form").removeAttr('disabled');
                     }
                 },
                 error: function (xhr, thrownError) {
@@ -535,7 +502,7 @@ var getForForm = {
                 dataType: "json",
                 beforeSend: function() {
                     $('.loading').removeClass('d-none')
-
+                    $("#ward-form").removeAttr('disabled');
                 },
                 success: function (data) {
                     // console.log(data);
@@ -558,5 +525,8 @@ var getForForm = {
 $(document).ready(function(){
     getForForm.getShowroom();
     getForForm.getDistrict();
-    getForForm.getWard()
+    getForForm.getWard();
+    $("#showroom-form").attr('disabled', true);
+    $("#ward-form").attr('disabled', true);
+    $("#district-form").attr('disabled', true);
 })
