@@ -87,7 +87,7 @@
                     <div class="contact-form-group">
                         <input type="text" class="contact-form-input font-kia-light" name="name" value="{{ old('name') }}" id="contact_name"
                             placeholder="Họ và tên" required>
-                            {{-- <p class="error-msg font-kia-re request">{{$errors->first('name')}}</p> --}}
+                            <p class="error-msg font-kia-re request">{{$errors->first('name')}}</p>
                     </div>
                 </div>
                 <div class="contact-column-6">
@@ -118,10 +118,10 @@
                         {{-- <select id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
-                        <select id="district-form" name="district" class="add-item font-kia-light js-example-disabled-results">
+                        <select id="district-form" name="district" class="add-item font-kia-light js-example-disabled-results" required>
                             <option value="" selected>Quận/ Huyện</option>
                         </select>
-                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results">
+                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item font-kia-light js-example-disabled-results" required>
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>
