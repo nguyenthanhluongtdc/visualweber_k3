@@ -111,7 +111,7 @@
                     <div class="tinh">
                         <input type="text" class="add-item contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
                         placeholder="Nhập địa chỉ liên hệ">
-                         <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
+                       
                         {{-- <select name="form-control" id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
@@ -122,6 +122,7 @@
                             <option value="" selected>Phường/ Xã</option>
                         </select>
                     </div>
+                    <p class="error-msg font-buenos-re">{{$errors->first('address')}}</p>
                 </div>
             </div>
 
