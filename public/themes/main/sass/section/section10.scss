@@ -378,13 +378,13 @@
     overflow-y: auto;
     background: $primary-color;
     position: relative;
-    padding: 50px 100px;
+    padding: 70px 100px;
     @media(max-width: 1680px) {
-      padding: 30px 70px;
+      padding: 50px 60px;
     }
 
     @media(max-width: 1368px) {
-      padding: 20px 50px;
+      padding: 40px 50px;
     }
 
     .form {
@@ -476,6 +476,17 @@
           width: 23px;
           height: 23px;
           border: 1px solid #fff;
+        }
+      }
+
+      &__btnSubmit {
+        text-align: center;
+        margin-top: 30px;
+        button {
+          padding: 20px 30px;
+          border: none;
+          background-color: white;
+          color: black;
         }
       }
     }

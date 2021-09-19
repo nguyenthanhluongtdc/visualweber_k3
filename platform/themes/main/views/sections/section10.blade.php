@@ -286,6 +286,12 @@
                                                     <input type="checkbox" name="rules" id="rules">
                                                     <label class="ml-3" for="rules">Đồng ý nhận thông tin từ KIA</label>
                                                 </p>
+
+                                                <p class="form__btnSubmit">
+                                                    <button class="text-uppercase font16 font-kia-bold">
+                                                        đăng ký ngay
+                                                    </button>
+                                                </p>
                                             </div>
                                         </form>
                                     </div>
@@ -562,6 +568,12 @@
                                                     <input type="checkbox" name="rules" id="rules">
                                                     <label class="ml-3" for="rules">Đồng ý nhận thông tin từ KIA</label>
                                                 </p>
+
+                                                <p class="form__btnSubmit">
+                                                    <button class="text-uppercase font16 font-kia-bold">
+                                                        đăng ký ngay
+                                                    </button>
+                                                </p>
                                             </div>
                                         </form>
                                     </div>
@@ -811,9 +823,10 @@
                                                     <input type="text" id="date" placeholder="Nhập thông tin email">
                                                 </p>
 
-                                                <p class="form__checkbox">
-                                                    <input type="checkbox" name="rules" id="rules">
-                                                    <label class="ml-3" for="rules">Đồng ý nhận thông tin từ KIA</label>
+                                                <p class="form__btnSubmit">
+                                                    <button class="text-uppercase font16 font-kia-bold">
+                                                        đăng ký ngay
+                                                    </button>
                                                 </p>
                                             </div>
                                         </form>
