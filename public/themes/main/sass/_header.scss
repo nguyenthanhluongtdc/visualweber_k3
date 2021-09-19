@@ -1,7 +1,6 @@
 // tam an menu 
 
 .header-pc{
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -130,13 +129,12 @@
     }
 }
 
-// tam an menu 
 
 .header-mobie{
     display: none;
     box-shadow: 0 0 18px rgb(0 0 0 / 12%);
     @media(max-width :1024px){
-        // display: block;
+        display: block;
     }
     .header-logo{
         img{
