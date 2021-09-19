@@ -19,6 +19,18 @@
                 <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}"
                                     alt="K3" >
                 @endif
+                @if (has_sub_field($item, 'co_video'))
+                <div class="button-video3">
+
+                  
+                   <div class="img">
+                    <img src="{{ Theme::asset()->url('images/button.png') }}" alt="">
+                   </div>
+                  
+                </div>
+                <a data-fancybox href="{{ Theme::asset()->url('images/k3cop.mp4') }}" class="showcopsss">
+                </a>
+                @endif
                 {{-- <div class="border"></div> --}}
                 <div class="content" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                     @if (has_sub_field($item, 'tieu_de_item_slider'))

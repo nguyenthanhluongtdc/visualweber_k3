@@ -553,3 +553,8 @@ $(document).ready(function() {
         return false;
       }
       });
+
+
+$('.button-video3').click(function(){
+    $('.showcopsss').click();
+})

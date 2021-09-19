@@ -232,6 +232,17 @@
     .item-slider{
         position: relative;
         height: 100%;
+        .button-video3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+            transform: translate(-50% , -50%);
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
         img{
             height:100%;
             object-fit: cover;
