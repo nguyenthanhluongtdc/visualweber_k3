@@ -208,7 +208,7 @@
 
 <button id="moveDown">
     <span class="arrow">
-        <img class="mw-100" src="{{Theme::asset()->url('/images/icon_down.png')}}" alt="">
+        <img class="mw-100" src="{{Theme::asset()->url('/images/bottom.png')}}" alt="">
     </span>
 </button>
 
