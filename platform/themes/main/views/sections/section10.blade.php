@@ -1,4 +1,7 @@
 <div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="dat-xe-truc-tuyen">
+    <p class="tt-test tt-test2 font-kia-light">
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+    </p>
     <div class="container-remake section10-wrap" >
         <h2 class="text-uppercase font-kia-bold font40 text-center mb-0" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" >ĐẶT XE TRỰC TUYẾN</h2>
         <h3 class="font30 font-kia-bold" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="300">Các dòng sản phẩm</h3>

@@ -1,4 +1,7 @@
 <div class="section section7 fp-auto-height-responsive fp-section fp-completely" data-anchor="noi-that">
+    <p class="tt-test  font-kia-light">
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+    </p>
     <div class="section7-wrap container-remake">
     {{-- <div class="section7-wrap container-remake h-100"> --}}
         <div class="top" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
