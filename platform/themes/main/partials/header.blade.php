@@ -53,7 +53,7 @@
         </div>
         <ul class="list-menu font-kia-bold font20" id="menu">
            
-            <li class="menu_item" data-menuanchor="ngoai-that">
+            <li class="menu_item menu_item-wi" data-menuanchor="ngoai-that">
                 <a href="{{ route('public.index') }}#ngoai-that" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop1.png') }}" alt=""  class="menu1">
@@ -61,7 +61,7 @@
                     <p>Nhận diện mới</p>
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="noi-that">
+            <li class="menu_item menu_item-wi" data-menuanchor="noi-that">
                 <a href="{{ route('public.index') }}#noi-that" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt=""  class="menu2">
@@ -69,7 +69,7 @@
                     <p>Kết nối công nghệ</p>
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="van-hanh">
+            <li class="menu_item menu_item-wi" data-menuanchor="van-hanh">
                 <a href="{{ route('public.index') }}#van-hanh" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt="" class="menu3">
@@ -77,7 +77,7 @@
                     <p>Chế độ lái thông minh</p>
                 </a>
             </li>
-            <li class="menu_item" data-menuanchor="an-toan">
+            <li class="menu_item menu_item-wi" data-menuanchor="an-toan">
                 <a href="{{ route('public.index') }}#an-toan" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop4.png') }}" alt=""  class="menu4">
@@ -108,7 +108,7 @@
                 <i class="fas fa-times"></i>
             </div>
             <ul class="list-menu font-kia-bold font20" id="menu">
-                <li class="menu_item close-menu2" data-menuanchor="trang-chu">
+                <li class="menu_item close-menu2 " data-menuanchor="trang-chu">
                     <a href="{{ route('public.index') }}#trang-chu" class="menu_link">
                         Trang chủ
                     </a>

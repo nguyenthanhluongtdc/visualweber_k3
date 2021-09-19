@@ -20,32 +20,41 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            li.menu_item-wi{
+                width: 170px;
+                @media(max-width : 1440px){
+                    width: 140px;
+                }
+                @media(max-width : 1366px){
+                    width: 130px;
+                }
+            }
             li{
                 .menu1{
-                    width: 65px;
+                    width: 70px;
                 }
                 .menu2{
-                    width: 30px;
+                    width: 33px;
                 }
                 .menu3{
-                    width: 25px;
+                    width: 28px;
                 }
                 .menu4{
-                    width: 40px;
+                    width: 45px;
                 }
 
                 @media(max-width  : 1440px){
                     .menu1{
-                        width: 60px;
+                        width: 65px;
                     }
                     .menu2{
-                        width: 27px;
+                        width: 30px;
                     }
                     .menu3{
-                        width: 22px;
+                        width: 25px;
                     }
                     .menu4{
-                        width: 36px;
+                        width: 42px;
                     }
                 }
                 a{
@@ -67,7 +76,7 @@
                             font-size: 13px;
                         }
                         @media(max-width: 1366px){
-                            font-size: 13px;
+                            font-size: 12px;
                         }
                         @media(max-width: 1279px){
                             font-size: 12px;
@@ -91,16 +100,19 @@
                     margin-left: 30px;
                 }
             }
-            li:after {
+            li p {
+                border-bottom: 1px solid #fff;
+            }
+            li p:after {
                 display:block;
                 content: '';
                 border-bottom: solid 1px black;  
                 transform: scaleX(0);  
                 transition: transform 250ms ease-in-out;
               }
-              li:hover:after { transform: scaleX(1); }
-              li:after{ transform-origin:  0% 50%; }
-            li.active{
+              li p:hover:after { transform: scaleX(1); }
+              li p:after{ transform-origin:  0% 50%; }
+            li.active p{
                     border-bottom: 1px solid black;
                    
                  
