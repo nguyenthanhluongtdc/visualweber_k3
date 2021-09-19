@@ -65,14 +65,17 @@
         }
         .section5-abso{
             position: absolute;
-            bottom: 105%;
+            bottom: 75%;
             right: 0;
-            height: 25vh;
+            height: 40vh;
             @media(max-width : 1679px){
-                height: 23vh;
+                // height: 23vh;
             }
             @media(max-width : 1400px){
-                height: 25vh;
+                height: 38vh;
+            }
+            @media(max-width : 1366px){
+                height: 35vh;
             }
             width: 50%;
             @media(max-width : 1024px){
@@ -231,7 +234,13 @@
         .tab-menu-s6{
             width: 32%;
            position: relative;
-           margin-top: 20px;
+           margin-top: 9%;
+           @media(max-width : 1500px){
+               margin-top: 10%;
+           }
+           @media(max-width : 1366px){
+            margin-top: 9%;
+        }
            a.active p.top{
                font-family: 'VN-KiaSignature-Bold';
            }
@@ -256,16 +265,18 @@
             flex-direction: column;
             .border-dotter{
                 width: 3px;
-                bottom: -20px;
+                bottom: -23px;
                 position: absolute;
                 left: 29px;
                 top: -15px;
                 @media(max-width : 1440px){
-                    bottom: -10px;
-                    top: -10px;
+                    bottom: -20px;
+                    top: -17px;
                 }
                 @media(max-width : 1366px){
                     left: 25px;
+                    bottom: -10px;
+                    top: -10px;
                 }
                 @media(max-width :1024px){
                     display: none;
@@ -289,15 +300,15 @@
             }
             li{
                 z-index: 2;
-                margin: 20px 0;
+                margin: 8px 0;
                 @media(max-width : 1680px){
-                    margin: 15px 0;
+                    // margin: 15px 0;
                 }
                 @media(max-width : 1600px){
-                    margin: 10px 0;
-                }
-                @media(max-width : 1279px){
                     margin: 5px 0;
+                }
+                @media(max-width : 1366px){
+                    margin: 3px 0;
                 }
             }
             .item-tab-wrap{
