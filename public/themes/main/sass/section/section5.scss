@@ -67,7 +67,39 @@
             position: absolute;
             bottom: 75%;
             right: 0;
-            height: 40vh;
+            
+            .content-s5-tab{
+               color: #fff;
+                img{
+                    width: 100%;
+                    height: 30vh;
+                    object-fit: cover;
+                    @media(max-width  :1366px){
+                        height: 30vh;
+                    }
+                    @media(max-width:  1024px){
+                        height: auto;
+                    }
+                }
+                p{
+                    // height: 70px;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    @media(max-width : 1440px){
+                        font-size: 13px;
+                        // height: 60px;
+                    }
+                    @media(max-width:  1024px){
+                       width: 90%;
+                       display: flex;
+                       margin:  0 auto;
+                       text-align: justify;
+                       height: auto;
+                       margin-bottom: 10px;
+                       margin-top: 20px;
+                    }
+                }
+            }
             @media(max-width : 1679px){
                 // height: 23vh;
             }
@@ -79,7 +111,11 @@
             }
             width: 50%;
             @media(max-width : 1024px){
-                display: none;
+                position: relative;
+                bottom: unset;
+                right: unset;
+                width: 100%;
+
             }
             img{
                 width: 100%;
@@ -92,54 +128,30 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            height: 53vh;
+            height: 50vh;
             @media(max-width : 1366px){
-                height: 51vh;
+                height: 50vh;
             }
             @media(max-width : 1024px){
                 flex-wrap: wrap;
-                flex-direction: column-reverse;
+                // flex-direction: column-reverse;
                 height: auto;
             }
-            .tab-content-left{
+            .left-pri{
                 width: 64%;
                 @media(max-width : 1024px){
                     width: 100%;
                     height: auto!important;
                     margin-top: 15px;
                 }
+                height: 100%;
                 color: #fff;
-                .content-s5-tab{
+                img{
+                    width: 100%;
                     height: 100%;
-                    img{
-                        width: 100%;
-                        height: 45vh;
-                        object-fit: cover;
-                        margin-bottom: 20px;
-                        @media(max-width  :1366px){
-                            margin-bottom: 10px;
-                            height: 39vh;
-                        }
-                        @media(max-width:  1024px){
-                            height: auto;
-                        }
-                    }
-                    p{
-                        // height: 70px;
-                        font-size: 18px;
-                        @media(max-width : 1440px){
-                            font-size: 13px;
-                            // height: 60px;
-                        }
-                        @media(max-width:  1024px){
-                           width: 90%;
-                           display: flex;
-                           margin:  0 auto;
-                           height: auto;
-                           margin-bottom: 10px;
-                        }
-                    }
+                    object-fit: cover;
                 }
+               
                
             }
         }
@@ -236,7 +248,7 @@
            position: relative;
            margin-top: 9%;
            @media(max-width : 1500px){
-               margin-top: 10%;
+               margin-top: 9%;
            }
            @media(max-width : 1366px){
             margin-top: 9%;
