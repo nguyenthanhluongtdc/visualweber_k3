@@ -337,7 +337,9 @@ if ($(window).width() < 1025) {
         fullpage_api.moveTo(1);
     });
 }
-
+$(document).on('click', '.wrap-kp', function(){
+    fullpage_api.moveSectionDown();
+});
 
     // document.addEventListener("DOMContentLoaded", function(){
     //     var province=document.getElementById("province");
