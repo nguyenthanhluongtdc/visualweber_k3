@@ -551,6 +551,7 @@
         }
         h3.bot{
             font-size: 39px;
+            margin-bottom: 35px;
             @media(max-width : 1680px){
                 font-size: 32px;
             }
@@ -595,6 +596,7 @@
                     @media(max-width : 1680px){
                         font-size: 90px;
                         line-height: 60px;
+                        min-width: 105px;
                     }
                     @media(max-width : 1600px){
                         font-size: 70px;
@@ -603,6 +605,7 @@
                     @media(max-width : 1366px){
                         font-size: 60px;
                         line-height: 30px;
+                        min-width: 90px;
                     }
                     @media(max-width : 1279px){
                         font-size: 60px;
@@ -699,7 +702,7 @@
             width: 50%;
         }
         @media(max-width : 1366px){
-            height: 42vh;
+            // height: 42vh;
         }
         @media(max-width : 1024px){
             width: 70%;
@@ -929,10 +932,13 @@
     transform: translate(-50%, -50%);
     background: $primary-color;
     color: #fff;
-    width: 600px;
+    width: 450px;
     padding: 30px;
-    height: 300px;
+    height: 250px;
     opacity: 0.9;
+   h2{
+    font-size: 20px;
+   }
     @media(max-width : 1024px){
         // width: 70%;
         // height: 400px;
