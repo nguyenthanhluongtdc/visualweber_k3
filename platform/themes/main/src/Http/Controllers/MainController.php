@@ -127,7 +127,7 @@ class MainController extends PublicController
     
     public function getSection($section = null)
     {
-        if(!blank($section) && !in_array($section, ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'dat-xe-truc-tuyen', 'lien-he'])) {            
+        if(!blank($section) && !in_array($section, ['trang-chu', 'su-tro-lai', 'hinh-360', 'video', 'ngoai-that', 'hinh-anh', 'noi-that' , 'van-hanh' , 'an-toan', 'dat-xe-truc-tuyen', 'bo-suu-tap','lien-he'])) {            
             return redirect()->route('public.page');
         }
         $key = null;

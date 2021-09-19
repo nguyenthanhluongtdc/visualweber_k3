@@ -493,6 +493,28 @@
     width: 100%;
     position: relative;
     z-index: 999999999999999999;
+    @media(max-width : 995px){
+        min-height:auto;
+        width: 100%;
+        position: relative;
+        z-index: 1000000000000000100;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 999999999999999999;
+        padding: 100px 0;
+    }
+    @media(max-width : 480px){
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 1000000000000000100;
+        height: 100%;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 999999999999999999;
+    }
     .content-count-down{
         display: flex;
         flex-direction: column;
