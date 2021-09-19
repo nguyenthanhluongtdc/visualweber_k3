@@ -41,7 +41,7 @@
                             });
                         </script> --}}
 
-                        <div class="content-bottom none-mobiee">
+                        <div class="content-bottom none-pcc">
                             <a class="register click1 font-kia-bold font20 font-kia-re" data-src="#animatedModal101"
                                 href="javascript:;" data-fancybox="muaxe1" class="">
                                 BẮT ĐẦU NGAY
@@ -299,16 +299,7 @@
                             </div>
 
                         </div>
-                        {{-- <div class="content-bottom none-pcc">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102"
-                                href="javascript:;" data-fancybox="muaxe1b" class="">
-                                BẮT ĐẦU NGAY
-                            </a>
-                            <div style="
-                            display: none;" id="animatedModal102" class="animated-modal2">
-                                <img src="{{ Theme::asset()->url('images/section10/popupmx2.jpg') }}">
-                            </div>
-                        </div> --}}
+                      
                     </div>
                 </div>
             </div>
@@ -337,19 +328,7 @@
                             </strong>
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
-                        <div class="content-bottom none-mobiee">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101"
-                                href="javascript:;" data-fancybox="muaxe3" class="">
-                                BẮT ĐẦU NGAY
-                            </a>
-
-                            <div style="
-                        display: none;" id="animatedModal101" class="animated-modal2">
-
-                                <img src="{{ Theme::asset()->url('images/section10/popupmx.jpg') }}">
-                            </div>
-
-                        </div>
+                       
                         <div class="content-bottom none-pcc">
                             <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102"
                                 href="javascript:;" data-fancybox="muaxe3b" class="">
