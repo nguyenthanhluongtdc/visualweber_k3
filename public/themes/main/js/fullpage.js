@@ -263,7 +263,68 @@ $('.section7-carousel').owlCarousel({
             $('.owl-prev').show();
     } 
 }); 
-
+$('.section11-carousel').owlCarousel({
+    center: true, 
+    autoplay:false, 
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    stagePadding: 450, 
+    dots: true,
+    items:1,           
+    loop:true,     
+    margin:70,
+    nav: true,
+    navText: ["<div class='nav-btn prev-slide'><i class='fas fa-long-arrow-alt-left'></i></div>", "<div class='nav-btn next-slide'><i class='fas fa-long-arrow-alt-right'></i></div>"],      
+    responsive:{
+        1920: {
+            stagePadding: 460, 
+            margin:70, 
+        },
+        1680: {
+            stagePadding: 430, 
+            margin:70, 
+        },
+        1440: {
+            stagePadding: 320, 
+            margin:70, 
+        },
+        1366: {
+            stagePadding: 290, 
+            margin:70, 
+        },
+        1266: {
+            stagePadding: 290, 
+            margin:70, 
+        },
+        1025: {
+            stagePadding: 290, 
+            margin:70, 
+        },
+        768: {
+            stagePadding: 100, 
+            margin:0, 
+        },
+        468:{
+            stagePadding: 40, 
+            margin:0,
+        },
+        414:{
+            stagePadding: 40, 
+            margin:0,
+        },
+        250:{
+            stagePadding: 40, 
+            margin:0,
+        }
+        
+    },
+    onInitialized : function(){
+        if($('.owl-item').first().hasClass('active'))
+            $('.owl-prev').hide();
+        else
+            $('.owl-prev').show();
+    } 
+}); 
 $(document).ready(function(){
     if(document.getElementById('fullpage')){
         myFullpage.moveTo(document.getElementById('fullpage').getAttribute('data-section'));
