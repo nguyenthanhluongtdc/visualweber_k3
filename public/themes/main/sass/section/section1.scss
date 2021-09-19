@@ -164,8 +164,10 @@
                     position: absolute;
                     top: 15%;
                     padding: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
                     img{
-                        width: 50%;
+                        width: 70%;
                     }
                     h3{
                         width: 100%;
@@ -205,7 +207,7 @@
                     display: flex;
                     justify-content: space-between;
                     color: #a3a5a9;
-                    height: 15vh;
+                    // height: 15vh;
                     // background: rgba(0 ,0, 0, 0.4);
                     align-items: baseline;
                     // padding: 15px 0;
