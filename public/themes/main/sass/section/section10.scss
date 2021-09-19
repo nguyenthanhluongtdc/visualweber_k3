@@ -23,9 +23,9 @@
     z-index: 0;
   }
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: contain;
     z-index: 2;
     position: relative;
     @media (max-width: 480px) {
@@ -258,5 +258,38 @@
   &::-webkit-scrollbar-thumb {
     background-color: #000000;
     border: 2px solid #555555;
+  }
+}
+
+
+.form-buy-car{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .left{
+    width: 50%;
+    background: #fff;
+    .logo-pc{
+      img{
+        filter: invert(1);
+      }
+    }
+
+    .chose-car-color{
+      ul{
+        li{
+          img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  .right{
+    width: 50%;
+    z-index: 2;
+    background: $primary-color;
   }
 }
