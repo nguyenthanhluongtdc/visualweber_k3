@@ -153,7 +153,7 @@
     data-aos-easing="ease-in-sine">
 
     <div class="item-bt">
-        <a class="" href="{{ Theme::asset()->url('/brochures/E-BROCHURE-K3.jpg') }}" download" target="_blank">
+        <a class="" href="{{ Theme::asset()->url('images/brochurek3.pdf') }}" download" target="_blank">
             <div class="wrap-button">
                 <p class="font-kia-bold show-p">E-brochure</p>
                 <div class="img-bt">
