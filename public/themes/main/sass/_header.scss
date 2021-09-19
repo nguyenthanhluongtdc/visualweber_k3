@@ -715,3 +715,12 @@
 .select2{
     width: 100%!important;
 }
+
+@media screen and (max-width: 480px) {
+    [data-aos-delay] {
+      transition-delay: 0!important;
+    }
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+  }

@@ -126,8 +126,7 @@
                         </div>
 
                         @foreach (get_field($page, 'list_section8') as $key => $item)
-                            <li class="nav-item" data-aos="fade-right" data-aos-offset="300"
-                                data-aos-duration="700" data-aos-easing="ease-in-sine">
+                            <li class="nav-item" >
                                 <a class="nav-link {{ $loop->first ? 'active' : '' }}" data-toggle="tab"
                                     href="#section8{{ $key }}">
                                     <div class="item-tab-wrap">
