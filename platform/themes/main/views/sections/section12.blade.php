@@ -51,6 +51,20 @@
 
                 </ul>
             @endif
+
+            <div class="social-ft">
+
+                <div class="item-social1">
+                    <a href="https://www.facebook.com/kiamotorsvietnam/" target="_blank">
+                        <img src="{{ Theme::asset()->url('images/fbicon.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="item-social">
+                    <a href="https://www.youtube.com/user/thacokia/featured" target="_blank">
+                        <img src="{{ Theme::asset()->url('images/yticon.png') }}" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="right" class="font-kia-re">
             <h3 class="font-kia-re">LIÊN HỆ VỚI CHÚNG TÔI</h3>
@@ -77,23 +91,7 @@
             @endif
 
 
-            {{-- <div class="social">
-
-                @if (has_field($page, 'link_facebook'))
-                <div class="item-social">
-                    <a href="https://www.facebook.com/kiamotorsvietnam/" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </div>
-                @endif
-                @if (has_field($page, 'link_youtube'))
-                <div class="item-social">
-                    <a href="https://www.youtube.com/user/thacokia/featured" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-                @endif
-            </div> --}}
+          
 
             <h3>TẢI ỨNG DỤNG KIA LINK</h3>
             <div class="app-kia">
