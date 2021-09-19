@@ -83,6 +83,9 @@
   .item {
     width: 25%;
     margin: 0 50px;
+    @media(max-width : 1270px){
+      width: 30%;
+    }
     h5 {
       margin-top: 5px;
       @media only screen and (min-width: 1599px) and (max-width: 1601px) {
@@ -98,7 +101,7 @@
     }
     @media (max-width: 480px) {
       width: 100%;
-      margin: 0;
+      margin: 0 0 20px 0;
     }
     .top {
       background: #06141f;
