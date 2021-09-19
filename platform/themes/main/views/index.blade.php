@@ -121,13 +121,15 @@
                 <div class="contact-column-12">
                    
                     <div class="tinh">
-                        <input type="text" class="add-item  add-item1 contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
+                        <div class="contact-form-group add-item  add-item1">
+                        <input type="text" class="contact-form-input font20 font-kia-light" name="address" value="{{ old('address') }}" id="contact_address"
                         placeholder="Nhập địa chỉ liên hệ" required>
-                       
+                        </div>
                         {{-- <select id="province" name="province" onchange="changeFunc();" class="font-kia-light js-example-disabled-results">
                             <option value="" selected>Tỉnh/ Thành phố</option>
                         </select> --}}
-                        <select id="district-form" name="district" class="add-item add-item2 font-kia-light js-example-disabled-results" required>
+                        <div class="contact-form-group add-item add-item2">
+                        <select id="district-form" name="district" class=" font-kia-light js-example-disabled-results" required>
                             @if(!old('city'))
                             <option value="">Quận/ Huyện</option>
                             @endif
@@ -138,7 +140,9 @@
                                 @endforeach
                             @endif
                         </select>
-                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class="add-item3 add-item font-kia-light js-example-disabled-results"  required>
+                        </div>
+                        <div class="contact-form-group add-item3 add-item">
+                        <select id="ward-form" name="ward" aria-placeholder="Quận huyện" class=" font-kia-light js-example-disabled-results"  required>
                             @if(!old('district'))
                             <option value="">Phường/ Xã</option>
                             @endif
@@ -149,6 +153,7 @@
                                 @endforeach
                             @endif
                         </select>
+                        </div>
                     </div>
                     {{-- <p class="error-msg font-kia-re request">{{$errors->first('address')}}</p> --}}
                 </div>
