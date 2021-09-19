@@ -147,7 +147,7 @@
                                             </i>
                                         </p>
                                     </div>
-                                    <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
+                                    <div class="right" >
                                         <form action="#" method="POST" class="form text-white">
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
 
@@ -292,7 +292,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div>style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;"
                         {{-- <div class="content-bottom none-pcc">
                             <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102"
                                 href="javascript:;" data-fancybox="muaxe1b" class="">
@@ -423,7 +423,7 @@
                                             </i>
                                         </p>
                                     </div>
-                                    <div class="right">
+                                    <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         <form action="#" method="POST" class="form text-white">
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
 
@@ -676,7 +676,7 @@
                                             </i>
                                         </p>
                                     </div>
-                                    <div class="right">
+                                    <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         <form action="#" method="POST" class="form text-white">
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
 
