@@ -603,6 +603,9 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            position: relative;
+           
+            animation: slide-right 2.7s ease-out;
             li{
                 margin: 0 70px;
                 display: flex;
@@ -614,6 +617,7 @@
                     line-height: 90px;
                     margin: 30px 0;
                     min-width: 135px;
+                    height: 100px;
                     padding: 0;
                     display: block;
                     text-align: center;
@@ -621,15 +625,18 @@
                         font-size: 90px;
                         line-height: 60px;
                         min-width: 105px;
+                        height: 80px;
                     }
                     @media(max-width : 1600px){
                         font-size: 70px;
                         line-height: 30px;
+                        height: 30px;
                     }
                     @media(max-width : 1366px){
                         font-size: 60px;
                         line-height: 30px;
                         min-width: 90px;
+                        height: 30px;
                     }
                     @media(max-width : 1279px){
                         font-size: 60px;
@@ -968,6 +975,7 @@
         font-size: 15px;
         height: 300px;
     }
+    transform: translate(-50%, -50%);
     animation: slide-upp 0.9s ease-out;
     .popup-content{
         width: 100%;
@@ -992,7 +1000,10 @@
     0% { top : 0%; }
     100% { top: 50%;}
 }
-
+@keyframes slide-right{
+    0% { left : -100%; }
+    100% { left: 0%;}
+}
 
 .count-down .contact-form-row .contact-form-group{
     position: relative;
