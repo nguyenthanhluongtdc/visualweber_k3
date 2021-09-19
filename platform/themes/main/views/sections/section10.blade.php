@@ -149,13 +149,13 @@
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         <form action="#" method="POST" class="form text-white">
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
+                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-light">ĐẶT XE TRỰC TUYẾN</h2>
 
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city">Tỉnh thành (*): </label>
                                                     <select id="city" name="city"  class="font-kia-light" required>
-                                                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
+                                                        <option value="" selected class="font-buenos-light">Vui lòng chọn tỉnh thành</option>
                                                     </select>
                                                 </p>
 
@@ -167,63 +167,65 @@
                                                 </p>
 
                                                 <div class="form__infoMore">
-                                                    <ul>
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Giá công bố:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                               Ưu đãi:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Giá sau ưu đãi:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Lệ phí trước bạ (*):
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Thuế:(*)
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-
-                                                    <p class="mt-3">
-                                                        <i>
-                                                            (*): Chi phí thực tế có thể thay đổi theo tỉnh thành
-                                                        </i>
-                                                    </p>
+                                                    <div class="form__infoMore--wrap">
+                                                        <ul>
+                                                            <li class="line">
+                                                                <span class="line__title">
+                                                                    Giá công bố:
+                                                                </span>
+    
+                                                                <span class="line__value">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+    
+                                                            <li class="line">
+                                                                <span class="line__title">
+                                                                   Ưu đãi:
+                                                                </span>
+    
+                                                                <span class="line__value">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+    
+                                                            <li class="line">
+                                                                <span class="line__title">
+                                                                    Giá sau ưu đãi:
+                                                                </span>
+    
+                                                                <span class="line__value">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+    
+                                                            <li class="line">
+                                                                <span class="line__title">
+                                                                    Lệ phí trước bạ (*):
+                                                                </span>
+    
+                                                                <span class="line__value">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+    
+                                                            <li class="line">
+                                                                <span class="line__title">
+                                                                    Thuế:(*)
+                                                                </span>
+    
+                                                                <span class="line__value">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+    
+                                                        <p class="mt-3">
+                                                            <i>
+                                                                (*): Chi phí thực tế có thể thay đổi theo tỉnh thành
+                                                            </i>
+                                                        </p>
+                                                    </div>
                                                 </div>
 
                                                 <div class="form__total-cost text-center">

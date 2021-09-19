@@ -449,11 +449,15 @@
         padding-right: 40px;
         
         margin-bottom: 15px;
+        &--wrap {
+          padding: 0px 0px 15px 30px;
+          border-bottom: 1px solid #666b71;
+        }
        
         ul {
           padding-left: 0;
-          padding-bottom: 15px;
-          border-bottom: 1px solid #fff;
+          // padding-bottom: 15px;
+          // border-bottom: 1px solid #fff;
 
           li {
             display: grid;
@@ -461,6 +465,14 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
+            position: relative;
+            &::before {
+              content: "•";
+              color: #ffffff;
+              display: inline-block;
+              position: absolute;
+              left: -1rem;
+            }
           }
         }
       }
@@ -549,6 +561,10 @@
           input, select{
             width: 100%;
             padding: 10px 15px;
+            border-radius: unset;
+          }
+          option {
+            color: #666b71;
           }
         }
         
