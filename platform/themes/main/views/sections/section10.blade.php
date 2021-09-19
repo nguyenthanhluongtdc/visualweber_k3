@@ -32,6 +32,10 @@
                             </strong>
                             <b class="price">xxx.xxx.xxx VNĐ</b>
                         </div>
+
+                        {{-- CODE FORM ĐẶT XE  --}}
+
+
                         <div class="content-bottom none-mobiee">
                             <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal101"
                                 href="javascript:;" data-fancybox="muaxe1"
