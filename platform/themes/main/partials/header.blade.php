@@ -163,21 +163,21 @@
         </a>
     </div>
     <div class="item-bt">
-        <a class="" href="https://www.facebook.com/kiamotorsvietnam/" target="_blank">
+        <a class="" href="https://kiamotorsvietnam.com.vn/lien-he" target="_blank">
             <div class="wrap-button">
-                <p class="font-buenos-bold show-p">Facebook</p>
-                <div class="img-bt">
-                    <i class="fab fa-facebook-f"></i>
+                <p class="font-buenos-bold show-p">Liên hệ (Hotline)</p>
+                <div class="img-bt icon-phoner">
+                    <i class="fas fa-phone-volume"></i>
                 </div>
             </div>
         </a>
     </div>
     <div class="item-bt">
-        <a class="" href="https://www.youtube.com/user/thacokia/featured" target="_blank">
+        <a class="" href="https://kiamotorsvietnam.com.vn/dai-ly" target="_blank">
             <div class="wrap-button">
-                <p class="font-kia-bold show-p">Youtube</p>
+                <p class="font-kia-bold show-p">Hệ thống Showroom</p>
                 <div class="img-bt">
-                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
             </div>
         </a>
