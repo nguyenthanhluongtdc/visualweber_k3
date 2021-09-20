@@ -31,14 +31,7 @@ $(document).ready(function () {
    
 })
 
-$('.ui.form')
-  .form({
-    fields: {
-      gender: 'empty',
-      name: 'empty'
-    }
-  })
-;
+
 
 
 
