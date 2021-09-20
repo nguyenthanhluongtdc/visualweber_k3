@@ -1,7 +1,7 @@
 .section5{
     background: $primary-color;
     .container-remake{
-        overflow: hidden;
+        // overflow: hidden;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -89,6 +89,10 @@
                         font-size: 13px;
                         // height: 60px;
                     }
+                    @media(max-width : 1366px){
+                        font-size: 12px;
+                        // height: 60px;
+                    }
                     @media(max-width:  1024px){
                        width: 90%;
                        display: flex;
@@ -103,12 +107,12 @@
             @media(max-width : 1679px){
                 // height: 23vh;
             }
-            @media(max-width : 1400px){
-                height: 38vh;
-            }
-            @media(max-width : 1366px){
-                height: 35vh;
-            }
+            // @media(max-width : 1400px){
+            //     height: 38vh;
+            // }
+            // @media(max-width : 1366px){
+            //     height: 35vh;
+            // }
             width: 50%;
             @media(max-width : 1024px){
                 position: relative;
