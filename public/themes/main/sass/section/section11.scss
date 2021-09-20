@@ -12,6 +12,26 @@
 //     }
 //     }
 // }
+.mobie-showw{
+    display: none;
+        @media(max-width : 1024px){
+            display: block;
+        }
+        .tt-text-mobie{
+            display: flex;
+         
+                 color: #ccc;
+                 font-size: 8px;
+                 width: 90%;
+                 display: flex;
+                 margin: 0 auto;
+                 
+                margin-bottom: 10px;
+         }
+         .tt-text-mobie2{
+             color: #444;
+         }
+}
 
 .section11{
     background: $primary-color;
