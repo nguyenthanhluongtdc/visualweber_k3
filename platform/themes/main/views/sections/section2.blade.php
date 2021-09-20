@@ -39,7 +39,7 @@
         <div class="right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_anh_section_2')) }}"
             alt="K3">
-            <div class="mobie-showw">
+            <div class="mobie-showw mobie-showw2">
                 <p class="font-kia-light tt-text-mobie" style="margin-top : 10px">
                     *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
                 </p>
