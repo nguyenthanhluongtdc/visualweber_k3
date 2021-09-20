@@ -108,3 +108,17 @@ if (!function_exists('get_ward_by_id')) {
         return $data;
     }
 }
+
+if (!function_exists('get_registration_fee_by_id')) {
+    /**
+     * @return \Illuminate\Support\Collection
+     * @throws Exception
+     */
+    function get_registration_fee_by_id($id)
+    {
+        $data = DB::table('registration_fees')->select('*')
+        ->where('city_id', $id)->first();
+        
+        return $data;
+    }
+}

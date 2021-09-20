@@ -27,7 +27,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             Route::get('showroom', 'MainController@getShowroom')->name('public.ajax.showroom');
             Route::get('xaphuong', 'MainController@getWard')->name('public.ajax.xaphuong');
             Route::get('quanhuyen', 'MainController@getDistrict')->name('public.ajax.quanhuyen');
-            Route::get('carprice', 'MainController@getDistrict')->name('public.ajax.carprice');
+            Route::get('carprice', 'MainController@getCarPrice')->name('public.ajax.carprice');
             
         });
         // Route::get('{slug?}' . config('core.base.general.public_single_ending_url'), [

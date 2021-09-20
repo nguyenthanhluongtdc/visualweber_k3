@@ -472,7 +472,12 @@ $(document).on('click', '.wrap-kp', function(){
 //                 }
 //             });
 //    }
+var Helper = {
+    covertMoney: (value) => {
+        return value.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+    }
 
+}
 var getForForm = {
     getShowroom: () => {
         const resultShoroom = $('#city')
@@ -586,22 +591,23 @@ var getForForm = {
     },
     getPriceCar: () => {
         var srcModal = ""
+        var carPrice = 0
+        var total = 0
+        var phi_dang_kiem_luu_hanh = 360000
+        var phi_truoc_ba = 0
+        var discount = 0
+        var priceAfterDiscount = 0;
         $(document).on('click','#pre-order-car', function(){
              srcModal = $(this).data('src')
-            console.log(srcModal);
         })
         $(document).on('change',srcModal +' #city_buy_car', function(){
-            var carPrice = $(srcModal + ' #car_price').data('price')
-            
-            console.log(srcModal + ' #car_price');
+            carPrice = $(srcModal + ' #car_price').data('price')
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 url: carPriceUrl,
                 data: {
-                    carPrice: carPrice,
-                    srcModal: srcModal,
                     cityId: $(this).val()
                 },
                 method: "GET",
@@ -612,11 +618,19 @@ var getForForm = {
                     // $('#ward-form').html('<option selected value="" >Vui lòng chọn Phường/Xã</option>')
                 },
                 success: function (data) {
-                    console.log(data);
-                    if($('#showroom-form').length){
-                        $('#showroom-form').html(data.showroom)
-                        $("#showroom-form").removeAttr('disabled');
-                    }
+                    // console.log(data);
+                    phi_truoc_ba = carPrice*data.phi_truoc_ba/100
+                    priceAfterDiscount = carPrice - discount
+                    var gtgt = carPrice*10/100
+                    total = priceAfterDiscount + phi_truoc_ba + gtgt + data.phi_dang_ky_bien_so + phi_dang_kiem_luu_hanh + data.phi_dang_kiem_xe
+                    // console.log(total);
+                    $(srcModal + ' #registration_fee').html(Helper.covertMoney(phi_truoc_ba))
+                    $(srcModal + ' #car_discount').html(Helper.covertMoney(discount))
+                    $(srcModal + ' #car_price_after_discount').html(Helper.covertMoney(priceAfterDiscount))
+                    $(srcModal + ' #fee').html(Helper.covertMoney(gtgt))
+                    $(srcModal + ' #registry_fee').html(Helper.covertMoney(data.phi_dang_kiem_xe))
+                    $(srcModal + ' #license_plate_fee').html(Helper.covertMoney(data.phi_dang_ky_bien_so))
+                    $(srcModal + ' #car_price_total').html(Helper.covertMoney(total))
                 },
                 error: function (xhr, thrownError) {
                     console.log(xhr.responseText);

@@ -24,7 +24,7 @@
                             <li class="font-kia-re">- Sưởi và làm mát hàng ghế trước</li>
                             <li class="font-kia-re">- Gương chiếu hậu chống chói tự động ECM</li>
                             <li class="font-kia-re">- Nhớ 2 vị trí ghế lái</li>
-                            <li class="font-kia-re">- 6 túi khí an toàn, cảm biến hỗ trợ đỗ xe trước và sau</li>
+                            <li class="font-kia-re">- 6 túi khí an toàn, cảm biến hỗ trợ đỗ xe trước sau</li>
                         </ul>
                         <div class="row-price font20 font-kia-bold">
                             <strong class="text-uppercase font-kia-bold">

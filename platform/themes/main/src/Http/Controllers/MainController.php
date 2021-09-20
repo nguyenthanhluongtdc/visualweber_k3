@@ -263,4 +263,28 @@ class MainController extends PublicController
             );
         }
     }
+    public function getCarPrice(Request $request){
+        try {
+            $data = get_registration_fee_by_id($request->cityId);
+            
+            return response()->json(
+                [
+                    'phi_truoc_ba' => $data->phi_truoc_ba,
+                    'phi_dang_ky_bien_so' => $data->phi_dang_ky_bien_so,
+                    'phi_dang_kiem_xe' => $data->phi_dang_kiem_xe,
+                    'type' => 'success',
+                ]
+            );
+        } catch (\Throwable $th) {
+            \Log::error('Có lỗi xảy ra khi lấy danh sách đại lý theo tỉnh thành', [$th->getMessage(), $th->getFile(), $th->getLine()]);
+            return response()->json(
+                [
+                    'type' => 'error',
+                    'message' => $th->getMessage(),
+
+                ]
+            );
+        }
+        
+    }
 }
