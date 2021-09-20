@@ -135,6 +135,13 @@ $(document).ready(function() {
             $('#book-a-car')[index].reset();
         }
     });
+    $('.nav-link').click(function(){
+        var color = $(this).data('name');
+        var el = $(this).parents('.bottom--top').find('h4');
+        if(el.length) {
+            el[0].innerHTML = color
+        }
+    });
     if($('.showroom').length){
         var ignoreDiacritics = true;
         $('.ui.dropdown.showroom').dropdown({
