@@ -688,3 +688,6 @@
     }
   }
 }
+.ui.search.dropdown.active>input.search, .ui.search.dropdown.visible>input.search{
+  color: #fff;
+}
