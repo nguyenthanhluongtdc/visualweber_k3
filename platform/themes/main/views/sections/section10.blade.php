@@ -251,23 +251,23 @@
                                                 </div>
 
                                                 <p class="form__input">
-                                                    <label for="date" class="font16 font-buenos-light">Thời gian nhận xe (*): </label>
-                                                    <input type="date" id="date" class="date ui search selection dropdown">
+                                                    <label for="" class="font16 font-buenos-light">Thời gian nhận xe (*): </label>
+                                                    <input name="date" type="date" class="date ui search selection dropdown">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date" class="font16 font-buenos-light"> Khách hàng (*): </label>
-                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Họ và tên">
+                                                    <input name="customer_name" class="ui search selection dropdown" type="text" placeholder="Họ và tên">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date" class="font16 font-buenos-light">Số điện thoại (*): </label>
-                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Nhập số điện thoại">
+                                                    <input name="customer_phone" class="ui search selection dropdown" type="text" placeholder="Nhập số điện thoại">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date" class="font16 font-buenos-light">Địa chỉ liên hệ (*):</label>
-                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
+                                                    <input name="customer_address" class="ui search selection dropdown" type="text" placeholder="Nhập địa chỉ liên hệ">
                                                 </p>
 
                                                 <div class="form__position">
@@ -293,16 +293,16 @@
 
                                                 <p class="form__input">
                                                     <label for="date" class="font16 font-buenos-light">Email (*): </label>
-                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Nhập thông tin email">
+                                                    <input name="customer_email" class="ui search selection dropdown" type="text" placeholder="Nhập thông tin email">
                                                 </p>
 
                                                 <p class="form__checkbox">
-                                                    <input type="checkbox" name="rules" id="accept">
+                                                    <input type="checkbox" name="accept" id="accept">
                                                     <label class="ml-3 mb-0 font16 font-buenos-light" for="accept">Đồng ý nhận thông tin từ KIA</label>
                                                 </p>
 
                                                 <p class="form__btnSubmit">
-                                                    <button class="text-uppercase font16 font-kia-bold">
+                                                    <button type="submit" class="text-uppercase font16 font-kia-bold">
                                                         đăng ký ngay
                                                     </button>
                                                 </p>
@@ -518,22 +518,22 @@
 
                                                 <p class="form__input">
                                                     <label for="date">Thời gian nhận xe (*): </label>
-                                                    <input type="date" id="date">
+                                                    <input type="date">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date"> Khách hàng (*): </label>
-                                                    <input type="text" id="date" placeholder="Họ và tên">
+                                                    <input type="text" placeholder="Họ và tên">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date">Số điện thoại (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập số điện thoại">
+                                                    <input type="text" placeholder="Nhập số điện thoại">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date">Địa chỉ liên hệ (*):</label>
-                                                    <input type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
+                                                    <input type="text" placeholder="Nhập địa chỉ liên hệ">
                                                 </p>
 
                                                 <div class="form__position">
@@ -554,7 +554,7 @@
 
                                                 <p class="form__input">
                                                     <label for="date">Email (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập thông tin email">
+                                                    <input type="text" placeholder="Nhập thông tin email">
                                                 </p>
 
                                                 <p class="form__checkbox">
@@ -777,22 +777,22 @@
 
                                                 <p class="form__input">
                                                     <label for="date">Thời gian nhận xe (*): </label>
-                                                    <input type="date" id="date">
+                                                    <input type="date">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date"> Khách hàng (*): </label>
-                                                    <input type="text" id="date" placeholder="Họ và tên">
+                                                    <input type="text" placeholder="Họ và tên">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date">Số điện thoại (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập số điện thoại">
+                                                    <input type="text" placeholder="Nhập số điện thoại">
                                                 </p>
 
                                                 <p class="form__input">
                                                     <label for="date">Địa chỉ liên hệ (*):</label>
-                                                    <input type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
+                                                    <input type="text" placeholder="Nhập địa chỉ liên hệ">
                                                 </p>
 
                                                 <div class="form__position">
@@ -813,7 +813,7 @@
 
                                                 <p class="form__input">
                                                     <label for="date">Email (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập thông tin email">
+                                                    <input type="text" placeholder="Nhập thông tin email">
                                                 </p>
 
                                                 <p class="form__btnSubmit">
