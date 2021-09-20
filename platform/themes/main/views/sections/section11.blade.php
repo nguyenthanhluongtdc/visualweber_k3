@@ -2,7 +2,7 @@
     >
     <div class="section11-wrap">
         <p class="tt-test font-kia-light">
-            *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+            *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
         </p>
         <h3 class="font60 font-kia-bold">Thư viện ảnh</h3>
         <div class="section11-carousel section11-carou owl-carousel s11-pc">

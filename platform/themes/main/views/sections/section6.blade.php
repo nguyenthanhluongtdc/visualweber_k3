@@ -5,7 +5,7 @@
 
 <div class="section section6 fp-auto-height-responsive fp-section fp-completely" data-anchor="hinh-anh" style="background-image: url('{{  RvMedia::getImageUrl(get_field($page, 'hinh_background_s6')) }}')">
     <p class="tt-test font-kia-light">
-        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
     </p>
    
     {{-- <img src="{{  RvMedia::getImageUrl(get_field($page, 'hinh_background_s6')) }}"> --}}

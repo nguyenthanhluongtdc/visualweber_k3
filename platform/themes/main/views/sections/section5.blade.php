@@ -1,6 +1,6 @@
 <div class="section section5 fp-auto-height-responsive fp-section fp-completely" data-anchor="ngoai-that">
     <p class="tt-test font-kia-light">
-        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
     </p>
     <div class="container-remake section5-wrap h-100">
         {{-- <div class="section5-abso">

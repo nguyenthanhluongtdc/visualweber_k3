@@ -1,6 +1,6 @@
 <div class="section section3 fp-auto-height-responsive fp-section fp-completely" data-anchor="hinh-360">
     <p class="tt-test font-kia-light">
-        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
     </p>
     <div class="logok3">
         <div class="container-remake">

@@ -104,7 +104,7 @@
 </div> --}}
 <div class="section section8 fp-auto-height-responsive fp-section fp-completely" data-anchor="van-hanh">
     <p class="tt-test tt-test2 font-kia-light">
-        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
     </p>
     @if (has_field($page, 'list_section8'))
 

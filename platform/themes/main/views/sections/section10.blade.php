@@ -1,6 +1,6 @@
 <div class="section section10 fp-auto-height-responsive fp-section fp-completely" data-anchor="dat-xe-truc-tuyen">
     <p class="tt-test tt-test2 font-kia-light">
-        *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+        *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
     </p>
     <div class="container-remake section10-wrap">
         <h2 class="text-uppercase font-kia-bold font40 text-center mb-0" data-aos="fade-left" data-aos-offset="300"
@@ -146,7 +146,7 @@
                                         </div>
                                         <p class="text-center box-des tt-test font-kia-light">
                                             <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
                                             </i>
                                         </p>
                                     </div>
@@ -165,6 +165,7 @@
                                                         @empty
                                                         @endforelse
                                                     </select>
+                                                    <p class="error-msg font-kia-re request erro-p">{{$errors->first('city')}}</p>
                                                 </p>
 
                                                 <p class="form__input">
