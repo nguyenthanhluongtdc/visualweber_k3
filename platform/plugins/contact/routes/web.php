@@ -27,5 +27,8 @@ Route::group(['namespace' => 'Platform\Contact\Http\Controllers', 'middleware' =
             'as'   => 'public.send.contact',
             'uses' => 'PublicController@postSendContact',
         ]);
+        
     });
 });
+
+

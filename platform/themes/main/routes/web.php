@@ -30,10 +30,10 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             Route::get('carprice', 'MainController@getCarPrice')->name('public.ajax.carprice');
             
         });
-        // Route::get('{slug?}' . config('core.base.general.public_single_ending_url'), [
-        //     'as'   => 'public.single',
-        //     'uses' => 'MainController@getView',
-        // ]);
+        Route::post('contact-buy-cars/send', [
+            'as'   => 'public.send.contact-buy-cars',
+            'uses' => 'MainController@postSendContact',
+        ]);
         Route::get('/ldp/{section?}', [
             'as' => 'index',
             'uses' => 'MainController@getSection'

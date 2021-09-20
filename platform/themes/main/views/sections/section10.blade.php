@@ -151,7 +151,8 @@
                                         </p>
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        <form id="book-a-car" action="#" method="POST" class="form text-white">
+                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
+                                        {{-- <form id="book-a-car" action="#" method="POST" class="form text-white"> --}}
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
@@ -328,7 +329,8 @@
                                                     </button>
                                                 </p>
                                             </div>
-                                        </form>
+                                        {{-- </form> --}}
+                                        {!! Form::close() !!}
                                     </div>
                                 </div>
                             </div>
@@ -444,7 +446,8 @@
                                         </p>
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        <form id="book-a-car" action="#" method="POST" class="form text-white">
+                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
+                                        {{-- <form id="book-a-car" action="#" method="POST" class="form text-white"> --}}
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
@@ -622,7 +625,7 @@
                                                     </button>
                                                 </p>
                                             </div>
-                                        </form>
+                                        {!! Form::close() !!}
                                     </div>
                                 </div>
                             </div>
@@ -736,7 +739,8 @@
                                         </p>
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        <form id="book-a-car" action="#" method="POST" class="form text-white">
+                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
+                                        <form id="book-a-car" action="{{route('public.send.contact-buy-cars')}}" method="POST" class="form text-white">
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
@@ -914,7 +918,7 @@
                                                     </button>
                                                 </p>
                                             </div>
-                                        </form>
+                                        {!! Form::close() !!}
                                     </div>
                                 </div>
                             </div>
