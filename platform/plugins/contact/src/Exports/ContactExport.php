@@ -33,7 +33,7 @@ class ContactExport extends TableExportHandler
         for ($index = 2; $index <= $totalRows; $index++) {
 
             $status = $event->sheet->getDelegate()
-                ->getStyle('F' . $index)
+                ->getStyle('K' . $index)
                 ->getFont()
                 ->getColor();
 
