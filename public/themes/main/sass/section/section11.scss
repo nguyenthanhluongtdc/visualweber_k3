@@ -16,6 +16,17 @@
 .section11{
     background: $primary-color;
     color: #FFF;
+    .s11-pc{
+        @media(max-width : 1024px){
+            display: none;
+        }
+    }
+    .s11-mobie{
+        display: none;
+        @media(max-width : 1024px){
+            display: block;
+        }
+    }
     h3{
         text-align: center;
         margin-bottom: 30px;

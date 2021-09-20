@@ -305,15 +305,15 @@ $('.section11-carousel').owlCarousel({
             margin:0, 
         },
         468:{
-            stagePadding: 40, 
+            stagePadding: 50, 
             margin:0,
         },
         414:{
-            stagePadding: 40, 
+            stagePadding: 50, 
             margin:0,
         },
         250:{
-            stagePadding: 40, 
+            stagePadding: 50, 
             margin:0,
         }
         
