@@ -629,7 +629,12 @@
         .form__infoMore--wrap{
           @media(max-width : 480px){
             padding: 0px 0px 15px 15px;
+            p.mt-3{
+              font-size: 10px;
+              text-align: center;
+            }
           }
+         
           
         }
        }
