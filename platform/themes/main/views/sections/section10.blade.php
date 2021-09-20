@@ -11,7 +11,7 @@
             <div class="item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500"
                 data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <div class="top">
-                    <p class="font20 font-kia-re">The New K3</p>
+                    <p class="font20 font-kia-re">The new K3</p>
                     <h5 class="font30 font-kia-bold">1.6 Premium</h5>
                 </div>
                 <div class="bottom">
@@ -56,7 +56,7 @@
                                     <div class="left">
                                         <div class="box-main">
                                             <div class="logo-pc">
-                                                <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="">
+                                                <img src="{{ Theme::asset()->url('images/logok3form.png') }}" alt="">
                                             </div>
     
                                             <div class="chose-car-color">
@@ -345,7 +345,7 @@
             <div class="item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500"
                 data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="top">
-                    <p class="font20 font-kia-re">The New K3</p>
+                    <p class="font20 font-kia-re">The new K3</p>
                     <h5 class="font30 font-kia-bold">1.6 Luxury</h5>
                 </div>
                 <div class="bottom">
@@ -379,7 +379,7 @@
                                     <div class="left">
                                         <div class="box-main">
                                             <div class="logo-pc">
-                                                <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="">
+                                                <img src="{{ Theme::asset()->url('images/logok3form.png') }}" alt="">
                                             </div>
     
                                             <div class="chose-car-color">
@@ -638,7 +638,7 @@
             <div class="item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500"
                 data-aos-easing="ease-in-sine" data-aos-delay="900">
                 <div class="top">
-                    <p class="font20 font-kia-re">The New K3</p>
+                    <p class="font20 font-kia-re">The new K3</p>
                     <h5 class="font30 font-kia-bold">1.6 MT</h5>
                 </div>
                 <div class="bottom">
@@ -672,7 +672,7 @@
                                     <div class="left">
                                         <div class="box-main">
                                             <div class="logo-pc">
-                                                <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="">
+                                                <img src="{{ Theme::asset()->url('images/logok3form.png') }}" alt="">
                                             </div>
     
                                             <div class="chose-car-color">
