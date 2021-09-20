@@ -81,7 +81,7 @@
                                                         <div class="info-other font-kia-bold mb-lg-4 mb-3 font30 text-center">
                                                             1.6 Premium
                                                         </div>
-                                                        <p class="text-center">Vui lòng chọn màu sắc</p>
+                                                        <p class="text-center ont-kia-light">Vui lòng chọn màu sắc</p>
                                                         <ul class="nav nav-tabs tab-color-car2" role="tablist">
                                                             {{-- Blue 1 --}}
                                                             <li class="nav-item">
@@ -153,7 +153,7 @@
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
                                         {{-- <form id="book-a-car" action="#" method="POST" class="form text-white"> --}}
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
+                                            <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
@@ -448,7 +448,7 @@
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
                                         {{-- <form id="book-a-car" action="#" method="POST" class="form text-white"> --}}
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
+                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
@@ -741,7 +741,7 @@
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
                                         <form id="book-a-car" action="{{route('public.send.contact-buy-cars')}}" method="POST" class="form text-white">
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
+                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
