@@ -134,7 +134,10 @@
             justify-content: space-between;
             height: 50vh;
             @media(max-width : 1366px){
-                height: 50vh;
+                height: 45vh;
+            }
+            @media(max-width : 1279px){
+                height: 40vh;
             }
             @media(max-width : 1024px){
                 flex-wrap: wrap;
@@ -159,9 +162,7 @@
                
             }
         }
-        @media(max-width : 1279px){
-            height: 50vh;
-        }
+        
         @media(max-width :1024px){
             flex-wrap: wrap;
             height: auto;
@@ -255,7 +256,7 @@
                margin-top: 9%;
            }
            @media(max-width : 1366px){
-            margin-top: 9%;
+            margin-top: 7%;
         }
            a.active p.top{
                font-family: 'VN-KiaSignature-Bold';
