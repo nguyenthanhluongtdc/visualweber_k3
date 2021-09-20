@@ -429,6 +429,10 @@
         label.error{
           position: absolute;
           top: 66%;
+          @media(max-width : 995px){
+            top: -26%;
+            font-size: 11px;
+          }
         }
         input, select {
           border: 1px solid #fff;

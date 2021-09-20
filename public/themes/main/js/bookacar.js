@@ -7,7 +7,8 @@ $(document).ready(function() {
                 minlength: 10
             },
             customer_address: "required",
-            customer_email: "required"
+            customer_email: "required",
+            date: "required"
 
         },
         messages: {
@@ -17,7 +18,8 @@ $(document).ready(function() {
                 minlength: "Số điện thoại ít nhất là 10 số"
             },
             customer_address: "Vui lòng nhập địa chỉ",
-            customer_email: "Vui lòng nhập email"
+            customer_email: "Vui lòng nhập email",
+            date: "Vui lòng chọn thời gian"
         },
         submitHandler: function(form) {
             form.submit();
