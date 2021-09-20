@@ -510,7 +510,27 @@
     
                                                             <li class="line">
                                                                 <span class="line__title font16 font-buenos-light">
-                                                                    Thuế(*):
+                                                                    Thuế:
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Phí đăng kiểm(*):
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Phí đăng ký biển số:
                                                                 </span>
     
                                                                 <span class="line__value font-buenos-light">
@@ -780,7 +800,27 @@
     
                                                             <li class="line">
                                                                 <span class="line__title font16 font-buenos-light">
-                                                                    Thuế(*):
+                                                                    Thuế:
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Phí đăng kiểm(*):
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Phí đăng ký biển số:
                                                                 </span>
     
                                                                 <span class="line__value font-buenos-light">

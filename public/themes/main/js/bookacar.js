@@ -131,7 +131,9 @@ var Popup = {
 
 $(document).ready(function() {
     $('.register').click(function(){
-        $('#book-a-car').trigger("reset");
+        for (let index = 0; index < $('#book-a-car').length; index++) {
+            $('#book-a-car')[index].reset();
+        }
     });
     if($('.showroom').length){
         var ignoreDiacritics = true;
