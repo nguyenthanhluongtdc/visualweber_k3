@@ -474,7 +474,7 @@ $(document).on('click', '.wrap-kp', function(){
 //    }
 var Helper = {
     covertMoney: (value) => {
-        return value.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
+        return value.toLocaleString('it-IT') + ' VND';
     }
 
 }
