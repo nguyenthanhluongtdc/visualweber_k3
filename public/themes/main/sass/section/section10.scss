@@ -436,9 +436,21 @@
             border-color: white;
             outline: none;
           }
+          &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color:white;
+            opacity: 1; /* Firefox */
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #fff;
+          }
+          
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #fff;
+          }
         }
         [type="date"] {
-          color: #808388; 
+          color: #fff; 
             &::-webkit-calendar-picker-indicator {
               filter: invert(1);
           }
@@ -462,7 +474,7 @@
           left: -8px;
         }
         .default {
-          color : #808388;
+          color : #ffff;
         }
       }
 
