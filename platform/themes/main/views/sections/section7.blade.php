@@ -51,4 +51,10 @@
         </div>
         @endif
     </div>
+
+    <div class="mobie-showw">
+        <p class="font-kia-light tt-text-mobie">
+            *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
+        </p>
+    </div>
 </div>
