@@ -111,7 +111,7 @@
                 }
                 .s1-icon-mobie{
                     position: absolute;
-                    bottom: 19%;
+                    bottom: 13%;
                     left: 0;
                     right: 0;
                     .access{
@@ -128,7 +128,7 @@
                         display: flex;
                         justify-content: center;
                         margin-bottom: 15px;
-                        align-items: baseline;
+                        align-items: center;
                         color: #fff;
                         text-align: center;
                         margin-left: -10%;
@@ -141,12 +141,16 @@
                         // .access{
                         //     margin-right: 25px;
                         // }
+                        p.number{
+                            font-size: 13px;
+                            margin: 4px 0;
+                        }
                         p.desc{
                             font-size: 15px;
                             line-height: 20px;
                             @media(max-width :480px){
-                                font-size: 13px;
-                                line-height: 17px;
+                                font-size: 12px;
+                                line-height: 14px;
                             }
                         }
                     }
@@ -163,7 +167,7 @@
                     justify-content: center;
                     position: absolute;
                     top: 15%;
-                    padding: 0;
+                   
                     left: 50%;
                     transform: translateX(-50%);
                     img{
@@ -176,31 +180,31 @@
                     }
                 }
                 .bottom{
-                    padding: 0;
+                    padding: 10px 0 15px;
                     margin: 0;
                     list-style: none;
                     .img-con{
                         img{
                             filter: invert(1);
-                            width: 60px;
+                            width: 45px;
                         }
                     }
                     .img-con2{
                         img{
                             filter: invert(1);
-                            width: 32px;
+                            width: 27px;
                         }
                     }
                     .img-con3{
                         img{
                             filter: invert(1);
-                            width: 29px;
+                            width: 23px;
                         }
                     }
                     .img-con4{
                         img{
                             filter: invert(1);
-                            width: 50px;
+                            width: 35px;
                         }
                     }
                     background-size: cover;
@@ -216,7 +220,7 @@
                         // flex-direction: column;
                         // align-items: center;
                         // justify-content: center;
-                        width: 33.33336%;
+                        width: 33.3%;
                         height: 100%;
                        
                         a{
@@ -267,11 +271,11 @@
                         color: #fff;
 
                         @media(max-width : 480px){
-                            font-size: 11px;
-                            line-height: 14px;
+                            font-size: 10px;
+                            line-height: 12px;
                         }
                         @media(max-width: 400px){
-                            font-size: 12px;
+                            font-size: 10px;
                         }
 
                     }

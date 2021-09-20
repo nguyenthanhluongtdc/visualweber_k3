@@ -188,3 +188,9 @@ $primary-color : #06141f;
         font-size: 13px;
     }
 }
+.font16{
+    font-size: 16px;
+    @media(max-width: 1366px){
+        font-size: 13px;
+    }
+}

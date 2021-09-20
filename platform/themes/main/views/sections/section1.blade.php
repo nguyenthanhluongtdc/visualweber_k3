@@ -90,7 +90,7 @@
                         <div class="wrap-a">
                             <div class="img img-con2"><img
                                     src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt=""></div>
-                            <p class="font-kia-light second">kết nối công nghệ</p>
+                            <p class="font-kia-light second">kết nối<br>công nghệ</p>
                         </div>
                     </a>
                 </li>
@@ -100,7 +100,7 @@
                         <div class="wrap-a">
                             <div class="img img-con3"> <img
                                     src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt=""> </div>
-                            <p class="font-kia-light">chế độ lái thông minh</p>
+                            <p class="font-kia-light">chế độ lái<br>thông minh</p>
                         </div>
                     </a>
                 </li>
