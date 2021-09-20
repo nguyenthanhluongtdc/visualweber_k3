@@ -4,7 +4,7 @@
         <p class="tt-test font-kia-light">
             *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
         </p>
-        <h3 class="font60 font-kia-bold">THƯ VIỆN ẢNH</h3>
+        <h3 class="font60 font-kia-bold">Thư viện ảnh</h3>
         <div class="section11-carousel section11-carou owl-carousel s11-pc">
             @foreach (get_field($page, 'slider_section_7') as $item)
                 <div class="item-slider">
