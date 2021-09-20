@@ -48,6 +48,9 @@
     top: 100px;
     left: 0;
     width: 100%;
+    @media(max-width : 1024px){
+      display: none;
+    }
     img{
       width: 250px;
     }
