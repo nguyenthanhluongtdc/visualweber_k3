@@ -130,6 +130,9 @@ var Popup = {
 }
 
 $(document).ready(function() {
+    $('.register').click(function(){
+        $('#book-a-car').trigger("reset");
+    });
     if($('.showroom').length){
         var ignoreDiacritics = true;
         $('.ui.dropdown.showroom').dropdown({
