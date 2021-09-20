@@ -135,6 +135,9 @@
       @media (max-width: 1440px) {
         padding: 20px;
       }
+      @media (max-width: 1366px) {
+        padding: 15px;
+      }
       img {
         width: 60%;
         display: flex;
@@ -155,6 +158,9 @@
           margin-bottom: 20px;
           color: #06141f;
           text-align: center;
+          @media(max-width : 1366px){
+            margin-bottom: 10px;
+          }
         }
         .register {
           width: 100%;
@@ -184,7 +190,7 @@
             line-height: 20px;
           }
           @media (max-width: 1366px) {
-            height: 120px;
+            height: 127px;
           }
 
           @media (max-width: 1280px) {
@@ -198,10 +204,11 @@
           li {
             color: #06141f;
             @media (max-width: 1366px) {
-              font-size: 13px;
+              font-size: 12px;
             }
             @media (max-width: 413px) {
               margin: 5px 0;
+              font-size: 13px;
             }
           }
         }
@@ -210,7 +217,11 @@
           margin-top: 20px;
           margin-bottom: 20px;
           display: flex;
-          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
+          .price{
+            margin-left: 5px;
+          }
         }
 
         .content-bottom {
