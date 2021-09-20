@@ -89,7 +89,10 @@ class ContactTable extends TableAbstract
             'name',
             'phone',
             'address',
-            // 'city',
+            'city',
+            'ward',
+            'district',
+            'showroom',
             'email',
             'created_at',
             'status',
@@ -114,6 +117,22 @@ class ContactTable extends TableAbstract
             ],
             'address'       => [
                 'title' => trans('Địa chỉ'),
+                'class' => 'text-left',
+            ],
+            'ward'       => [
+                'title' => trans('Xã phường'),
+                'class' => 'text-left',
+            ],
+            'district'       => [
+                'title' => trans('Quận huyện'),
+                'class' => 'text-left',
+            ],
+            'city'       => [
+                'title' => trans('Tỉnh thành phố'),
+                'class' => 'text-left',
+            ],
+            'showroom'       => [
+                'title' => trans('Showroom'),
                 'class' => 'text-left',
             ],
             'email'      => [
