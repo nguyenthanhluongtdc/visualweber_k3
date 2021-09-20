@@ -32,7 +32,7 @@
                 <div class="item-slider">
     
                     @if (has_sub_field($item, 'hinh_item_slider'))
-                        <a href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}" data-fancybox data-caption="THE NEW K3">
+                        <a href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}" data-fancybox data-caption="The new K3">
                             <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_item_slider')) }}" alt="K3">
                         </a>
                     @endif
@@ -42,7 +42,7 @@
             <div class="item-slider">
     
                 @if (has_sub_field($item, 'hinh_van_hanh'))
-                    <a href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" data-fancybox data-caption="THE NEW K3">
+                    <a href="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" data-fancybox data-caption="The new K3">
                         <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}" alt="K3">
                     </a>
                 @endif

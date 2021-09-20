@@ -297,6 +297,7 @@
   height: 100vh;
   overflow: hidden;
   .font-mobie-small{
+    font-size: 11px;
     @media(max-width : 480px){
       font-size: 10px;
     }
