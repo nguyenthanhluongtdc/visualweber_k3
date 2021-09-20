@@ -46,12 +46,12 @@
 
                         <div class="content-bottom none-pcc">
                             <a class="register click1 font-kia-bold font20 font-kia-re" id="pre-order-car" data-src="#animatedModal101"
-                                data-price="900000000" href="javascript:;" data-fancybox="muaxe1">
+                                 href="javascript:;" data-fancybox="muaxe1">
                                 BẮT ĐẦU NGAY
                             </a>
 
                             <div style="
-                                display: none;" id="animatedModal101" class="animated-modal2">
+                                display: none;" id="animatedModal101"  class="animated-modal2">
                                 <div class="form-buy-car">
                                     <div class="left">
                                         <div class="box-main">
@@ -156,7 +156,7 @@
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
-                                                    <select name="city" class="font-buenos-light ui search selection dropdown city w-100" required>
+                                                    <select name="city" id="city_buy_car" class="font-buenos-light ui search selection dropdown city w-100" required>
                                                         <option hidden value="" selected>Vui lòng chọn tỉnh thành</option>
                                                         @forelse(@$provinces as $row)
                                                             <option {{ old('city') == @$row->matp ? 'selected' : '' }}
@@ -181,8 +181,8 @@
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light" id="car_price">
-                                                                    xxx.xxx.xxx VND
+                                                                <span class="line__value font-buenos-light" id="car_price" data-price="685000000">
+                                                                    685.000.000 VND
                                                                 </span>
                                                             </li>
     
@@ -364,7 +364,7 @@
                         </div>
                        
                         <div class="content-bottom none-pcc">
-                            <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car" data-price="1000000000" data-src="#animatedModal102"
+                            <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car"  data-src="#animatedModal102"
                                 href="javascript:;" data-fancybox="muaxe3b" class="">
                                 BẮT ĐẦU NGAY
                             </a>
@@ -448,7 +448,7 @@
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
-                                                    <select name="city" class="font-buenos-light ui search selection dropdown city w-100" required>
+                                                    <select name="city" id="city_buy_car" class="font-buenos-light ui search selection dropdown city w-100" required>
                                                         <option hidden value="" selected>Vui lòng chọn tỉnh thành</option>
                                                         @forelse(@$provinces as $row)
                                                             <option {{ old('city') == @$row->matp ? 'selected' : '' }}
@@ -473,8 +473,8 @@
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light" id="car_price">
-                                                                    xxx.xxx.xxx VND
+                                                                <span class="line__value font-buenos-light" id="car_price" data-price="639000000">
+                                                                    639.000.000 VND
                                                                 </span>
                                                             </li>
     
@@ -654,7 +654,7 @@
                         </div>
                         
                         <div class="content-bottom none-mobile">
-                            <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car" data-price="1100000000" data-src="#animatedModal103"
+                            <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car" data-src="#animatedModal103"
                                 href="javascript:;" data-fancybox="muaxe2b" class="">
                                 BẮT ĐẦU NGAY
                             </a>
@@ -738,7 +738,7 @@
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
-                                                    <select name="city" class="font-buenos-light ui search selection dropdown city w-100" required>
+                                                    <select name="city" id="city_buy_car" class="font-buenos-light ui search selection dropdown city w-100" required>
                                                         <option hidden value="" selected>Vui lòng chọn tỉnh thành</option>
                                                         @forelse(@$provinces as $row)
                                                             <option {{ old('city') == @$row->matp ? 'selected' : '' }}
@@ -763,8 +763,8 @@
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light" id="car_price">
-                                                                    xxx.xxx.xxx VND
+                                                                <span class="line__value font-buenos-light" id="car_price" data-price="544000000">
+                                                                    544.000.000 VND
                                                                 </span>
                                                             </li>
     

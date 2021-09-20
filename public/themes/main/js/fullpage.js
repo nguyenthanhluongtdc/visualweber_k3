@@ -585,10 +585,48 @@ var getForForm = {
         })
     },
     getPriceCar: () => {
+        var srcModal = ""
         $(document).on('click','#pre-order-car', function(){
-            var carPrice = $(this).data('price')
-            var srcModal = $(this).data('src')
-            // console.log(carPrice);
+             srcModal = $(this).data('src')
+            console.log(srcModal);
+        })
+        $(document).on('change',srcModal +' #city_buy_car', function(){
+            var carPrice = $(srcModal + ' #car_price').data('price')
+            
+            console.log(srcModal + ' #car_price');
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: carPriceUrl,
+                data: {
+                    carPrice: carPrice,
+                    srcModal: srcModal,
+                    cityId: $(this).val()
+                },
+                method: "GET",
+                dataType: "json",
+                beforeSend: function() {
+                    // $('.loading').removeClass('d-none')
+                    // $("#ward-form").attr('disabled', true);
+                    // $('#ward-form').html('<option selected value="" >Vui lòng chọn Phường/Xã</option>')
+                },
+                success: function (data) {
+                    console.log(data);
+                    if($('#showroom-form').length){
+                        $('#showroom-form').html(data.showroom)
+                        $("#showroom-form").removeAttr('disabled');
+                    }
+                },
+                error: function (xhr, thrownError) {
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
+                }
+            })
         })
     }
 }
