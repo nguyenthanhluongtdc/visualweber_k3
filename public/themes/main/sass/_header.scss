@@ -211,11 +211,28 @@
             list-style: none;
             li{
                 margin-bottom: 20px;
+                .img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 5px;
+                    img{
+                        filter: invert(1);
+                    }
+                }
                 a{
                     color: #fff;
                     text-decoration: none;
                 }
                 
+            }
+            li.chose-car{
+                margin-top: 20px;
+                a{
+                    border: 1px solid #fff;
+                    padding: 10px 25px;
+                }
             }
         }
     }
