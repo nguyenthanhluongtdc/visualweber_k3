@@ -437,12 +437,41 @@
     }
 
     .form {
-      .show-request-none{
+      .customner__city{
         label.error{
           display: none!important;
         }
       }
-
+      .customer__district{
+        label.error{
+          display: none!important;
+        }
+      }
+      .customer__ward{
+        label.error{
+          display: none!important;
+        }
+      }
+      .city{
+        label.error{
+          left: -43%;
+          top: 72%;
+          @media(max-width : 995px){
+            left: 0;
+            top: -102%;
+          }
+        }
+      }
+      .showroom{
+        label.error{
+          left: -43%;
+          top: 72%;
+          @media(max-width : 995px){
+            left: 0;
+            top: -102%;
+          }
+        }
+      }
       &__title {
 
       }
@@ -459,7 +488,11 @@
         position: relative;
         label.error{
           position: absolute;
+          color: #ac2b31;
           top: 66%;
+          @media(max-width : 1440px){
+            font-size: 11px;
+          }
           @media(max-width : 995px){
             top: -26%;
             font-size: 11px;

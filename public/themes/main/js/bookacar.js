@@ -7,28 +7,43 @@ $(document).ready(function () {
    // configure your validation
   
     $(".form-car").validate({
+        ignore: [],
         rules: {
             customer_name: "required",
             customer_phone: {
                 required: true,
                 minlength: 10
             },
+            city: {
+                required: true,
+            },
+            showroom: {
+                required: true,
+            },
             customer_address: "required",
-            customer_email: "required",
+            customer_email:{
+                required: true,
+                email: true,
+                regxEmail: /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+            },
             date: "required",
             city : "required",
-
+            
         },
         messages: {
+            showroom: "Vui lòng chọn showroom",
+            city: "Vui lòng chọn tỉnh thành",
             customer_name: "Vui lòng nhập họ tên",
             customer_phone: {
                 required: "Vui lòng nhập số điện thoại",
                 minlength: "Số điện thoại ít nhất là 10 số"
             },
             customer_address: "Vui lòng nhập địa chỉ",
-            customer_email: "Vui lòng nhập email",
+            customer_email: {
+                required: 'Vui lòng nhập email',
+                email: 'Email không đúng định dạng!'
+            },
             date: "Vui lòng chọn thời gian",
-            city: "Vui lòng chọn thời gian",
 
         },
         submitHandler: function (form) {
