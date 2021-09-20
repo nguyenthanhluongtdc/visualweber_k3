@@ -593,7 +593,6 @@ var getForForm = {
         var srcModal = ""
         var carPrice = 0
         var total = 0
-        var phi_dang_kiem_luu_hanh = 360000
         var phi_truoc_ba = 0
         var discount = 0
         var priceAfterDiscount = 0;
@@ -622,7 +621,7 @@ var getForForm = {
                     phi_truoc_ba = carPrice*data.phi_truoc_ba/100
                     priceAfterDiscount = carPrice - discount
                     var gtgt = carPrice*10/100
-                    total = priceAfterDiscount + phi_truoc_ba + gtgt + data.phi_dang_ky_bien_so + phi_dang_kiem_luu_hanh + data.phi_dang_kiem_xe
+                    total = priceAfterDiscount + phi_truoc_ba + gtgt + data.phi_dang_ky_bien_so + data.phi_dang_kiem_xe
                     // console.log(total);
                     $(srcModal + ' #registration_fee').html(Helper.covertMoney(phi_truoc_ba))
                     $(srcModal + ' #car_discount').html(Helper.covertMoney(discount))
