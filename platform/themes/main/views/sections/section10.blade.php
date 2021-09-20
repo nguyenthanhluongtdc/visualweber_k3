@@ -146,7 +146,7 @@
                                         </div>
                                         <p class="text-center box-des tt-test font-kia-light">
                                             <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực thế
+                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
                                             </i>
                                         </p>
                                     </div>
@@ -216,15 +216,7 @@
                                                                 </span>
                                                             </li>
     
-                                                            <li class="line">
-                                                                <span class="line__title font16 font-buenos-light">
-                                                                    Thuế:
-                                                                </span>
-    
-                                                                <span class="line__value font-buenos-light"  id="fee">
-                                                                    xxx.xxx.xxx VND
-                                                                </span>
-                                                            </li>
+                                                          
 
                                                             <li class="line">
                                                                 <span class="line__title font16 font-buenos-light">
@@ -242,6 +234,15 @@
                                                                 </span>
     
                                                                 <span class="line__value font-buenos-light" id="license_plate_fee">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Thuế:
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light"  id="fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -438,7 +439,7 @@
                                         </div>
                                         <p class="text-center box-des tt-test font-kia-light">
                                             <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực thế
+                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
                                             </i>
                                         </p>
                                     </div>
@@ -508,15 +509,7 @@
                                                                 </span>
                                                             </li>
     
-                                                            <li class="line">
-                                                                <span class="line__title font16 font-buenos-light">
-                                                                    Thuế:
-                                                                </span>
-    
-                                                                <span class="line__value font-buenos-light"  id="fee">
-                                                                    xxx.xxx.xxx VND
-                                                                </span>
-                                                            </li>
+                                                           
 
                                                             <li class="line">
                                                                 <span class="line__title font16 font-buenos-light">
@@ -534,6 +527,16 @@
                                                                 </span>
     
                                                                 <span class="line__value font-buenos-light" id="license_plate_fee">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Thuế:
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light"  id="fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -798,16 +801,7 @@
                                                                 </span>
                                                             </li>
     
-                                                            <li class="line">
-                                                                <span class="line__title font16 font-buenos-light">
-                                                                    Thuế:
-                                                                </span>
-    
-                                                                <span class="line__value font-buenos-light"  id="fee">
-                                                                    xxx.xxx.xxx VND
-                                                                </span>
-                                                            </li>
-
+                                                          
                                                             <li class="line">
                                                                 <span class="line__title font16 font-buenos-light">
                                                                     Phí đăng kiểm(*):
@@ -827,6 +821,17 @@
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
+
+                                                            <li class="line">
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Thuế:
+                                                                </span>
+    
+                                                                <span class="line__value font-buenos-light"  id="fee">
+                                                                    xxx.xxx.xxx VND
+                                                                </span>
+                                                            </li>
+
                                                         </ul>
     
                                                         <p class="mt-3 font-buenos-light">
