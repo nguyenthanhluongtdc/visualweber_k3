@@ -138,6 +138,11 @@
                                                         <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
                                                             White Premium
                                                         </h4>
+                                                        <p class="font-kia-light text-mobie">
+                                                            <i>
+                                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
+                                                            </i>
+                                                        </p>
                                                     </div>
     
                                                 </div>
@@ -268,7 +273,7 @@
                                                             xxx.xxx
                                                         </span>
                                                     </div>
-                                                    <p class="font-buenos-light">
+                                                    <p class="font-buenos-light font-mobie-small">
                                                         (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
                                                     </p>
                                                 </div>
@@ -434,6 +439,11 @@
                                                         <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
                                                             White Luxury
                                                         </h4>
+                                                        <p class="font-kia-light text-mobie">
+                                                            <i>
+                                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
+                                                            </i>
+                                                        </p>
                                                     </div>
     
                                                 </div>
@@ -564,7 +574,7 @@
                                                             xxx.xxx
                                                         </span>
                                                     </div>
-                                                    <p class="font-buenos-light">
+                                                    <p class="font-buenos-light font-mobie-small">
                                                         (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
                                                     </p>
                                                 </div>
@@ -727,6 +737,11 @@
                                                         <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
                                                             White MT
                                                         </h4>
+                                                        <p class="font-kia-light text-mobie">
+                                                            <i>
+                                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
+                                                            </i>
+                                                        </p>
                                                     </div>
     
                                                 </div>
@@ -857,7 +872,7 @@
                                                             xxx.xxx
                                                         </span>
                                                     </div>
-                                                    <p class="font-buenos-light">
+                                                    <p class="font-buenos-light font-mobie-small">
                                                         (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
                                                     </p>
                                                 </div>
