@@ -273,9 +273,9 @@ class MainController extends PublicController
             
             return response()->json(
                 [
-                    'phi_truoc_ba' => $data->phi_truoc_ba,
-                    'phi_dang_ky_bien_so' => $data->phi_dang_ky_bien_so,
-                    'phi_dang_kiem_xe' => $data->phi_dang_kiem_xe,
+                    'phi_truoc_ba' => $data->phi_truoc_ba ?? 0,
+                    'phi_dang_ky_bien_so' => $data->phi_dang_ky_bien_so ?? 0,
+                    'phi_dang_kiem_xe' => $data->phi_dang_kiem_xe ?? 0,
                     'type' => 'success',
                 ]
             );
