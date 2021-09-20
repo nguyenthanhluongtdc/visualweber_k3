@@ -929,3 +929,8 @@
 <script>
     const carPriceUrl = '{{route('public.ajax.carprice')}}'
 </script>
+<style>
+    .error{
+        color: red
+    }
+</style>
