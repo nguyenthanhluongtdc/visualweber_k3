@@ -412,10 +412,37 @@
           background-color: transparent;
           color: white;
           padding: 5px;
+          border-radius: unset;
           &:focus {
             border-color: white;
             outline: none;
           }
+        }
+        [type="date"] {
+            &::-webkit-calendar-picker-indicator {
+              filter: invert(1);
+          }
+        }
+      }
+
+      .dropdown {
+        background-color: transparent;
+        border-radius: unset;
+        color: #808388;
+        border-color: #ffffff;
+        min-width: unset;
+        &:hover {
+          border-color: #ffffff;
+        }
+        .icon {
+          color: #ffffff;
+        }
+        .text {
+          color: #ffffff;
+          left: -8px;
+        }
+        .default {
+          color : #808388;
         }
       }
 
@@ -481,6 +508,9 @@
         margin-bottom: 30px;
         .item {
           margin-bottom: 15px;
+        }
+        p {
+          font-style: italic;
         }
       }
 

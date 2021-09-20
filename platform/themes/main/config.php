@@ -77,6 +77,7 @@ return [
             $theme->asset()->container('footer')->add('cloudimage', '//cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.6.0/js-cloudimage-360-view.min.js');
             $theme->asset()->container('footer')->usePath()->add('script', 'js/common.js',[],[],time());
             $theme->asset()->container('footer')->usePath()->add('script', 'js/fullpage.js',[],[],time());
+            $theme->asset()->container('header')->usePath()->add('script', 'js/bookacar.js',[],[],time());
         },
 
         // Listen on event before render a layout,
