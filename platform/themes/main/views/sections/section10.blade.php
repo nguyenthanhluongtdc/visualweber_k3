@@ -156,13 +156,13 @@
                                         </p>
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
+                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form form-car text-white', 'id' => 'id="book-a-car"']) !!}
                                         {{-- <form id="book-a-car" action="#" method="POST" class="form text-white"> --}}
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
                                                 <p class="form__input">
                                                     <label for="city" class="font16">Tỉnh thành (*): </label>
-                                                    <select name="city" id="city_buy_car" class="font-buenos-light ui search selection dropdown city w-100" required>
+                                                    <select name="city" id="city_buy_car" class="font-buenos-light ui search selection dropdown required city w-100">
                                                         <option hidden value="" selected>Vui lòng chọn tỉnh thành</option>
                                                         @forelse(@$provinces as $row)
                                                             <option {{ old('city') == @$row->matp ? 'selected' : '' }}
@@ -175,7 +175,7 @@
 
                                                 <p class="form__input">
                                                     <label for="showroom" class="font16">Showroom (*): </label>
-                                                    <select name="showroom" class="font-buenos-light ui search selection dropdown showroom w-100 showroom-book-a-car" required>
+                                                    <select name="showroom" class="font-buenos-light ui search selection dropdown showroom w-100 showroom-book-a-car">
                                                         <option value="" selected>Vui lòng chọn showroom</option>
                                                     </select>
                                                 </p>
@@ -330,7 +330,7 @@
                                                 </p>
 
                                                 <p class="form__btnSubmit">
-                                                    <button type="submit" class="text-uppercase font16 font-kia-bold">
+                                                    <button type="submit" class="text-uppercase font16 font-kia-bold button">
                                                         đăng ký ngay
                                                     </button>
                                                 </p>
@@ -457,7 +457,7 @@
                                         </p>
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
+                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form form-car text-white', 'id' => 'id="book-a-car"']) !!}
                                         {{-- <form id="book-a-car" action="#" method="POST" class="form text-white"> --}}
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
@@ -755,7 +755,7 @@
                                         </p>
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form text-white', 'id' => 'id="book-a-car"']) !!}
+                                        {!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form form-car text-white', 'id' => 'id="book-a-car"']) !!}
                                         <form id="book-a-car" action="{{route('public.send.contact-buy-cars')}}" method="POST" class="form text-white">
                                             <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
                                             <div class="form__body">
@@ -958,3 +958,5 @@
         color: red
     }
 </style>
+
+

@@ -1,5 +1,12 @@
 $(document).ready(function () {
-    $("#book-a-car").validate({
+     // add the rule here
+    $.validator.addMethod("valueNotEquals", function(value, element, arg){
+    return arg !== value;
+   }, "Value must not equal arg.");
+  
+   // configure your validation
+  
+    $(".form-car").validate({
         rules: {
             customer_name: "required",
             customer_phone: {
@@ -9,6 +16,7 @@ $(document).ready(function () {
             customer_address: "required",
             customer_email: "required",
             date: "required",
+            city : "required",
 
         },
         messages: {
@@ -20,6 +28,7 @@ $(document).ready(function () {
             customer_address: "Vui lòng nhập địa chỉ",
             customer_email: "Vui lòng nhập email",
             date: "Vui lòng chọn thời gian",
+            city: "Vui lòng chọn thời gian",
 
         },
         submitHandler: function (form) {
@@ -28,6 +37,7 @@ $(document).ready(function () {
 
 
     });
+   
    
 })
 
@@ -76,9 +86,11 @@ var Popup = {
                     }
                 }
             });
+          
            
         }
     },
+
 
     customner__city: function () {
         if ($('.customner__city').length) {
@@ -122,6 +134,8 @@ var Popup = {
         }
     },
 
+    
+
     customer__district: function () {
         if ($('.customer__district').length) {
             var ignoreDiacritics = true;
@@ -164,6 +178,7 @@ var Popup = {
         }
     }
 }
+
 
 $(document).ready(function () {
     $('.register').click(function () {
