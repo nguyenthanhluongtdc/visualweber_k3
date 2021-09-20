@@ -219,6 +219,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @media(max-width :480px){
+            font-size: 16px;
+          }
           .price{
             margin-left: 5px;
           }
