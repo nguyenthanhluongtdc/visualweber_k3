@@ -45,8 +45,8 @@
                         @endphp
 
                         <div class="content-bottom none-pcc">
-                            <a class="register click1 font-kia-bold font20 font-kia-re" data-src="#animatedModal101"
-                                href="javascript:;" data-fancybox="muaxe1">
+                            <a class="register click1 font-kia-bold font20 font-kia-re" id="pre-order-car" data-src="#animatedModal101"
+                                data-price="900000000" href="javascript:;" data-fancybox="muaxe1">
                                 BẮT ĐẦU NGAY
                             </a>
 
@@ -181,7 +181,7 @@
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_price">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -191,7 +191,7 @@
                                                                    Ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_discount">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -201,7 +201,7 @@
                                                                     Giá sau ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_price_after_discount">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -211,7 +211,7 @@
                                                                     Lệ phí trước bạ (*):
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light"  id="registration_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -221,7 +221,7 @@
                                                                     Thuế:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light"  id="fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -231,7 +231,7 @@
                                                                     Phí đăng kiểm(*):
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="registry_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -241,7 +241,7 @@
                                                                     Phí đăng ký biển số:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="license_plate_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -261,7 +261,7 @@
                                                             tổng chi phí ước tính:
                                                         </span>
 
-                                                        <span class="font-buenos-bold">
+                                                        <span class="font-buenos-bold" id="car_price_total">
                                                             xxx.xxx
                                                         </span>
                                                     </div>
@@ -364,7 +364,7 @@
                         </div>
                        
                         <div class="content-bottom none-pcc">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal102"
+                            <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car" data-price="1000000000" data-src="#animatedModal102"
                                 href="javascript:;" data-fancybox="muaxe3b" class="">
                                 BẮT ĐẦU NGAY
                             </a>
@@ -473,7 +473,7 @@
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_price">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -483,7 +483,7 @@
                                                                    Ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_discount">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -493,7 +493,7 @@
                                                                     Giá sau ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_price_after_discount">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -503,7 +503,7 @@
                                                                     Lệ phí trước bạ (*):
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light"  id="registration_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -513,7 +513,7 @@
                                                                     Thuế:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light"  id="fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -523,7 +523,7 @@
                                                                     Phí đăng kiểm(*):
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="registry_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -533,7 +533,7 @@
                                                                     Phí đăng ký biển số:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="license_plate_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -553,7 +553,7 @@
                                                             tổng chi phí ước tính:
                                                         </span>
 
-                                                        <span class="font-buenos-bold">
+                                                        <span class="font-buenos-bold" id="car_price_total">
                                                             xxx.xxx
                                                         </span>
                                                     </div>
@@ -654,7 +654,7 @@
                         </div>
                         
                         <div class="content-bottom none-mobile">
-                            <a class="register font-kia-bold font20 font-kia-re" data-src="#animatedModal103"
+                            <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car" data-price="1100000000" data-src="#animatedModal103"
                                 href="javascript:;" data-fancybox="muaxe2b" class="">
                                 BẮT ĐẦU NGAY
                             </a>
@@ -763,7 +763,7 @@
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_price">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -773,7 +773,7 @@
                                                                    Ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_discount">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -783,7 +783,7 @@
                                                                     Giá sau ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="car_price_after_discount">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -793,7 +793,7 @@
                                                                     Lệ phí trước bạ (*):
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light"  id="registration_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -803,7 +803,7 @@
                                                                     Thuế:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light"  id="fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -813,7 +813,7 @@
                                                                     Phí đăng kiểm(*):
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="registry_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -823,7 +823,7 @@
                                                                     Phí đăng ký biển số:
                                                                 </span>
     
-                                                                <span class="line__value font-buenos-light">
+                                                                <span class="line__value font-buenos-light" id="license_plate_fee">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
@@ -843,7 +843,7 @@
                                                             tổng chi phí ước tính:
                                                         </span>
 
-                                                        <span class="font-buenos-bold">
+                                                        <span class="font-buenos-bold" id="car_price_total">
                                                             xxx.xxx
                                                         </span>
                                                     </div>

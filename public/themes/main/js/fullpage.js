@@ -584,11 +584,19 @@ var getForForm = {
             })
         })
     },
+    getPriceCar: () => {
+        $(document).on('click','#pre-order-car', function(){
+            var carPrice = $(this).data('price')
+            var srcModal = $(this).data('src')
+            // console.log(carPrice);
+        })
+    }
 }
 $(document).ready(function(){
     getForForm.getShowroom();
     getForForm.getDistrict();
     getForForm.getWard();
+    getForForm.getPriceCar();
     // $("#showroom-form").attr('disabled', true);
     // $("#ward-form").attr('disabled', true);
     // $("#district-form").attr('disabled', true);
