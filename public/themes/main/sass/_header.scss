@@ -139,14 +139,14 @@
                     font-size: 15px;
                     background: #08141e;
                     color: #fff;
-                    padding: 10px 40px;
+                    padding: 12px 40px 10px;
                     @media(max-width: 1440px){
-                        padding: 10px 25px;
+                        padding: 12px 25px 10px;
                         font-size: 14px;
                     }
                     @media(max-width: 1366px){
                         font-size: 13px;
-                        padding: 10px 20px;
+                        padding: 12px 20px 10px;
                     }
                 }
             }
@@ -347,6 +347,10 @@
 }
 @media(max-width: 1024px){
     #page-wrap{
+        // overflow: hidden;
+        
+    }
+    #fullpage{
         overflow: hidden;
     }
     .fancybox-toolbar{
