@@ -242,6 +242,9 @@
             left: 50%;
             cursor: pointer;
             transform: translate(-50% , -50%);
+            @media(max-width : 480px){
+                top: 35%;
+            }
             img{
                 width: 70px;
                 height: 70px;
