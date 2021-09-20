@@ -521,6 +521,9 @@
           li {
             display: grid;
             grid-template-columns: 70% 30%;
+            @media(max-width : 480px){
+              display: flex;
+            }
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
