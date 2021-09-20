@@ -272,7 +272,7 @@
                                         </div>
                                         <p class="text-center box-des tt-test font-kia-light">
                                             <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
+                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
                                             </i>
                                         </p>
                                     </div>
@@ -570,7 +570,7 @@
                                         </div>
                                         <p class="text-center box-des tt-test font-kia-light">
                                             <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực thế
+                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực thế
                                             </i>
                                         </p>
                                     </div>
