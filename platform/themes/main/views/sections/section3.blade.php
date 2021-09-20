@@ -2,7 +2,11 @@
     <p class="tt-test font-kia-light">
         *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực tế
     </p>
-    
+    <div class="logok3">
+        <div class="container-remake">
+            <img src="{{ Theme::asset()->url('images/logok3new.png') }}" alt="logo-k3">
+        </div>
+    </div>
     <div class="container-remake section3-wrap">
         <ul class="list-tab-section3 nav nav-tabs" role="tablist">
             <div class="border-dotter"

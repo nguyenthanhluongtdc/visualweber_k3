@@ -43,6 +43,15 @@
 .section3 {
   background: $primary-color;
   color: #fff;
+  .logok3{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    img{
+      width: 250px;
+    }
+}
   .tab-pane.active {
     animation: slide-down 0.9s ease-out;
     

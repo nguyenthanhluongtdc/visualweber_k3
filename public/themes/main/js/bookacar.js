@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $("#book-a-car").validate({
         rules: {
             customer_name: "required",
@@ -8,7 +8,7 @@ $(document).ready(function() {
             },
             customer_address: "required",
             customer_email: "required",
-            date: "required"
+            date: "required",
 
         },
         messages: {
@@ -19,26 +19,39 @@ $(document).ready(function() {
             },
             customer_address: "Vui lòng nhập địa chỉ",
             customer_email: "Vui lòng nhập email",
-            date: "Vui lòng chọn thời gian"
+            date: "Vui lòng chọn thời gian",
+
         },
-        submitHandler: function(form) {
+        submitHandler: function (form) {
             form.submit();
         }
 
 
     });
+   
 })
+
+$('.ui.form')
+  .form({
+    fields: {
+      gender: 'empty',
+      name: 'empty'
+    }
+  })
+;
+
 
 
 var Popup = {
-    city: function() {
+    city: function () {
         if ($('.city').length) {
             var ignoreDiacritics = true;
             $('.ui.dropdown.city').dropdown({
                 ignoreDiacritics: ignoreDiacritics,
+                
                 sortSelect: true,
                 fullTextSearch: 'exact',
-                onChange: function(value, text) {
+                onChange: function (value, text) {
                     if (text) {
                         $.ajax({
                             headers: {
@@ -52,16 +65,16 @@ var Popup = {
                                 provinceId: value
                             },
                             dataType: "json",
-                            beforeSend: function() {
+                            beforeSend: function () {
                                 $('.ui.dropdown.showroom').api('set loading');
                             },
-                            success: function(result, status, xhr) {
+                            success: function (result, status, xhr) {
                                 for (let index = 0; index < $('select[name="showroom"]').length; index++) {
                                     $('select[name="showroom"]')[index].innerHTML = result.showroom;
                                 }
                             },
-                            error: function(xhr, status, error) {},
-                            complete: function(xhr, status) {
+                            error: function (xhr, status, error) { },
+                            complete: function (xhr, status) {
                                 $('.ui.dropdown.showroom').api('remove loading');
                                 $('.showroom-book-a-car').destroy();
                                 $('.ui.dropdown.showroom').dropdown();
@@ -70,17 +83,18 @@ var Popup = {
                     }
                 }
             });
+           
         }
     },
 
-    customner__city: function() {
+    customner__city: function () {
         if ($('.customner__city').length) {
             var ignoreDiacritics = true;
             $('.ui.dropdown.customner__city').dropdown({
                 ignoreDiacritics: ignoreDiacritics,
                 sortSelect: true,
                 fullTextSearch: 'exact',
-                onChange: function(value, text) {
+                onChange: function (value, text) {
                     if (text) {
                         $.ajax({
                             headers: {
@@ -94,16 +108,16 @@ var Popup = {
                                 provinceId: value
                             },
                             dataType: "json",
-                            beforeSend: function() {
+                            beforeSend: function () {
                                 $('.ui.dropdown.customer__district').api('set loading');
                             },
-                            success: function(result, status, xhr) {
+                            success: function (result, status, xhr) {
                                 for (let index = 0; index < $('select[name="customer__district"]').length; index++) {
                                     $('select[name="customer__district"]')[index].innerHTML = result.district;
                                 }
                             },
-                            error: function(xhr, status, error) {},
-                            complete: function(xhr, status) {
+                            error: function (xhr, status, error) { },
+                            complete: function (xhr, status) {
                                 $('.ui.dropdown.customer__district').api('remove loading');
                                 $('.ui.dropdown.customer__district').destroy();
                                 $('.ui.dropdown.customer__district').dropdown();
@@ -115,14 +129,14 @@ var Popup = {
         }
     },
 
-    customer__district: function() {
+    customer__district: function () {
         if ($('.customer__district').length) {
             var ignoreDiacritics = true;
             $('.ui.dropdown.customer__district').dropdown({
                 ignoreDiacritics: ignoreDiacritics,
                 sortSelect: true,
                 fullTextSearch: 'exact',
-                onChange: function(value, text) {
+                onChange: function (value, text) {
                     if (text) {
                         $.ajax({
                             headers: {
@@ -136,16 +150,16 @@ var Popup = {
                                 districtId: value
                             },
                             dataType: "json",
-                            beforeSend: function() {
+                            beforeSend: function () {
                                 $('.ui.dropdown.customer__ward').api('set loading');
                             },
-                            success: function(result, status, xhr) {
+                            success: function (result, status, xhr) {
                                 for (let index = 0; index < $('select[name="customer__ward"]').length; index++) {
                                     $('select[name="customer__ward"]')[index].innerHTML = result.ward;
                                 }
                             },
-                            error: function(xhr, status, error) {},
-                            complete: function(xhr, status) {
+                            error: function (xhr, status, error) { },
+                            complete: function (xhr, status) {
                                 $('.ui.dropdown.customer__ward').api('remove loading');
                                 $('.ui.dropdown.customer__ward').destroy();
                                 $('.ui.dropdown.customer__ward').dropdown();
@@ -158,13 +172,13 @@ var Popup = {
     }
 }
 
-$(document).ready(function() {
-    $('.register').click(function() {
+$(document).ready(function () {
+    $('.register').click(function () {
         for (let index = 0; index < $('#book-a-car').length; index++) {
             $('#book-a-car')[index].reset();
         }
     });
-    $('.nav-link').click(function() {
+    $('.nav-link').click(function () {
         var color = $(this).data('name');
         var el = $(this).parents('.bottom--top').find('h4');
         if (el.length) {
@@ -202,3 +216,6 @@ $(document).ready(function() {
     //customner district
     Popup.customer__district();
 });
+
+
+

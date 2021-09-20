@@ -3,7 +3,7 @@
 
     <div class="s1-pc">
         <div class="logo-pc">
-            <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="">
+            <img src="{{ Theme::asset()->url('images/logok3new.png') }}" alt="">
         </div>
         <div class="number-wrap">
             <div class="access access1">
@@ -70,7 +70,7 @@
 
             </div>
             <div class="center">
-                <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="logo">
+                <img src="{{ Theme::asset()->url('images/logok3new.png') }}" alt="logoK3">
             </div>
             <ul class="bottom menu2ne"
                 style="background-image: url('{{ Theme::asset()->url('images/section1/bgmb.jpg') }}')">
