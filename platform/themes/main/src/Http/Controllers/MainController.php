@@ -21,6 +21,9 @@ use Platform\Base\Http\Responses\BaseHttpResponse;
 use Platform\Theme\Http\Controllers\PublicController;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Platform\ContactBuyCar\Http\Requests\ContactBuyCarRequest;
+use Platform\ContactBuyCar\Repositories\Interfaces\ContactBuyCarInterface;
+use Platform\Contact\Events\SentContactEvent;
+use EmailHandler;
 
 class MainController extends PublicController
 {
@@ -288,24 +291,17 @@ class MainController extends PublicController
         }
         
     }
-    public function postSendContact(ContactBuyCarRequest $request, BaseHttpResponse $response)
+    public function postSendContact(ContactBuyCarRequest $request, BaseHttpResponse $response, ContactBuyCarInterface $contactRepository)
     {        
-        dd('a');
         try {
-            $city = get_city_by_id($request->city)->name;
-            $showroom = get_showroom_by_id($request->showroom)->name;
-            $district = get_district_by_id($request->district)->name;
-            $ward = get_ward_by_id($request->ward)->name;
+            // $city = get_city_by_id($request->city)->name;
+            // $showroom = get_showroom_by_id($request->showroom)->name;
+            // $district = get_district_by_id($request->district)->name;
+            // $ward = get_ward_by_id($request->ward)->name;
 
-            $contact = $this->contactRepository->getModel();
-            $contact->fill($request->input());
-            $contact['email'] = $contact->email ?? "";
-            $contact['content'] = $contact->content ?? "";
-            $contact['city'] = $city ?? "";
-            $contact['showroom'] = $showroom ?? "";
-            $contact['district'] = $district ?? "";
-            $contact['ward'] = $ward ?? "";
-            $this->contactRepository->createOrUpdate($contact);
+            $contact = $contactRepository->getModel();
+            $contact = $contact->fill($request->input());
+            $data = $contactRepository->createOrUpdate($contact);
             event(new SentContactEvent($contact));
             EmailHandler::setModule(CONTACT_MODULE_SCREEN_NAME)
                 ->setVariableValues([

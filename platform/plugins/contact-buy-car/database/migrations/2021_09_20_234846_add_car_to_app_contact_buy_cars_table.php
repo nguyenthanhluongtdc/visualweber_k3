@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddMoreColumnsToTableContacts extends Migration
+class AddCarToAppContactBuyCarsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddMoreColumnsToTableContacts extends Migration
      */
     public function up()
     {
-        Schema::table('contacts', function (Blueprint $table) {
-            //
+        Schema::table('app_contact_buy_cars', function (Blueprint $table) {
+            $table->string('car_type',255)->nullable();
+            $table->string('car_color',255)->nullable();
         });
     }
 
@@ -25,7 +26,7 @@ class AddMoreColumnsToTableContacts extends Migration
      */
     public function down()
     {
-        Schema::table('contacts', function (Blueprint $table) {
+        Schema::table('app_contact_buy_cars', function (Blueprint $table) {
             //
         });
     }

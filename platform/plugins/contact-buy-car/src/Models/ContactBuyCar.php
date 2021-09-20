@@ -21,8 +21,20 @@ class ContactBuyCar extends BaseModel
      * @var array
      */
     protected $fillable = [
-        'name',
         'status',
+        'fullname',
+        'total_price',
+        'showroom',
+        'buy_date',
+        'phone',
+        'email',
+        'address',
+        'province',
+        'disctrict',
+        'ward',
+        'status',
+        'car_type',
+        'car_color'
     ];
 
     /**
