@@ -406,6 +406,9 @@
     @media(max-width: 1368px) {
       padding: 40px 50px;
     }
+    @media(max-width: 480px) {
+      padding: 20px;
+    }
 
     .form {
 
@@ -584,6 +587,9 @@
 
     .left {
       padding: 30px 40px;
+      p.text-center{
+        margin-bottom: 12px;
+      }
       .box-main {
         .logo-pc {
           width: 50%;
@@ -598,10 +604,20 @@
     }
 
     .right {
-      padding: 60px 50px;
+      // padding: 60px 50px;
 
       .form {
-       
+       .form__infoMore{
+        @media(max-width : 480px){
+          padding: 0;
+        }
+        .form__infoMore--wrap{
+          @media(max-width : 480px){
+            padding: 0px 0px 15px 15px;
+          }
+          
+        }
+       }
         &__input {
           flex-wrap: wrap;
           display: flex;
@@ -621,6 +637,20 @@
             max-width: 100%;
           }
         }
+      }
+
+      .form__position .item-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .customner__city{
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .customer__district , .customer__ward{
+          width: 49%;
+        }
+        
       }
     }
   }
