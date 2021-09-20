@@ -17,7 +17,7 @@ $(document).ready(function() {
                 minlength: "Số điện thoại ít nhất là 10 số"
             },
             customer_address: "Vui lòng nhập địa chỉ",
-            customer_email: "Vui lòng nhập số điện thoại"
+            customer_email: "Vui lòng nhập email"
         },
         submitHandler: function(form) {
             form.submit();
