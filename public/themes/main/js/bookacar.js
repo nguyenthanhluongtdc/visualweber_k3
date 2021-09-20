@@ -24,8 +24,9 @@ var Popup = {
                                 $('.ui.dropdown.showroom').api('set loading');
                             },
                             success: function(result, status, xhr) {
-                                // $('.showroom-book-a-car')[0].innerHTML = result.showroom;
-                                $('select[name="showroom"]')[0].innerHTML = result.showroom;
+                                for (let index = 0; index < $('select[name="showroom"]').length; index++) {
+                                    $('select[name="showroom"]')[index].innerHTML = result.showroom;
+                                }
                             },
                             error: function(xhr, status, error) {
                             },
@@ -66,8 +67,9 @@ var Popup = {
                                 $('.ui.dropdown.customer__district').api('set loading');
                             },
                             success: function(result, status, xhr) {
-                                console.log($('.customer__district'));
-                                $('.customer__district')[0].innerHTML = result.district;
+                                for (let index = 0; index < $('select[name="customer__district"]').length; index++) {
+                                    $('select[name="customer__district"]')[index].innerHTML = result.district;
+                                }
                             },
                             error: function(xhr, status, error) {
                             },
@@ -75,6 +77,49 @@ var Popup = {
                                 $('.ui.dropdown.customer__district').api('remove loading');
                                 $('.ui.dropdown.customer__district').destroy();
                                 $('.ui.dropdown.customer__district').dropdown();
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    },
+
+    customer__district:function(){
+        if($('.customer__district').length){
+            var ignoreDiacritics = true;
+            $('.ui.dropdown.customer__district').dropdown({
+                ignoreDiacritics: ignoreDiacritics,
+                sortSelect: true,
+                fullTextSearch:'exact',
+                onChange: function(value, text) {
+                    if(text){
+                        $.ajax({
+                            headers: {
+                                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+                                    "content"
+                                )
+                            },
+                            url: '/ajax/xaphuong',
+                            method: "GET",
+                            data: {
+                                districtId: value
+                            },
+                            dataType: "json",
+                            beforeSend: function() {
+                                $('.ui.dropdown.customer__ward').api('set loading');
+                            },
+                            success: function(result, status, xhr) {
+                                for (let index = 0; index < $('select[name="customer__ward"]').length; index++) {
+                                    $('select[name="customer__ward"]')[index].innerHTML = result.ward;
+                                }
+                            },
+                            error: function(xhr, status, error) {
+                            },
+                            complete: function(xhr, status) {
+                                $('.ui.dropdown.customer__ward').api('remove loading');
+                                $('.ui.dropdown.customer__ward').destroy();
+                                $('.ui.dropdown.customer__ward').dropdown();
                             }
                         });
                     }
@@ -113,4 +158,6 @@ $(document).ready(function() {
     Popup.city();
     //customner city
     Popup.customner__city();
+    //customner district
+    Popup.customer__district();
 });

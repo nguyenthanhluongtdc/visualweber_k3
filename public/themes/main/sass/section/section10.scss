@@ -301,6 +301,9 @@
       align-self: flex-start;
       overflow: hidden;
     }
+    .tt-test {
+      color: unset;
+    }
     .box-main {
       height: 90%;
       overflow: hidden;
@@ -421,6 +424,7 @@
           }
         }
         [type="date"] {
+          color: #808388;
             &::-webkit-calendar-picker-indicator {
               filter: invert(1);
           }
@@ -430,7 +434,7 @@
       .dropdown {
         background-color: transparent;
         border-radius: unset;
-        color: #808388;
+        // color: #808388;
         border-color: #ffffff;
         min-width: unset;
         &:hover {
