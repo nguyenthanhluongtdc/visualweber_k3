@@ -268,9 +268,28 @@
               padding-right: 0;
               padding-left: 0;
             }
+
+            // ảnh 360 nhỏ to => hright : 50vh
+
             .cloudimage-360 {
-              width: 100%;
-              height: 50vh;
+              width: 70%;
+              height: 35vh;
+              @media(max-width : 1440px){
+                height: 33vh;
+              }
+              @media(max-width : 1366px){
+                height: 30vh;
+              }
+              @media(max-width : 1279px){
+                height: 20vh;
+              }
+              .cloudimage-inner-box{
+                width: 70%;
+              }
+              canvas {
+                // width: 60%!important;
+                height: auto;
+              }
               @media(max-width : 1024px){
                 height: auto;
               }
@@ -407,13 +426,13 @@
           .tab-content {
             position: relative;
           }
-         
+         // ảnh 360 nhỏ  to -> width 100 %
           .tab-pane {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            width: 100%;
+            width: 65%;
             height:100%;
             opacity: 0;
             z-index: -1;
