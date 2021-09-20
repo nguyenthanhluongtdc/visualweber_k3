@@ -475,6 +475,10 @@ $(document).on('click', '.wrap-kp', function(){
 //    }
 var Helper = {
     covertMoney: (value) => {
+        if(value){
+            return value.toLocaleString('it-IT') + ' VND';
+        }
+        value = 0;
         return value.toLocaleString('it-IT') + ' VND';
     }
 
@@ -496,7 +500,7 @@ var getForForm = {
                 method: "GET",
                 dataType: "json",
                 beforeSend: function() {
-                    $('.loading').removeClass('d-none')
+                    // $('.loading').removeClass('d-none')
                     $("#ward-form").attr('disabled', true);
                     $('#ward-form').html('<option selected value="" >Vui lòng chọn Phường/Xã</option>')
                 },
@@ -509,10 +513,10 @@ var getForForm = {
                 error: function (xhr, thrownError) {
                     console.log(xhr.responseText);
                     console.log(thrownError)
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 },
                 complete: function(xhr, status) {
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 }
             })
         })
@@ -533,7 +537,7 @@ var getForForm = {
                 method: "GET",
                 dataType: "json",
                 beforeSend: function() {
-                    $('.loading').removeClass('d-none')
+                    // $('.loading').removeClass('d-none')
                     $("#ward-form").attr('disabled', true);
                     $('#ward-form').html('<option selected value="" >Vui lòng chọn Phường/Xã</option>')
                 },
@@ -546,10 +550,10 @@ var getForForm = {
                 error: function (xhr, thrownError) {
                     console.log(xhr.responseText);
                     console.log(thrownError)
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 },
                 complete: function(xhr, status) {
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 }
             })
         })
@@ -570,7 +574,7 @@ var getForForm = {
                 method: "GET",
                 dataType: "json",
                 beforeSend: function() {
-                    $('.loading').removeClass('d-none')
+                    // $('.loading').removeClass('d-none')
                     $("#ward-form").removeAttr('disabled');
                 },
                 success: function (data) {
@@ -582,10 +586,10 @@ var getForForm = {
                 error: function (xhr, thrownError) {
                     console.log(xhr.responseText);
                     console.log(thrownError)
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 },
                 complete: function(xhr, status) {
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 }
             })
         })
@@ -631,14 +635,15 @@ var getForForm = {
                     $(srcModal + ' #registry_fee').html(Helper.covertMoney(data.phi_dang_kiem_xe))
                     $(srcModal + ' #license_plate_fee').html(Helper.covertMoney(data.phi_dang_ky_bien_so))
                     $(srcModal + ' #car_price_total').html(Helper.covertMoney(total))
+                    $(srcModal + ' input[name="total_price"]')[0].value = total
                 },
                 error: function (xhr, thrownError) {
                     console.log(xhr.responseText);
                     console.log(thrownError)
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 },
                 complete: function(xhr, status) {
-                    $('.loading').addClass('d-none')
+                    // $('.loading').addClass('d-none')
                 }
             })
         })

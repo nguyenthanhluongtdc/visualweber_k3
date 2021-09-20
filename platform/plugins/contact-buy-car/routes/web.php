@@ -14,12 +14,12 @@ Route::group(['namespace' => 'Platform\ContactBuyCar\Http\Controllers', 'middlew
         });
     });
 
-    // Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
-    //     Route::post('contact-buy-cars/send', [
-    //         'as'   => 'public.send.contact-buy-cars',
-    //         'uses' => 'PublicController@postSendContact',
-    //     ]);
-    // });
+    Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
+        Route::post('contact-buy-cars/send', [
+            'as'   => 'public.send.contact-buy-cars',
+            'uses' => 'PublicController@postSendContact',
+        ]);
+    });
     
 });
 
