@@ -921,3 +921,6 @@
     </div>
 
 </div>
+<script>
+    const carPriceUrl = '{{route('public.ajax.carprice')}}'
+</script>
