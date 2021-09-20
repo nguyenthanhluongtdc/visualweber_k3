@@ -149,20 +149,27 @@
                                     </div>
                                     <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
                                         <form action="#" method="POST" class="form text-white">
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-light">ĐẶT XE TRỰC TUYẾN</h2>
-
+                                            <h2 class="form__title text-center font50 text-uppercase text-white font-buenos-bold">ĐẶT XE TRỰC TUYẾN</h2>
+                                            @php
+                                                $provinces = get_province_for_form();
+                                            @endphp
                                             <div class="form__body">
                                                 <p class="form__input">
-                                                    <label for="city">Tỉnh thành (*): </label>
-                                                    <select id="city" name="city"  class="font-kia-light" required>
-                                                        <option value="" selected class="font-buenos-light">Vui lòng chọn tỉnh thành</option>
+                                                    <label for="city" class="font16">Tỉnh thành (*): </label>
+                                                    <select name="city" class="font-buenos-light ui search selection dropdown city w-100" required>
+                                                        <option hidden value="" selected>Vui lòng chọn tỉnh thành</option>
+                                                        @forelse(@$provinces as $row)
+                                                            <option {{ old('city') == @$row->matp ? 'selected' : '' }}
+                                                                value="{{ @$row->matp }}">{{ @$row->name }}</option>
+                                                        @empty
+                                                        @endforelse
                                                     </select>
                                                 </p>
 
                                                 <p class="form__input">
-                                                    <label for="showroom">Showroom (*): </label>
-                                                    <select id="showroom" name="showroom"  class="font-kia-light" required>
-                                                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
+                                                    <label for="showroom" class="font16">Showroom (*): </label>
+                                                    <select name="showroom" class="font-buenos-light ui search selection dropdown showroom w-100 showroom-book-a-car" required>
+                                                        <option value="" selected>Vui lòng chọn showroom</option>
                                                     </select>
                                                 </p>
 
@@ -170,57 +177,57 @@
                                                     <div class="form__infoMore--wrap">
                                                         <ul>
                                                             <li class="line">
-                                                                <span class="line__title">
+                                                                <span class="line__title font16 font-buenos-light">
                                                                     Giá công bố:
                                                                 </span>
     
-                                                                <span class="line__value">
+                                                                <span class="line__value font-buenos-light">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
     
                                                             <li class="line">
-                                                                <span class="line__title">
+                                                                <span class="line__title font16 font-buenos-light">
                                                                    Ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value">
+                                                                <span class="line__value font-buenos-light">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
     
                                                             <li class="line">
-                                                                <span class="line__title">
+                                                                <span class="line__title font16 font-buenos-light">
                                                                     Giá sau ưu đãi:
                                                                 </span>
     
-                                                                <span class="line__value">
+                                                                <span class="line__value font-buenos-light">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
     
                                                             <li class="line">
-                                                                <span class="line__title">
+                                                                <span class="line__title font16 font-buenos-light">
                                                                     Lệ phí trước bạ (*):
                                                                 </span>
     
-                                                                <span class="line__value">
+                                                                <span class="line__value font-buenos-light">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
     
                                                             <li class="line">
-                                                                <span class="line__title">
-                                                                    Thuế:(*)
+                                                                <span class="line__title font16 font-buenos-light">
+                                                                    Thuế(*):
                                                                 </span>
     
-                                                                <span class="line__value">
+                                                                <span class="line__value font-buenos-light">
                                                                     xxx.xxx.xxx VND
                                                                 </span>
                                                             </li>
                                                         </ul>
     
-                                                        <p class="mt-3">
+                                                        <p class="mt-3 font-buenos-light">
                                                             <i>
                                                                 (*): Chi phí thực tế có thể thay đổi theo tỉnh thành
                                                             </i>
@@ -230,63 +237,68 @@
 
                                                 <div class="form__total-cost text-center">
                                                     <div class="font-kia-bold font25 item text-uppercase">
-                                                        <span>
+                                                        <span class="font-buenos-bold">
                                                             tổng chi phí ước tính:
                                                         </span>
 
-                                                        <span>
+                                                        <span class="font-buenos-bold">
                                                             xxx.xxx
                                                         </span>
                                                     </div>
-                                                    <p>
+                                                    <p class="font-buenos-light">
                                                         (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
                                                     </p>
                                                 </div>
 
                                                 <p class="form__input">
-                                                    <label for="date">Thời gian nhận xe (*): </label>
-                                                    <input type="date" id="date">
+                                                    <label for="date" class="font16 font-buenos-light">Thời gian nhận xe (*): </label>
+                                                    <input type="date" id="date" class="date ui search selection dropdown">
                                                 </p>
 
                                                 <p class="form__input">
-                                                    <label for="date"> Khách hàng (*): </label>
-                                                    <input type="text" id="date" placeholder="Họ và tên">
+                                                    <label for="date" class="font16 font-buenos-light"> Khách hàng (*): </label>
+                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Họ và tên">
                                                 </p>
 
                                                 <p class="form__input">
-                                                    <label for="date">Số điện thoại (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập số điện thoại">
+                                                    <label for="date" class="font16 font-buenos-light">Số điện thoại (*): </label>
+                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Nhập số điện thoại">
                                                 </p>
 
                                                 <p class="form__input">
-                                                    <label for="date">Địa chỉ liên hệ (*):</label>
-                                                    <input type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
+                                                    <label for="date" class="font16 font-buenos-light">Địa chỉ liên hệ (*):</label>
+                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
                                                 </p>
 
                                                 <div class="form__position">
                                                     <div class="item-right">
-                                                        <select id="city__customer" name="city__customer"  class="font-kia-light" required>
+                                                        <select id="customer__city" name="customer__city"  class="font-buenos-light ui search selection dropdown customner__city" required>
                                                             <option value="" selected>Tỉnh/ Thành phố</option>
+                                                            @forelse(@$provinces as $row)
+                                                                <option {{ old('city') == @$row->matp ? 'selected' : '' }}
+                                                                    value="{{ @$row->matp }}">{{ @$row->name }}</option>
+                                                            @empty
+                                                            @endforelse
                                                         </select>
     
-                                                        <select id="district__customer" name="district__customer"  class="font-kia-light" required>
+                                                        <select id="customer__district" name="customer__district"  class="font-buenos-light ui search selection dropdown customer__district" required>
                                                             <option value="" selected>Quận/ Huyện</option>
                                                         </select>
     
-                                                        <select id="ward__customer" name="ward__customer"  class="font-kia-light" required>
+                                                        <select id="customer__ward" name="customer__ward"  class="font-buenos-light ui search selection dropdown customer__ward" required>
                                                             <option value="" selected>Phường/ xã</option>
                                                         </select>
                                                     </div>
                                                 </div>
 
                                                 <p class="form__input">
-                                                    <label for="date">Email (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập thông tin email">
+                                                    <label for="date" class="font16 font-buenos-light">Email (*): </label>
+                                                    <input class="ui search selection dropdown" type="text" id="date" placeholder="Nhập thông tin email">
                                                 </p>
 
                                                 <p class="form__checkbox">
-                                                    <input type="checkbox" name="rules" id="rules">
-                                                    <label class="ml-3" for="rules">Đồng ý nhận thông tin từ KIA</label>
+                                                    <input type="checkbox" name="rules" id="accept">
+                                                    <label class="ml-3 mb-0 font16 font-buenos-light" for="accept">Đồng ý nhận thông tin từ KIA</label>
                                                 </p>
 
                                                 <p class="form__btnSubmit">
@@ -338,228 +350,7 @@
                             </a>
                             
                             {{-- modal  --}}
-                            <div style="
-                                display: none;" id="animatedModal102" class="animated-modal2">
-                                <div class="form-buy-car">
-                                    <div class="left">
-                                        <div class="box-main">
-                                            <div class="logo-pc">
-                                                <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="">
-                                            </div>
-    
-                                            <div class="chose-car-color">
-                                                <!-- Tab panes -->
-                                                <div class="tab-content tab-content-color2">
-                                                    <div id="color21" class="container tab-pane active item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/whitepri.png') }}"
-                                                            alt="">
-                                                    </div>
-                                                    <div id="color22" class="container tab-pane item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/blue.webp') }}"
-                                                            alt="">
-                                                    </div>
-                                                    <div id="color23" class="container tab-pane item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/black.webp') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-    
-                                                <div class="left-bottom">
-                                                    <div class="bottom--top">
-                                                        <div class="info-other font-kia-bold mb-lg-4 mb-3 font30 text-uppercase text-center">
-                                                            1.6 premium
-                                                        </div>
-        
-                                                        <ul class="nav nav-tabs tab-color-car2" role="tablist">
-                                                            {{-- Blue 1 --}}
-                                                            <li class="nav-item">
-                                                                <a class="nav-link active" data-toggle="tab" href="#color21">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}"
-                                                                        alt="K3">
-                                                                </a>
-                                                            </li>
-                                                            {{-- White --}}
-                                                            <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color22">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}"
-                                                                        alt="K3">
-                                                                </a>
-                                                            </li>
-                                                            {{-- Black --}}
-                                                            <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color23">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}"
-                                                                        alt="K3">
-                                                                </a>
-                                                            </li>
-        
-                                                        </ul>
-        
-                                                        <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
-                                                            White Premium
-                                                        </h4>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                        <p class="text-center box-des">
-                                            <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực thế
-                                            </i>
-                                        </p>
-                                    </div>
-                                    <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        <form action="#" method="POST" class="form text-white">
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
-
-                                            <div class="form__body">
-                                                <p class="form__input">
-                                                    <label for="city">Tỉnh thành (*): </label>
-                                                    <select id="city" name="city"  class="font-kia-light" required>
-                                                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
-                                                    </select>
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="showroom">Showroom (*): </label>
-                                                    <select id="showroom" name="showroom"  class="font-kia-light" required>
-                                                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
-                                                    </select>
-                                                </p>
-
-                                                <div class="form__infoMore">
-                                                    <ul>
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Giá công bố:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                               Ưu đãi:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Giá sau ưu đãi:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Lệ phí trước bạ (*):
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Thuế:(*)
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-
-                                                    <p class="mt-3">
-                                                        <i>
-                                                            (*): Chi phí thực tế có thể thay đổi theo tỉnh thành
-                                                        </i>
-                                                    </p>
-                                                </div>
-
-                                                <div class="form__total-cost text-center">
-                                                    <div class="font-kia-bold font25 item text-uppercase">
-                                                        <span>
-                                                            tổng chi phí ước tính:
-                                                        </span>
-
-                                                        <span>
-                                                            xxx.xxx
-                                                        </span>
-                                                    </div>
-                                                    <p>
-                                                        (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
-                                                    </p>
-                                                </div>
-
-                                                <p class="form__input">
-                                                    <label for="date">Thời gian nhận xe (*): </label>
-                                                    <input type="date" id="date">
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="date"> Khách hàng (*): </label>
-                                                    <input type="text" id="date" placeholder="Họ và tên">
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="date">Số điện thoại (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập số điện thoại">
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="date">Địa chỉ liên hệ (*):</label>
-                                                    <input type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
-                                                </p>
-
-                                                <div class="form__position">
-                                                    <div class="item-right">
-                                                        <select id="city__customer" name="city__customer"  class="font-kia-light" required>
-                                                            <option value="" selected>Tỉnh/ Thành phố</option>
-                                                        </select>
-    
-                                                        <select id="district__customer" name="district__customer"  class="font-kia-light" required>
-                                                            <option value="" selected>Quận/ Huyện</option>
-                                                        </select>
-    
-                                                        <select id="ward__customer" name="ward__customer"  class="font-kia-light" required>
-                                                            <option value="" selected>Phường/ xã</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <p class="form__input">
-                                                    <label for="date">Email (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập thông tin email">
-                                                </p>
-
-                                                <p class="form__checkbox">
-                                                    <input type="checkbox" name="rules" id="rules">
-                                                    <label class="ml-3" for="rules">Đồng ý nhận thông tin từ KIA</label>
-                                                </p>
-
-                                                <p class="form__btnSubmit">
-                                                    <button class="text-uppercase font16 font-kia-bold">
-                                                        đăng ký ngay
-                                                    </button>
-                                                </p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -597,223 +388,7 @@
                             </a>
                             
                             {{-- modal  --}}
-                            <div style="
-                                display: none;" id="animatedModal103" class="animated-modal2">
-                                <div class="form-buy-car">
-                                    <div class="left">
-                                        <div class="box-main">
-                                            <div class="logo-pc">
-                                                <img src="{{ Theme::asset()->url('images/logok3so1.png') }}" alt="">
-                                            </div>
-    
-                                            <div class="chose-car-color">
-                                                <!-- Tab panes -->
-                                                <div class="tab-content tab-content-color2">
-                                                    <div id="color31" class="container tab-pane active item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/whitepri.png') }}"
-                                                            alt="">
-                                                    </div>
-                                                    <div id="color32" class="container tab-pane item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/blue.webp') }}"
-                                                            alt="">
-                                                    </div>
-                                                    <div id="color33" class="container tab-pane item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/black.webp') }}"
-                                                            alt="">
-                                                    </div>
-                                                </div>
-    
-                                                <div class="left-bottom">
-                                                    <div class="bottom--top">
-                                                        <div class="info-other font-kia-bold mb-lg-4 mb-3 font30 text-uppercase text-center">
-                                                            1.6 premium
-                                                        </div>
-        
-                                                        <ul class="nav nav-tabs tab-color-car2" role="tablist">
-                                                            {{-- Blue 1 --}}
-                                                            <li class="nav-item">
-                                                                <a class="nav-link active" data-toggle="tab" href="#color31">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}"
-                                                                        alt="K3">
-                                                                </a>
-                                                            </li>
-                                                            {{-- White --}}
-                                                            <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color32">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}"
-                                                                        alt="K3">
-                                                                </a>
-                                                            </li>
-                                                            {{-- Black --}}
-                                                            <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color33">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}"
-                                                                        alt="K3">
-                                                                </a>
-                                                            </li>
-        
-                                                        </ul>
-        
-                                                        <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
-                                                            White Premium
-                                                        </h4>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-    
-                                        </div>
-                                        <p class="text-center box-des">
-                                            <i>
-                                                *Thông tin và hình ảnh chỉ mang tính chất tham khảo & có thể khác so với thực thế
-                                            </i>
-                                        </p>
-                                    </div>
-                                    <div class="right" style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        <form action="#" method="POST" class="form text-white">
-                                            <h2 class="form__title text-center font50 text-uppercase text-white font-kia-bold">ĐẶT XE TRỰC TUYẾN</h2>
-
-                                            <div class="form__body">
-                                                <p class="form__input">
-                                                    <label for="city">Tỉnh thành (*): </label>
-                                                    <select id="city" name="city"  class="font-kia-light" required>
-                                                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
-                                                    </select>
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="showroom">Showroom (*): </label>
-                                                    <select id="showroom" name="showroom"  class="font-kia-light" required>
-                                                        <option value="" selected>Vui lòng chọn tỉnh thành</option>
-                                                    </select>
-                                                </p>
-
-                                                <div class="form__infoMore">
-                                                    <ul>
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Giá công bố:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                               Ưu đãi:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Giá sau ưu đãi:
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Lệ phí trước bạ (*):
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-
-                                                        <li class="line">
-                                                            <span class="line__title">
-                                                                Thuế:(*)
-                                                            </span>
-
-                                                            <span class="line__value">
-                                                                xxx.xxx.xxx VND
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-
-                                                    <p class="mt-3">
-                                                        <i>
-                                                            (*): Chi phí thực tế có thể thay đổi theo tỉnh thành
-                                                        </i>
-                                                    </p>
-                                                </div>
-
-                                                <div class="form__total-cost text-center">
-                                                    <div class="font-kia-bold font25 item text-uppercase">
-                                                        <span>
-                                                            tổng chi phí ước tính:
-                                                        </span>
-
-                                                        <span>
-                                                            xxx.xxx
-                                                        </span>
-                                                    </div>
-                                                    <p>
-                                                        (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
-                                                    </p>
-                                                </div>
-
-                                                <p class="form__input">
-                                                    <label for="date">Thời gian nhận xe (*): </label>
-                                                    <input type="date" id="date">
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="date"> Khách hàng (*): </label>
-                                                    <input type="text" id="date" placeholder="Họ và tên">
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="date">Số điện thoại (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập số điện thoại">
-                                                </p>
-
-                                                <p class="form__input">
-                                                    <label for="date">Địa chỉ liên hệ (*):</label>
-                                                    <input type="text" id="date" placeholder="Nhập địa chỉ liên hệ">
-                                                </p>
-
-                                                <div class="form__position">
-                                                    <div class="item-right">
-                                                        <select id="city__customer" name="city__customer"  class="font-kia-light" required>
-                                                            <option value="" selected>Tỉnh/ Thành phố</option>
-                                                        </select>
-    
-                                                        <select id="district__customer" name="district__customer"  class="font-kia-light" required>
-                                                            <option value="" selected>Quận/ Huyện</option>
-                                                        </select>
-    
-                                                        <select id="ward__customer" name="ward__customer"  class="font-kia-light" required>
-                                                            <option value="" selected>Phường/ xã</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <p class="form__input">
-                                                    <label for="date">Email (*): </label>
-                                                    <input type="text" id="date" placeholder="Nhập thông tin email">
-                                                </p>
-
-                                                <p class="form__btnSubmit">
-                                                    <button class="text-uppercase font16 font-kia-bold">
-                                                        đăng ký ngay
-                                                    </button>
-                                                </p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
