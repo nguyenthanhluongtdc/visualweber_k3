@@ -108,7 +108,7 @@
                 <i class="fas fa-times"></i>
             </div>
             <ul class="list-menu font-kia-bold font20" id="menu">
-                <li class="menu_item menu_item-wi" data-menuanchor="ngoai-that">
+                <li class="menu_item close-menu2 menu_item-wi" data-menuanchor="ngoai-that">
                 <a href="{{ route('public.index') }}#ngoai-that" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop1.png') }}" alt=""  class="menu1" style="width: 60px">
@@ -116,7 +116,7 @@
                     <p>Nhận diện mới</p>
                 </a>
             </li>
-            <li class="menu_item menu_item-wi" data-menuanchor="noi-that">
+            <li class="menu_item close-menu2 menu_item-wi" data-menuanchor="noi-that">
                 <a href="{{ route('public.index') }}#noi-that" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop2.png') }}" alt=""  class="menu2" style="width: 40px">
@@ -124,7 +124,7 @@
                     <p>Kết nối công nghệ</p>
                 </a>
             </li>
-            <li class="menu_item menu_item-wi" data-menuanchor="van-hanh">
+            <li class="menu_item close-menu2 menu_item-wi" data-menuanchor="van-hanh">
                 <a href="{{ route('public.index') }}#van-hanh" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop3.png') }}" alt="" class="menu3" style="width: 36px">
@@ -132,7 +132,7 @@
                     <p>Chế độ lái thông minh</p>
                 </a>
             </li>
-            <li class="menu_item menu_item-wi" data-menuanchor="an-toan">
+            <li class="menu_item close-menu2 menu_item-wi" data-menuanchor="an-toan">
                 <a href="{{ route('public.index') }}#an-toan" class="menu_link">
                     <div class="img">
                         <img src="{{ Theme::asset()->url('images/section1/icontop4.png') }}" alt=""  class="menu4" style="width: 50px">
@@ -140,7 +140,7 @@
                     <p>An toàn tối ưu</p>
                 </a>
             </li>
-            <li class="chose-car" data-menuanchor="dat-xe-truc-tuyen">
+            <li class="chose-car close-menu2" data-menuanchor="dat-xe-truc-tuyen">
                 <a href="{{ route('public.index') }}#dat-xe-truc-tuyen">
                     ĐẶT XE TRỰC TUYẾN
                 </a>
