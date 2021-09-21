@@ -508,6 +508,23 @@
               }
              }
           }
+          #tabcar05.tab-pane{
+            width: 50%;
+            .cloudimage-360{
+              padding-top: 50px;
+
+            }
+            @media(max-width : 1024px){
+              // transform: translateX(-50%);
+              // left: 50%;
+              transition: none;
+              width: 80%;
+              .cloudimage-360{
+                padding-top: 25px;
+  
+              }
+             }
+          }
           .tab-pane.active{
               opacity: 1;
               z-index: 1;
