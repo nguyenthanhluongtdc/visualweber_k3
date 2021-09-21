@@ -34,7 +34,8 @@ class ContactBuyCar extends BaseModel
         'ward',
         'status',
         'car_type',
-        'car_color'
+        'car_color',
+        'created_at'
     ];
 
     /**

@@ -6,6 +6,7 @@ use Platform\Base\Forms\FormAbstract;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\ContactBuyCar\Http\Requests\ContactBuyCarRequest;
 use Platform\ContactBuyCar\Models\ContactBuyCar;
+use Assets;
 
 class ContactBuyCarForm extends FormAbstract
 {
@@ -35,7 +36,7 @@ class ContactBuyCarForm extends FormAbstract
             ->addMetaBoxes([
                 'information' => [
                     'title'      => trans('plugins/contact::contact.contact_information'),
-                    'content'    => view('plugins/contact::contact-info', ['contact' => $this->getModel()])->render(),
+                    'content'    => view('plugins/contact-buy-car::contact-info', ['contact' => $this->getModel()])->render(),
                     'attributes' => [
                         'style' => 'margin-top: 0',
                     ],

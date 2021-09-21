@@ -49,11 +49,17 @@ class ContactBuyCarTable extends TableAbstract
     {
         $data = $this->table
             ->eloquent($this->query())
-            ->editColumn('name', function ($item) {
+            ->editColumn('fullname', function ($item) {
                 if (!Auth::user()->hasPermission('contact-buy-car.edit')) {
-                    return $item->name;
+                    return $item->fullname;
                 }
-                return Html::link(route('contact-buy-car.edit', $item->id), $item->name);
+                return Html::link(route('contact-buy-car.edit', $item->id), $item->fullname);
+            })
+            ->editColumn('showroom', function ($item) {
+                return get_showroom_by_id($item->showroom)->name ?? "N/A";
+            })
+            ->editColumn('total_price', function ($item) {
+                return number_format($item->total_price,2,',','.') ?? "N/A";
             })
             ->editColumn('checkbox', function ($item) {
                 return $this->getCheckbox($item->id);
@@ -79,9 +85,20 @@ class ContactBuyCarTable extends TableAbstract
         $query = $this->repository->getModel()
             ->select([
                'id',
-               'name',
-               'created_at',
                'status',
+                'fullname',
+                'total_price',
+                'showroom',
+                'buy_date',
+                'phone',
+                'email',
+                'address',
+                'province',
+                'disctrict',
+                'ward',
+                'status',
+                'car_type',
+                'car_color'
            ]);
 
         return $this->applyScopes($query);
@@ -93,22 +110,54 @@ class ContactBuyCarTable extends TableAbstract
     public function columns()
     {
         return [
-            'id' => [
-                'title' => trans('core/base::tables.id'),
-                'width' => '20px',
-            ],
-            'name' => [
+            // 'id' => [
+            //     'title' => trans('core/base::tables.id'),
+            //     'width' => '20px',
+            // ],
+            'fullname' => [
                 'title' => trans('core/base::tables.name'),
+                'class' => 'text-left',
+            ],
+            'email' => [
+                'title' => trans('Email'),
+                'class' => 'text-left',
+            ],
+            'phone' => [
+                'title' => trans('Số điện thoại'),
+                'class' => 'text-left',
+            ],
+            'address' => [
+                'title' => trans('Địa chỉ'),
+                'class' => 'text-left',
+            ],
+            'showroom' => [
+                'title' => trans('Showroom'),
+                'class' => 'text-left',
+            ],
+            'car_type' => [
+                'title' => trans('Loại xe'),
+                'class' => 'text-left',
+            ],
+            'car_color' => [
+                'title' => trans('Màu xe'),
+                'class' => 'text-left',
+            ],
+            'buy_date' => [
+                'title' => trans('Ngày nhận xe'),
+                'class' => 'text-left',
+            ],
+            'total_price' => [
+                'title' => trans('Giá xe'),
                 'class' => 'text-left',
             ],
             'created_at' => [
                 'title' => trans('core/base::tables.created_at'),
                 'width' => '100px',
             ],
-            'status' => [
-                'title' => trans('core/base::tables.status'),
-                'width' => '100px',
-            ],
+            // 'status' => [
+            //     'title' => trans('core/base::tables.status'),
+            //     'width' => '100px',
+            // ],
         ];
     }
 
@@ -126,7 +175,7 @@ class ContactBuyCarTable extends TableAbstract
     public function getBulkChanges(): array
     {
         return [
-            'name' => [
+            'fullname' => [
                 'title'    => trans('core/base::tables.name'),
                 'type'     => 'text',
                 'validate' => 'required|max:120',
@@ -150,5 +199,15 @@ class ContactBuyCarTable extends TableAbstract
     public function getFilters(): array
     {
         return $this->getBulkChanges();
+    }
+    /**
+     * {@inheritDoc}
+     */
+    public function getDefaultButtons(): array
+    {
+        return [
+            'export',
+            'reload',
+        ];
     }
 }
