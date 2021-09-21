@@ -15,7 +15,7 @@
                     <h5 class="font30 font-kia-bold">1.6 Premium</h5>
                 </div>
                 <div class="bottom">
-                    <img src="{{ Theme::asset()->url('images/section10/xepri.png') }}">
+                    <img src="{{ Theme::asset()->url('images/section10/xe1.png') }}">
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật</p>
                         <ul class="list-content scrollable-content font18">
@@ -182,7 +182,7 @@
                     <h5 class="font30 font-kia-bold">1.6 Luxury</h5>
                 </div>
                 <div class="bottom">
-                    <img src="{{ Theme::asset()->url('images/section10/2luxu.png') }}">
+                    <img src="{{ Theme::asset()->url('images/section10/xe2.png') }}">
                     <div class="content-item">
                         <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
                         <ul class="list-content scrollable-content font18">
