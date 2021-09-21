@@ -397,12 +397,13 @@
         }
 
         ul {
+          align-items: center;
           li {
             img {
               width: 50px;
               height: 50px;
               border-radius: 50%;
-
+              transition: all linear .3s;
               @media (max-width: 1680px) {
                 width: 40px;
                 height: 40px;
@@ -410,6 +411,11 @@
               @media (max-width: 1368px) {
                 width: 30px;
                 height: 30px;
+              }
+            }
+            a.active {
+              img {
+                transform: scale(1.3,1.3);
               }
             }
           }
@@ -770,8 +776,8 @@
 .ui.search.dropdown.visible > input.search {
   color: #fff;
 }
-.error-js{
-  width:100%;
+.error-js {
+  width: 100%;
 }
 .error-active {
   position: relative;
@@ -799,32 +805,32 @@
   transition: all linear 0.3s;
   opacity: 0;
 }
-.form-car{
-  .form__input{
-    label{
-      margin-right:10px;
+.form-car {
+  .form__input {
+    label {
+      margin-right: 10px;
       margin-bottom: 0;
       // height:0;
     }
-    input{
-      font-family: "VN-KiaSignature-Light";
+    input {
+      font-family: 'VN-KiaSignature-Light';
       font-size: 12px;
     }
   }
-  .ui.search{
+  .ui.search {
     font-size: 12px;
   }
-  .menu{
-    .item{
+  .menu {
+    .item {
       font-size: 12px !important;
     }
   }
 }
-@media screen and(max-width:1024px){
-  .form-car{
-    .form__input{
-      label{
-        height:auto;
+@media screen and(max-width:1024px) {
+  .form-car {
+    .form__input {
+      label {
+        height: auto;
       }
     }
   }

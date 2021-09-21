@@ -521,8 +521,8 @@
     }
   }
 }
-.camon {
-  z-index: 1111;
+.camon,.please-select-product {
+  z-index: 111111;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -557,7 +557,7 @@
       font-size: 15px;
     }
   }
-  .close-popup {
+  .close-popup, .close-popup-please-select-product {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -576,6 +576,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 0;
+    z-index: 111110;
     background-color: rgba(0, 0, 0, 0.5);
   }
 }

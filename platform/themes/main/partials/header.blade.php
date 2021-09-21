@@ -225,10 +225,18 @@
             <i class="fas fa-times"></i>
         </div>
     <div class="popup-content">
-        <h2 class="font-kia-bold font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
+        <h2 class="font-kia-bold font30">ĐĂNG KÝ THÀNH CÔNG!</h2>
     </div>
 </div>
 
+<div class="please-select-product">
+    <div class="close-popup-please-select-product">
+            <i class="fas fa-times"></i>
+        </div>
+    <div class="popup-content">
+        <h2 class="font-kia-bold font30">Vui lòng chọn màu xe!</h2>
+    </div>
+</div>
 
 <div id="page-wrap">
    

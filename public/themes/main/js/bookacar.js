@@ -1,58 +1,54 @@
 $(document).ready(function () {
-//      // add the rule here
-//     $.validator.addMethod("valueNotEquals", function(value, element, arg){
-//     return arg !== value;
-//    }, "Value must not equal arg.");
-  
-   // configure your validation
-  
-    // $(".form-car").validate({
-    //     // ignore: [],
-    //     // rules: {
-    //     //     fullname: "required",
-    //     //     phone: {
-    //     //         required: true,
-    //     //         minlength: 10
-    //     //     },
-    //     //     city: {
-    //     //         required: true,
-    //     //     },
-    //     //     province: {
-    //     //         required: true,
-    //     //     },
-    //     //     showroom: {
-    //     //         required: true,
-    //     //     },
-    //     //     address: "required",
-    //     //     email:{
-    //     //         required: true,
-    //     //         email: true,
-    //     //         regxEmail: /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-    //     //     },
-    //     //     buy_date: "required",
-            
-    //     // },
-    //     // messages: {
-    //     //     showroom: "Vui lòng chọn showroom",
-    //     //     city: "Vui lòng chọn tỉnh thành",
-    //     //     province: "Vui lòng chọn tỉnh thành",
-    //     //     name: "Vui lòng nhập họ tên",
-    //     //     phone: {
-    //     //         required: "Vui lòng nhập số điện thoại",
-    //     //         minlength: "Số điện thoại ít nhất là 10 số"
-    //     //     },
-    //     //     address: "Vui lòng nhập địa chỉ",
-    //     //     email: {
-    //     //         required: 'Vui lòng nhập email',
-    //     //         email: 'Email không đúng định dạng!'
-    //     //     },
-    //     //     buy_date: "Vui lòng chọn thời gian",
-
-    //     // },
-    //     submitHandler: function (form) {
-    //         form.submit();
-    //     }
-    // });
+  //      // add the rule here
+  //     $.validator.addMethod("valueNotEquals", function(value, element, arg){
+  //     return arg !== value;
+  //    }, "Value must not equal arg.");
+  // configure your validation
+  // $(".form-car").validate({
+  //     // ignore: [],
+  //     // rules: {
+  //     //     fullname: "required",
+  //     //     phone: {
+  //     //         required: true,
+  //     //         minlength: 10
+  //     //     },
+  //     //     city: {
+  //     //         required: true,
+  //     //     },
+  //     //     province: {
+  //     //         required: true,
+  //     //     },
+  //     //     showroom: {
+  //     //         required: true,
+  //     //     },
+  //     //     address: "required",
+  //     //     email:{
+  //     //         required: true,
+  //     //         email: true,
+  //     //         regxEmail: /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+  //     //     },
+  //     //     buy_date: "required",
+  //     // },
+  //     // messages: {
+  //     //     showroom: "Vui lòng chọn showroom",
+  //     //     city: "Vui lòng chọn tỉnh thành",
+  //     //     province: "Vui lòng chọn tỉnh thành",
+  //     //     name: "Vui lòng nhập họ tên",
+  //     //     phone: {
+  //     //         required: "Vui lòng nhập số điện thoại",
+  //     //         minlength: "Số điện thoại ít nhất là 10 số"
+  //     //     },
+  //     //     address: "Vui lòng nhập địa chỉ",
+  //     //     email: {
+  //     //         required: 'Vui lòng nhập email',
+  //     //         email: 'Email không đúng định dạng!'
+  //     //     },
+  //     //     buy_date: "Vui lòng chọn thời gian",
+  //     // },
+  //     submitHandler: function (form) {
+  //         form.submit();
+  //     }
+  // });
 })
 
 var Popup = {
@@ -190,7 +186,7 @@ $(document).ready(function () {
     var el = $(this).parents('.bottom--top').find('h4')
     if (el.length) {
       el[0].innerHTML = color
-      if($('.fancybox-container input[name="car_color"]').length){
+      if ($('.fancybox-container input[name="car_color"]').length) {
         $('.fancybox-container input[name="car_color"]')[0].value = color
       }
     }
@@ -225,4 +221,18 @@ $(document).ready(function () {
   Popup.customner__city()
   //customner district
   Popup.customer__district()
+
+  $('.form.form-car').submit(function (event) {
+    if ($('.fancybox-container input[name="car_color"]').length) {
+      if (!$('.fancybox-container input[name="car_color"]')[0].value) {
+        $('.please-select-product').show()
+        $('body').addClass('active-popup')
+        event.preventDefault()
+      }
+    }
+  })
+  $('.close-popup-please-select-product').click(function () {
+    $('.please-select-product').hide()
+    $('body').removeClass('active-popup')
+  })
 })
