@@ -120,6 +120,30 @@
                     bottom: 21%;
                     left: 0;
                     right: 0;
+                    .wrap-kp{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .icon-kp{
+                            animation: MoveUpDown 1.5s linear infinite;
+                                position: absolute;
+                                left: 105px;
+                                bottom: 0;
+                            img{
+
+                                width: 35px;
+                            }
+                        }
+                        .chu{
+                           img{
+                            width: 150px;
+                           }
+                        }
+                    }
                     .access{
                         img{
                             width: 50px;
