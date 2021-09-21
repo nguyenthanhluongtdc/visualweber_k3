@@ -1,10 +1,10 @@
 <div data-anchor="trang-chu" class="section section1 fp-auto-height-responsive fp-section fp-completely"
-    style="background-image: url('{{ Theme::asset()->url('images/section1/bgnew3.jpg') }}')">
+    style="background-image: url('{{ Theme::asset()->url('images/section1/bannerkv1.jpg') }}')">
 
     <div class="s1-pc">
-        <div class="logo-pc">
+        {{-- <div class="logo-pc">
             <img src="{{ Theme::asset()->url('images/logok3new.png') }}" alt="">
-        </div>
+        </div> --}}
         <div class="number-wrap">
             <div class="access access1">
                 <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
