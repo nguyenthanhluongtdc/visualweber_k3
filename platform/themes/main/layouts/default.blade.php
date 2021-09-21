@@ -19,6 +19,7 @@
    $('.fixed-bg').show();
    $('.dangky').hide();
    $('.camon').show();
+   $('body').addClass('active-popup');
    
 </script>
 @endif

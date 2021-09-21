@@ -352,6 +352,7 @@ $('.close-popup').click(function(){
     $('.fixed-bg').hide();
     $('.animated-modal-tk').hide();
     $('.camon').hide();
+    $('body').removeClass('active-popup');
 
     });
 
@@ -687,56 +688,56 @@ $('.button-video3').click(function(){
 
 
 $(document).ready(function() {
-    $.validator.addMethod("valueNotEquals", function(value, element, arg) {
-        return arg !== value;
-    }, "Value must not equal arg.");
+    // $.validator.addMethod("valueNotEquals", function(value, element, arg) {
+    //     return arg !== value;
+    // }, "Value must not equal arg.");
   
-    // configure your validation
+    // // configure your validation
   
-    $(".form-car").validate({
-        ignore: [],
-        rules: {
-          fullname: "required",
-            phone: {
-                required: true,
-                minlength: 10
-            },
-            city: {
-                required: true,
-            },
-            showroom: {
-                required: true,
-            },
-            address: "required",
-            email: {
-                required: true,
-                email: true,
-                regxEmail: /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-            },
-            buy_date: "required",
-            city: "required",
+    // $(".form-car").validate({
+    //     ignore: [],
+    //     rules: {
+    //       fullname: "required",
+    //         phone: {
+    //             required: true,
+    //             minlength: 10
+    //         },
+    //         city: {
+    //             required: true,
+    //         },
+    //         showroom: {
+    //             required: true,
+    //         },
+    //         address: "required",
+    //         email: {
+    //             required: true,
+    //             email: true,
+    //             regxEmail: /^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    //         },
+    //         buy_date: "required",
+    //         city: "required",
   
-        },
-        messages: {
-            showroom: "Vui lòng chọn showroom",
-            city: "Vui lòng chọn tỉnh thành",
-            fullname: "Vui lòng nhập họ tên",
-            phone: {
-                required: "Vui lòng nhập số điện thoại",
-                minlength: "Số điện thoại ít nhất là 10 số"
-            },
-            address: "Vui lòng nhập địa chỉ",
-            email: {
-                required: 'Vui lòng nhập email',
-                email: 'Email không đúng định dạng!'
-            },
-            buy_date: "Vui lòng chọn thời gian",
+    //     },
+    //     messages: {
+    //         showroom: "Vui lòng chọn showroom",
+    //         city: "Vui lòng chọn tỉnh thành",
+    //         fullname: "Vui lòng nhập họ tên",
+    //         phone: {
+    //             required: "Vui lòng nhập số điện thoại",
+    //             minlength: "Số điện thoại ít nhất là 10 số"
+    //         },
+    //         address: "Vui lòng nhập địa chỉ",
+    //         email: {
+    //             required: 'Vui lòng nhập email',
+    //             email: 'Email không đúng định dạng!'
+    //         },
+    //         buy_date: "Vui lòng chọn thời gian",
   
-        },
-        submitHandler: function(form) {
-            form.submit();
-        }
+    //     },
+    //     submitHandler: function(form) {
+    //         form.submit();
+    //     }
   
   
-    });
+    // });
   });

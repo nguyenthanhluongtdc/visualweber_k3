@@ -221,11 +221,11 @@
 
 
 <div class="camon">
-    <div class="popup-content">
-        <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
-        <div class="close-popup">
+    <div class="close-popup">
             <i class="fas fa-times"></i>
         </div>
+    <div class="popup-content">
+        <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
     </div>
 </div>
 
