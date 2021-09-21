@@ -28,7 +28,7 @@
 @if (has_field($page, 'hinh_video_tren_mobie'))
 
     <div class="videomobie">
-        <a data-fancybox href="{{ Theme::asset()->url('images/k3video.mp4') }}">
+        <a data-fancybox href="https://www.youtube.com/watch?v=CBHCVhoWINk">
             <img src="{{ RvMedia::getImageUrl(get_field($page, 'hinh_video_tren_mobie')) }}"
             alt="K3">
         </a>
