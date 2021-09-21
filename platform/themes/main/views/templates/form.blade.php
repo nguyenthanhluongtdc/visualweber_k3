@@ -87,7 +87,7 @@
 
             <li class="line">
                <span class="line__title font14 font-buenos-light">
-                  Phí đăng ký biển số(**):
+                  Phí đăng ký biển số (**):
                </span>
 
                <span class="line__value font-buenos-light" id="license_plate_fee">
@@ -134,7 +134,7 @@
          <input type="hidden" name="total_price" value="{{old('total_price')}}">
       </div>
       <p class="font-buenos-light font-mobie-small">
-         (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết.)
+         (Tổng chi phí ước tính mang tính chất tham khảo. Vui lòng liên hệ Showroom để biết thêm chi tiết)
       </p>
    </div>
 
@@ -224,6 +224,9 @@
          <p class="error-msg font-kia-re request erro-p">{{$errors->first('email')}}</p>
       </div>
    </div>
+   <p class="font-buenos-light font-mobie-small mb-3">
+      (*) Thông tin bắt buộc trên chỗ đồng ý nhận tin từ KIA
+   </p>
 
    <div class="form__checkbox">
       <div class="{{$errors->first('accept') ? 'error-active' : ''}}">
