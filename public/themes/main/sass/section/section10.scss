@@ -837,4 +837,13 @@
       }
     }
   }
+  .form-buy-car .right .form__total-cost .item{
+    width: 100%;
+    span{
+      font-size: 14px;
+    }
+    span#car_price_total{
+      font-size: 12px;
+    }
+  }
 }
