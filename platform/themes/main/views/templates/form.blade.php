@@ -49,8 +49,8 @@
                   Giá công bố:
                </span>
 
-               <span class="line__value font-buenos-light" id="car_price" data-price="685000000">
-                  685.000.000 VND
+               <span class="line__value font-buenos-light" id="car_price" data-price="{{$car_price ?? 0}}">
+                  {{number_format($car_price,0,',','.')}} VNĐ
                </span>
             </li>
 
@@ -60,7 +60,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="car_discount">
-                  xxx.xxx.xxx VND
+                  xxx.xxx.xxx VNĐ
                </span>
             </li>
 
@@ -70,28 +70,28 @@
                </span>
 
                <span class="line__value font-buenos-light" id="car_price_after_discount">
-                  xxx.xxx.xxx VND
+                  xxx.xxx.xxx VNĐ
                </span>
             </li>
 
             <li class="line">
                <span class="line__title font14 font-buenos-light">
-                  Lệ phí trước bạ (*):
+                  Lệ phí trước bạ (**):
                </span>
 
                <span class="line__value font-buenos-light" id="registration_fee">
-                  xxx.xxx.xxx VND
+                  xxx.xxx.xxx VNĐ
                </span>
             </li>
 
 
             <li class="line">
                <span class="line__title font14 font-buenos-light">
-                  Phí đăng ký biển số(*):
+                  Phí đăng ký biển số(**):
                </span>
 
                <span class="line__value font-buenos-light" id="license_plate_fee">
-                  xxx.xxx.xxx VND
+                  xxx.xxx.xxx VNĐ
                </span>
             </li>
             <li class="line">
@@ -100,23 +100,23 @@
                </span>
 
                <span class="line__value font-buenos-light" id="registry_fee">
-                  xxx.xxx.xxx VND
+                  xxx.xxx.xxx VNĐ
                </span>
             </li>
-            <li class="line">
+            {{-- <li class="line">
                <span class="line__title font14 font-buenos-light">
                   Thuế:
                </span>
 
                <span class="line__value font-buenos-light" id="fee">
-                  xxx.xxx.xxx VND
+                  xxx.xxx.xxx VNĐ
                </span>
-            </li>
+            </li> --}}
          </ul>
 
          <p class="mt-3 font-buenos-light">
             <i>
-               (*): Chi phí thực tế có thể thay đổi theo tỉnh thành
+               (**): Chi phí thực tế có thể thay đổi theo tỉnh thành
             </i>
          </p>
       </div>
