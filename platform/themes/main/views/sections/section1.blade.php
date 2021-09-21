@@ -44,7 +44,7 @@
 
     <div class="s1-mobie">
         <div class="img-pri-s1">
-            <img src="{{ Theme::asset()->url('images/section1/kv1mobie.jpg') }}" alt="" class="bg fit-cover">
+            <img src="{{ Theme::asset()->url('images/section1/bannerkv1b.jpg')  }}" alt="" class="bg fit-cover">
             <div class="s1-icon-mobie">
                 <div class="top">
                     <div class="access">
