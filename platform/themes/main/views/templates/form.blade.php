@@ -169,7 +169,7 @@
       </div>
    </div>
 
-   <div class="form__position">
+   <div class="form__position mb-lg-3 mb-0">
       <div class="item-right">
          <div class="{{$errors->first('province') ? 'error-active' : 'error-js'}}">
             <select id="customer__city" name="province" class="font-buenos-light ui search selection dropdown customner__city w-100" required>

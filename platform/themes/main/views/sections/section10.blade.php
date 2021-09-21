@@ -62,19 +62,12 @@
                                             <div class="chose-car-color">
                                                 <!-- Tab panes -->
                                                 <div class="tab-content tab-content-color2">
-                                                    <div id="color1" class="container tab-pane active item-car-color ">
-                                                        <br>
-                                                        <img src="{{ Theme::asset()->url('images/form/whitepri.png') }}"
-                                                            alt="">
-                                                    </div>
-                                                    <div id="color2" class="container tab-pane item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/blue.webp') }}"
-                                                            alt="">
-                                                    </div>
-                                                    <div id="color3" class="container tab-pane item-car-color "><br>
-                                                        <img src="{{ Theme::asset()->url('images/form/black.webp') }}"
-                                                            alt="">
-                                                    </div>
+                                                    @for($i=1;$i<=7;$i++)
+                                                        <div id="color{{$i}}" class="container tab-pane active item-car-color ">
+                                                            <br>
+                                                            <img src="{{ Theme::asset()->url('images/form/xe/'.$i.'.png') }}"alt="">
+                                                        </div>
+                                                    @endfor
                                                 </div>
 
                                                 <div class="left-bottom">
