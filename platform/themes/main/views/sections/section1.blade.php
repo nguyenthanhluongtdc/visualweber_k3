@@ -44,7 +44,7 @@
 
     <div class="s1-mobie">
         <div class="img-pri-s1">
-            <img src="{{ Theme::asset()->url('images/section1/bannerkv1b.jpg')  }}" alt="" class="bg fit-cover">
+            <img src="{{ Theme::asset()->url('images/section1/bannerkv1c.jpg')  }}" alt="" class="bg fit-cover">
             <div class="mobie-kp">
                 <div class="wrap-kp menu2ne">
                     <div class="icon-kp item" data-menuanchor="ngoai-that">
