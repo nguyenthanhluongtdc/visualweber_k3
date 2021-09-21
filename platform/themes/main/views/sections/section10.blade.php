@@ -111,28 +111,28 @@
                                                             </li>
                                                             {{-- Blue --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color4">
+                                                                <a class="nav-link " data-toggle="tab" href="#color4" data-name="Blue Premium">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- Gray --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color5">
+                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Gray Premium">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- Gray 1 --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color6">
+                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Gray Premium">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- RED --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color7">
+                                                                <a class="nav-link " data-toggle="tab" href="#color7" data-name="Red Premium">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/red2.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
@@ -241,11 +241,12 @@
                                                             1.6 Luxury
                                                         </div>
 
+                                                        <p class="text-center ont-kia-light">Vui lòng chọn màu sắc</p>
                                                         <ul class="nav nav-tabs tab-color-car2" role="tablist">
                                                             {{-- Blue 1 --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link active" data-toggle="tab"
-                                                                    href="#color21" data-name="White Luxury">
+                                                                    href="#color1" data-name="White Luxury">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}"
                                                                         alt="K3">
                                                                 </a>
@@ -253,7 +254,7 @@
                                                             {{-- White --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link " data-toggle="tab"
-                                                                    href="#color22" data-name="Blue Luxury">
+                                                                    href="#color2" data-name="Blue Luxury">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}"
                                                                         alt="K3">
                                                                 </a>
@@ -261,14 +262,40 @@
                                                             {{-- Black --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link " data-toggle="tab"
-                                                                    href="#color23" data-name="Black Luxury">
+                                                                    href="#color3" data-name="Black Luxury">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
-
+                                                            {{-- Blue --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color4" data-name="Blue Luxury">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- Gray --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Gray Luxury">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/gray.jpg') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- Gray 1 --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Gray Luxury">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- RED --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color7" data-name="Red Luxury">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/red2.jpg') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
                                                         </ul>
-
                                                         <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
                                                             White Luxury
                                                         </h4>
@@ -368,33 +395,61 @@
                                                         1.6 MT
                                                     </div>
 
-                                                    <ul class="nav nav-tabs tab-color-car2" role="tablist">
-                                                        {{-- Blue 1 --}}
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active" data-toggle="tab"
-                                                                href="#color31" data-name="White MT">
-                                                                <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}"
-                                                                    alt="K3">
-                                                            </a>
-                                                        </li>
-                                                        {{-- White --}}
-                                                        <li class="nav-item">
-                                                            <a class="nav-link " data-toggle="tab" href="#color32"
-                                                                data-name="Blue MT">
-                                                                <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}"
-                                                                    alt="K3">
-                                                            </a>
-                                                        </li>
-                                                        {{-- Black --}}
-                                                        <li class="nav-item">
-                                                            <a class="nav-link " data-toggle="tab" href="#color33"
-                                                                data-name="Black MT">
-                                                                <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}"
-                                                                    alt="K3">
-                                                            </a>
-                                                        </li>
-
-                                                    </ul>
+                                                    <p class="text-center ont-kia-light">Vui lòng chọn màu sắc</p>
+                                                        <ul class="nav nav-tabs tab-color-car2" role="tablist">
+                                                            {{-- Blue 1 --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link active" data-toggle="tab"
+                                                                    href="#color1" data-name="White MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- White --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab"
+                                                                    href="#color2" data-name="Blue MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- Black --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab"
+                                                                    href="#color3" data-name="Black MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- Blue --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color4" data-name="Blue MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- Gray --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Gray MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/gray.jpg') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- Gray 1 --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Gray MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                            {{-- RED --}}
+                                                            <li class="nav-item">
+                                                                <a class="nav-link " data-toggle="tab" href="#color7" data-name="Red MT">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/red2.jpg') }}"
+                                                                        alt="K3">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
 
                                                     <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
                                                         White MT

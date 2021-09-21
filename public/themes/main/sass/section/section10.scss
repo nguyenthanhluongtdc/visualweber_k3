@@ -480,8 +480,8 @@
 
       &__input {
         display: grid;
-        align-items: flex-start;
-        grid-template-columns: 20% 80%;
+        align-items: center;
+        grid-template-columns: 25% 75%;
         margin-bottom: 15px;
         position: relative;
         label.error {
@@ -561,8 +561,8 @@
           width: 100%;
         }
         .item-right {
-          flex: 0 0 80%;
-          max-width: 80%;
+          flex: 0 0 75%;
+          max-width: 75%;
           display: grid;
           justify-content: space-between;
           grid-template-columns: 32% 32% 32%;
@@ -803,7 +803,8 @@
   .form__input{
     label{
       margin-right:10px;
-      height:0;
+      margin-bottom: 0;
+      // height:0;
     }
     input{
       font-family: "VN-KiaSignature-Light";
