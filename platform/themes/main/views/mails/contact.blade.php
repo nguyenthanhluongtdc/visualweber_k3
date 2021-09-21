@@ -13,7 +13,7 @@ color: #000;
             <td>
               <h4 style="padding:0;margin:0;color:#08141e;font-size:18px;">{{__('KIA')}}</h4>
             </td>
-            <td>
+            <td style="text-align: right;">
               <img class="img-fluid" style="max-width:100px;" src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ @theme_option('site_title') }}">
             </td>
           </tr>
