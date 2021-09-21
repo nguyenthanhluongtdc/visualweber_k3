@@ -38,7 +38,7 @@ var myFullpage = new fullpage('#fullpage', {
 
     fadingEffect: false,
     // normalScrollElements: ".scrollable-content",
-    normalScrollElements: ".fancybox-container, .scrollable-content",
+    normalScrollElements: ".fancybox-container, .scrollable-content, #animatedModal103",
     scrollOverflow: false,
     scrollOverflowReset: false,
     scrollOverflowOptions: null,
