@@ -803,6 +803,7 @@
   .form__input{
     label{
       margin-right:10px;
+      height:0;
     }
     input{
       font-family: "VN-KiaSignature-Light";
@@ -811,5 +812,14 @@
   }
   .ui.search{
     font-size: 12px;
+  }
+}
+@media screen and(max-width:1024px){
+  .form-car{
+    .form__input{
+      label{
+        height:auto;
+      }
+    }
   }
 }

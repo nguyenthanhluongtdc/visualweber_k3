@@ -477,10 +477,10 @@ $(document).on('click', '.wrap-kp', function(){
 var Helper = {
     covertMoney: (value) => {
         if(value){
-            return value.toLocaleString('it-IT') + ' VND';
+            return value.toLocaleString('it-IT') + ' VNĐ';
         }
         value = 0;
-        return value.toLocaleString('it-IT') + ' VND';
+        return value.toLocaleString('it-IT') + ' VNĐ';
     }
 
 }
@@ -626,13 +626,14 @@ var getForForm = {
                     // console.log(data);
                     phi_truoc_ba = carPrice*data.phi_truoc_ba/100
                     priceAfterDiscount = carPrice - discount
-                    var gtgt = carPrice*10/100
+                    // var gtgt = carPrice*10/100
+                    var gtgt = 0
                     total = priceAfterDiscount + phi_truoc_ba + gtgt + data.phi_dang_ky_bien_so + data.phi_dang_kiem_xe
                     // console.log(total);
                     $(srcModal + ' #registration_fee').html(Helper.covertMoney(phi_truoc_ba))
                     $(srcModal + ' #car_discount').html(Helper.covertMoney(discount))
                     $(srcModal + ' #car_price_after_discount').html(Helper.covertMoney(priceAfterDiscount))
-                    $(srcModal + ' #fee').html(Helper.covertMoney(gtgt))
+                    // $(srcModal + ' #fee').html(Helper.covertMoney(gtgt))
                     $(srcModal + ' #registry_fee').html(Helper.covertMoney(data.phi_dang_kiem_xe))
                     $(srcModal + ' #license_plate_fee').html(Helper.covertMoney(data.phi_dang_ky_bien_so))
                     $(srcModal + ' #car_price_total').html(Helper.covertMoney(total))
