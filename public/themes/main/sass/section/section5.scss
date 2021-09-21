@@ -252,12 +252,17 @@
         .tab-menu-s6{
             width: 32%;
            position: relative;
-           margin-top: 9%;
+           margin-top: 5%;
+           top: 50%;
+           transform: translateY(-50%);
            @media(max-width : 1500px){
-               margin-top: 9%;
+               margin-top: 6%;
            }
            @media(max-width : 1366px){
-            // margin-top: 7%;
+            margin-top: 5%;
+        }
+        @media(max-width : 1200px){
+            margin-top: 6%;
         }
            a.active p.top{
                font-family: 'VN-KiaSignature-Bold';
@@ -287,9 +292,13 @@
                 position: absolute;
                 left: 29px;
                 top: -15px;
+                @media(max-width : 1680px){
+                    
+                    top: -17px;
+                }
                 @media(max-width : 1440px){
                     bottom: -20px;
-                    top: -17px;
+                    top: -16px;
                 }
                 @media(max-width : 1366px){
                     left: 25px;
