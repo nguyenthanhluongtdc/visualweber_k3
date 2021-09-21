@@ -480,8 +480,8 @@
 
       &__input {
         display: grid;
-        align-items: center;
-        grid-template-columns: 30% 70%;
+        align-items: flex-start;
+        grid-template-columns: 20% 80%;
         margin-bottom: 15px;
         position: relative;
         label.error {
@@ -561,8 +561,8 @@
           width: 100%;
         }
         .item-right {
-          flex: 0 0 70%;
-          max-width: 70%;
+          flex: 0 0 80%;
+          max-width: 80%;
           display: grid;
           justify-content: space-between;
           grid-template-columns: 32% 32% 32%;
@@ -629,7 +629,10 @@
       &__total-cost {
         margin-bottom: 30px;
         .item {
-          margin-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          margin: auto auto 15px;
         }
         p {
           font-style: italic;
@@ -798,6 +801,9 @@
 }
 .form-car{
   .form__input{
+    label{
+      margin-right:10px;
+    }
     input{
       font-family: "VN-KiaSignature-Light";
       font-size: 12px;
