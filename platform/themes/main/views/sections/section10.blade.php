@@ -218,7 +218,7 @@
                                                     @for($i=1;$i<=7;$i++)
                                                         <div id="color2{{$i}}" class="container tab-pane {{$i==1 ? 'active' : ''}} item-car-color ">
                                                             <br>
-                                                            <img src="{{ Theme::asset()->url('images/form/xe/'.$i.'.png') }}"alt="">
+                                                            <img src="{{ Theme::asset()->url('images/form/xe/'.$i.'.png?v=1') }}"alt="">
                                                         </div>
                                                     @endfor
                                                 </div>
@@ -369,7 +369,7 @@
                                                 @for($i=1;$i<=7;$i++)
                                                         <div id="color3{{$i}}" class="container tab-pane {{$i==1 ? 'active' : ''}} item-car-color ">
                                                             <br>
-                                                            <img src="{{ Theme::asset()->url('images/form/xe/'.$i.'.png') }}"alt="">
+                                                            <img src="{{ Theme::asset()->url('images/form/xe/'.$i.'.png?v=1') }}"alt="">
                                                         </div>
                                                     @endfor
                                             </div>
