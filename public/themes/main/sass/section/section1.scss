@@ -12,6 +12,12 @@
     background-size: cover;
     background-position: bottom;
     text-transform: uppercase;
+    height: 608px;
+    background-position: center center;
+    background-size: contain;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+
     .s1-pc{
         @media(max-width :1024px){
             display: none;
