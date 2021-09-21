@@ -88,7 +88,7 @@
                                                             {{-- Blue 1 --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link active" data-toggle="tab"
-                                                                    href="#color1" data-name="White Premium">
+                                                                    href="#color1" data-vi="TRẮNG NGỌC TRAI" data-name="Glacial White Pearl">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/white.webp') }}"
                                                                         alt="K3">
                                                                 </a>
@@ -139,8 +139,11 @@
                                                             </li>
                                                         </ul>
 
-                                                        <h4 class="car-name font-kia-bold mt-lg-4 mt-3 text-center">
-                                                            White Premium
+                                                        <h4 class="car-name name-en font-kia-bold mt-lg-4 mt-3 text-center">
+                                                            Glacial White Pearl
+                                                        </h4>
+                                                        <h4 class="car-name name-vi font-kia-bold mt-lg-4 mt-3 text-center">
+                                                            TRẮNG NGỌC TRAI
                                                         </h4>
                                                         <p class="font-kia-light text-mobie">
                                                             <i>
@@ -337,7 +340,7 @@
                 <h5 class="font30 font-kia-bold">1.6 MT</h5>
             </div>
             <div class="bottom">
-                <img src="{{ Theme::asset()->url('images/section10/3mt.png') }}">
+                <img src="{{ Theme::asset()->url('images/section10/3mt2.png') }}">
                 <div class="content-item">
                     <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
                     <ul class="list-content scrollable-content font18">

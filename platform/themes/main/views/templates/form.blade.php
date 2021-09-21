@@ -225,7 +225,7 @@
       </div>
    </div>
    <p class="font-buenos-light font-mobie-small mb-3">
-      (*) Thông tin bắt buộc trên chỗ đồng ý nhận tin từ KIA
+      (*) Thông tin bắt buộc
    </p>
 
    <div class="form__checkbox">
