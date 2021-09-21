@@ -86,6 +86,15 @@
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
+                                <div class="car-name">
+                                    <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                        XANH NƯỚC BIỂN
+                                    </h4>
+                                    <P class="desc font-kia-light">
+                                        Mineral Blue
+                                    </P>
+                                </div>
+                                
                             </div>
                             {{-- White --}}
                             <div id="tabcar01" class="container tab-pane item-car-color "><br>
@@ -93,6 +102,14 @@
                                     data-filename="SWP_{index}.png" data-amount="31" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
+                                </div>
+                                <div class="car-name">
+                                    <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                        TRẮNG NGỌC TRAI
+                                    </h4>
+                                    <P class="desc font-kia-light">
+                                        Glacial White Pearl
+                                    </P>
                                 </div>
                             </div>
                             {{-- Black --}}
@@ -102,6 +119,14 @@
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
+                                <div class="car-name">
+                                    <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                        ĐEN
+                                    </h4>
+                                    <P class="desc font-kia-light">
+                                        Aurora Black Pearl
+                                    </P>
+                                </div>
                             </div>
                              {{-- Blue --}}
                              <div id="tabcar03" class="container tab-pane item-car-color "><br>
@@ -109,6 +134,14 @@
                                     data-filename="M4B_{index}.png" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
+                                </div>
+                                <div class="car-name">
+                                    <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                        XANH SẪM
+                                    </h4>
+                                    <P class="desc font-kia-light">
+                                        Deep Chroma Blue
+                                    </P>
                                 </div>
                             </div>
                            
@@ -119,6 +152,15 @@
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
+                               
+                                <div class="car-name">
+                                    <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                        XÁM
+                                    </h4>
+                                    <P class="desc font-kia-light">
+                                        Steel Grey
+                                    </P>
+                                </div>
                             </div>
                             {{-- Gray 1 --}}
                             <div id="tabcar05" class="container tab-pane item-car-color"><br>
@@ -127,24 +169,39 @@
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
+                                <div class="car-name">
+                                    <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                        BẠC
+                                    </h4>
+                                    <P class="desc font-kia-light">
+                                        Sleek Sliver
+                                    </P>
+                                </div>
                             </div>
                             <div id="tabcar01b" class="container tab-pane item-car-color"><br>
-                                {{-- <div class="cloudimage-360" data-folder="/themes/main/images/360/red/"
-                                    data-filename="RED_{index}.png" data-amount="36" data-spin-reverse="true">
-                                </div> --}}
-                                <img class="w-100" src="{{ Theme::asset()->url('images/360/red/RED_1.png?v=12') }}" alt="360">
-                                <div class="ring360 opacity-0">
-                                    <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
-                                </div>
+                                <div class="cloudimage-360" data-folder="/themes/main/images/360/red_1/"
+                                data-filename="M4B_{index}.png" data-amount="31" data-spin-reverse="true"></div>
+                            <div class="ring360">
+                                <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
+                            </div>
+                            <div class="car-name">
+                                <h4 class="font-kia-bold mt-lg-4 mt-3 text-center font20">
+                                    ĐỎ
+                                </h4>
+                                <P class="desc font-kia-light">
+                                    Runway Red
+                                </P>
+                            </div>
                             </div>
                            
                         </div>
                         <ul class="nav nav-tabs tab-color-car" role="tablist">
                             {{-- Blue 1 --}}
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabcar06">
+                                <a class="nav-link active" data-toggle="tab" href="#tabcar06"  data-name="White Premium">
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}" alt="K3">
                                 </a>
+                               
                             </li>
                            {{-- White --}}
                             <li class="nav-item">
@@ -182,7 +239,7 @@
                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/red2.jpg') }}" alt="K3">
                                 </a>
                             </li>
-                            
+                           
                         </ul>
                     </div>
 
