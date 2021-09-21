@@ -111,6 +111,7 @@
     left: 10px;
     color: #ccc;
     font-size: 10px;
+    z-index: 22;
     @media(max-width : 1024px){
         display: none;
     }
