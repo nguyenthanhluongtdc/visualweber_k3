@@ -302,21 +302,23 @@ class MainController extends PublicController
             $contact = $contactRepository->getModel();
             $contact = $contact->fill($request->input());
             $data = $contactRepository->createOrUpdate($contact);
-            event(new SentContactEvent($contact));
-            EmailHandler::setModule(CONTACT_MODULE_SCREEN_NAME)
-                ->setVariableValues([
-                    'contact_name'    => $contact->name ?? 'N/A',
-                    'contact_subject' => $contact->subject ?? 'N/A',
-                    'contact_email'   => $contact->email ?? 'N/A',
-                    'contact_phone'   => $contact->phone ?? 'N/A',
-                    'contact_city'   => $contact->city ?? 'N/A',
-                    'contact_address' => $contact->address ?? 'N/A',
-                    'contact_content' => $contact->content ?? 'N/A',
-                    'contact_showroom' => $contact->showroom ?? 'N/A',
-                    'contact_district' => $contact->district ?? 'N/A',
-                    'contact_ward' => $contact->ward ?? 'N/A',
-                ])
-                ->sendUsingTemplate('notice');
+            
+            EmailHandler::send(view('theme.main::views.mails.contact',['data'=>$data])->render(), 'Re: ' . $contact->subject, $contact->email);
+            // event(new SentContactEvent($contact));
+            // EmailHandler::setModule(CONTACT_MODULE_SCREEN_NAME)
+            //     ->setVariableValues([
+            //         'contact_name'    => $contact->name ?? 'N/A',
+            //         'contact_subject' => $contact->subject ?? 'N/A',
+            //         'contact_email'   => $contact->email ?? 'N/A',
+            //         'contact_phone'   => $contact->phone ?? 'N/A',
+            //         'contact_city'   => $contact->city ?? 'N/A',
+            //         'contact_address' => $contact->address ?? 'N/A',
+            //         'contact_content' => $contact->content ?? 'N/A',
+            //         'contact_showroom' => $contact->showroom ?? 'N/A',
+            //         'contact_district' => $contact->district ?? 'N/A',
+            //         'contact_ward' => $contact->ward ?? 'N/A',
+            //     ])
+            //     ->sendUsingTemplate('notice');
                 return redirect()->back()->with([
                     'type' => 'success',
                     'message' => __('Send message successfully!')
