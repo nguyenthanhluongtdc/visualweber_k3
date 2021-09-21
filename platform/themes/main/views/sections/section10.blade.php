@@ -105,7 +105,7 @@
                                                             {{-- Blue --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link " data-toggle="tab" href="#color4" data-name="Blue Premium" data-vi="XANH SẪM">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2.png') }}"
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2-1.png') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
@@ -259,7 +259,7 @@
                                                             {{-- Blue --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link " data-toggle="tab" href="#color24" data-name="Blue Premium" data-vi="XANH SẪM">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2.png') }}"
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2-1.png') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
@@ -410,7 +410,7 @@
                                                         {{-- Blue --}}
                                                         <li class="nav-item">
                                                             <a class="nav-link " data-toggle="tab" href="#color34" data-name="Blue Premium" data-vi="XANH SẪM">
-                                                                <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2.png') }}"
+                                                                <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2-1.png') }}"
                                                                     alt="K3">
                                                             </a>
                                                         </li>

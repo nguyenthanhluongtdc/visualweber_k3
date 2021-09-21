@@ -116,7 +116,7 @@
 
          <p class="mt-3 font-buenos-light">
             <i>
-               (**): Chi phí thực tế có thể thay đổi theo tỉnh thành
+               (**) Chi phí thực tế có thể thay đổi theo tỉnh thành
             </i>
          </p>
       </div>
@@ -224,7 +224,7 @@
          <p class="error-msg font-kia-re request erro-p">{{$errors->first('email')}}</p>
       </div>
    </div>
-   <p class="font-buenos-light font-mobie-small mb-3">
+   <p class="font-buenos-light font-mobie-small mb-3" style="font-style: italic;">
       (*) Thông tin bắt buộc
    </p>
 
