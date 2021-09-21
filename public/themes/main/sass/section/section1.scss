@@ -115,9 +115,9 @@
                         height: 97vh;
                     }
                 }
-                .s1-icon-mobie{
+                .mobie-kp{
                     position: absolute;
-                    bottom: 21%;
+                    bottom: 40%;
                     left: 0;
                     right: 0;
                     .wrap-kp{
@@ -128,11 +128,13 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        position: relative;
                         .icon-kp{
-                            animation: MoveUpDown 1.5s linear infinite;
-                                position: absolute;
-                                left: 105px;
-                                bottom: 0;
+                            animation: down 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                            // animation: MoveUpDown 1.8s linear infinite;
+                                position: relative;
+                                left: 11px;
+                                // bottom: 0;
                             img{
 
                                 width: 35px;
@@ -144,6 +146,13 @@
                            }
                         }
                     }
+                }
+                .s1-icon-mobie{
+                    position: absolute;
+                    bottom: 21%;
+                    left: 0;
+                    right: 0;
+                   
                     .access{
                         img{
                             width: 50px;

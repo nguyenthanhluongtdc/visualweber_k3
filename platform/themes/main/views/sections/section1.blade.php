@@ -45,7 +45,19 @@
     <div class="s1-mobie">
         <div class="img-pri-s1">
             <img src="{{ Theme::asset()->url('images/section1/bannerkv1b.jpg')  }}" alt="" class="bg fit-cover">
+            <div class="mobie-kp">
+                <div class="wrap-kp menu2ne">
+                    <div class="icon-kp item" data-menuanchor="ngoai-that">
+                        <img src="{{ Theme::asset()->url('images/section1/khampha.png') }}" alt="">
+                    </div>
+                    <div class="chu item"  data-menuanchor="ngoai-that">
+                        <img src="{{ Theme::asset()->url('images/section1/chu.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
             <div class="s1-icon-mobie">
+
+               
                 <div class="top">
                     <div class="access">
                         <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
@@ -66,14 +78,7 @@
                         <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng <br> đặt mua xe</p>
                     </div>
                 </div>
-                <div class="wrap-kp menu2ne">
-                    <div class="icon-kp item" data-menuanchor="ngoai-that">
-                        <img src="{{ Theme::asset()->url('images/section1/khampha.png') }}" alt="">
-                    </div>
-                    <div class="chu item"  data-menuanchor="ngoai-that">
-                        <img src="{{ Theme::asset()->url('images/section1/chu.png') }}" alt="">
-                    </div>
-                </div>
+               
 
             </div>
             <div class="center">
