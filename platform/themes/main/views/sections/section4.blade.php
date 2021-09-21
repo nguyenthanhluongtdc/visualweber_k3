@@ -15,7 +15,7 @@
     @if (has_field($page, 'img_video_pc'))
 
     <div class="video videopc" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-        <a data-fancybox href="{{ Theme::asset()->url('images/k3video.mp4') }}" class="showvideo">
+        <a data-fancybox href="https://www.youtube.com/watch?v=CBHCVhoWINk" class="showvideo">
             <img src="{{ Theme::asset()->url('images/bgvideo.jpg') }}" alt="">
         </a>
         <div class="button-video">
