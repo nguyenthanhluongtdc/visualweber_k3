@@ -543,6 +543,9 @@
         // color: #808388;
         border-color: #ffffff;
         min-width: unset;
+        display:flex;
+        align-items: flex-end;
+        line-height: 1.2;
         &:hover {
           border-color: #ffffff;
         }

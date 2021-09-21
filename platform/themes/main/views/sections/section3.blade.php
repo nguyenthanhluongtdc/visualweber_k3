@@ -218,7 +218,7 @@
                             {{-- Blue --}}
                             <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" href="#tabcar03">
-                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}" alt="K3">
+                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_2.jpg') }}" alt="K3">
                                 </a>
                             </li>
                             {{-- <li class="nav-item">
