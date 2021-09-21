@@ -426,11 +426,11 @@
     position: relative;
     padding: 70px 100px;
     @media (max-width: 1680px) {
-      padding: 50px 60px;
+      padding: 30px 20px;
     }
 
     @media (max-width: 1368px) {
-      padding: 40px 50px;
+      padding: 30px 20px;
     }
     @media (max-width: 480px) {
       padding: 20px;
@@ -812,6 +812,11 @@
   }
   .ui.search{
     font-size: 12px;
+  }
+  .menu{
+    .item{
+      font-size: 12px !important;
+    }
   }
 }
 @media screen and(max-width:1024px){
