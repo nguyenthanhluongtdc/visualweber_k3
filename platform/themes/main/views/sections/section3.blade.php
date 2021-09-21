@@ -98,8 +98,8 @@
                             </div>
                             {{-- White --}}
                             <div id="tabcar01" class="container tab-pane item-car-color "><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/silver/"
-                                    data-filename="SWP_{index}.png" data-amount="35" data-spin-reverse="true"></div>
+                                <div class="cloudimage-360" data-folder="/themes/main/images/360/white/"
+                                    data-filename="SWP_{index}.png" data-amount="31" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
@@ -165,7 +165,7 @@
                             {{-- Gray 1 --}}
                             <div id="tabcar05" class="container tab-pane item-car-color"><br>
                                 <div class="cloudimage-360" data-folder="/themes/main/images/360/gray_1/"
-                                    data-filename="KLG_{index}.webp" data-amount="36" data-spin-reverse="true"></div>
+                                    data-filename="KLG_{index}.webp" data-amount="35" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
                                 </div>
