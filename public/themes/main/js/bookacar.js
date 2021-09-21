@@ -87,6 +87,7 @@ var Popup = {
               error: function (xhr, status, error) {},
               complete: function (xhr, status) {
                 $('.ui.dropdown.showroom').api('remove loading')
+                $('.ui.dropdown.showroom').api('reset')
                 // $('.showroom-book-a-car').destroy();
                 // $('.ui.dropdown.showroom').dropdown();
               },

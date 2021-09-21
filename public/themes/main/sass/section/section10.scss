@@ -796,3 +796,11 @@
   transition: all linear 0.3s;
   opacity: 0;
 }
+.form-car{
+  .form__input{
+    input{
+      font-family: "VN-KiaSignature-Light";
+      font-size: 12px;
+    }
+  }
+}
