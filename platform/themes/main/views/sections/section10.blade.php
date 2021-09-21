@@ -111,14 +111,14 @@
                                                             </li>
                                                             {{-- Gray 1 --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Sleek Sliver" data-vi="BẠC">
+                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Sleek Sliver" data-vi="BẠC">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- Gray --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Steel Grey" data-vi="XÁM">
+                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Steel Grey" data-vi="XÁM">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
