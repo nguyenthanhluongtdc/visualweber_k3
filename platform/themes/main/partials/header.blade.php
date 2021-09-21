@@ -225,7 +225,7 @@
             <i class="fas fa-times"></i>
         </div>
     <div class="popup-content">
-        <h2 class="font-sfu-black font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
+        <h2 class="font-kia-bold font30">CẢM ƠN BẠN ĐÃ ĐĂNG KÝ!</h2>
     </div>
 </div>
 
