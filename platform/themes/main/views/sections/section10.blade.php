@@ -340,7 +340,7 @@
                 <h5 class="font30 font-kia-bold">1.6 MT</h5>
             </div>
             <div class="bottom">
-                <img src="{{ Theme::asset()->url('images/section10/3mt2.png') }}">
+                <img src="{{ Theme::asset()->url('images/section10/3mt.png') }}">
                 <div class="content-item">
                     <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
                     <ul class="list-content scrollable-content font18">
