@@ -667,6 +667,9 @@
   outline: none;
   color: white;
   right: 20px;
+  @media(max-width : 480px){
+    right: 7px;
+  }
   padding: 5px 10px;
   border-radius: 5px;
 
@@ -676,7 +679,9 @@
     animation: top 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
     width: 50px;
     text-align: center;
-
+    @media(max-width : 480px){
+      width: 35px;
+    }
     img {
       transform: rotate(-180deg) translateX(-20%);
     }
