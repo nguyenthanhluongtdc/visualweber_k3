@@ -162,7 +162,7 @@
                             @if (has_sub_field($item, 'hinh_van_hanh'))
                               
                                     <div class="{{ $loop->first ? 'img' : 'novideo'}} ">
-                                        <a  class="videoco" data-fancybox href="{{ Theme::asset()->url('images/kdtx.mp4') }}">
+                                        <a  class="videoco" data-fancybox href="{{ Theme::asset()->url('images/khoatuxa.mp4') }}">
                                         <img src="{{ RvMedia::getImageUrl(get_sub_field($item, 'hinh_van_hanh')) }}"
                                             alt="{{ get_sub_field($item, 'name_section8') }}">
                                        
