@@ -65,7 +65,7 @@
                                                     @for($i=1;$i<=7;$i++)
                                                         <div id="color{{$i}}" class="container tab-pane {{$i==1 ? 'active' : ''}} item-car-color ">
                                                             <br>
-                                                            <img src="{{ Theme::asset()->url('images/form/xe/premium/'.$i.'.png') }}"alt="">
+                                                            <img src="{{ Theme::asset()->url('images/form/xe/premium/'.$i.'.png?v=1') }}"alt="">
                                                         </div>
                                                     @endfor
                                                 </div>
