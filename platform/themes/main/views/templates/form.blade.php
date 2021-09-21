@@ -1,4 +1,4 @@
-{!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form form-car text-white',
+{!! Form::open(['route' => 'public.send.contact-buy-cars', 'method' => 'POST', 'class' => 'form form-car text-white font-kia-re',
 'id' => 'id="book-a-car"']) !!}
 <input type="hidden" name="car_color" value="{{$car_color}}">
 <input type="hidden" name="modal" value="{{$modal ?? ''}}">
