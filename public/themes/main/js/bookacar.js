@@ -183,12 +183,17 @@ $(document).ready(function () {
   })
   $('.nav-link').click(function () {
     var color = $(this).data('name')
-    var el = $(this).parents('.bottom--top').find('h4')
+    var colorVi = $(this).data('vi')
+    var el = $(this).parents('.bottom--top').find('h4.name-en')
     if (el.length) {
       el[0].innerHTML = color
       if ($('.fancybox-container input[name="car_color"]').length) {
         $('.fancybox-container input[name="car_color"]')[0].value = color
       }
+    }
+    var vi = $(this).parents('.bottom--top').find('h4.name-vi')
+    if (vi.length) {
+        vi[0].innerHTML = colorVi
     }
   })
   if ($('.showroom').length) {

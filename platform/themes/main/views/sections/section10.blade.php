@@ -96,7 +96,7 @@
                                                             {{-- White --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link " data-toggle="tab"
-                                                                    href="#color2" data-name="Blue Premium">
+                                                                    href="#color2" data-name="Mineral Blue " data-vi="XANH NƯỚC BIỂN ">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/blue_1.webp') }}"
                                                                         alt="K3">
                                                                 </a>
@@ -104,46 +104,46 @@
                                                             {{-- Black --}}
                                                             <li class="nav-item">
                                                                 <a class="nav-link " data-toggle="tab"
-                                                                    href="#color3" data-name="Black Premium">
+                                                                    href="#color3" data-name="Aurora Black Pearl " data-vi="ĐEN">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/black.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- Blue --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color4" data-name="Blue Premium">
-                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue.webp') }}"
+                                                                <a class="nav-link " data-toggle="tab" href="#color4" data-name="Blue Premium" data-vi="XANH SẪM">
+                                                                    <img src="{{ Theme::asset()->url('images/360_color_thumb/blue2.png') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- Gray --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Gray Premium">
+                                                                <a class="nav-link " data-toggle="tab" href="#color5" data-name="Steel Grey" data-vi="XÁM">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- Gray 1 --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Gray Premium">
+                                                                <a class="nav-link " data-toggle="tab" href="#color6" data-name="Sleek Sliver" data-vi="BẠC">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/gray_1.webp') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                             {{-- RED --}}
                                                             <li class="nav-item">
-                                                                <a class="nav-link " data-toggle="tab" href="#color7" data-name="Red Premium">
+                                                                <a class="nav-link " data-toggle="tab" href="#color7" data-name="Runway Red" data-vi="ĐỎ">
                                                                     <img src="{{ Theme::asset()->url('images/360_color_thumb/red2.jpg') }}"
                                                                         alt="K3">
                                                                 </a>
                                                             </li>
                                                         </ul>
 
-                                                        <h4 class="car-name name-en font-kia-bold mt-lg-4 mt-3 text-center">
-                                                            Glacial White Pearl
+                                                        <h4 class="car-name name-vi font-kia-bold mt-lg-4 mt-3 mb-0 text-center text-uppercase">
+                                                            Trắng ngọc trai
                                                         </h4>
-                                                        <h4 class="car-name name-vi font-kia-bold mt-lg-4 mt-3 text-center">
-                                                            TRẮNG NGỌC TRAI
+                                                        <h4 class="car-name name-en font-kia-light m-0 text-center" style="">
+                                                            Glacial White Pearl
                                                         </h4>
                                                         <p class="font-kia-light text-mobie">
                                                             <i>
@@ -340,7 +340,7 @@
                 <h5 class="font30 font-kia-bold">1.6 MT</h5>
             </div>
             <div class="bottom">
-                <img src="{{ Theme::asset()->url('images/section10/3mt.png') }}">
+                <img src="{{ Theme::asset()->url('images/section10/3mt3.png') }}">
                 <div class="content-item">
                     <p class="title font20 font-kia-bold">Tính năng nổi bật </p>
                     <ul class="list-content scrollable-content font18">
