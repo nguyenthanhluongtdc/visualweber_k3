@@ -30,7 +30,9 @@
                             <strong class="text-uppercase font-kia-bold">
                                 GIÁ CÔNG BỐ:
                             </strong>
-                            <b class="price">685.000.000 VNĐ</b>
+                            @if (has_field($page, 'gia_xe_premium'))
+                            <b class="price"><span> {!! number_format(get_field($page, 'gia_xe_premium'),0,',','.') !!}</span> VNĐ</b>
+                            @endif
                         </div>
 
                         {{-- CODE FORM ĐẶT XE --}}
@@ -157,9 +159,14 @@
                                             </i>
                                         </p>
                                     </div>
+                                    @if (has_field($page, 'gia_xe_premium'))
+                                        @php $a =  get_field($page, 'gia_xe_premium');
+                                        @endphp
+                                    @endif
+                                  
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>'685000000'])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a])
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +199,9 @@
                             <strong class="text-uppercase font-kia-bold">
                                 GIÁ CÔNG BỐ:
                             </strong>
-                            <b class="price">639.000.000 VNĐ</b>
+                            @if (has_field($page, 'gia_xe_luxury'))
+                            <b class="price"><span> {!! number_format(get_field($page, 'gia_xe_luxury'),0,',','.') !!}</span> VNĐ</b>
+                            @endif
                         </div>
 
                         <div class="content-bottom none-pcc">
@@ -310,9 +319,13 @@
                                             </i>
                                         </p>
                                     </div>
+                                    @if (has_field($page, 'gia_xe_luxury'))
+                                    @php $b =  get_field($page, 'gia_xe_luxury');
+                                    @endphp
+                                    @endif
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>'639000000'])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b])
                                     </div>
                                 </div>
                         </div>
@@ -343,7 +356,9 @@
                         <strong class="text-uppercase  ">
                             GIÁ CÔNG BỐ:
                         </strong>
-                        <b class="price">544.000.000 VNĐ</b>
+                        @if (has_field($page, 'gia_xe_mt'))
+                        <b class="price"><span> {!! number_format(get_field($page, 'gia_xe_mt'),0,',','.') !!}</span> VNĐ</b>
+                        @endif
                     </div>
 
                     <div class="content-bottom none-mobile">
@@ -461,9 +476,13 @@
                                         </i>
                                     </p>
                                 </div>
+                                @if (has_field($page, 'gia_xe_mt'))
+                                @php $c =  get_field($page, 'gia_xe_mt');
+                                @endphp
+                                @endif
                                 <div class="right"
                                     style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>'544000000'])
+                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c])
                                 </div>
                             </div>
                     </div>

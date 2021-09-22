@@ -20,6 +20,7 @@
         *Thông tin và hình ảnh chỉ mang tính chất tham khảo và có thể khác so với thực tế
     </p>
     <div class="container-remake section2-wrap">
+       
         <div class="left">
             <h2 class="font60 font-kia-bold" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Một bước tiến <br> vượt trội</h2>
             
