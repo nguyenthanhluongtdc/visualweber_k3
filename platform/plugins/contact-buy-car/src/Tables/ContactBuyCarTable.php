@@ -49,6 +49,12 @@ class ContactBuyCarTable extends TableAbstract
     {
         $data = $this->table
             ->eloquent($this->query())
+            ->editColumn('id', function ($item) {
+                if (!Auth::user()->hasPermission('contact-buy-car.edit')) {
+                    return $item->id;
+                }
+                return Html::link(route('contact-buy-car.edit', $item->id), $item->id);
+            })
             ->editColumn('fullname', function ($item) {
                 if (!Auth::user()->hasPermission('contact-buy-car.edit')) {
                     return $item->fullname;
@@ -110,10 +116,10 @@ class ContactBuyCarTable extends TableAbstract
     public function columns()
     {
         return [
-            // 'id' => [
-            //     'title' => trans('core/base::tables.id'),
-            //     'width' => '20px',
-            // ],
+            'id' => [
+                'title' => trans('core/base::tables.id'),
+                'width' => '20px',
+            ],
             'fullname' => [
                 'title' => trans('core/base::tables.name'),
                 'class' => 'text-left',
