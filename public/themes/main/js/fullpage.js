@@ -607,6 +607,7 @@ var getForForm = {
         })
         $(document).on('change',srcModal +' #city_buy_car', function(){
             carPrice = $(srcModal + ' #car_price').data('price')
+            discount = $(srcModal + ' #car_discount').data('price')
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

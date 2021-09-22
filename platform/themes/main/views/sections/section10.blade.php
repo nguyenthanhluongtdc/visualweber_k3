@@ -163,10 +163,17 @@
                                         @php $a =  get_field($page, 'gia_xe_premium');
                                         @endphp
                                     @endif
-                                  
+                                    @if (has_field($page, 'gia_uu_dai_premium'))
+                                    @php $cda =  get_field($page, 'gia_uu_dai_premium');
+                                    @endphp
+                                     @else {
+                                        @php $cda =  0;
+                                        @endphp
+                                     }
+                                     @endif
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a, 'car_discount'=>$cda])
                                     </div>
                                 </div>
                             </div>
@@ -323,9 +330,19 @@
                                     @php $b =  get_field($page, 'gia_xe_luxury');
                                     @endphp
                                     @endif
+                                    @if (has_field($page, 'gia_uu_dai_luxury'))
+                                    @php $cdb =  get_field($page, 'gia_uu_dai_luxury');
+                                    @endphp
+                                     @else {
+                                        @php $cdb =  0;
+                                        @endphp
+                                     }
+                                    @endif
+
+                                     
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b , 'car_discount'=>$cdb])
                                     </div>
                                 </div>
                         </div>
@@ -480,9 +497,18 @@
                                 @php $c =  get_field($page, 'gia_xe_mt');
                                 @endphp
                                 @endif
+                                @if (has_field($page, 'gia_uu_dai_mt'))
+                                @php $cdc =  get_field($page, 'gia_uu_dai_mt');
+                                @endphp
+                                     @else {
+                                        @php $cdc =  0;
+                                        @endphp
+                                     }
+                                 @endif
+
                                 <div class="right"
                                     style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c])
+                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c, 'car_discount'=>$cdc])
                                 </div>
                             </div>
                     </div>

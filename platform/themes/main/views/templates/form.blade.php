@@ -59,8 +59,8 @@
                   Ưu đãi:
                </span>
 
-               <span class="line__value font-buenos-light" id="car_discount">
-                  xxx.xxx.xxx VNĐ
+               <span class="line__value discount font-buenos-light" id="car_discount" data-price="{{$car_discount ?? 0}}">
+                  {{number_format($car_discount,0,',','.')}} VNĐ
                </span>
             </li>
 
