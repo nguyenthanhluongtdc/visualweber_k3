@@ -118,7 +118,7 @@
                             </div>
                             {{-- Black --}}
                             <div id="tabcar02" class="container tab-pane item-car-color"><br>
-                                <div class="cloudimage-360" data-folder="/themes/main/images/360/black/"
+                                <div class="cloudimage-360" data-folder="/themes/main/images/360/blackk3/"
                                     data-filename="ABP_{index}.png" data-amount="36" data-spin-reverse="true"></div>
                                 <div class="ring360">
                                     <img src="{{ Theme::asset()->url('images/section3/360.png') }}" alt="360">
