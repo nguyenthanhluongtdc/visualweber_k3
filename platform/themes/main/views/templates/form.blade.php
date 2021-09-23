@@ -50,7 +50,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="car_price" data-price="{{$car_price ?? 0}}">
-                  {{number_format($car_price,0,',','.')}} VNĐ
+                  {{$car_price ? number_format($car_price,0,',','.') : '...'}} VNĐ
                </span>
             </li>
 
@@ -60,7 +60,7 @@
                </span>
 
                <span class="line__value discount font-buenos-light" id="car_discount" data-price="{{$car_discount ?? 0}}">
-                  {{number_format($car_discount,0,',','.')}} VNĐ
+                  {{$car_discount ? number_format($car_discount,0,',','.') : '0'}} VNĐ
                </span>
             </li>
 
@@ -70,7 +70,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="car_price_after_discount">
-                  xxx.xxx.xxx VNĐ
+                  0 VNĐ
                </span>
             </li>
 
@@ -80,7 +80,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="registration_fee">
-                  xxx.xxx.xxx VNĐ
+                  0 VNĐ
                </span>
             </li>
 
@@ -91,7 +91,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="license_plate_fee">
-                  xxx.xxx.xxx VNĐ
+                  0 VNĐ
                </span>
             </li>
             <li class="line">
@@ -100,7 +100,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="registry_fee">
-                  xxx.xxx.xxx VNĐ
+                  0 VNĐ
                </span>
             </li>
             {{-- <li class="line">
@@ -109,7 +109,7 @@
                </span>
 
                <span class="line__value font-buenos-light" id="fee">
-                  xxx.xxx.xxx VNĐ
+                  ... VNĐ
                </span>
             </li> --}}
          </ul>
@@ -129,7 +129,7 @@
          </span>
 
          <span class="font-buenos-bold" id="car_price_total">
-            xxx.xxx.xxx VNĐ
+            0 VNĐ
          </span>
          <input type="hidden" name="total_price" value="{{old('total_price')}}">
       </div>

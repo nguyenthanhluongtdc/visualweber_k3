@@ -30,9 +30,9 @@
                             <strong class="text-uppercase font-kia-bold">
                                 GIÁ CÔNG BỐ:
                             </strong>
-                            @if (has_field($page, 'gia_xe_premium'))
-                            <b class="price"><span> {!! number_format(get_field($page, 'gia_xe_premium'),0,',','.') !!}</span> VNĐ</b>
-                            @endif
+                            <b class="price">
+                                <span>{!! get_field($page, 'gia_xe_premium') ? number_format(get_field($page, 'gia_xe_premium'),0,',','.') : '...' !!}</span> VNĐ
+                            </b>
                         </div>
 
                         {{-- CODE FORM ĐẶT XE --}}
@@ -173,7 +173,7 @@
                                      @endif
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a, 'car_discount'=>$cda])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a ?? 0, 'car_discount'=>$cda ?? 0])
                                     </div>
                                 </div>
                             </div>
@@ -206,9 +206,9 @@
                             <strong class="text-uppercase font-kia-bold">
                                 GIÁ CÔNG BỐ:
                             </strong>
-                            @if (has_field($page, 'gia_xe_luxury'))
-                            <b class="price"><span> {!! number_format(get_field($page, 'gia_xe_luxury'),0,',','.') !!}</span> VNĐ</b>
-                            @endif
+                            <b class="price">
+                                <span>{!! get_field($page, 'gia_xe_luxury') ? number_format(get_field($page, 'gia_xe_luxury'),0,',','.') : '...' !!}</span> VNĐ
+                            </b>
                         </div>
 
                         <div class="content-bottom none-pcc">
@@ -373,9 +373,9 @@
                         <strong class="text-uppercase  ">
                             GIÁ CÔNG BỐ:
                         </strong>
-                        @if (has_field($page, 'gia_xe_mt'))
-                        <b class="price"><span> {!! number_format(get_field($page, 'gia_xe_mt'),0,',','.') !!}</span> VNĐ</b>
-                        @endif
+                        <b class="price">
+                            <span>{!! get_field($page, 'gia_xe_mt') ? number_format(get_field($page, 'gia_xe_mt'),0,',','.') : '...' !!}</span> VNĐ
+                        </b>
                     </div>
 
                     <div class="content-bottom none-mobile">
