@@ -104,6 +104,7 @@ class ContactBuyCarTable extends TableAbstract
                 'ward',
                 'status',
                 'car_type',
+                'created_at',
                 'car_color'
            ]);
 
