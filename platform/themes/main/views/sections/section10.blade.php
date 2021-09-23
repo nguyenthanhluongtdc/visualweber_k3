@@ -342,7 +342,7 @@
                                      
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b , 'car_discount'=>$cdb])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Luxury','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b ?? 0 , 'car_discount'=>$cdb])
                                     </div>
                                 </div>
                         </div>
@@ -508,7 +508,7 @@
 
                                 <div class="right"
                                     style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c, 'car_discount'=>$cdc])
+                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c ?? 0, 'car_discount'=>$cdc])
                                 </div>
                             </div>
                     </div>
