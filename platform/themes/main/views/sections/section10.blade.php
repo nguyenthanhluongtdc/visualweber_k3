@@ -166,10 +166,10 @@
                                     @if (has_field($page, 'gia_uu_dai_premium'))
                                     @php $cda =  get_field($page, 'gia_uu_dai_premium');
                                     @endphp
-                                     @else {
+                                     @else 
                                         @php $cda =  0;
                                         @endphp
-                                     }
+                                     
                                      @endif
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
@@ -333,10 +333,10 @@
                                     @if (has_field($page, 'gia_uu_dai_luxury'))
                                     @php $cdb =  get_field($page, 'gia_uu_dai_luxury');
                                     @endphp
-                                     @else {
+                                     @else 
                                         @php $cdb =  0;
                                         @endphp
-                                     }
+                                     
                                     @endif
 
                                      
@@ -500,10 +500,10 @@
                                 @if (has_field($page, 'gia_uu_dai_mt'))
                                 @php $cdc =  get_field($page, 'gia_uu_dai_mt');
                                 @endphp
-                                     @else {
+                                     @else 
                                         @php $cdc =  0;
                                         @endphp
-                                     }
+                                     
                                  @endif
 
                                 <div class="right"
