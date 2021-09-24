@@ -28,7 +28,7 @@
                         </ul>
                         <div class="row-price font20 font-kia-bold">
                             <strong class="text-uppercase font-kia-bold">
-                                GIÁ CÔNG BỐ:
+                                GIÁ BÁN ƯU ĐÃI:
                             </strong>
                             <b class="price">
                                 <span>{!! get_field($page, 'gia_xe_premium') ? number_format(get_field($page, 'gia_xe_premium'),0,',','.') : '...' !!}</span> VNĐ
@@ -49,7 +49,7 @@
                         <div class="content-bottom none-pcc">
                             <a class="register click1 font-kia-bold font20 font-kia-re" id="pre-order-car"
                                 data-src="#animatedModal101" href="javascript:;" data-fancybox="muaxe1">
-                                BẮT ĐẦU NGAY
+                                ĐẶT XE NGAY
                             </a>
 
                             <div style="
@@ -204,7 +204,7 @@
                         </ul>
                         <div class="row-price font20 font-kia-bold">
                             <strong class="text-uppercase font-kia-bold">
-                                GIÁ CÔNG BỐ:
+                                GIÁ BÁN ƯU ĐÃI:
                             </strong>
                             <b class="price">
                                 <span>{!! get_field($page, 'gia_xe_luxury') ? number_format(get_field($page, 'gia_xe_luxury'),0,',','.') : '...' !!}</span> VNĐ
@@ -215,7 +215,7 @@
                             <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car"
                                 data-src="#animatedModal102" href="javascript:;" data-fancybox="muaxe3b"
                                 class="">
-                                BẮT ĐẦU NGAY
+                                ĐẶT XE NGAY
                             </a>
                             
                             {{-- modal --}}
@@ -371,7 +371,7 @@
                     </ul>
                     <div class="row-price font20 font-kia-bold">
                         <strong class="text-uppercase  ">
-                            GIÁ CÔNG BỐ:
+                            GIÁ BÁN ƯU ĐÃI:
                         </strong>
                         <b class="price">
                             <span>{!! get_field($page, 'gia_xe_mt') ? number_format(get_field($page, 'gia_xe_mt'),0,',','.') : '...' !!}</span> VNĐ
@@ -382,7 +382,7 @@
                         <a class="register font-kia-bold font20 font-kia-re" id="pre-order-car"
                             data-src="#animatedModal103" href="javascript:;" data-fancybox="muaxe2b"
                             class="">
-                                BẮT ĐẦU NGAY
+                                ĐẶT XE NGAY
                             </a>
                             
                             {{-- modal --}}

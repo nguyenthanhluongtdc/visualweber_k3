@@ -46,7 +46,7 @@
          <ul>
             <li class="line">
                <span class="line__title font14 font-buenos-light">
-                  Giá công bố:
+                  Giá bán ưu đãi:
                </span>
 
                <span class="line__value font-buenos-light" id="car_price" data-price="{{$car_price ?? 0}}">
