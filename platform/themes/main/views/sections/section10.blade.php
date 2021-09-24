@@ -12,7 +12,7 @@
                 data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <div class="top">
                     <p class="font20 font-kia-re">The new K3</p>
-                    <h5 class="font30 font-kia-bold">1.6 Premium</h5>
+                    <h5 class="font30 font-kia-bold">K3 Premium</h5>
                 </div>
                 <div class="bottom">
                     <img src="{{ Theme::asset()->url('images/section10/xe1.png') }}">
@@ -76,7 +76,7 @@
                                                     <div class="bottom--top">
                                                         <div
                                                             class="info-other font-kia-bold mb-lg-4 mb-3 font30 text-center">
-                                                            1.6 Premium
+                                                            K3 Premium
                                                         </div>
                                                         <p class="text-center ont-kia-light">Vui lòng chọn màu sắc</p>
                                                         <ul class="nav nav-tabs tab-color-car2" role="tablist">
@@ -173,7 +173,7 @@
                                      @endif
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a ?? 0, 'car_discount'=>$cda ?? 0])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'K3 Premium','modal'=>'animatedModal101','car_color'=>'','car_price'=>$a ?? 0, 'car_discount'=>$cda ?? 0])
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                 data-aos-easing="ease-in-sine" data-aos-delay="600">
                 <div class="top">
                     <p class="font20 font-kia-re">The new K3</p>
-                    <h5 class="font30 font-kia-bold">1.6 Luxury</h5>
+                    <h5 class="font30 font-kia-bold">K3 Luxury</h5>
                 </div>
                 <div class="bottom">
                     <img src="{{ Theme::asset()->url('images/section10/xe2.png') }}">
@@ -243,7 +243,7 @@
                                                     <div class="bottom--top">
                                                         <div
                                                             class="info-other font-kia-bold mb-lg-4 mb-3 font30 text-center">
-                                                            1.6 Luxury
+                                                            K3 Luxury
                                                         </div>
 
                                                         <p class="text-center ont-kia-light">Vui lòng chọn màu sắc</p>
@@ -342,7 +342,7 @@
                                      
                                     <div class="right"
                                         style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                        @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 Luxury','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b ?? 0 , 'car_discount'=>$cdb])
+                                        @includeIf('theme.main::views.templates.form',['car_type'=>'K3 Luxury','modal'=>'animatedModal103','car_color'=>'','car_price'=>$b ?? 0 , 'car_discount'=>$cdb])
                                     </div>
                                 </div>
                         </div>
@@ -356,7 +356,7 @@
             data-aos-easing="ease-in-sine" data-aos-delay="900">
             <div class="top">
                 <p class="font20 font-kia-re">The new K3</p>
-                <h5 class="font30 font-kia-bold">1.6 MT</h5>
+                <h5 class="font30 font-kia-bold">K3 Deluxe (MT)</h5>
             </div>
             <div class="bottom">
                 <img src="{{ Theme::asset()->url('images/section10/3mt3.png') }}">
@@ -410,7 +410,7 @@
                                                 <div class="bottom--top">
                                                     <div
                                                         class="info-other font-kia-bold mb-lg-4 mb-3 font30 text-center">
-                                                        1.6 MT
+                                                        K3 Deluxe (MT)
                                                     </div>
 
                                                     <p class="text-center ont-kia-light">Vui lòng chọn màu sắc</p>
@@ -508,7 +508,7 @@
 
                                 <div class="right"
                                     style="background-image: url({{ Theme::asset()->url('images/form/bgform.jpg') }}); background-size: cover; background-repeat: no-repeat;">
-                                    @includeIf('theme.main::views.templates.form',['car_type'=>'1.6 MT','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c ?? 0, 'car_discount'=>$cdc])
+                                    @includeIf('theme.main::views.templates.form',['car_type'=>'K3 Deluxe (MT)','modal'=>'animatedModal103','car_color'=>'','car_price'=>$c ?? 0, 'car_discount'=>$cdc])
                                 </div>
                             </div>
                     </div>
