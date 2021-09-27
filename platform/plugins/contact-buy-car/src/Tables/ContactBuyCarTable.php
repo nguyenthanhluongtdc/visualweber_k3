@@ -129,6 +129,10 @@ class ContactBuyCarTable extends TableAbstract
                 'title' => trans('Email'),
                 'class' => 'text-left',
             ],
+            'created_at' => [
+                'title' => trans('core/base::tables.created_at'),
+                'width' => '100px',
+            ],
             'phone' => [
                 'title' => trans('Số điện thoại'),
                 'class' => 'text-left',
@@ -148,10 +152,6 @@ class ContactBuyCarTable extends TableAbstract
             'car_color' => [
                 'title' => trans('Màu xe'),
                 'class' => 'text-left',
-            ],
-            'created_at' => [
-                'title' => trans('core/base::tables.created_at'),
-                'width' => '100px',
             ],
             'total_price' => [
                 'title' => trans('Giá xe'),
