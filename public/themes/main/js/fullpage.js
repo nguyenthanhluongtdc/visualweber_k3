@@ -83,7 +83,7 @@ var myFullpage = new fullpage('#fullpage', {
         let count = window.location.pathname.toString().split('/').length;
         let url = window.location.pathname.substr(0, window.location.pathname.toString().lastIndexOf('/'));
         let paramQuery = window.location.search;
-        if (count <= 2) {
+        if (count <= 1) {
             url = window.location.pathname.toString();
         }
         if(origin.anchor != 'trang-chu'){
@@ -122,7 +122,7 @@ var myFullpage = new fullpage('#fullpage', {
         let count = window.location.pathname.toString().split('/').length;
         let url = window.location.pathname.substr(0, window.location.pathname.toString().lastIndexOf('/'));
         let paramQuery = window.location.search;
-        if (count <= 2) {
+        if (count <= 1) {
             url = window.location.pathname.toString();
         }
         history.pushState(null, null, url + '/' + destination.anchor + paramQuery);
