@@ -149,17 +149,17 @@ class ContactBuyCarTable extends TableAbstract
                 'title' => trans('Màu xe'),
                 'class' => 'text-left',
             ],
-            'buy_date' => [
-                'title' => trans('Ngày nhận xe'),
-                'class' => 'text-left',
+            'created_at' => [
+                'title' => trans('core/base::tables.created_at'),
+                'width' => '100px',
             ],
             'total_price' => [
                 'title' => trans('Giá xe'),
                 'class' => 'text-left',
             ],
-            'created_at' => [
-                'title' => trans('core/base::tables.created_at'),
-                'width' => '100px',
+            'buy_date' => [
+                'title' => trans('Ngày nhận xe'),
+                'class' => 'text-left',
             ],
             // 'status' => [
             //     'title' => trans('core/base::tables.status'),
