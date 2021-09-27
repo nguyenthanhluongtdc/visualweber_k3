@@ -626,7 +626,7 @@ var getForForm = {
                 success: function (data) {
                     // console.log(data);
                     phi_truoc_ba = carPrice*data.phi_truoc_ba/100
-                    priceAfterDiscount = carPrice - discount
+                    priceAfterDiscount = carPrice
                     // var gtgt = carPrice*10/100
                     var gtgt = 0
                     total = priceAfterDiscount + phi_truoc_ba + gtgt + data.phi_dang_ky_bien_so + data.phi_dang_kiem_xe

@@ -6,7 +6,7 @@
         <h2 class="text-uppercase font-kia-bold font40 text-center mb-0" data-aos="fade-left" data-aos-offset="300"
             data-aos-duration="700" data-aos-easing="ease-in-sine">ĐẶT XE TRỰC TUYẾN</h2>
         <h3 class="font30 font-kia-bold" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700"
-            data-aos-easing="ease-in-sine" data-aos-delay="300">Các dòng sản phẩm</h3>
+            data-aos-easing="ease-in-sine" data-aos-delay="300">CÁC PHIÊN BẢN</h3>
         <div class="list-section10">
             <div class="item" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500"
                 data-aos-easing="ease-in-sine" data-aos-delay="300">

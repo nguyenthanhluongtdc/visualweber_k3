@@ -54,7 +54,7 @@
                </span>
             </li>
 
-            <li class="line">
+            {{-- <li class="line">
                <span class="line__title font14 font-buenos-light">
                   Ưu đãi:
                </span>
@@ -72,7 +72,7 @@
                <span class="line__value font-buenos-light" id="car_price_after_discount">
                   0 VNĐ
                </span>
-            </li>
+            </li> --}}
 
             <li class="line">
                <span class="line__title font14 font-buenos-light">
@@ -217,10 +217,10 @@
    </div>
 
    <div class="form__input">
-      <label for="date" class="font14 font-buenos-light">Email (*): </label>
+      <label for="date" class="font14 font-buenos-light">Email: </label>
       <div class="{{$errors->first('email') ? 'error-active' : 'error-js'}}">
          <input name="email" class="ui search selection dropdown w-100" type="text" placeholder="Nhập thông tin email"
-            value="{{old('email')}}" required/>
+            value="{{old('email')}}">
          <p class="error-msg font-kia-re request erro-p">{{$errors->first('email')}}</p>
       </div>
    </div>
@@ -228,17 +228,17 @@
       (*) Thông tin bắt buộc
    </p>
 
-   <div class="form__checkbox">
+   {{-- <div class="form__checkbox">
       <div class="{{$errors->first('accept') ? 'error-active' : ''}}">
          <input type="checkbox" name="accept" id="accept" value="{{old('accept')}}" required>
          <p class="error-msg font-kia-re request erro-p">{{$errors->first('accept')}}</p>
       </div>
       <label class="ml-3 mb-0 font14 font-buenos-light" for="accept">Đồng ý nhận thông tin từ KIA</label>
-   </div>
+   </div> --}}
 
    <p class="form__btnSubmit">
       <button type="submit" class="text-uppercase font14 font-kia-bold button">
-         đăng ký ngay
+         ĐẶT XE
       </button>
    </p>
 </div>
