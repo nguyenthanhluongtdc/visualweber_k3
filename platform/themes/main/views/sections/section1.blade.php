@@ -13,7 +13,7 @@
                         {!! get_field($page, 'number_user') !!}
                     @endif
                 </p>
-                <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
+                <p class="desc font-buenos-bold">LƯỢT TRUY CẬP</p>
             </div>
             <div class="access access2">
                 <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
