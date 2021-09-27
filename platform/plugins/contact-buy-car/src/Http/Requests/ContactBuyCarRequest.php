@@ -26,7 +26,7 @@ class ContactBuyCarRequest extends Request
                 'size:10',
             ],
             'address'              => 'required',
-            'email'              => 'required',
+           
             'buy_date'              => 'required',
             'city'              => 'required',
         ];
@@ -45,7 +45,7 @@ class ContactBuyCarRequest extends Request
             'phone.regex' => 'Số điện thoại không hợp lệ',
             'phone.size' => 'Số điện thoại phải đúng 10 chữ số',
             'address.required'      => "Vui lòng nhập địa chỉ",
-            'email.required'      => "Vui lòng nhập email",
+           
             'buy_date.required'      => "Vui lòng chọn thời gian"
         ];
     }

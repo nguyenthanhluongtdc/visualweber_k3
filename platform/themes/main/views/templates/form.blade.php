@@ -221,7 +221,7 @@
       <div class="{{$errors->first('email') ? 'error-active' : 'error-js'}}">
          <input name="email" class="ui search selection dropdown w-100" type="text" placeholder="Nhập thông tin email"
             value="{{old('email')}}">
-         <p class="error-msg font-kia-re request erro-p">{{$errors->first('email')}}</p>
+         {{-- <p class="error-msg font-kia-re request erro-p">{{$errors->first('email')}}</p> --}}
       </div>
    </div>
    <p class="font-buenos-light font-mobie-small mb-3" style="font-style: italic;">
