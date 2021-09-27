@@ -238,7 +238,7 @@
 
    <p class="form__btnSubmit">
       <button type="submit" class="text-uppercase font14 font-kia-bold button">
-         ĐẶT XE
+         ĐẶT XE
       </button>
    </p>
 </div>
