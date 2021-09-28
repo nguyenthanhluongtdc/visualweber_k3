@@ -802,9 +802,12 @@
 .tuvanngay{
   position: fixed;
   bottom: 23px;
-  color: #fff;
+  // color: #0068a6;
   font-size: 15px;
   right: 10px;
+  background-image: linear-gradient(to right, #004aa1, #00e8e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   @media(max-width : 480px){
     font-size: 13px;
   }

@@ -22,7 +22,7 @@
          }(document, 'script', 'facebook-jssdk'));
      </script>
  --}}
-     <div class="tuvanngay font-kia-light font20">
+     <div class="tuvanngay font-kia-bold font20">
        Tư vấn ngay
      </div>
   <!-- Messenger Plugin chat Code -->
