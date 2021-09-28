@@ -24,6 +24,9 @@ use Platform\ContactBuyCar\Http\Requests\ContactBuyCarRequest;
 use Platform\ContactBuyCar\Repositories\Interfaces\ContactBuyCarInterface;
 use Platform\Contact\Events\SentContactEvent;
 use EmailHandler;
+use Analytics;
+use Platform\Analytics\Exceptions\InvalidConfiguration;
+use Platform\Analytics\Period;
 
 class MainController extends PublicController
 {
@@ -178,6 +181,13 @@ class MainController extends PublicController
                 if ($slug) {
                     $data = (new PageService)->handleFrontRoutes($slug);
                     $data['data']['section'] = $section;
+                    $startDate = \Carbon\Carbon::parse('2005-01-01 00:00:00');
+                    $endDate = today()->endOfDay();
+                    $period = Period::create($startDate, $endDate);
+                    $total = Analytics::performQuery($period,
+                'ga:sessions, ga:users, ga:pageviews, ga:percentNewSessions, ga:bounceRate, ga:pageviewsPerVisit, ga:avgSessionDuration, ga:newUsers')->totalsForAllResults;
+                    $data['data']['total_buy_car'] = floor($total['ga:pageviews'] * 0.04 ?? 0);
+                    $data['data']['total_access'] = $total['ga:pageviews'] ?? 0;
                     return Theme::scope('page', $data['data'], $data['default_view'])->render();
                 }
             }
