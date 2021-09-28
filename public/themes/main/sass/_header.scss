@@ -691,13 +691,17 @@
 #moveDown {
   position: fixed;
   z-index: 10000;
-  top: 82%;
+  top: 75%;
+  @media(max-width : 1366px){
+    top: 70%;
+  }
   background-color: transparent;
   border: none;
   outline: none;
   right: 20px;
   @media(max-width : 480px){
     right: 7px;
+    top: 80%;
   }
   display: flex;
   //transform: rotate(90deg) translate(0, -100%);
@@ -713,8 +717,11 @@
 
   .arrow {
     animation: down 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    width: 50px;
+    width: 45px;
     text-align: center;
+    @media(max-width : 1280px){
+      width: 40px;
+    }
     @media(max-width : 480px){
       width: 35px;
     }
@@ -782,5 +789,23 @@
   }
   [data-aos-delay] {
     transition-delay: 0s !important;
+  }
+}
+
+
+.fb_dialog_content iframe{
+  bottom: 50px!important;
+  @media(max-width : 480px){
+    right : 6px!important;
+  }
+}
+.tuvanngay{
+  position: fixed;
+  bottom: 23px;
+  color: #fff;
+  font-size: 15px;
+  right: 10px;
+  @media(max-width : 480px){
+    font-size: 13px;
   }
 }
