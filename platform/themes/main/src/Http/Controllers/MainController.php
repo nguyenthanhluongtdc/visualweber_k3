@@ -182,7 +182,7 @@ class MainController extends PublicController
                     $data = (new PageService)->handleFrontRoutes($slug);
                     $data['data']['section'] = $section;
                     $startDate = \Carbon\Carbon::parse('2005-01-01 00:00:00');
-                    $endDate = today()->endOfDay();
+                    $endDate = \Carbon\Carbon::now()->addDays(1)->endOfDay();
                     $period = Period::create($startDate, $endDate);
                     $total = Analytics::performQuery($period,
                 'ga:sessions, ga:users, ga:pageviews, ga:percentNewSessions, ga:bounceRate, ga:pageviewsPerVisit, ga:avgSessionDuration, ga:newUsers')->totalsForAllResults;
