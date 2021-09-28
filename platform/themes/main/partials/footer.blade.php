@@ -31,10 +31,13 @@
   <!-- Your Plugin chat code -->
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
-
+  @php
+      $fb = theme_option('facebook_page_id');
+  @endphp
+  
   <script>
     var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "149184158553057");
+    chatbox.setAttribute("page_id", <?php echo $fb ?>);
     chatbox.setAttribute("attribution", "biz_inbox");
 
     window.fbAsyncInit = function() {
@@ -52,6 +55,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+
 <!-- JS Library-->
 {!! Theme::footer() !!}
 
