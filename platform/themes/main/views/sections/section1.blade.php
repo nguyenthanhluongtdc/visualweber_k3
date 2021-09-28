@@ -64,18 +64,20 @@
                     <div class="access">
                         <img src="{{ Theme::asset()->url('images/section1/users.png') }}" alt="">
                         <p class="number font-kia-bold">
-                            @if (has_field($page, 'number_user'))
+                            {{-- @if (has_field($page, 'number_user'))
                                 {!! get_field($page, 'number_user') !!}
-                            @endif
+                            @endif --}}
+                            {{$total_access ?? 0}}
                         </p>
                         <p class="desc font-kia-bold" style="text-transform: uppercase;">lượt truy cập</p>
                     </div>
                     <div class="client">
                         <img src="{{ Theme::asset()->url('images/section1/icon2.png') }}" alt="">
                         <p class="number font-kia-bold">
-                            @if (has_field($page, 'number_buy'))
+                            {{-- @if (has_field($page, 'number_buy'))
                                 {!! get_field($page, 'number_buy') !!}
-                            @endif
+                            @endif --}}
+                            {{$total_buy_car ?? 0}}
                         </p>
                         <p class="desc font-kia-bold" style="text-transform: uppercase;">khách hàng <br> đặt mua xe</p>
                     </div>
