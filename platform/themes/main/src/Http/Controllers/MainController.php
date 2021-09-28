@@ -186,6 +186,7 @@ class MainController extends PublicController
                     $period = Period::create($startDate, $endDate);
                     $total = Analytics::performQuery($period,
                 'ga:sessions, ga:users, ga:pageviews, ga:percentNewSessions, ga:bounceRate, ga:pageviewsPerVisit, ga:avgSessionDuration, ga:newUsers')->totalsForAllResults;
+                    $total['ga:pageviews'] = ($total['ga:pageviews'] ?? 0) + 18278;
                     $data['data']['total_buy_car'] = floor($total['ga:pageviews'] * 0.04 ?? 0);
                     $data['data']['total_access'] = $total['ga:pageviews'] ?? 0;
                     return Theme::scope('page', $data['data'], $data['default_view'])->render();
